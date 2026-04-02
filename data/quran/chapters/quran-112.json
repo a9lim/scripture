@@ -1,0 +1,28 @@
+{
+  "chapter": 112,
+  "id": "quran-112",
+  "name": "Unity",
+  "sections": [
+    {
+      "startVerse": 1,
+      "verses": [
+        {
+          "number": 1,
+          "text": "Say: He is God, the One!"
+        },
+        {
+          "number": 2,
+          "text": "God, the eternally Besought of all!"
+        },
+        {
+          "number": 3,
+          "text": "He begetteth not nor was begotten."
+        },
+        {
+          "number": 4,
+          "text": "And there is none comparable unto Him."
+        }
+      ]
+    }
+  ]
+}

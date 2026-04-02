@@ -1,0 +1,896 @@
+{
+  "id": "kj",
+  "title": "Kojiki",
+  "translations": [
+    {
+      "id": "chamberlain",
+      "name": "Basil Hall Chamberlain",
+      "year": 1919
+    }
+  ],
+  "books": [
+    {
+      "id": "kjk",
+      "name": "Kamitsumaki",
+      "chapters": [
+        {
+          "id": "kjk-0",
+          "name": "Preface",
+          "verses": 6
+        },
+        {
+          "id": "kjk-1",
+          "name": "The Beginning Of Heaven And Earth.",
+          "verses": 2
+        },
+        {
+          "id": "kjk-2",
+          "name": "The Seven Divine Generations.",
+          "verses": 3
+        },
+        {
+          "id": "kjk-3",
+          "name": "The Island Of Onogoro",
+          "verses": 1
+        },
+        {
+          "id": "kjk-4",
+          "name": "Courtship Of The Deities The Male-Who-Invites And The Female Who-Invites.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-5",
+          "name": "Birth Of The Eight Islands.",
+          "verses": 2
+        },
+        {
+          "id": "kjk-6",
+          "name": "Birth Of The Various Deities.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-7",
+          "name": "Retirement Of Her Augustness The Princess-Who-Invites.",
+          "verses": 3
+        },
+        {
+          "id": "kjk-8",
+          "name": "The Slaying Of The Fire-Deity.",
+          "verses": 4
+        },
+        {
+          "id": "kjk-9",
+          "name": "The Land Of Hades.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-10",
+          "name": "The Purification Of The August Person.",
+          "verses": 5
+        },
+        {
+          "id": "kjk-11",
+          "name": "Investiture Of The Three Deities; The Illustrious August Children.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-12",
+          "name": "The Crying And Weeping Of His Impetuous-Male-Augustness.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-13",
+          "name": "The August Oath",
+          "verses": 1
+        },
+        {
+          "id": "kjk-14",
+          "name": "The August Declaration Of The Division Of The August Male Children And The August Female Children.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-15",
+          "name": "The Door Of The Heavenly Rock-Dwelling.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-16",
+          "name": "The August Expulsion Of His-Impetuous-Male-Augustness.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-17",
+          "name": "The Palace Of Suga.",
+          "verses": 2
+        },
+        {
+          "id": "kjk-18",
+          "name": "The August Ancestors Of The Deity-Master-Of-The-Great Land.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-19",
+          "name": "The White Hare Of Inaba.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-20",
+          "name": "Mount Tema.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-21",
+          "name": "The Nether-Distant-Land.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-22",
+          "name": "The Wooing Of The Deity-Of-Eight-Thousand-Spears.",
+          "verses": 5
+        },
+        {
+          "id": "kjk-23",
+          "name": "The Cup Pledge.",
+          "verses": 3
+        },
+        {
+          "id": "kjk-24",
+          "name": "The Deities The August Descendants Of The Deity Master-Of-The-Great-Land.",
+          "verses": 2
+        },
+        {
+          "id": "kjk-25",
+          "name": "The August-Luck-Spirit-The-August-Wondrous-Spirit.] [*1",
+          "verses": 1
+        },
+        {
+          "id": "kjk-26",
+          "name": "The August Children Of The Great-Harvest-Deity And Of The Swift-Mountain-Deity.",
+          "verses": 3
+        },
+        {
+          "id": "kjk-27",
+          "name": "The August Deliberation For Pacifying The Land.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-28",
+          "name": "The Heavenly-Young-Prince.",
+          "verses": 2
+        },
+        {
+          "id": "kjk-29",
+          "name": "Abdication Of The Deity Master-Of-The-Great-Land.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-30",
+          "name": "The August Descent From Heaven Of His Augustness The August Grandchild.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-31",
+          "name": "The August Reign In Himuka Of His Augustness Prince Rice-Ear-Ruddy-Plenty.] [*1",
+          "verses": 1
+        },
+        {
+          "id": "kjk-32",
+          "name": "The Duchess Of Saru.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-33",
+          "name": "The Deity Prince Of Saruta At Azaka.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-34",
+          "name": "The Curse Of The Deity Great-Mountain-Possessor.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-35",
+          "name": "The August Child-Bearing Of Princess-Blossoming Brilliantly-Like-The-Flowers-Of-The-Trees.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-36",
+          "name": "The August Exchange Of Luck.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-37",
+          "name": "The Palace Of The Ocean-Possessor.",
+          "verses": 2
+        },
+        {
+          "id": "kjk-38",
+          "name": "Submission Of His Augustness Fire-Shine.",
+          "verses": 1
+        },
+        {
+          "id": "kjk-39",
+          "name": "The August Children Of His Augustness Cormorant-Thatch-Meeting-Incompletely",
+          "verses": 1
+        }
+      ]
+    },
+    {
+      "id": "kjn",
+      "name": "Nakatsumaki",
+      "chapters": [
+        {
+          "id": "kjn-40",
+          "name": "Reign Of The Emperor Jim-Mu [*2] (Part I. His Progress Eastward, And Death Of His Elder Brother)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-41",
+          "name": "Emperor Jim-Mu (Part Ii. The Cross-Sword Sent Down From Heaven).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-42",
+          "name": "Emperor Jim-Mu (Part Iii. The Gigantic Crow And Gods With Tails)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-43",
+          "name": "Emperor Jim-Mu ( Iv. The Ukashi Brethren).",
+          "verses": 3
+        },
+        {
+          "id": "kjn-44",
+          "name": "Emperor Jim-Mu (Part V. The Earth-Spider Of The Cave Of Osaka).",
+          "verses": 2
+        },
+        {
+          "id": "kjn-45",
+          "name": "Emperor Jim-Mu (Part. Vi. The Prince Of Tomi And The Shiki Brethren)",
+          "verses": 4
+        },
+        {
+          "id": "kjn-46",
+          "name": "Emperor Jim-Mu (Part Vii. The Empire Pacified)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-47",
+          "name": "Emperor Jim-Mu (Part. Viii. He Weds ).",
+          "verses": 12
+        },
+        {
+          "id": "kjn-48",
+          "name": "Emperor Jim-Mu (Part. Ix Troubles Which Followed His Decease).",
+          "verses": 3
+        },
+        {
+          "id": "kjn-49",
+          "name": "Emperor Jim-Mu (Part X. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-50",
+          "name": "Emperor Jim-Mu (Part Xi. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-51",
+          "name": "Emperor Sui-Zei.",
+          "verses": 1
+        },
+        {
+          "id": "kjn-52",
+          "name": "Emperor An-Nei.",
+          "verses": 1
+        },
+        {
+          "id": "kjn-53",
+          "name": "Emperor I-Toku.",
+          "verses": 1
+        },
+        {
+          "id": "kjn-54",
+          "name": "Emperor Ko-Sho.",
+          "verses": 2
+        },
+        {
+          "id": "kjn-55",
+          "name": "Emperor Koan.",
+          "verses": 1
+        },
+        {
+          "id": "kjn-56",
+          "name": "Emperor Ko-Rei.",
+          "verses": 1
+        },
+        {
+          "id": "kjn-57",
+          "name": "Emperor Ko-Gen.",
+          "verses": 2
+        },
+        {
+          "id": "kjn-58",
+          "name": "Emperor Kai-Kuwa.",
+          "verses": 1
+        },
+        {
+          "id": "kjn-59",
+          "name": "Emperor Su-Jin (Part I. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-60",
+          "name": "Emperor Su-Jin (Part Ii. A Pestilence Is Staid By Oho-Tata-Ne-Ko).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-61",
+          "name": "Emperor Su-Jin (Part Iii: Story Of Oho-Tata-Ne-Ko'S Birth)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-62",
+          "name": "Emperor Su-Jin (Part Iv. War With King Take-Hani-Yasu).",
+          "verses": 2
+        },
+        {
+          "id": "kjn-63",
+          "name": "Emperor Su-Jin (Part V. Peace Restored And Tribute Levied).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-64",
+          "name": "Emperor Su-Jin (Part Vi. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-65",
+          "name": "Emperor Sui-Nin (Part I. Genealogies)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-66",
+          "name": "Emperor Sui-Nin (Part Ii. Conspiracy Of King Saho-Biko And The Empress Saho-Bime).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-67",
+          "name": "Emperor Sui-Nin (Part Iii. Birth Of Prince Homu-Chi-Wake And Death Of The Conspirators)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-68",
+          "name": "Emperor Sui-Nin (Part Iv. The Dumb Prince Homu-Chi-Wake).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-69",
+          "name": "Emperor Sui-Nin (Part. V. His Later Wives.)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-70",
+          "name": "Emperor Sui-Nin (Part Vi. Taji-Mori Brings Back The Orange From The Eternal Land.)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-71",
+          "name": "Emperor Sui-Nin (Part Vii. His Death And That Of The Empress Hibasu.)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-72",
+          "name": "Empress Kei-Ko (Part I, Genealogies)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-73",
+          "name": "Emperor Kei-Ko (Part Ii. The Maidens Ye-Hime And Oto-Hime).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-74",
+          "name": "Emperor Kei-Ko (Part Iii. Various Deeds.)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-75",
+          "name": "Emperor Kei-Ko (Part Iv. Yamato-Take Slays His Elder Brother).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-76",
+          "name": "Emperor Kei-Ko (Part V. Yamato-Take Slays The Kumaso Bravoes).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-77",
+          "name": "Emperor Kei-Ko (Part Vi. Yamato-Take Slays The Idzumo Bravo).",
+          "verses": 2
+        },
+        {
+          "id": "kjn-78",
+          "name": "Emperor Kei-Ko (Part Vii. Yamato-Take Is Sent To Subdue The East, And Visits His Aunt At Ise).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-79",
+          "name": "Emperor Kei-Ko (Part Viii. Yamato-Take Slays The Rulers Of Sagamu.)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-80",
+          "name": "Emperor Kei-Ko (Part Ix. Yamato-Take'S Empress Stills The Waves.)",
+          "verses": 2
+        },
+        {
+          "id": "kjn-81",
+          "name": "Emperor Kei-Ko (Part X. Yamato-Take Slays The Deity Of The Ashigara Pass.)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-82",
+          "name": "Emperor Kei-Ko (Part Xi. Yamato-Take Dwells In The Palace Of Sakawori.)",
+          "verses": 3
+        },
+        {
+          "id": "kjn-83",
+          "name": "Emperor Kei-Ko (Part Xii. Yamato-Take Wooes Princess Miyazu).",
+          "verses": 3
+        },
+        {
+          "id": "kjn-84",
+          "name": "Emperor Kei-Ko (Part Xiii. Yamato-Take Meets The Deity Of Mount Ibuki).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-85",
+          "name": "Emperor Kei-Ko (Part Xiv. The Death Of Yamato-Take).",
+          "verses": 6
+        },
+        {
+          "id": "kjn-86",
+          "name": "Emperor Kei-Ko (Part Xv. Yamato-Take Turns Into A White Bird)",
+          "verses": 6
+        },
+        {
+          "id": "kjn-87",
+          "name": "Emperor Kei-Ko (Part Xvi. Yamato-Take'S Butler).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-88",
+          "name": "Emperor Kei-Ko (Part Xvii. Yamato-Take'S Descendants).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-89",
+          "name": "Emperor Kei-Ko (Part Xviii. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-90",
+          "name": "Emperor Sei-Mu.",
+          "verses": 1
+        },
+        {
+          "id": "kjn-91",
+          "name": "Emperor Chiu-Ai (Part I. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-92",
+          "name": "Emperor Chiu-Ai (Part Ii. The Possession Of Korea Divinely Promised).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-93",
+          "name": "Emperor Chiu-Ai (Part Iii. Preparations For The Conquest Of Korea).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-94",
+          "name": "Emperor Chiu-Ai (Part Iv. The Empress Jin-Go Conquers Korea)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-95",
+          "name": "Emperor Chiu-Ai (Part V. The Empress Jin-Go Fishes In Tsukushi).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-96",
+          "name": "Emperor Chiu-Ai (Part Vi. The Empress Jin-Go Subdues Yamato).",
+          "verses": 2
+        },
+        {
+          "id": "kjn-97",
+          "name": "Emperor Chiu-Ai (Part Viii. The Heir Apparent Exchanges Names With The Great Deity Izasa-Wake).",
+          "verses": 2
+        },
+        {
+          "id": "kjn-98",
+          "name": "Emperor Chiu-Ai (Part Viii. The Empress Jin-Go Presents Liquor To The Heir Apparent).",
+          "verses": 3
+        },
+        {
+          "id": "kjn-99",
+          "name": "Emperor Chiu-Ai (Part Ix. His Death And That Of The Empress Jin-Go).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-100",
+          "name": "Emperor O-Jin [*1] (Part 1. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-101",
+          "name": "Emperor O-Jin (Part Ii. He Divides The Inheritance Between His Three Sons)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-102",
+          "name": "Emperor O-Jin (Part Iv. He Grants Princess Kaminaga To His Son Oho-Sazaki).",
+          "verses": 3
+        },
+        {
+          "id": "kjn-103",
+          "name": "Emperor O-Jin (Part V. Songs Of The Territorial Owners Of Yeshinu).",
+          "verses": 3
+        },
+        {
+          "id": "kjn-104",
+          "name": "Emperor O-Jin (Part Vi. Various Deeds)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-105",
+          "name": "Emperor O-Jin (Part Viii. Tribute From Korea).",
+          "verses": 2
+        },
+        {
+          "id": "kjn-106",
+          "name": "Emperor O-Jin (Part Viii. The Emperor Intoxicated).",
+          "verses": 2
+        },
+        {
+          "id": "kjn-107",
+          "name": "Emperor O-Jin (Part Ix. Troubles Which Followed His Decease)",
+          "verses": 2
+        },
+        {
+          "id": "kjn-108",
+          "name": "Emperor O-Jin (Part X. Princes Oho-Sazaki And Uji-No-Waki-Iratsuko Cede The Empire To Each Other)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-109",
+          "name": "Emperor O-Jin (Part Xi. Ama-No-Hi-Boko Crosses Over To Japan)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-110",
+          "name": "Emperor O-Jin (Part Xii. Descendants Of Ama-No-Hi-Boko, And Treasures Brought By Him.)",
+          "verses": 1
+        },
+        {
+          "id": "kjn-111",
+          "name": "Emperor O-Jin (Part Xiii. The Youth-Of-The-Glow-On-The-Autumn-Mountains And The Youth-Of-The-Haze-On-The-Spring-Mountains).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-112",
+          "name": "Emperor O-Jin (Part Xvi. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjn-113",
+          "name": "Emperor O-Jin (Part Xv. His Age And Place Of Burial).",
+          "verses": 1
+        }
+      ]
+    },
+    {
+      "id": "kjs",
+      "name": "Shimotsumaki",
+      "chapters": [
+        {
+          "id": "kjs-114",
+          "name": "Emperor Nin-Toku (Part I. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-115",
+          "name": "Emperor Nin-Toku (Part Ii. Various Deeds).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-116",
+          "name": "Emperor Nin-Toku [Part Iii. He Remits The Taxes)",
+          "verses": 1
+        },
+        {
+          "id": "kjs-117",
+          "name": "Emperor Nin-Toku (Part Iv. He Loves Princess Kuro).",
+          "verses": 5
+        },
+        {
+          "id": "kjs-118",
+          "name": "Emperor Nin-Toku Part V. The Empress Retires To Yamashiro).",
+          "verses": 3
+        },
+        {
+          "id": "kjs-119",
+          "name": "Emperor Nin-Toku (Part Vi. He Follows The Empress Into Yamashiro).",
+          "verses": 6
+        },
+        {
+          "id": "kjs-120",
+          "name": "Emperor Nin-Toku (Part Viii. He Loves Yata-No-Waki-Iratsume).",
+          "verses": 3
+        },
+        {
+          "id": "kjs-121",
+          "name": "Emperor Nin-Toku (Part Viii. Death Of King Hayabusa-Wake And Queen Medori).",
+          "verses": 6
+        },
+        {
+          "id": "kjs-122",
+          "name": "Emperor Nin-Toku (Part Viii. Queen Medori'S Armlet).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-123",
+          "name": "Emperor Nin-Toku (Part Ix. A Wild-Goose Lays An Egg).",
+          "verses": 4
+        },
+        {
+          "id": "kjs-124",
+          "name": "Emperor Nin-Toku (Part X. A Vessel Is Made Into A Lute)",
+          "verses": 2
+        },
+        {
+          "id": "kjs-125",
+          "name": "Emperor Nin-Toku (Part Xi. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-126",
+          "name": "Emperor Ri-Chiu (Part I. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-127",
+          "name": "Emperor Ri-Chiu (Part Ii. He Is Taken To Iso-No-Kami).",
+          "verses": 4
+        },
+        {
+          "id": "kjs-128",
+          "name": "Emperor. Ri-Chiu (Part Iii. His Rebellious Brother And The Latter'S Retainer Sobakari Are Slain)",
+          "verses": 2
+        },
+        {
+          "id": "kjs-129",
+          "name": "Emperor Ri-Chiu (Part Iv. Various Deeds).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-130",
+          "name": "Emperor Ri-Chiu (Part V. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-131",
+          "name": "Emperor Han-Zei.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-132",
+          "name": "Emperor In-Giyo [*1] (Part I Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-133",
+          "name": "Emperor In-Giyo (Part Ii. His Sickness Is Cured By A Korean Physician).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-134",
+          "name": "Emperor In-Giyo (Part Iii. He Rectifies The People'S Names).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-135",
+          "name": "Emperor In-Giyo (Part Iv. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-136",
+          "name": "Emperor In-Giyo (Part Vi. War Between Prince Karu And Prince Anaho).",
+          "verses": 4
+        },
+        {
+          "id": "kjs-137",
+          "name": "Emperor In-Giyo (Part Vii. Death Of Prince Karu And Princess So-Tohoshi).",
+          "verses": 7
+        },
+        {
+          "id": "kjs-138",
+          "name": "Emperor An-Ko (Part I. He Slays King Oho-Kusaka).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-139",
+          "name": "Emperor An-Ko (Part Ii. He Is Slain By King Ma-Yowa).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-140",
+          "name": "Emperor An-Ko (Part Iii. Prince Oho Hatsuse Slays Princes Kuro-Biko And Shiro-Biro).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-141",
+          "name": "Emperor (Part Iv. Death Of Prince Ma-Yowa And Of The Grandee Tsubura).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-142",
+          "name": "Emperor An-Ko (Part V: Prince Oho-Hatsuse Slays Prince Oshiha).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-143",
+          "name": "Emperor An-Ko (Part Vi. Flight Of Princes Ohoke And Woke)].",
+          "verses": 1
+        },
+        {
+          "id": "kjs-144",
+          "name": "Emperor Yu-Riyaku, (I. Genealogies).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-145",
+          "name": "Emperor Yu-Riyaku (Part Ii. Various Deeds).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-146",
+          "name": "Emperor Yu-Riyaku (Part Iv. He Wooes Princess Waka-Kusaka-Be).",
+          "verses": 2
+        },
+        {
+          "id": "kjs-147",
+          "name": "Emperor Yu-Riyaku (Part V. Story Of The Woman Akawi-Ko).",
+          "verses": 5
+        },
+        {
+          "id": "kjs-148",
+          "name": "Emperor Yu-Riyaku (Part Vi. He Makes A Progress To Yeshinu).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-149",
+          "name": "Emperor Yu-Riyaku (Part Vii. The Horse-Fly And The Dragon-Fly).",
+          "verses": 2
+        },
+        {
+          "id": "kjs-150",
+          "name": "Emperor Yu-Riyaku (Part Vii. Adventure With A Wild Boar).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-151",
+          "name": "Emperor Yu-Riyaku (Part Ix. Revelation Of The Great Deity Of Kadzuraki, Lord Of One Word).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-152",
+          "name": "Emperor Yu-Riyaku (Part Xi. The Leaf In The Cup).",
+          "verses": 4
+        },
+        {
+          "id": "kjs-153",
+          "name": "Emperor Yu-Riyaku (Part Xii. Songs By The Emperor And Princess Wodo).",
+          "verses": 3
+        },
+        {
+          "id": "kjs-154",
+          "name": "Emperor Yu-Riyaku (Part Xiii. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-155",
+          "name": "Emperor Sei-Nei (Part I. Search For A Successor To Him).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-156",
+          "name": "Emperor Sei-Nei (Part Ii. Princes Ohoke And Woke Are Discovered).",
+          "verses": 2
+        },
+        {
+          "id": "kjs-157",
+          "name": "Emperor Sei-Nei (. The Grandee Shibi). [*1",
+          "verses": 7
+        },
+        {
+          "id": "kjs-158",
+          "name": "Emperor Sei-Nei (Part Iv. Prince Ohoke Cedes The Empire To Prince Woke).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-159",
+          "name": "Emperor Ken-Zo (Part I. The Old Woman Oki-Me).",
+          "verses": 2
+        },
+        {
+          "id": "kjs-160",
+          "name": "Emperor Ken-Zo (Part Ii. He Slays The Boar-Herd).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-161",
+          "name": "Emperor Ken-Zo (Part Iii. The Emperor Yu-Riyaku'S Mausoleum Is Disfigured).",
+          "verses": 2
+        },
+        {
+          "id": "kjs-162",
+          "name": "Emperor Ken-Zo (Part Iv. His Age And Place Of Burial).",
+          "verses": 1
+        },
+        {
+          "id": "kjs-163",
+          "name": "Emperor Nin-Ken.] [*1",
+          "verses": 1
+        },
+        {
+          "id": "kjs-164",
+          "name": "Emperor Mu-Retsu.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-165",
+          "name": "Emperor Kei-Tai.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-166",
+          "name": "Emperor Kan-An.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-167",
+          "name": "Emperor Sen-Kuwa.",
+          "verses": 2
+        },
+        {
+          "id": "kjs-168",
+          "name": "Emperor Kim-Mei.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-169",
+          "name": "Emperor Bi-Datsu.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-170",
+          "name": "Emperor Yomei.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-171",
+          "name": "Emperor Su-Jun.",
+          "verses": 1
+        },
+        {
+          "id": "kjs-172",
+          "name": "Empress Sui-Ko.",
+          "verses": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,589 @@
+{
+  "id": "quran",
+  "title": "Quran",
+  "translations": [
+    {
+      "id": "pickthall",
+      "name": "Marmaduke Pickthall",
+      "year": 1930
+    }
+  ],
+  "books": [
+    {
+      "id": "quran",
+      "name": "Quran",
+      "chapters": [
+        {
+          "id": "quran-1",
+          "name": "Opening",
+          "verses": 7
+        },
+        {
+          "id": "quran-2",
+          "name": "Cow",
+          "verses": 286
+        },
+        {
+          "id": "quran-3",
+          "name": "Family of Amram",
+          "verses": 200
+        },
+        {
+          "id": "quran-4",
+          "name": "Women",
+          "verses": 176
+        },
+        {
+          "id": "quran-5",
+          "name": "Food",
+          "verses": 120
+        },
+        {
+          "id": "quran-6",
+          "name": "Cattle",
+          "verses": 165
+        },
+        {
+          "id": "quran-7",
+          "name": "Elevated Places",
+          "verses": 206
+        },
+        {
+          "id": "quran-8",
+          "name": "Spoils Of War",
+          "verses": 75
+        },
+        {
+          "id": "quran-9",
+          "name": "Repentance",
+          "verses": 129
+        },
+        {
+          "id": "quran-10",
+          "name": "Jonah",
+          "verses": 109
+        },
+        {
+          "id": "quran-11",
+          "name": "Hod",
+          "verses": 123
+        },
+        {
+          "id": "quran-12",
+          "name": "Joseph",
+          "verses": 111
+        },
+        {
+          "id": "quran-13",
+          "name": "Thunder",
+          "verses": 43
+        },
+        {
+          "id": "quran-14",
+          "name": "Abraham",
+          "verses": 52
+        },
+        {
+          "id": "quran-15",
+          "name": "Rock",
+          "verses": 99
+        },
+        {
+          "id": "quran-16",
+          "name": "Bee",
+          "verses": 128
+        },
+        {
+          "id": "quran-17",
+          "name": "Israelites",
+          "verses": 111
+        },
+        {
+          "id": "quran-18",
+          "name": "Cave",
+          "verses": 110
+        },
+        {
+          "id": "quran-19",
+          "name": "Mary",
+          "verses": 98
+        },
+        {
+          "id": "quran-20",
+          "name": "Teth Heh",
+          "verses": 135
+        },
+        {
+          "id": "quran-21",
+          "name": "Prophets",
+          "verses": 112
+        },
+        {
+          "id": "quran-22",
+          "name": "Pilgrimage",
+          "verses": 78
+        },
+        {
+          "id": "quran-23",
+          "name": "Believers",
+          "verses": 118
+        },
+        {
+          "id": "quran-24",
+          "name": "Light",
+          "verses": 64
+        },
+        {
+          "id": "quran-25",
+          "name": "Criterion",
+          "verses": 77
+        },
+        {
+          "id": "quran-26",
+          "name": "Poets",
+          "verses": 227
+        },
+        {
+          "id": "quran-27",
+          "name": "Nemal",
+          "verses": 93
+        },
+        {
+          "id": "quran-28",
+          "name": "Narrative",
+          "verses": 88
+        },
+        {
+          "id": "quran-29",
+          "name": "Spider",
+          "verses": 69
+        },
+        {
+          "id": "quran-30",
+          "name": "Romans",
+          "verses": 60
+        },
+        {
+          "id": "quran-31",
+          "name": "Achiacharus",
+          "verses": 34
+        },
+        {
+          "id": "quran-32",
+          "name": "Adoration",
+          "verses": 30
+        },
+        {
+          "id": "quran-33",
+          "name": "Allies",
+          "verses": 73
+        },
+        {
+          "id": "quran-34",
+          "name": "Sheba",
+          "verses": 54
+        },
+        {
+          "id": "quran-35",
+          "name": "Creator",
+          "verses": 45
+        },
+        {
+          "id": "quran-36",
+          "name": "Yod Shin",
+          "verses": 83
+        },
+        {
+          "id": "quran-37",
+          "name": "Rangers",
+          "verses": 182
+        },
+        {
+          "id": "quran-38",
+          "name": "Zadeh",
+          "verses": 88
+        },
+        {
+          "id": "quran-39",
+          "name": "Companies",
+          "verses": 75
+        },
+        {
+          "id": "quran-40",
+          "name": "Forgiving One",
+          "verses": 85
+        },
+        {
+          "id": "quran-41",
+          "name": "Heh Mem",
+          "verses": 54
+        },
+        {
+          "id": "quran-42",
+          "name": "Counsel",
+          "verses": 53
+        },
+        {
+          "id": "quran-43",
+          "name": "Embellishment",
+          "verses": 89
+        },
+        {
+          "id": "quran-44",
+          "name": "Evident Smoke",
+          "verses": 59
+        },
+        {
+          "id": "quran-45",
+          "name": "Kneeling",
+          "verses": 37
+        },
+        {
+          "id": "quran-46",
+          "name": "Sandhills",
+          "verses": 35
+        },
+        {
+          "id": "quran-47",
+          "name": "Mahemod",
+          "verses": 38
+        },
+        {
+          "id": "quran-48",
+          "name": "Victory",
+          "verses": 29
+        },
+        {
+          "id": "quran-49",
+          "name": "Chambers",
+          "verses": 18
+        },
+        {
+          "id": "quran-50",
+          "name": "Coph",
+          "verses": 45
+        },
+        {
+          "id": "quran-51",
+          "name": "Scatterers",
+          "verses": 60
+        },
+        {
+          "id": "quran-52",
+          "name": "Mountain",
+          "verses": 49
+        },
+        {
+          "id": "quran-53",
+          "name": "Star",
+          "verses": 62
+        },
+        {
+          "id": "quran-54",
+          "name": "Moon",
+          "verses": 55
+        },
+        {
+          "id": "quran-55",
+          "name": "Merciful",
+          "verses": 78
+        },
+        {
+          "id": "quran-56",
+          "name": "That Which is Coming",
+          "verses": 96
+        },
+        {
+          "id": "quran-57",
+          "name": "Iron",
+          "verses": 29
+        },
+        {
+          "id": "quran-58",
+          "name": "She Who Pleaded",
+          "verses": 22
+        },
+        {
+          "id": "quran-59",
+          "name": "Exile",
+          "verses": 24
+        },
+        {
+          "id": "quran-60",
+          "name": "She Who is Tested",
+          "verses": 13
+        },
+        {
+          "id": "quran-61",
+          "name": "Ranks",
+          "verses": 14
+        },
+        {
+          "id": "quran-62",
+          "name": "Day of Congregation",
+          "verses": 11
+        },
+        {
+          "id": "quran-63",
+          "name": "Hypocrites",
+          "verses": 11
+        },
+        {
+          "id": "quran-64",
+          "name": "Cheating",
+          "verses": 18
+        },
+        {
+          "id": "quran-65",
+          "name": "Divorce",
+          "verses": 12
+        },
+        {
+          "id": "quran-66",
+          "name": "Prohibition",
+          "verses": 12
+        },
+        {
+          "id": "quran-67",
+          "name": "Kingdom",
+          "verses": 30
+        },
+        {
+          "id": "quran-68",
+          "name": "Pen",
+          "verses": 52
+        },
+        {
+          "id": "quran-69",
+          "name": "Inevitable",
+          "verses": 52
+        },
+        {
+          "id": "quran-70",
+          "name": "Ladders",
+          "verses": 44
+        },
+        {
+          "id": "quran-71",
+          "name": "Noah",
+          "verses": 28
+        },
+        {
+          "id": "quran-72",
+          "name": "Ginn",
+          "verses": 28
+        },
+        {
+          "id": "quran-73",
+          "name": "Mantled One",
+          "verses": 20
+        },
+        {
+          "id": "quran-74",
+          "name": "Clothed One",
+          "verses": 56
+        },
+        {
+          "id": "quran-75",
+          "name": "Resurrection",
+          "verses": 40
+        },
+        {
+          "id": "quran-76",
+          "name": "Man",
+          "verses": 31
+        },
+        {
+          "id": "quran-77",
+          "name": "Emissaries",
+          "verses": 50
+        },
+        {
+          "id": "quran-78",
+          "name": "Tidings",
+          "verses": 40
+        },
+        {
+          "id": "quran-79",
+          "name": "Those Who Pull Out",
+          "verses": 46
+        },
+        {
+          "id": "quran-80",
+          "name": "He Frowned",
+          "verses": 42
+        },
+        {
+          "id": "quran-81",
+          "name": "Cessation",
+          "verses": 29
+        },
+        {
+          "id": "quran-82",
+          "name": "Cleaving Asunder",
+          "verses": 19
+        },
+        {
+          "id": "quran-83",
+          "name": "Defrauders",
+          "verses": 36
+        },
+        {
+          "id": "quran-84",
+          "name": "Rending",
+          "verses": 25
+        },
+        {
+          "id": "quran-85",
+          "name": "Constellations",
+          "verses": 22
+        },
+        {
+          "id": "quran-86",
+          "name": "Night-Comer",
+          "verses": 17
+        },
+        {
+          "id": "quran-87",
+          "name": "Most High",
+          "verses": 19
+        },
+        {
+          "id": "quran-88",
+          "name": "Overwhelming Calamity",
+          "verses": 26
+        },
+        {
+          "id": "quran-89",
+          "name": "Dawn",
+          "verses": 30
+        },
+        {
+          "id": "quran-90",
+          "name": "City",
+          "verses": 20
+        },
+        {
+          "id": "quran-91",
+          "name": "Sun",
+          "verses": 15
+        },
+        {
+          "id": "quran-92",
+          "name": "Night",
+          "verses": 21
+        },
+        {
+          "id": "quran-93",
+          "name": "Early Hours",
+          "verses": 11
+        },
+        {
+          "id": "quran-94",
+          "name": "Expansion",
+          "verses": 8
+        },
+        {
+          "id": "quran-95",
+          "name": "Fig",
+          "verses": 8
+        },
+        {
+          "id": "quran-96",
+          "name": "Clot",
+          "verses": 19
+        },
+        {
+          "id": "quran-97",
+          "name": "Majesty",
+          "verses": 5
+        },
+        {
+          "id": "quran-98",
+          "name": "Proof",
+          "verses": 8
+        },
+        {
+          "id": "quran-99",
+          "name": "Shaking",
+          "verses": 8
+        },
+        {
+          "id": "quran-100",
+          "name": "Assaulters",
+          "verses": 11
+        },
+        {
+          "id": "quran-101",
+          "name": "Terrible Calamity",
+          "verses": 11
+        },
+        {
+          "id": "quran-102",
+          "name": "Worldly Gain",
+          "verses": 8
+        },
+        {
+          "id": "quran-103",
+          "name": "Time",
+          "verses": 3
+        },
+        {
+          "id": "quran-104",
+          "name": "Slanderer",
+          "verses": 9
+        },
+        {
+          "id": "quran-105",
+          "name": "Elephant",
+          "verses": 5
+        },
+        {
+          "id": "quran-106",
+          "name": "Coresh",
+          "verses": 4
+        },
+        {
+          "id": "quran-107",
+          "name": "Daily Necessaries",
+          "verses": 7
+        },
+        {
+          "id": "quran-108",
+          "name": "Abundance",
+          "verses": 3
+        },
+        {
+          "id": "quran-109",
+          "name": "Unbelievers",
+          "verses": 6
+        },
+        {
+          "id": "quran-110",
+          "name": "Help",
+          "verses": 3
+        },
+        {
+          "id": "quran-111",
+          "name": "Flame",
+          "verses": 5
+        },
+        {
+          "id": "quran-112",
+          "name": "Unity",
+          "verses": 4
+        },
+        {
+          "id": "quran-113",
+          "name": "Daybreak",
+          "verses": 5
+        },
+        {
+          "id": "quran-114",
+          "name": "Men",
+          "verses": 6
+        }
+      ]
+    }
+  ]
+}

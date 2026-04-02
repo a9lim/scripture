@@ -1,0 +1,1052 @@
+{
+  "id": "bom",
+  "title": "Book of Mormon",
+  "books": [
+    {
+      "id": "1-ne",
+      "name": "1 Nephi",
+      "chapters": [
+        {
+          "id": "1-ne-1",
+          "verses": 20
+        },
+        {
+          "id": "1-ne-2",
+          "verses": 24
+        },
+        {
+          "id": "1-ne-3",
+          "verses": 31
+        },
+        {
+          "id": "1-ne-4",
+          "verses": 38
+        },
+        {
+          "id": "1-ne-5",
+          "verses": 22
+        },
+        {
+          "id": "1-ne-6",
+          "verses": 6
+        },
+        {
+          "id": "1-ne-7",
+          "verses": 22
+        },
+        {
+          "id": "1-ne-8",
+          "verses": 38
+        },
+        {
+          "id": "1-ne-9",
+          "verses": 6
+        },
+        {
+          "id": "1-ne-10",
+          "verses": 22
+        },
+        {
+          "id": "1-ne-11",
+          "verses": 36
+        },
+        {
+          "id": "1-ne-12",
+          "verses": 23
+        },
+        {
+          "id": "1-ne-13",
+          "verses": 42
+        },
+        {
+          "id": "1-ne-14",
+          "verses": 30
+        },
+        {
+          "id": "1-ne-15",
+          "verses": 36
+        },
+        {
+          "id": "1-ne-16",
+          "verses": 39
+        },
+        {
+          "id": "1-ne-17",
+          "verses": 55
+        },
+        {
+          "id": "1-ne-18",
+          "verses": 25
+        },
+        {
+          "id": "1-ne-19",
+          "verses": 24
+        },
+        {
+          "id": "1-ne-20",
+          "verses": 22
+        },
+        {
+          "id": "1-ne-21",
+          "verses": 26
+        },
+        {
+          "id": "1-ne-22",
+          "verses": 31
+        }
+      ]
+    },
+    {
+      "id": "2-ne",
+      "name": "2 Nephi",
+      "chapters": [
+        {
+          "id": "2-ne-1",
+          "verses": 32
+        },
+        {
+          "id": "2-ne-2",
+          "verses": 30
+        },
+        {
+          "id": "2-ne-3",
+          "verses": 25
+        },
+        {
+          "id": "2-ne-4",
+          "verses": 35
+        },
+        {
+          "id": "2-ne-5",
+          "verses": 34
+        },
+        {
+          "id": "2-ne-6",
+          "verses": 18
+        },
+        {
+          "id": "2-ne-7",
+          "verses": 11
+        },
+        {
+          "id": "2-ne-8",
+          "verses": 25
+        },
+        {
+          "id": "2-ne-9",
+          "verses": 54
+        },
+        {
+          "id": "2-ne-10",
+          "verses": 25
+        },
+        {
+          "id": "2-ne-11",
+          "verses": 8
+        },
+        {
+          "id": "2-ne-12",
+          "verses": 22
+        },
+        {
+          "id": "2-ne-13",
+          "verses": 26
+        },
+        {
+          "id": "2-ne-14",
+          "verses": 6
+        },
+        {
+          "id": "2-ne-15",
+          "verses": 30
+        },
+        {
+          "id": "2-ne-16",
+          "verses": 13
+        },
+        {
+          "id": "2-ne-17",
+          "verses": 25
+        },
+        {
+          "id": "2-ne-18",
+          "verses": 22
+        },
+        {
+          "id": "2-ne-19",
+          "verses": 21
+        },
+        {
+          "id": "2-ne-20",
+          "verses": 34
+        },
+        {
+          "id": "2-ne-21",
+          "verses": 16
+        },
+        {
+          "id": "2-ne-22",
+          "verses": 6
+        },
+        {
+          "id": "2-ne-23",
+          "verses": 22
+        },
+        {
+          "id": "2-ne-24",
+          "verses": 32
+        },
+        {
+          "id": "2-ne-25",
+          "verses": 30
+        },
+        {
+          "id": "2-ne-26",
+          "verses": 33
+        },
+        {
+          "id": "2-ne-27",
+          "verses": 35
+        },
+        {
+          "id": "2-ne-28",
+          "verses": 32
+        },
+        {
+          "id": "2-ne-29",
+          "verses": 14
+        },
+        {
+          "id": "2-ne-30",
+          "verses": 18
+        },
+        {
+          "id": "2-ne-31",
+          "verses": 21
+        },
+        {
+          "id": "2-ne-32",
+          "verses": 9
+        },
+        {
+          "id": "2-ne-33",
+          "verses": 15
+        }
+      ]
+    },
+    {
+      "id": "jacob",
+      "name": "Jacob",
+      "chapters": [
+        {
+          "id": "jacob-1",
+          "verses": 19
+        },
+        {
+          "id": "jacob-2",
+          "verses": 35
+        },
+        {
+          "id": "jacob-3",
+          "verses": 14
+        },
+        {
+          "id": "jacob-4",
+          "verses": 18
+        },
+        {
+          "id": "jacob-5",
+          "verses": 77
+        },
+        {
+          "id": "jacob-6",
+          "verses": 13
+        },
+        {
+          "id": "jacob-7",
+          "verses": 27
+        }
+      ]
+    },
+    {
+      "id": "enos",
+      "name": "Enos",
+      "chapters": [
+        {
+          "id": "enos-1",
+          "verses": 27
+        }
+      ]
+    },
+    {
+      "id": "jarom",
+      "name": "Jarom",
+      "chapters": [
+        {
+          "id": "jarom-1",
+          "verses": 15
+        }
+      ]
+    },
+    {
+      "id": "omni",
+      "name": "Omni",
+      "chapters": [
+        {
+          "id": "omni-1",
+          "verses": 30
+        }
+      ]
+    },
+    {
+      "id": "w-of-m",
+      "name": "Words of Mormon",
+      "chapters": [
+        {
+          "id": "w-of-m-1",
+          "verses": 18
+        }
+      ]
+    },
+    {
+      "id": "mosiah",
+      "name": "Mosiah",
+      "chapters": [
+        {
+          "id": "mosiah-1",
+          "verses": 18
+        },
+        {
+          "id": "mosiah-2",
+          "verses": 41
+        },
+        {
+          "id": "mosiah-3",
+          "verses": 27
+        },
+        {
+          "id": "mosiah-4",
+          "verses": 30
+        },
+        {
+          "id": "mosiah-5",
+          "verses": 15
+        },
+        {
+          "id": "mosiah-6",
+          "verses": 7
+        },
+        {
+          "id": "mosiah-7",
+          "verses": 33
+        },
+        {
+          "id": "mosiah-8",
+          "verses": 21
+        },
+        {
+          "id": "mosiah-9",
+          "verses": 19
+        },
+        {
+          "id": "mosiah-10",
+          "verses": 22
+        },
+        {
+          "id": "mosiah-11",
+          "verses": 29
+        },
+        {
+          "id": "mosiah-12",
+          "verses": 37
+        },
+        {
+          "id": "mosiah-13",
+          "verses": 35
+        },
+        {
+          "id": "mosiah-14",
+          "verses": 12
+        },
+        {
+          "id": "mosiah-15",
+          "verses": 31
+        },
+        {
+          "id": "mosiah-16",
+          "verses": 15
+        },
+        {
+          "id": "mosiah-17",
+          "verses": 20
+        },
+        {
+          "id": "mosiah-18",
+          "verses": 35
+        },
+        {
+          "id": "mosiah-19",
+          "verses": 29
+        },
+        {
+          "id": "mosiah-20",
+          "verses": 26
+        },
+        {
+          "id": "mosiah-21",
+          "verses": 36
+        },
+        {
+          "id": "mosiah-22",
+          "verses": 16
+        },
+        {
+          "id": "mosiah-23",
+          "verses": 39
+        },
+        {
+          "id": "mosiah-24",
+          "verses": 25
+        },
+        {
+          "id": "mosiah-25",
+          "verses": 24
+        },
+        {
+          "id": "mosiah-26",
+          "verses": 39
+        },
+        {
+          "id": "mosiah-27",
+          "verses": 37
+        },
+        {
+          "id": "mosiah-28",
+          "verses": 20
+        },
+        {
+          "id": "mosiah-29",
+          "verses": 47
+        }
+      ]
+    },
+    {
+      "id": "alma",
+      "name": "Alma",
+      "chapters": [
+        {
+          "id": "alma-1",
+          "verses": 33
+        },
+        {
+          "id": "alma-2",
+          "verses": 38
+        },
+        {
+          "id": "alma-3",
+          "verses": 27
+        },
+        {
+          "id": "alma-4",
+          "verses": 20
+        },
+        {
+          "id": "alma-5",
+          "verses": 62
+        },
+        {
+          "id": "alma-6",
+          "verses": 8
+        },
+        {
+          "id": "alma-7",
+          "verses": 27
+        },
+        {
+          "id": "alma-8",
+          "verses": 32
+        },
+        {
+          "id": "alma-9",
+          "verses": 34
+        },
+        {
+          "id": "alma-10",
+          "verses": 32
+        },
+        {
+          "id": "alma-11",
+          "verses": 46
+        },
+        {
+          "id": "alma-12",
+          "verses": 37
+        },
+        {
+          "id": "alma-13",
+          "verses": 31
+        },
+        {
+          "id": "alma-14",
+          "verses": 29
+        },
+        {
+          "id": "alma-15",
+          "verses": 19
+        },
+        {
+          "id": "alma-16",
+          "verses": 21
+        },
+        {
+          "id": "alma-17",
+          "verses": 39
+        },
+        {
+          "id": "alma-18",
+          "verses": 43
+        },
+        {
+          "id": "alma-19",
+          "verses": 36
+        },
+        {
+          "id": "alma-20",
+          "verses": 30
+        },
+        {
+          "id": "alma-21",
+          "verses": 23
+        },
+        {
+          "id": "alma-22",
+          "verses": 35
+        },
+        {
+          "id": "alma-23",
+          "verses": 18
+        },
+        {
+          "id": "alma-24",
+          "verses": 30
+        },
+        {
+          "id": "alma-25",
+          "verses": 17
+        },
+        {
+          "id": "alma-26",
+          "verses": 37
+        },
+        {
+          "id": "alma-27",
+          "verses": 30
+        },
+        {
+          "id": "alma-28",
+          "verses": 14
+        },
+        {
+          "id": "alma-29",
+          "verses": 17
+        },
+        {
+          "id": "alma-30",
+          "verses": 60
+        },
+        {
+          "id": "alma-31",
+          "verses": 38
+        },
+        {
+          "id": "alma-32",
+          "verses": 43
+        },
+        {
+          "id": "alma-33",
+          "verses": 23
+        },
+        {
+          "id": "alma-34",
+          "verses": 41
+        },
+        {
+          "id": "alma-35",
+          "verses": 16
+        },
+        {
+          "id": "alma-36",
+          "verses": 30
+        },
+        {
+          "id": "alma-37",
+          "verses": 47
+        },
+        {
+          "id": "alma-38",
+          "verses": 15
+        },
+        {
+          "id": "alma-39",
+          "verses": 19
+        },
+        {
+          "id": "alma-40",
+          "verses": 26
+        },
+        {
+          "id": "alma-41",
+          "verses": 15
+        },
+        {
+          "id": "alma-42",
+          "verses": 31
+        },
+        {
+          "id": "alma-43",
+          "verses": 54
+        },
+        {
+          "id": "alma-44",
+          "verses": 24
+        },
+        {
+          "id": "alma-45",
+          "verses": 24
+        },
+        {
+          "id": "alma-46",
+          "verses": 41
+        },
+        {
+          "id": "alma-47",
+          "verses": 36
+        },
+        {
+          "id": "alma-48",
+          "verses": 25
+        },
+        {
+          "id": "alma-49",
+          "verses": 30
+        },
+        {
+          "id": "alma-50",
+          "verses": 40
+        },
+        {
+          "id": "alma-51",
+          "verses": 37
+        },
+        {
+          "id": "alma-52",
+          "verses": 40
+        },
+        {
+          "id": "alma-53",
+          "verses": 23
+        },
+        {
+          "id": "alma-54",
+          "verses": 24
+        },
+        {
+          "id": "alma-55",
+          "verses": 35
+        },
+        {
+          "id": "alma-56",
+          "verses": 57
+        },
+        {
+          "id": "alma-57",
+          "verses": 36
+        },
+        {
+          "id": "alma-58",
+          "verses": 41
+        },
+        {
+          "id": "alma-59",
+          "verses": 13
+        },
+        {
+          "id": "alma-60",
+          "verses": 36
+        },
+        {
+          "id": "alma-61",
+          "verses": 21
+        },
+        {
+          "id": "alma-62",
+          "verses": 52
+        },
+        {
+          "id": "alma-63",
+          "verses": 17
+        }
+      ]
+    },
+    {
+      "id": "hel",
+      "name": "Helaman",
+      "chapters": [
+        {
+          "id": "hel-1",
+          "verses": 34
+        },
+        {
+          "id": "hel-2",
+          "verses": 14
+        },
+        {
+          "id": "hel-3",
+          "verses": 37
+        },
+        {
+          "id": "hel-4",
+          "verses": 26
+        },
+        {
+          "id": "hel-5",
+          "verses": 52
+        },
+        {
+          "id": "hel-6",
+          "verses": 41
+        },
+        {
+          "id": "hel-7",
+          "verses": 29
+        },
+        {
+          "id": "hel-8",
+          "verses": 28
+        },
+        {
+          "id": "hel-9",
+          "verses": 41
+        },
+        {
+          "id": "hel-10",
+          "verses": 19
+        },
+        {
+          "id": "hel-11",
+          "verses": 38
+        },
+        {
+          "id": "hel-12",
+          "verses": 26
+        },
+        {
+          "id": "hel-13",
+          "verses": 39
+        },
+        {
+          "id": "hel-14",
+          "verses": 31
+        },
+        {
+          "id": "hel-15",
+          "verses": 17
+        },
+        {
+          "id": "hel-16",
+          "verses": 25
+        }
+      ]
+    },
+    {
+      "id": "3-ne",
+      "name": "3 Nephi",
+      "chapters": [
+        {
+          "id": "3-ne-1",
+          "verses": 30
+        },
+        {
+          "id": "3-ne-2",
+          "verses": 19
+        },
+        {
+          "id": "3-ne-3",
+          "verses": 26
+        },
+        {
+          "id": "3-ne-4",
+          "verses": 33
+        },
+        {
+          "id": "3-ne-5",
+          "verses": 26
+        },
+        {
+          "id": "3-ne-6",
+          "verses": 30
+        },
+        {
+          "id": "3-ne-7",
+          "verses": 26
+        },
+        {
+          "id": "3-ne-8",
+          "verses": 25
+        },
+        {
+          "id": "3-ne-9",
+          "verses": 22
+        },
+        {
+          "id": "3-ne-10",
+          "verses": 19
+        },
+        {
+          "id": "3-ne-11",
+          "verses": 41
+        },
+        {
+          "id": "3-ne-12",
+          "verses": 48
+        },
+        {
+          "id": "3-ne-13",
+          "verses": 34
+        },
+        {
+          "id": "3-ne-14",
+          "verses": 27
+        },
+        {
+          "id": "3-ne-15",
+          "verses": 24
+        },
+        {
+          "id": "3-ne-16",
+          "verses": 20
+        },
+        {
+          "id": "3-ne-17",
+          "verses": 25
+        },
+        {
+          "id": "3-ne-18",
+          "verses": 39
+        },
+        {
+          "id": "3-ne-19",
+          "verses": 36
+        },
+        {
+          "id": "3-ne-20",
+          "verses": 46
+        },
+        {
+          "id": "3-ne-21",
+          "verses": 29
+        },
+        {
+          "id": "3-ne-22",
+          "verses": 17
+        },
+        {
+          "id": "3-ne-23",
+          "verses": 14
+        },
+        {
+          "id": "3-ne-24",
+          "verses": 18
+        },
+        {
+          "id": "3-ne-25",
+          "verses": 6
+        },
+        {
+          "id": "3-ne-26",
+          "verses": 21
+        },
+        {
+          "id": "3-ne-27",
+          "verses": 33
+        },
+        {
+          "id": "3-ne-28",
+          "verses": 40
+        },
+        {
+          "id": "3-ne-29",
+          "verses": 9
+        },
+        {
+          "id": "3-ne-30",
+          "verses": 2
+        }
+      ]
+    },
+    {
+      "id": "4-ne",
+      "name": "4 Nephi",
+      "chapters": [
+        {
+          "id": "4-ne-1",
+          "verses": 49
+        }
+      ]
+    },
+    {
+      "id": "morm",
+      "name": "Mormon",
+      "chapters": [
+        {
+          "id": "morm-1",
+          "verses": 19
+        },
+        {
+          "id": "morm-2",
+          "verses": 29
+        },
+        {
+          "id": "morm-3",
+          "verses": 22
+        },
+        {
+          "id": "morm-4",
+          "verses": 23
+        },
+        {
+          "id": "morm-5",
+          "verses": 24
+        },
+        {
+          "id": "morm-6",
+          "verses": 22
+        },
+        {
+          "id": "morm-7",
+          "verses": 10
+        },
+        {
+          "id": "morm-8",
+          "verses": 41
+        },
+        {
+          "id": "morm-9",
+          "verses": 37
+        }
+      ]
+    },
+    {
+      "id": "ether",
+      "name": "Ether",
+      "chapters": [
+        {
+          "id": "ether-1",
+          "verses": 43
+        },
+        {
+          "id": "ether-2",
+          "verses": 25
+        },
+        {
+          "id": "ether-3",
+          "verses": 28
+        },
+        {
+          "id": "ether-4",
+          "verses": 19
+        },
+        {
+          "id": "ether-5",
+          "verses": 6
+        },
+        {
+          "id": "ether-6",
+          "verses": 30
+        },
+        {
+          "id": "ether-7",
+          "verses": 27
+        },
+        {
+          "id": "ether-8",
+          "verses": 26
+        },
+        {
+          "id": "ether-9",
+          "verses": 35
+        },
+        {
+          "id": "ether-10",
+          "verses": 34
+        },
+        {
+          "id": "ether-11",
+          "verses": 23
+        },
+        {
+          "id": "ether-12",
+          "verses": 41
+        },
+        {
+          "id": "ether-13",
+          "verses": 31
+        },
+        {
+          "id": "ether-14",
+          "verses": 31
+        },
+        {
+          "id": "ether-15",
+          "verses": 34
+        }
+      ]
+    },
+    {
+      "id": "moro",
+      "name": "Moroni",
+      "chapters": [
+        {
+          "id": "moro-1",
+          "verses": 4
+        },
+        {
+          "id": "moro-2",
+          "verses": 3
+        },
+        {
+          "id": "moro-3",
+          "verses": 4
+        },
+        {
+          "id": "moro-4",
+          "verses": 3
+        },
+        {
+          "id": "moro-5",
+          "verses": 2
+        },
+        {
+          "id": "moro-6",
+          "verses": 9
+        },
+        {
+          "id": "moro-7",
+          "verses": 48
+        },
+        {
+          "id": "moro-8",
+          "verses": 30
+        },
+        {
+          "id": "moro-9",
+          "verses": 26
+        },
+        {
+          "id": "moro-10",
+          "verses": 34
+        }
+      ]
+    }
+  ]
+}

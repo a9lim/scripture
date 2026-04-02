@@ -1,0 +1,789 @@
+{
+  "id": "apoc",
+  "title": "Apocrypha",
+  "translations": [
+    {
+      "id": "kjv",
+      "name": "King James Version",
+      "year": 1769
+    }
+  ],
+  "books": [
+    {
+      "id": "tobit",
+      "name": "Tobit",
+      "chapters": [
+        {
+          "id": "tobit-1",
+          "verses": 22
+        },
+        {
+          "id": "tobit-2",
+          "verses": 14
+        },
+        {
+          "id": "tobit-3",
+          "verses": 17
+        },
+        {
+          "id": "tobit-4",
+          "verses": 21
+        },
+        {
+          "id": "tobit-5",
+          "verses": 22
+        },
+        {
+          "id": "tobit-6",
+          "verses": 17
+        },
+        {
+          "id": "tobit-7",
+          "verses": 18
+        },
+        {
+          "id": "tobit-8",
+          "verses": 21
+        },
+        {
+          "id": "tobit-9",
+          "verses": 6
+        },
+        {
+          "id": "tobit-10",
+          "verses": 12
+        },
+        {
+          "id": "tobit-11",
+          "verses": 19
+        },
+        {
+          "id": "tobit-12",
+          "verses": 22
+        },
+        {
+          "id": "tobit-13",
+          "verses": 18
+        },
+        {
+          "id": "tobit-14",
+          "verses": 15
+        }
+      ]
+    },
+    {
+      "id": "judith",
+      "name": "Judith",
+      "chapters": [
+        {
+          "id": "judith-1",
+          "verses": 16
+        },
+        {
+          "id": "judith-2",
+          "verses": 28
+        },
+        {
+          "id": "judith-3",
+          "verses": 10
+        },
+        {
+          "id": "judith-4",
+          "verses": 15
+        },
+        {
+          "id": "judith-5",
+          "verses": 24
+        },
+        {
+          "id": "judith-6",
+          "verses": 21
+        },
+        {
+          "id": "judith-7",
+          "verses": 32
+        },
+        {
+          "id": "judith-8",
+          "verses": 36
+        },
+        {
+          "id": "judith-9",
+          "verses": 14
+        },
+        {
+          "id": "judith-10",
+          "verses": 23
+        },
+        {
+          "id": "judith-11",
+          "verses": 23
+        },
+        {
+          "id": "judith-12",
+          "verses": 20
+        },
+        {
+          "id": "judith-13",
+          "verses": 20
+        },
+        {
+          "id": "judith-14",
+          "verses": 19
+        },
+        {
+          "id": "judith-15",
+          "verses": 13
+        },
+        {
+          "id": "judith-16",
+          "verses": 25
+        }
+      ]
+    },
+    {
+      "id": "add-esth",
+      "name": "Additions to Esther",
+      "chapters": [
+        {
+          "id": "add-esth-10",
+          "verses": 10
+        },
+        {
+          "id": "add-esth-11",
+          "verses": 12
+        },
+        {
+          "id": "add-esth-12",
+          "verses": 6
+        },
+        {
+          "id": "add-esth-13",
+          "verses": 18
+        },
+        {
+          "id": "add-esth-14",
+          "verses": 19
+        },
+        {
+          "id": "add-esth-15",
+          "verses": 16
+        },
+        {
+          "id": "add-esth-16",
+          "verses": 24
+        }
+      ]
+    },
+    {
+      "id": "wis",
+      "name": "Wisdom of Solomon",
+      "chapters": [
+        {
+          "id": "wis-1",
+          "verses": 16
+        },
+        {
+          "id": "wis-2",
+          "verses": 24
+        },
+        {
+          "id": "wis-3",
+          "verses": 19
+        },
+        {
+          "id": "wis-4",
+          "verses": 20
+        },
+        {
+          "id": "wis-5",
+          "verses": 23
+        },
+        {
+          "id": "wis-6",
+          "verses": 25
+        },
+        {
+          "id": "wis-7",
+          "verses": 30
+        },
+        {
+          "id": "wis-8",
+          "verses": 21
+        },
+        {
+          "id": "wis-9",
+          "verses": 18
+        },
+        {
+          "id": "wis-10",
+          "verses": 21
+        },
+        {
+          "id": "wis-11",
+          "verses": 26
+        },
+        {
+          "id": "wis-12",
+          "verses": 27
+        },
+        {
+          "id": "wis-13",
+          "verses": 19
+        },
+        {
+          "id": "wis-14",
+          "verses": 31
+        },
+        {
+          "id": "wis-15",
+          "verses": 19
+        },
+        {
+          "id": "wis-16",
+          "verses": 29
+        },
+        {
+          "id": "wis-17",
+          "verses": 21
+        },
+        {
+          "id": "wis-18",
+          "verses": 25
+        },
+        {
+          "id": "wis-19",
+          "verses": 22
+        }
+      ]
+    },
+    {
+      "id": "sir",
+      "name": "Sirach",
+      "chapters": [
+        {
+          "id": "sir-1",
+          "verses": 30
+        },
+        {
+          "id": "sir-2",
+          "verses": 18
+        },
+        {
+          "id": "sir-3",
+          "verses": 31
+        },
+        {
+          "id": "sir-4",
+          "verses": 31
+        },
+        {
+          "id": "sir-5",
+          "verses": 15
+        },
+        {
+          "id": "sir-6",
+          "verses": 37
+        },
+        {
+          "id": "sir-7",
+          "verses": 36
+        },
+        {
+          "id": "sir-8",
+          "verses": 19
+        },
+        {
+          "id": "sir-9",
+          "verses": 18
+        },
+        {
+          "id": "sir-10",
+          "verses": 31
+        },
+        {
+          "id": "sir-11",
+          "verses": 34
+        },
+        {
+          "id": "sir-12",
+          "verses": 18
+        },
+        {
+          "id": "sir-13",
+          "verses": 26
+        },
+        {
+          "id": "sir-14",
+          "verses": 27
+        },
+        {
+          "id": "sir-15",
+          "verses": 20
+        },
+        {
+          "id": "sir-16",
+          "verses": 30
+        },
+        {
+          "id": "sir-17",
+          "verses": 32
+        },
+        {
+          "id": "sir-18",
+          "verses": 33
+        },
+        {
+          "id": "sir-19",
+          "verses": 30
+        },
+        {
+          "id": "sir-20",
+          "verses": 32
+        },
+        {
+          "id": "sir-21",
+          "verses": 28
+        },
+        {
+          "id": "sir-22",
+          "verses": 27
+        },
+        {
+          "id": "sir-23",
+          "verses": 28
+        },
+        {
+          "id": "sir-24",
+          "verses": 34
+        },
+        {
+          "id": "sir-25",
+          "verses": 26
+        },
+        {
+          "id": "sir-26",
+          "verses": 29
+        },
+        {
+          "id": "sir-27",
+          "verses": 30
+        },
+        {
+          "id": "sir-28",
+          "verses": 26
+        },
+        {
+          "id": "sir-29",
+          "verses": 28
+        },
+        {
+          "id": "sir-30",
+          "verses": 25
+        },
+        {
+          "id": "sir-31",
+          "verses": 31
+        },
+        {
+          "id": "sir-32",
+          "verses": 24
+        },
+        {
+          "id": "sir-33",
+          "verses": 31
+        },
+        {
+          "id": "sir-34",
+          "verses": 26
+        },
+        {
+          "id": "sir-35",
+          "verses": 20
+        },
+        {
+          "id": "sir-36",
+          "verses": 26
+        },
+        {
+          "id": "sir-37",
+          "verses": 31
+        },
+        {
+          "id": "sir-38",
+          "verses": 34
+        },
+        {
+          "id": "sir-39",
+          "verses": 35
+        },
+        {
+          "id": "sir-40",
+          "verses": 30
+        },
+        {
+          "id": "sir-41",
+          "verses": 24
+        },
+        {
+          "id": "sir-42",
+          "verses": 25
+        },
+        {
+          "id": "sir-43",
+          "verses": 33
+        },
+        {
+          "id": "sir-44",
+          "verses": 23
+        },
+        {
+          "id": "sir-45",
+          "verses": 26
+        },
+        {
+          "id": "sir-46",
+          "verses": 20
+        },
+        {
+          "id": "sir-47",
+          "verses": 25
+        },
+        {
+          "id": "sir-48",
+          "verses": 25
+        },
+        {
+          "id": "sir-49",
+          "verses": 16
+        },
+        {
+          "id": "sir-50",
+          "verses": 29
+        },
+        {
+          "id": "sir-51",
+          "verses": 30
+        }
+      ]
+    },
+    {
+      "id": "bar",
+      "name": "Baruch",
+      "chapters": [
+        {
+          "id": "bar-1",
+          "verses": 22
+        },
+        {
+          "id": "bar-2",
+          "verses": 35
+        },
+        {
+          "id": "bar-3",
+          "verses": 37
+        },
+        {
+          "id": "bar-4",
+          "verses": 37
+        },
+        {
+          "id": "bar-5",
+          "verses": 9
+        },
+        {
+          "id": "bar-6",
+          "verses": 73
+        }
+      ]
+    },
+    {
+      "id": "pr-azar",
+      "name": "Prayer of Azariah",
+      "chapters": [
+        {
+          "id": "pr-azar-1",
+          "verses": 68
+        }
+      ]
+    },
+    {
+      "id": "sus",
+      "name": "Susanna",
+      "chapters": [
+        {
+          "id": "sus-1",
+          "verses": 64
+        }
+      ]
+    },
+    {
+      "id": "bel",
+      "name": "Bel and the Dragon",
+      "chapters": [
+        {
+          "id": "bel-1",
+          "verses": 42
+        }
+      ]
+    },
+    {
+      "id": "1-macc",
+      "name": "1 Maccabees",
+      "chapters": [
+        {
+          "id": "1-macc-1",
+          "verses": 64
+        },
+        {
+          "id": "1-macc-2",
+          "verses": 70
+        },
+        {
+          "id": "1-macc-3",
+          "verses": 60
+        },
+        {
+          "id": "1-macc-4",
+          "verses": 61
+        },
+        {
+          "id": "1-macc-5",
+          "verses": 68
+        },
+        {
+          "id": "1-macc-6",
+          "verses": 63
+        },
+        {
+          "id": "1-macc-7",
+          "verses": 50
+        },
+        {
+          "id": "1-macc-8",
+          "verses": 32
+        },
+        {
+          "id": "1-macc-9",
+          "verses": 73
+        },
+        {
+          "id": "1-macc-10",
+          "verses": 89
+        },
+        {
+          "id": "1-macc-11",
+          "verses": 74
+        },
+        {
+          "id": "1-macc-12",
+          "verses": 53
+        },
+        {
+          "id": "1-macc-13",
+          "verses": 53
+        },
+        {
+          "id": "1-macc-14",
+          "verses": 49
+        },
+        {
+          "id": "1-macc-15",
+          "verses": 41
+        },
+        {
+          "id": "1-macc-16",
+          "verses": 24
+        }
+      ]
+    },
+    {
+      "id": "2-macc",
+      "name": "2 Maccabees",
+      "chapters": [
+        {
+          "id": "2-macc-1",
+          "verses": 36
+        },
+        {
+          "id": "2-macc-2",
+          "verses": 32
+        },
+        {
+          "id": "2-macc-3",
+          "verses": 40
+        },
+        {
+          "id": "2-macc-4",
+          "verses": 50
+        },
+        {
+          "id": "2-macc-5",
+          "verses": 27
+        },
+        {
+          "id": "2-macc-6",
+          "verses": 31
+        },
+        {
+          "id": "2-macc-7",
+          "verses": 42
+        },
+        {
+          "id": "2-macc-8",
+          "verses": 36
+        },
+        {
+          "id": "2-macc-9",
+          "verses": 29
+        },
+        {
+          "id": "2-macc-10",
+          "verses": 38
+        },
+        {
+          "id": "2-macc-11",
+          "verses": 38
+        },
+        {
+          "id": "2-macc-12",
+          "verses": 45
+        },
+        {
+          "id": "2-macc-13",
+          "verses": 26
+        },
+        {
+          "id": "2-macc-14",
+          "verses": 46
+        },
+        {
+          "id": "2-macc-15",
+          "verses": 39
+        }
+      ]
+    },
+    {
+      "id": "1-esd",
+      "name": "1 Esdras",
+      "chapters": [
+        {
+          "id": "1-esd-1",
+          "verses": 58
+        },
+        {
+          "id": "1-esd-2",
+          "verses": 30
+        },
+        {
+          "id": "1-esd-3",
+          "verses": 24
+        },
+        {
+          "id": "1-esd-4",
+          "verses": 63
+        },
+        {
+          "id": "1-esd-5",
+          "verses": 73
+        },
+        {
+          "id": "1-esd-6",
+          "verses": 34
+        },
+        {
+          "id": "1-esd-7",
+          "verses": 15
+        },
+        {
+          "id": "1-esd-8",
+          "verses": 96
+        },
+        {
+          "id": "1-esd-9",
+          "verses": 55
+        }
+      ]
+    },
+    {
+      "id": "pr-man",
+      "name": "Prayer of Manasseh",
+      "chapters": [
+        {
+          "id": "pr-man-1",
+          "verses": 15
+        }
+      ]
+    },
+    {
+      "id": "2-esd",
+      "name": "2 Esdras",
+      "chapters": [
+        {
+          "id": "2-esd-1",
+          "verses": 40
+        },
+        {
+          "id": "2-esd-2",
+          "verses": 48
+        },
+        {
+          "id": "2-esd-3",
+          "verses": 36
+        },
+        {
+          "id": "2-esd-4",
+          "verses": 52
+        },
+        {
+          "id": "2-esd-5",
+          "verses": 56
+        },
+        {
+          "id": "2-esd-6",
+          "verses": 59
+        },
+        {
+          "id": "2-esd-7",
+          "verses": 70
+        },
+        {
+          "id": "2-esd-8",
+          "verses": 63
+        },
+        {
+          "id": "2-esd-9",
+          "verses": 47
+        },
+        {
+          "id": "2-esd-10",
+          "verses": 59
+        },
+        {
+          "id": "2-esd-11",
+          "verses": 46
+        },
+        {
+          "id": "2-esd-12",
+          "verses": 51
+        },
+        {
+          "id": "2-esd-13",
+          "verses": 58
+        },
+        {
+          "id": "2-esd-14",
+          "verses": 48
+        },
+        {
+          "id": "2-esd-15",
+          "verses": 63
+        },
+        {
+          "id": "2-esd-16",
+          "verses": 78
+        }
+      ]
+    }
+  ]
+}

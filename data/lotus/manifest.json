@@ -1,0 +1,147 @@
+{
+  "id": "lotus",
+  "title": "Lotus Sutra",
+  "books": [
+    {
+      "id": "lotus",
+      "name": "Lotus Sutra",
+      "chapters": [
+        {
+          "id": "lotus-1",
+          "name": "1",
+          "verses": 101
+        },
+        {
+          "id": "lotus-2",
+          "name": "2",
+          "verses": 144
+        },
+        {
+          "id": "lotus-3",
+          "name": "3",
+          "verses": 149
+        },
+        {
+          "id": "lotus-4",
+          "name": "4",
+          "verses": 63
+        },
+        {
+          "id": "lotus-5",
+          "name": "5",
+          "verses": 83
+        },
+        {
+          "id": "lotus-6",
+          "name": "6",
+          "verses": 40
+        },
+        {
+          "id": "lotus-7",
+          "name": "7",
+          "verses": 110
+        },
+        {
+          "id": "lotus-8",
+          "name": "8",
+          "verses": 46
+        },
+        {
+          "id": "lotus-9",
+          "name": "9",
+          "verses": 19
+        },
+        {
+          "id": "lotus-10",
+          "name": "10",
+          "verses": 36
+        },
+        {
+          "id": "lotus-11",
+          "name": "11",
+          "verses": 52
+        },
+        {
+          "id": "lotus-12",
+          "name": "12",
+          "verses": 22
+        },
+        {
+          "id": "lotus-13",
+          "name": "13",
+          "verses": 74
+        },
+        {
+          "id": "lotus-14",
+          "name": "14",
+          "verses": 51
+        },
+        {
+          "id": "lotus-15",
+          "name": "15",
+          "verses": 24
+        },
+        {
+          "id": "lotus-16",
+          "name": "16",
+          "verses": 62
+        },
+        {
+          "id": "lotus-17",
+          "name": "17",
+          "verses": 18
+        },
+        {
+          "id": "lotus-18",
+          "name": "18",
+          "verses": 76
+        },
+        {
+          "id": "lotus-19",
+          "name": "19",
+          "verses": 13
+        },
+        {
+          "id": "lotus-20",
+          "name": "20",
+          "verses": 15
+        },
+        {
+          "id": "lotus-21",
+          "name": "21",
+          "verses": 5
+        },
+        {
+          "id": "lotus-22",
+          "name": "22",
+          "verses": 3
+        },
+        {
+          "id": "lotus-23",
+          "name": "23",
+          "verses": 11
+        },
+        {
+          "id": "lotus-24",
+          "name": "24",
+          "verses": 34
+        },
+        {
+          "id": "lotus-25",
+          "name": "25",
+          "verses": 3
+        },
+        {
+          "id": "lotus-26",
+          "name": "26",
+          "verses": 6
+        },
+        {
+          "id": "lotus-27",
+          "name": "27",
+          "verses": 5
+        }
+      ]
+    }
+  ]
+}
