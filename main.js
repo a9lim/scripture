@@ -207,23 +207,12 @@ async function init() {
   // Resume dropdown
   initResume($, navigate);
 
-  // Sidebar tabs
+  // Sidebar tabs (wired by shared-tabs.js; hook bookmarks refresh)
   tabBookmarks = document.getElementById('tab-bookmarks');
-
-  document.querySelectorAll('.sidebar-tabs .tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tab = btn.dataset.tab;
-      document.getElementById('tab-notes').classList.toggle('active', tab === 'notes');
-      tabBookmarks.classList.toggle('active', tab === 'bookmarks');
-      document.querySelectorAll('.sidebar-tabs .tab-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.tab === tab);
-        b.setAttribute('aria-selected', b.dataset.tab === tab ? 'true' : 'false');
-      });
-      if (tab === 'bookmarks') {
-        renderBookmarks($, currentWork, currentChapter, 'chapter', navigate);
-      }
+  document.querySelector('.sidebar-tabs .tab-btn[data-tab="bookmarks"]')
+    ?.addEventListener('click', () => {
+      renderBookmarks($, currentWork, currentChapter, 'chapter', navigate);
     });
-  });
 
   // Verse action popover
   initPopover($, {
