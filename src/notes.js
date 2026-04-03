@@ -43,6 +43,22 @@ function noteKey(workId, chapterId, verseNum) {
   return `${workId}:${chapterId}:${verseNum}`;
 }
 
+/* ── markdown helpers ───────────────────────────────────────────── */
+
+function renderMarkdown(text) {
+  let html = escapeHtml(text);
+  // Bold: **text**
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Italic: *text* (but not inside bold markers)
+  html = html.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+  // Verse refs: workId:chapterId:verse → clickable link
+  html = html.replace(
+    /\b([a-z]+:[a-z0-9-]+-\d+:\d+)\b/g,
+    '<a class="note-ref-link" href="#" data-ref="$1">$1</a>'
+  );
+  return html;
+}
+
 /* ── public API ──────────────────────────────────────────────────── */
 
 /**
@@ -126,6 +142,11 @@ export function openNote(verseNum) {
 
   const textarea = card.querySelector('textarea');
   if (textarea) {
+    // Switch from rendered display to editing mode
+    const display = card.querySelector('.note-display');
+    if (display) display.hidden = true;
+    textarea.hidden = false;
+    autoResize(textarea);
     textarea.focus();
     card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
@@ -150,13 +171,62 @@ function buildCard(verseNum, text) {
   });
   card.appendChild(verseBtn);
 
-  // Auto-expanding textarea
+  // Note body container
+  const body = document.createElement('div');
+  body.className = 'note-body';
+
+  // Rendered markdown display (shown when not editing)
+  const display = document.createElement('div');
+  display.className = 'note-display';
+
+  // Auto-expanding textarea (shown when editing)
   const textarea = document.createElement('textarea');
   textarea.className = 'note-textarea';
   textarea.value = text;
   textarea.placeholder = 'Write a note\u2026';
   textarea.rows = 1;
-  autoResize(textarea);
+
+  function showRendered() {
+    if (textarea.value.trim()) {
+      // Safe: renderMarkdown escapes input via escapeHtml() before inserting known-safe tags
+      display.innerHTML = renderMarkdown(textarea.value.trim());
+      display.hidden = false;
+      textarea.hidden = true;
+    }
+  }
+
+  function showEditing() {
+    display.hidden = true;
+    textarea.hidden = false;
+    autoResize(textarea);
+  }
+
+  // Start in rendered mode if text exists
+  if (text) {
+    showRendered();
+    textarea.hidden = true;
+  } else {
+    display.hidden = true;
+  }
+
+  // Click rendered display to edit
+  display.addEventListener('click', (e) => {
+    // Handle verse ref link clicks
+    const refLink = e.target.closest('.note-ref-link');
+    if (refLink) {
+      e.preventDefault();
+      const ref = refLink.dataset.ref;
+      const slash = ref.indexOf(':');
+      const lastColon = ref.lastIndexOf(':');
+      const workId = ref.slice(0, slash);
+      const chapterId = ref.slice(slash + 1, lastColon);
+      const verse = parseInt(ref.slice(lastColon + 1), 10);
+      location.hash = `${workId}/${chapterId}:${verse}`;
+      return;
+    }
+    showEditing();
+    textarea.focus();
+  });
 
   // Save on input (debounced)
   const save = debounce(() => {
@@ -174,7 +244,7 @@ function buildCard(verseNum, text) {
     save();
   });
 
-  // Delete on blur when empty
+  // On blur: show rendered view, or delete if empty
   textarea.addEventListener('blur', () => {
     if (!textarea.value.trim()) {
       const store = loadStore();
@@ -185,15 +255,20 @@ function buildCard(verseNum, text) {
         showToast('Note deleted');
       }
       card.remove();
-      // Show empty state if no cards remain
       const container = _$.notesContent;
       if (container && !container.querySelector('.note-card')) {
         showEmpty(container);
       }
+    } else {
+      showRendered();
     }
   });
 
-  card.appendChild(textarea);
+  autoResize(textarea);
+
+  body.appendChild(display);
+  body.appendChild(textarea);
+  card.appendChild(body);
   return card;
 }
 
