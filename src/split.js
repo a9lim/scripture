@@ -19,7 +19,7 @@ let _navigatePrimary = null;
 /* ── public API ─────────────────────────────────────────────────── */
 
 export function isSplitOpen() {
-  return _pane !== null && _pane.parentNode !== null;
+  return _pane !== null && !_pane.hidden;
 }
 
 export function getSplitState() {
@@ -37,8 +37,7 @@ export function toggleSplit($, primaryNavigate) {
 
 export function closeSplit($) {
   if (!_pane) return;
-  _pane.remove();
-  _pane = null;
+  _pane.hidden = true;
   $.appLayout.classList.remove('split-active');
 
   // Remove split portion from hash
@@ -54,8 +53,9 @@ export async function openSplit($, primaryNavigate, workId, chapterId, verse) {
 
   if (!_pane) {
     _pane = buildPane($);
-    $.appLayout.classList.add('split-active');
   }
+  _pane.hidden = false;
+  $.appLayout.classList.add('split-active');
 
   _workId = workId;
   _chapterId = chapterId;
@@ -233,6 +233,9 @@ function buildPane($) {
       const url = `${location.origin}${location.pathname}#${_workId}/${_chapterId}:${verse}`;
       await navigator.clipboard.writeText(url);
       showToast('Link copied');
+    },
+    onRead: (verse) => {
+      import('./tts.js').then(m => m.startTTS(_els.verses, verse));
     },
     isBookmarked: (verse) => isBookmarked(_workId, _chapterId, verse)
   });

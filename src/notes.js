@@ -130,6 +130,14 @@ export function renderNotes($, workId, chapterId) {
   } else {
     renderNotesAll(container, all, filter);
   }
+
+  // Restore focus to search input after re-render
+  if (_notesFilter) {
+    requestAnimationFrame(() => {
+      searchInput.focus();
+      searchInput.selectionStart = searchInput.selectionEnd = searchInput.value.length;
+    });
+  }
 }
 
 function renderNotesChapter(container, all, workId, chapterId, filter) {
@@ -160,12 +168,11 @@ function renderNotesAll(container, all, filter) {
   const entries = [];
   for (const [key, text] of Object.entries(all)) {
     if (!text) continue;
+    const parsed = parseRef(key);
     if (filter) {
-      const parsed = parseRef(key);
       const ref = formatRef(parsed.chapterId, parsed.verse);
       if (!text.toLowerCase().includes(filter) && !ref.toLowerCase().includes(filter) && !key.toLowerCase().includes(filter)) continue;
     }
-    const parsed = parseRef(key);
     entries.push({ ref: key, text, ...parsed });
   }
 
