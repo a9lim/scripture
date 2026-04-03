@@ -1,22 +1,11 @@
 {
-  "chapter": 26,
-  "id": "bund-26",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "A Hasar on the ground is a Parasang of one thousand steps of the two feet."
-        },
-        {
-          "number": 2,
-          "text": "A Parasang is a measure as much as a far-seeing man may look out, see a beast of burden, and make known that it is black or white."
-        },
-        {
-          "number": 3,
-          "text": "And the measure of a man is eight medium spans."
-        }
+        "A Hasar on the ground is a Parasang of one thousand steps of the two feet.",
+        "A Parasang is a measure as much as a far-seeing man may look out, see a beast of burden, and make known that it is black or white.",
+        "And the measure of a man is eight medium spans."
       ]
     }
   ]

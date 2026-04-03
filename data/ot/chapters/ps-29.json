@@ -1,54 +1,19 @@
 {
-  "chapter": 29,
-  "id": "ps-29",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "Give unto the Lord, O ye mighty, give unto the Lord glory and strength."
-        },
-        {
-          "number": 2,
-          "text": "Give unto the Lord the glory due unto his name; worship the Lord in the beauty of holiness."
-        },
-        {
-          "number": 3,
-          "text": "The voice of the Lord is upon the waters: the God of glory thundereth: the Lord is upon many waters."
-        },
-        {
-          "number": 4,
-          "text": "The voice of the Lord is powerful; the voice of the Lord is full of majesty."
-        },
-        {
-          "number": 5,
-          "text": "The voice of the Lord breaketh the cedars; yea, the Lord breaketh the cedars of Lebanon."
-        },
-        {
-          "number": 6,
-          "text": "He maketh them also to skip like a calf; Lebanon and Sirion like a young unicorn."
-        },
-        {
-          "number": 7,
-          "text": "The voice of the Lord divideth the flames of fire."
-        },
-        {
-          "number": 8,
-          "text": "The voice of the Lord shaketh the wilderness; the Lord shaketh the wilderness of Kadesh."
-        },
-        {
-          "number": 9,
-          "text": "The voice of the Lord maketh the hinds to calve, and discovereth the forests: and in his temple doth every one speak of his glory."
-        },
-        {
-          "number": 10,
-          "text": "The Lord sitteth upon the flood; yea, the Lord sitteth King for ever."
-        },
-        {
-          "number": 11,
-          "text": "The Lord will give strength unto his people; the Lord will bless his people with peace."
-        }
+        "Give unto the Lord, O ye mighty, give unto the Lord glory and strength.",
+        "Give unto the Lord the glory due unto his name; worship the Lord in the beauty of holiness.",
+        "The voice of the Lord is upon the waters: the God of glory thundereth: the Lord is upon many waters.",
+        "The voice of the Lord is powerful; the voice of the Lord is full of majesty.",
+        "The voice of the Lord breaketh the cedars; yea, the Lord breaketh the cedars of Lebanon.",
+        "He maketh them also to skip like a calf; Lebanon and Sirion like a young unicorn.",
+        "The voice of the Lord divideth the flames of fire.",
+        "The voice of the Lord shaketh the wilderness; the Lord shaketh the wilderness of Kadesh.",
+        "The voice of the Lord maketh the hinds to calve, and discovereth the forests: and in his temple doth every one speak of his glory.",
+        "The Lord sitteth upon the flood; yea, the Lord sitteth King for ever.",
+        "The Lord will give strength unto his people; the Lord will bless his people with peace."
       ]
     }
   ]

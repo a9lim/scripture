@@ -5,96 +5,32 @@
     {
       "id": "moses",
       "name": "Moses",
-      "chapters": [
-        {
-          "id": "moses-1",
-          "verses": 42
-        },
-        {
-          "id": "moses-2",
-          "verses": 31
-        },
-        {
-          "id": "moses-3",
-          "verses": 25
-        },
-        {
-          "id": "moses-4",
-          "verses": 32
-        },
-        {
-          "id": "moses-5",
-          "verses": 59
-        },
-        {
-          "id": "moses-6",
-          "verses": 68
-        },
-        {
-          "id": "moses-7",
-          "verses": 69
-        },
-        {
-          "id": "moses-8",
-          "verses": 30
-        }
-      ]
+      "abbrev": "Moses",
+      "chapters": 8
     },
     {
       "id": "abr",
       "name": "Abraham",
-      "chapters": [
-        {
-          "id": "abr-1",
-          "verses": 31
-        },
-        {
-          "id": "abr-2",
-          "verses": 25
-        },
-        {
-          "id": "abr-3",
-          "verses": 28
-        },
-        {
-          "id": "abr-4",
-          "verses": 31
-        },
-        {
-          "id": "abr-5",
-          "verses": 21
-        }
-      ]
+      "abbrev": "Abr.",
+      "chapters": 5
     },
     {
       "id": "js-m",
       "name": "Joseph Smith—Matthew",
-      "chapters": [
-        {
-          "id": "js-m-1",
-          "verses": 55
-        }
-      ]
+      "abbrev": "JS—M",
+      "chapters": 1
     },
     {
       "id": "js-h",
       "name": "Joseph Smith—History",
-      "chapters": [
-        {
-          "id": "js-h-1",
-          "verses": 75
-        }
-      ]
+      "abbrev": "JS—H",
+      "chapters": 1
     },
     {
       "id": "a-of-f",
       "name": "Articles of Faith",
-      "chapters": [
-        {
-          "id": "a-of-f-1",
-          "verses": 13
-        }
-      ]
+      "abbrev": "A of F",
+      "chapters": 1
     }
   ]
 }

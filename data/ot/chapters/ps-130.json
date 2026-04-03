@@ -1,42 +1,16 @@
 {
-  "chapter": 130,
-  "id": "ps-130",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "Out of the depths have I cried unto thee, O Lord."
-        },
-        {
-          "number": 2,
-          "text": "Lord, hear my voice: let thine ears be attentive to the voice of my supplications."
-        },
-        {
-          "number": 3,
-          "text": "If thou, Lord, shouldest mark iniquities, O Lord, who shall stand?"
-        },
-        {
-          "number": 4,
-          "text": "But there is forgiveness with thee, that thou mayest be feared."
-        },
-        {
-          "number": 5,
-          "text": "I wait for the Lord, my soul doth wait, and in his word do I hope."
-        },
-        {
-          "number": 6,
-          "text": "My soul waiteth for the Lord more than they that watch for the morning: I say, more than they that watch for the morning."
-        },
-        {
-          "number": 7,
-          "text": "Let Israel hope in the Lord: for with the Lord there is mercy, and with him is plenteous redemption."
-        },
-        {
-          "number": 8,
-          "text": "And he shall redeem Israel from all his iniquities."
-        }
+        "Out of the depths have I cried unto thee, O Lord.",
+        "Lord, hear my voice: let thine ears be attentive to the voice of my supplications.",
+        "If thou, Lord, shouldest mark iniquities, O Lord, who shall stand?",
+        "But there is forgiveness with thee, that thou mayest be feared.",
+        "I wait for the Lord, my soul doth wait, and in his word do I hope.",
+        "My soul waiteth for the Lord more than they that watch for the morning: I say, more than they that watch for the morning.",
+        "Let Israel hope in the Lord: for with the Lord there is mercy, and with him is plenteous redemption.",
+        "And he shall redeem Israel from all his iniquities."
       ]
     }
   ]

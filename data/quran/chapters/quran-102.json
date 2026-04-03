@@ -1,43 +1,16 @@
 {
-  "chapter": 102,
-  "id": "quran-102",
-  "name": "Worldly Gain",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "Rivalry in worldly increase distracteth you"
-        },
-        {
-          "number": 2,
-          "text": "Until ye come to the graves."
-        },
-        {
-          "number": 3,
-          "text": "Nay, but ye will come to know!"
-        },
-        {
-          "number": 4,
-          "text": "Nay, but ye will come to know!"
-        },
-        {
-          "number": 5,
-          "text": "Nay, would that ye knew now with a sure knowledge!"
-        },
-        {
-          "number": 6,
-          "text": "For ye will behold hell-fire."
-        },
-        {
-          "number": 7,
-          "text": "Aye, ye will behold it with sure vision."
-        },
-        {
-          "number": 8,
-          "text": "Then, on that day, ye will be asked concerning pleasure."
-        }
+        "Rivalry in worldly increase distracteth you",
+        "Until ye come to the graves.",
+        "Nay, but ye will come to know!",
+        "Nay, but ye will come to know!",
+        "Nay, would that ye knew now with a sure knowledge!",
+        "For ye will behold hell-fire.",
+        "Aye, ye will behold it with sure vision.",
+        "Then, on that day, ye will be asked concerning pleasure."
       ]
     }
   ]

@@ -1,39 +1,15 @@
 {
-  "chapter": 107,
-  "id": "quran-107",
-  "name": "Daily Necessaries",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "Hast thou observed him who belieth religion?"
-        },
-        {
-          "number": 2,
-          "text": "That is he who repelleth the orphan,"
-        },
-        {
-          "number": 3,
-          "text": "And urgeth not the feeding of the needy."
-        },
-        {
-          "number": 4,
-          "text": "Ah, woe unto worshippers"
-        },
-        {
-          "number": 5,
-          "text": "Who are heedless of their prayer;"
-        },
-        {
-          "number": 6,
-          "text": "Who would be seen at worship"
-        },
-        {
-          "number": 7,
-          "text": "Yet refuse small kindnesses!"
-        }
+        "Hast thou observed him who belieth religion?",
+        "That is he who repelleth the orphan,",
+        "And urgeth not the feeding of the needy.",
+        "Ah, woe unto worshippers",
+        "Who are heedless of their prayer;",
+        "Who would be seen at worship",
+        "Yet refuse small kindnesses!"
       ]
     }
   ]

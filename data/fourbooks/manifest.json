@@ -12,254 +12,26 @@
     {
       "id": "gl",
       "name": "Great Learning",
-      "chapters": [
-        {
-          "id": "gl-1",
-          "verses": 64
-        }
-      ]
+      "abbrev": "G.L.",
+      "chapters": 1
     },
     {
       "id": "dom",
       "name": "Doctrine of the Mean",
-      "chapters": [
-        {
-          "id": "dom-1",
-          "verses": 130
-        }
-      ]
+      "abbrev": "D.M.",
+      "chapters": 1
     },
     {
       "id": "analects",
       "name": "Analects",
-      "chapters": [
-        {
-          "id": "analects-1",
-          "verses": 26
-        },
-        {
-          "id": "analects-2",
-          "verses": 39
-        },
-        {
-          "id": "analects-3",
-          "verses": 36
-        },
-        {
-          "id": "analects-4",
-          "verses": 31
-        },
-        {
-          "id": "analects-5",
-          "verses": 40
-        },
-        {
-          "id": "analects-6",
-          "verses": 37
-        },
-        {
-          "id": "analects-7",
-          "verses": 50
-        },
-        {
-          "id": "analects-8",
-          "verses": 33
-        },
-        {
-          "id": "analects-9",
-          "verses": 43
-        },
-        {
-          "id": "analects-10",
-          "verses": 61
-        },
-        {
-          "id": "analects-11",
-          "verses": 58
-        },
-        {
-          "id": "analects-12",
-          "verses": 52
-        },
-        {
-          "id": "analects-13",
-          "verses": 53
-        },
-        {
-          "id": "analects-14",
-          "verses": 72
-        },
-        {
-          "id": "analects-15",
-          "verses": 57
-        },
-        {
-          "id": "analects-16",
-          "verses": 35
-        },
-        {
-          "id": "analects-17",
-          "verses": 52
-        },
-        {
-          "id": "analects-18",
-          "verses": 28
-        },
-        {
-          "id": "analects-19",
-          "verses": 33
-        },
-        {
-          "id": "analects-20",
-          "verses": 15
-        }
-      ]
+      "abbrev": "Analects",
+      "chapters": 20
     },
     {
       "id": "mencius",
       "name": "Mencius",
-      "chapters": [
-        {
-          "id": "mencius-1",
-          "name": "1",
-          "verses": 27
-        },
-        {
-          "id": "mencius-2",
-          "name": "2",
-          "verses": 30
-        },
-        {
-          "id": "mencius-3",
-          "name": "3",
-          "verses": 37
-        },
-        {
-          "id": "mencius-4",
-          "name": "4",
-          "verses": 33
-        },
-        {
-          "id": "mencius-5",
-          "name": "5",
-          "verses": 41
-        },
-        {
-          "id": "mencius-6",
-          "name": "6",
-          "verses": 34
-        },
-        {
-          "id": "mencius-7",
-          "name": "7",
-          "verses": 30
-        },
-        {
-          "id": "mencius-8",
-          "name": "8",
-          "verses": 37
-        },
-        {
-          "id": "mencius-9",
-          "name": "9",
-          "verses": 30
-        },
-        {
-          "id": "mencius-10",
-          "name": "10",
-          "verses": 23
-        },
-        {
-          "id": "mencius-11",
-          "name": "11",
-          "verses": 25
-        },
-        {
-          "id": "mencius-12",
-          "name": "12",
-          "verses": 29
-        },
-        {
-          "id": "mencius-13",
-          "name": "13",
-          "verses": 45
-        },
-        {
-          "id": "mencius-14",
-          "name": "14",
-          "verses": 28
-        },
-        {
-          "id": "mencius-15",
-          "name": "15",
-          "verses": 27
-        },
-        {
-          "id": "mencius-16",
-          "name": "16",
-          "verses": 34
-        },
-        {
-          "id": "mencius-17",
-          "name": "17",
-          "verses": 16
-        },
-        {
-          "id": "mencius-18",
-          "name": "18",
-          "verses": 31
-        },
-        {
-          "id": "mencius-19",
-          "name": "19",
-          "verses": 29
-        },
-        {
-          "id": "mencius-20",
-          "name": "20",
-          "verses": 26
-        },
-        {
-          "id": "mencius-21",
-          "name": "21",
-          "verses": 38
-        },
-        {
-          "id": "mencius-22",
-          "name": "22",
-          "verses": 33
-        },
-        {
-          "id": "mencius-23",
-          "name": "23",
-          "verses": 37
-        },
-        {
-          "id": "mencius-24",
-          "name": "24",
-          "verses": 43
-        },
-        {
-          "id": "mencius-25",
-          "name": "25",
-          "verses": 47
-        },
-        {
-          "id": "mencius-26",
-          "name": "26",
-          "verses": 53
-        },
-        {
-          "id": "mencius-27",
-          "name": "27",
-          "verses": 30
-        },
-        {
-          "id": "mencius-28",
-          "name": "28",
-          "verses": 46
-        }
-      ]
+      "abbrev": "Mencius",
+      "chapters": 28
     }
   ]
 }

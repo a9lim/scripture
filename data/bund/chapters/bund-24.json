@@ -1,130 +1,38 @@
 {
-  "chapter": 24,
-  "id": "bund-24",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "On the chieftainship of men and animals and every single thing it says in revelation, that first of the human species Gayomard was produced, brilliant and white, with eyes which looked out for the great one, him who was here the Zarathushtrotema; the chieftainship of all things was from Zartosht."
-        },
-        {
-          "number": 2,
-          "text": "The white ass-goat, which holds its head down, is the chief of goats, the first of those species created."
-        },
-        {
-          "number": 3,
-          "text": "The black sheep which is fat and white-jawed is the chief of sheep; it was the first of those species created."
-        },
-        {
-          "number": 4,
-          "text": "The camel with white-haired knees and two humps is the chief of camels."
-        },
-        {
-          "number": 5,
-          "text": "First the black-haired ox with yellow knees was created; he is the chief of oxen."
-        },
-        {
-          "number": 6,
-          "text": "First the dazzling white horse, with yellow ears, glossy hair, and white eyes, was produced; he is the chief of horses."
-        },
-        {
-          "number": 7,
-          "text": "The white, cat-footed ass is the chief of asses."
-        },
-        {
-          "number": 8,
-          "text": "First of dogs the fair dog with yellow hair was produced; he is the chief of dogs."
-        },
-        {
-          "number": 9,
-          "text": "The hare was produced brown; he is the chief of the wide-travelers."
-        },
-        {
-          "number": 10,
-          "text": "Those beasts which have no dread whatever of the hand are evil."
-        },
-        {
-          "number": 11,
-          "text": "First of birds the griffin of three natures was created, not for here, for the Karshipt is the chief, which they call the falcon, that which revelation says was brought to the enclosure formed by Yim Jamshed."
-        },
-        {
-          "number": 12,
-          "text": "First of fur animals the white ermine was produced; he is the chief of fur animals; as it says that it is the white ermine which came unto the assembly of the archangels."
-        },
-        {
-          "number": 13,
-          "text": "The Kar-fish, or Arizh, is the chief of the water-creatures."
-        },
-        {
-          "number": 14,
-          "text": "The Daitya river is the chief of streams."
-        },
-        {
-          "number": 15,
-          "text": "The Daraja river is the chief of exalted rivers, for the dwelling of the father of Zartosht was on its banks, and Zartosht was born there."
-        },
-        {
-          "number": 16,
-          "text": "The hoary forest is the chief of forests."
-        },
-        {
-          "number": 17,
-          "text": "Hugar the lofty, on which the water of Aredvisur flows and leaps, is the chief of summits, since it is that above which is the revolution of the constellation Sataves, the chief of reservoirs."
-        },
-        {
-          "number": 18,
-          "text": "The Haoma which is out-squeezed is the chief of medicinal plants."
-        },
-        {
-          "number": 19,
-          "text": "Wheat is the chief of large-seeded grains."
-        },
-        {
-          "number": 20,
-          "text": "The desert wormwood is the chief of non-medicinal plants."
-        },
-        {
-          "number": 21,
-          "text": "The summer vetch, which they also call 'pag', is the chief of small-seeded grains."
-        },
-        {
-          "number": 22,
-          "text": "The kusti is the chief of clothes."
-        },
-        {
-          "number": 23,
-          "text": "The Bazayvana is the chief of seas."
-        },
-        {
-          "number": 24,
-          "text": "Of two men, when they come forward together, the wiser and more truthful is chief."
-        },
-        {
-          "number": 25,
-          "text": "This, too it says in revelation, that Ohrmazd created the whole material world one abode, so that all may be one; for there is much splendor and glory of industry in the world."
-        },
-        {
-          "number": 26,
-          "text": "Whatsoever he performs, who practices that which is good, is the value of the water of life; since water is not created alike in value, for the undefiled water of Aredvisur is worth the whole water of the sky and earth of Xwaniratha, except the Arag river, created by; Ohrmazd."
-        },
-        {
-          "number": 27,
-          "text": "Of trees the myrtle and date, on which model, it is said, trees were formed, are worth all the trees of Xwaniratha, except the Gokaren tree with which they restore the dead."
-        },
-        {
-          "number": 28,
-          "text": "Of mountains Mount Aparsen's beginning is in Sagastan and end in Khujistan, some say it is all the mountains of Pars, and is chief of all mountains except Alburz."
-        },
-        {
-          "number": 29,
-          "text": "Of birds Chamros is chief, who is worth all the birds in Xwaniratha, except the griffin of three natures."
-        },
-        {
-          "number": 30,
-          "text": "The conclusion is this, that every one who performs a great duty has then much value."
-        }
+        "On the chieftainship of men and animals and every single thing it says in revelation, that first of the human species Gayomard was produced, brilliant and white, with eyes which looked out for the great one, him who was here the Zarathushtrotema; the chieftainship of all things was from Zartosht.",
+        "The white ass-goat, which holds its head down, is the chief of goats, the first of those species created.",
+        "The black sheep which is fat and white-jawed is the chief of sheep; it was the first of those species created.",
+        "The camel with white-haired knees and two humps is the chief of camels.",
+        "First the black-haired ox with yellow knees was created; he is the chief of oxen.",
+        "First the dazzling white horse, with yellow ears, glossy hair, and white eyes, was produced; he is the chief of horses.",
+        "The white, cat-footed ass is the chief of asses.",
+        "First of dogs the fair dog with yellow hair was produced; he is the chief of dogs.",
+        "The hare was produced brown; he is the chief of the wide-travelers.",
+        "Those beasts which have no dread whatever of the hand are evil.",
+        "First of birds the griffin of three natures was created, not for here, for the Karshipt is the chief, which they call the falcon, that which revelation says was brought to the enclosure formed by Yim Jamshed.",
+        "First of fur animals the white ermine was produced; he is the chief of fur animals; as it says that it is the white ermine which came unto the assembly of the archangels.",
+        "The Kar-fish, or Arizh, is the chief of the water-creatures.",
+        "The Daitya river is the chief of streams.",
+        "The Daraja river is the chief of exalted rivers, for the dwelling of the father of Zartosht was on its banks, and Zartosht was born there.",
+        "The hoary forest is the chief of forests.",
+        "Hugar the lofty, on which the water of Aredvisur flows and leaps, is the chief of summits, since it is that above which is the revolution of the constellation Sataves, the chief of reservoirs.",
+        "The Haoma which is out-squeezed is the chief of medicinal plants.",
+        "Wheat is the chief of large-seeded grains.",
+        "The desert wormwood is the chief of non-medicinal plants.",
+        "The summer vetch, which they also call 'pag', is the chief of small-seeded grains.",
+        "The kusti is the chief of clothes.",
+        "The Bazayvana is the chief of seas.",
+        "Of two men, when they come forward together, the wiser and more truthful is chief.",
+        "This, too it says in revelation, that Ohrmazd created the whole material world one abode, so that all may be one; for there is much splendor and glory of industry in the world.",
+        "Whatsoever he performs, who practices that which is good, is the value of the water of life; since water is not created alike in value, for the undefiled water of Aredvisur is worth the whole water of the sky and earth of Xwaniratha, except the Arag river, created by; Ohrmazd.",
+        "Of trees the myrtle and date, on which model, it is said, trees were formed, are worth all the trees of Xwaniratha, except the Gokaren tree with which they restore the dead.",
+        "Of mountains Mount Aparsen's beginning is in Sagastan and end in Khujistan, some say it is all the mountains of Pars, and is chief of all mountains except Alburz.",
+        "Of birds Chamros is chief, who is worth all the birds in Xwaniratha, except the griffin of three natures.",
+        "The conclusion is this, that every one who performs a great duty has then much value."
       ]
     }
   ]

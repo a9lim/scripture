@@ -1,126 +1,37 @@
 {
-  "chapter": 118,
-  "id": "ps-118",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "O give thanks unto the Lord; for he is good: because his mercy endureth for ever."
-        },
-        {
-          "number": 2,
-          "text": "Let Israel now say, that his mercy endureth for ever."
-        },
-        {
-          "number": 3,
-          "text": "Let the house of Aaron now say, that his mercy endureth for ever."
-        },
-        {
-          "number": 4,
-          "text": "Let them now that fear the Lord say, that his mercy endureth for ever."
-        },
-        {
-          "number": 5,
-          "text": "I called upon the Lord in distress: the Lord answered me, and set me in a large place."
-        },
-        {
-          "number": 6,
-          "text": "The Lord is on my side; I will not fear: what can man do unto me?"
-        },
-        {
-          "number": 7,
-          "text": "The Lord taketh my part with them that help me: therefore shall I see my desire upon them that hate me."
-        },
-        {
-          "number": 8,
-          "text": "It is better to trust in the Lord than to put confidence in man."
-        },
-        {
-          "number": 9,
-          "text": "It is better to trust in the Lord than to put confidence in princes."
-        },
-        {
-          "number": 10,
-          "text": "All nations compassed me about: but in the name of the Lord will I destroy them."
-        },
-        {
-          "number": 11,
-          "text": "They compassed me about; yea, they compassed me about: but in the name of the Lord I will destroy them."
-        },
-        {
-          "number": 12,
-          "text": "They compassed me about like bees; they are quenched as the fire of thorns: for in the name of the Lord I will destroy them."
-        },
-        {
-          "number": 13,
-          "text": "Thou hast thrust sore at me that I might fall: but the Lord helped me."
-        },
-        {
-          "number": 14,
-          "text": "The Lord is my strength and song, and is become my salvation."
-        },
-        {
-          "number": 15,
-          "text": "The voice of rejoicing and salvation is in the tabernacles of the righteous: the right hand of the Lord doeth valiantly."
-        },
-        {
-          "number": 16,
-          "text": "The right hand of the Lord is exalted: the right hand of the Lord doeth valiantly."
-        },
-        {
-          "number": 17,
-          "text": "I shall not die, but live, and declare the works of the Lord."
-        },
-        {
-          "number": 18,
-          "text": "The Lord hath chastened me sore: but he hath not given me over unto death."
-        },
-        {
-          "number": 19,
-          "text": "Open to me the gates of righteousness: I will go into them, and I will praise the Lord:"
-        },
-        {
-          "number": 20,
-          "text": "This gate of the Lord, into which the righteous shall enter."
-        },
-        {
-          "number": 21,
-          "text": "I will praise thee: for thou hast heard me, and art become my salvation."
-        },
-        {
-          "number": 22,
-          "text": "The stone which the builders refused is become the head stone of the corner."
-        },
-        {
-          "number": 23,
-          "text": "This is the Lord’s doing; it is marvellous in our eyes."
-        },
-        {
-          "number": 24,
-          "text": "This is the day which the Lord hath made; we will rejoice and be glad in it."
-        },
-        {
-          "number": 25,
-          "text": "Save now, I beseech thee, O Lord: O Lord, I beseech thee, send now prosperity."
-        },
-        {
-          "number": 26,
-          "text": "Blessed be he that cometh in the name of the Lord: we have blessed you out of the house of the Lord."
-        },
-        {
-          "number": 27,
-          "text": "God is the Lord, which hath shewed us light: bind the sacrifice with cords, even unto the horns of the altar."
-        },
-        {
-          "number": 28,
-          "text": "Thou art my God, and I will praise thee: thou art my God, I will exalt thee."
-        },
-        {
-          "number": 29,
-          "text": "O give thanks unto the Lord; for he is good: for his mercy endureth for ever."
-        }
+        "O give thanks unto the Lord; for he is good: because his mercy endureth for ever.",
+        "Let Israel now say, that his mercy endureth for ever.",
+        "Let the house of Aaron now say, that his mercy endureth for ever.",
+        "Let them now that fear the Lord say, that his mercy endureth for ever.",
+        "I called upon the Lord in distress: the Lord answered me, and set me in a large place.",
+        "The Lord is on my side; I will not fear: what can man do unto me?",
+        "The Lord taketh my part with them that help me: therefore shall I see my desire upon them that hate me.",
+        "It is better to trust in the Lord than to put confidence in man.",
+        "It is better to trust in the Lord than to put confidence in princes.",
+        "All nations compassed me about: but in the name of the Lord will I destroy them.",
+        "They compassed me about; yea, they compassed me about: but in the name of the Lord I will destroy them.",
+        "They compassed me about like bees; they are quenched as the fire of thorns: for in the name of the Lord I will destroy them.",
+        "Thou hast thrust sore at me that I might fall: but the Lord helped me.",
+        "The Lord is my strength and song, and is become my salvation.",
+        "The voice of rejoicing and salvation is in the tabernacles of the righteous: the right hand of the Lord doeth valiantly.",
+        "The right hand of the Lord is exalted: the right hand of the Lord doeth valiantly.",
+        "I shall not die, but live, and declare the works of the Lord.",
+        "The Lord hath chastened me sore: but he hath not given me over unto death.",
+        "Open to me the gates of righteousness: I will go into them, and I will praise the Lord:",
+        "This gate of the Lord, into which the righteous shall enter.",
+        "I will praise thee: for thou hast heard me, and art become my salvation.",
+        "The stone which the builders refused is become the head stone of the corner.",
+        "This is the Lord’s doing; it is marvellous in our eyes.",
+        "This is the day which the Lord hath made; we will rejoice and be glad in it.",
+        "Save now, I beseech thee, O Lord: O Lord, I beseech thee, send now prosperity.",
+        "Blessed be he that cometh in the name of the Lord: we have blessed you out of the house of the Lord.",
+        "God is the Lord, which hath shewed us light: bind the sacrifice with cords, even unto the horns of the altar.",
+        "Thou art my God, and I will praise thee: thou art my God, I will exalt thee.",
+        "O give thanks unto the Lord; for he is good: for his mercy endureth for ever."
       ]
     }
   ]

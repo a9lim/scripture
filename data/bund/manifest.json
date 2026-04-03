@@ -12,150 +12,43 @@
     {
       "id": "bund",
       "name": "Bundahishn",
-      "chapters": [
-        {
-          "id": "bund-1",
-          "name": "In the name of the creator Ohrmazd",
-          "verses": 28
-        },
-        {
-          "id": "bund-2",
-          "name": "On the formation of the luminaries",
-          "verses": 11
-        },
-        {
-          "id": "bund-3",
-          "verses": 27
-        },
-        {
-          "id": "bund-4",
-          "verses": 5
-        },
-        {
-          "id": "bund-5",
-          "verses": 9
-        },
-        {
-          "id": "bund-6",
-          "verses": 4
-        },
-        {
-          "id": "bund-7",
-          "verses": 17
-        },
-        {
-          "id": "bund-8",
-          "name": "On the conflict which the evil spirit waged with the earth",
-          "verses": 5
-        },
-        {
-          "id": "bund-9",
-          "verses": 6
-        },
-        {
-          "id": "bund-10",
-          "name": "On the conflict waged with the primeval ox",
-          "verses": 4
-        },
-        {
-          "id": "bund-11",
-          "verses": 6
-        },
-        {
-          "id": "bund-12",
-          "verses": 41
-        },
-        {
-          "id": "bund-13",
-          "verses": 17
-        },
-        {
-          "id": "bund-14",
-          "verses": 31
-        },
-        {
-          "id": "bund-15",
-          "verses": 31
-        },
-        {
-          "id": "bund-16",
-          "verses": 7
-        },
-        {
-          "id": "bund-17",
-          "verses": 9
-        },
-        {
-          "id": "bund-18",
-          "verses": 11
-        },
-        {
-          "id": "bund-19",
-          "verses": 36
-        },
-        {
-          "id": "bund-20",
-          "verses": 23
-        },
-        {
-          "id": "bund-21",
-          "verses": 7
-        },
-        {
-          "id": "bund-22",
-          "verses": 11
-        },
-        {
-          "id": "bund-23",
-          "verses": 3
-        },
-        {
-          "id": "bund-24",
-          "verses": 30
-        },
-        {
-          "id": "bund-25",
-          "verses": 22
-        },
-        {
-          "id": "bund-26",
-          "verses": 3
-        },
-        {
-          "id": "bund-27",
-          "verses": 25
-        },
-        {
-          "id": "bund-28",
-          "verses": 48
-        },
-        {
-          "id": "bund-29",
-          "verses": 15
-        },
-        {
-          "id": "bund-30",
-          "verses": 33
-        },
-        {
-          "id": "bund-31",
-          "name": "On the race and genealogy of the Kayanians",
-          "verses": 41
-        },
-        {
-          "id": "bund-32",
-          "verses": 10
-        },
-        {
-          "id": "bund-33",
-          "name": "The family of the Mobads",
-          "verses": 12
-        },
-        {
-          "id": "bund-34",
-          "name": "On the reckoning of the years",
-          "verses": 9
-        }
+      "abbrev": "Bund.",
+      "chapters": 34,
+      "names": [
+        "In the name of the creator Ohrmazd",
+        "On the formation of the luminaries",
+        null,
+        null,
+        null,
+        null,
+        null,
+        "On the conflict which the evil spirit waged with the earth",
+        null,
+        "On the conflict waged with the primeval ox",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "On the race and genealogy of the Kayanians",
+        null,
+        "The family of the Mobads",
+        "On the reckoning of the years"
       ]
     }
   ]

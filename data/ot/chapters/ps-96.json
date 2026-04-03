@@ -1,62 +1,21 @@
 {
-  "chapter": 96,
-  "id": "ps-96",
   "sections": [
     {
       "startVerse": 1,
       "verses": [
-        {
-          "number": 1,
-          "text": "O sing unto the Lord a new song: sing unto the Lord, all the earth."
-        },
-        {
-          "number": 2,
-          "text": "Sing unto the Lord, bless his name; shew forth his salvation from day to day."
-        },
-        {
-          "number": 3,
-          "text": "Declare his glory among the heathen, his wonders among all people."
-        },
-        {
-          "number": 4,
-          "text": "For the Lord is great, and greatly to be praised: he is to be feared above all gods."
-        },
-        {
-          "number": 5,
-          "text": "For all the gods of the nations are idols: but the Lord made the heavens."
-        },
-        {
-          "number": 6,
-          "text": "Honour and majesty are before him: strength and beauty are in his sanctuary."
-        },
-        {
-          "number": 7,
-          "text": "Give unto the Lord, O ye kindreds of the people, give unto the Lord glory and strength."
-        },
-        {
-          "number": 8,
-          "text": "Give unto the Lord the glory due unto his name: bring an offering, and come into his courts."
-        },
-        {
-          "number": 9,
-          "text": "O worship the Lord in the beauty of holiness: fear before him, all the earth."
-        },
-        {
-          "number": 10,
-          "text": "Say among the heathen that the Lord reigneth: the world also shall be established that it shall not be moved: he shall judge the people righteously."
-        },
-        {
-          "number": 11,
-          "text": "Let the heavens rejoice, and let the earth be glad; let the sea roar, and the fulness thereof."
-        },
-        {
-          "number": 12,
-          "text": "Let the field be joyful, and all that is therein: then shall all the trees of the wood rejoice"
-        },
-        {
-          "number": 13,
-          "text": "Before the Lord: for he cometh, for he cometh to judge the earth: he shall judge the world with righteousness, and the people with his truth."
-        }
+        "O sing unto the Lord a new song: sing unto the Lord, all the earth.",
+        "Sing unto the Lord, bless his name; shew forth his salvation from day to day.",
+        "Declare his glory among the heathen, his wonders among all people.",
+        "For the Lord is great, and greatly to be praised: he is to be feared above all gods.",
+        "For all the gods of the nations are idols: but the Lord made the heavens.",
+        "Honour and majesty are before him: strength and beauty are in his sanctuary.",
+        "Give unto the Lord, O ye kindreds of the people, give unto the Lord glory and strength.",
+        "Give unto the Lord the glory due unto his name: bring an offering, and come into his courts.",
+        "O worship the Lord in the beauty of holiness: fear before him, all the earth.",
+        "Say among the heathen that the Lord reigneth: the world also shall be established that it shall not be moved: he shall judge the people righteously.",
+        "Let the heavens rejoice, and let the earth be glad; let the sea roar, and the fulness thereof.",
+        "Let the field be joyful, and all that is therein: then shall all the trees of the wood rejoice",
+        "Before the Lord: for he cometh, for he cometh to judge the earth: he shall judge the world with righteousness, and the people with his truth."
       ]
     }
   ]

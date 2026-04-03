@@ -51189,7 +51189,6 @@
     "lotus:lotus-2:27",
     "lotus:lotus-2:90",
     "lotus:lotus-2:96",
-    "lotus:lotus-22:3",
     "lotus:lotus-24:1",
     "lotus:lotus-25:1",
     "lotus:lotus-25:3",
@@ -352113,7 +352112,7 @@
   "niche": [
     "quran:quran-24:35"
   ],
-  "nick": [
+  "nickname": [
     "lotus:lotus-19:1"
   ],
   "nicknames": [
@@ -409897,9 +409896,7 @@
     "kj:kjk-27:1",
     "kj:kjk-28:1",
     "kj:kjk-29:1",
-    "kj:kjs-124:1",
-    "lotus:lotus-22:1",
-    "lotus:lotus-22:3"
+    "kj:kjs-124:1"
   ],
   "reach": [
     "ot:ex-26:28",
@@ -410939,6 +410936,9 @@
   "reappear": [
     "lotus:lotus-25:1"
   ],
+  "reappeared": [
+    "lotus:lotus-22:1"
+  ],
   "rear": [
     "ot:2-sam-24:18",
     "ot:ex-26:30",
@@ -411529,6 +411529,7 @@
   ],
   "reborn": [
     "lotus:lotus-10:1",
+    "lotus:lotus-22:3",
     "lotus:lotus-26:4",
     "lotus:lotus-3:23"
   ],
@@ -472320,8 +472321,7 @@
     "nt:mark-6:10",
     "nt:rom-3:19",
     "bom:morm-9:27",
-    "dc:dc-128:10",
-    "lotus:lotus-4:47"
+    "dc:dc-128:10"
   ],
   "soft": [
     "ot:job-23:16",
@@ -553844,7 +553844,8 @@
     "dc:dc-132:48",
     "dc:dc-20:82",
     "dc:dc-55:3",
-    "dc:dc-97:2"
+    "dc:dc-97:2",
+    "lotus:lotus-4:47"
   ],
   "whore": [
     "ot:deut-22:21",
