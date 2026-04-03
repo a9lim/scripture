@@ -1,13 +1,6 @@
 {
   "id": "fourbooks",
   "title": "The Four Books",
-  "translations": [
-    {
-      "id": "legge",
-      "name": "James Legge",
-      "year": 1861
-    }
-  ],
   "books": [
     {
       "id": "gl",

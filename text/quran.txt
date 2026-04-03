@@ -1,6 +1,6 @@
 WORK: quran | Quran
 BOOK: quran | Quran
-CHAPTER: quran-1 | Opening
+CHAPTER: Opening
 In the name of God, the Beneficent, the Merciful.
 Praise be to God, Lord of the Worlds,
 The Beneficent, the Merciful.
@@ -8,7 +8,7 @@ Master of the Day of Judgment,
 Thee alone we worship; Thee alone we ask for help.
 Show us the straight path,
 The path of those whom Thou hast favoured; Not the path of those who earn Thine anger nor of those who go astray.
-CHAPTER: quran-2 | Cow
+CHAPTER: Cow
 Aleph. Lamed. Mem.
 This is the Scripture whereof there is no doubt, a guidance unto those who ward off evil.
 Who believe in the Unseen, and establish worship, and spend of that We have bestowed upon them;
@@ -295,7 +295,7 @@ If ye be on a journey and cannot find a scribe, then a pledge in hand shall suff
 Unto God belongeth whatsoever is in the heavens and whatsoever is in the earth; and whether ye make known what is in your minds or hide it, God will bring you to account for it. He will forgive whom He will and He will punish whom He will. God is Able to do all things.
 The messenger believeth in that which hath been revealed unto him from his Lord and so do believers. Each one believeth in God and His angels and His scriptures and His messengers - We make no distinction between any of His messengers - and they say: We hear, and we obey. Grant us Thy forgiveness, our Lord. Unto Thee is the journeying.
 God tasketh not a soul beyond its scope. For it is only that which it hath earned, and against it only that which it hath deserved. Our Lord! Condemn us not if we forget, or miss the mark! Our Lord! Lay not on us such a burden as thou didst lay on those before us! Our Lord! Impose not on us that which we have not the strength to bear! Pardon us, absolve us and have mercy on us, Thou, our Protector, and give us victory over the disbelieving folk.
-CHAPTER: quran-3 | Family of Amram
+CHAPTER: Family of Amram
 Aleph. Lamed. Mem.
 God! There is no God save Him, the Alive, the Eternal.
 He hath revealed unto thee Mahemod the Scripture with truth, confirming that which was revealed before it, even as He revealed the Torah and the Gospel.
@@ -496,7 +496,7 @@ It is but a brief comfort. And afterward their habitation will be hell, an ill a
 But those who keep their duty to their Lord, for them are Gardens underneath which rivers flow, wherein they will be safe for ever. A gift of welcome from their Lord. That which God hath in store is better for the righteous.
 And lo! of the People of the Scripture there are some who believe in God and that which is revealed unto you and that which was revealed unto them, humbling themselves before God. They purchase not a trifling gain at the price of the revelations of God. Verily their reward is with their Lord. Lo! God is swift to take account.
 O ye who believe! Endure, outdo all others in endurance, be ready, and observe your duty to God, in order that ye may succeed.
-CHAPTER: quran-4 | Women
+CHAPTER: Women
 O mankind! Be careful of your duty to your Lord Who created you from a single soul and from it created its mate and from them twain hath spread abroad a multitude of men and women. Be careful of your duty toward God in Whom ye claim your rights of one another, and toward the wombs that bare you. Lo! God hath been a watcher over you.
 Give unto orphans their wealth. Exchange not the good for the bad in your management thereof nor absorb their wealth into your own wealth. Lo! that would be a great sin.
 And if ye fear that ye will not deal fairly by the orphans, marry of the women, who seem good to you, two or three or four; and if ye fear that ye cannot do justice to so many then one only or the captives that your right hands possess. Thus it is more likely that ye will not do injustice.
@@ -673,7 +673,7 @@ Then, as for those who believed and did good works, unto them will He pay their 
 O mankind! Now hath a proof from your Lord come unto you, and We have sent down unto you a clear light;
 As for those who believe in God, and hold fast unto Him, them He will cause to enter into His mercy and grace, and will guide them unto Him by a straight road.
 They ask thee for a pronouncement. Say: God hath pronounced for you concerning distant kindred. If a man die childless and he have a sister, hers is half the heritage, and he would have inherited from her had she died childless. And if there be two sisters, then theirs are two-thirds of the heritage, and if they be brethren, men and women, unto the male is the equivalent of the share of two females. God expoundeth unto you, so that ye err not. God is Knower of all things.
-CHAPTER: quran-5 | Food
+CHAPTER: Food
 O ye who believe! Fulfil your indentures. The beast of cattle is made lawful unto you for food except that which is announced unto you herein, game being unlawful when ye are on the pilgrimage. Lo! God ordaineth that which pleaseth Him.
 O ye who believe! Profane not God's monuments nor the Sacred Month nor the offerings nor the garlands, nor those repairing to the Sacred House, seeking the grace and pleasure of their Lord. But when ye have left the sacred territory, then go hunting if ye will. And let not your hatred of a folk who once stopped your going to the inviolable place of worship seduce you to transgress; but help ye one another unto righteousness and pious duty. Help not one another unto sin and transgression, but keep your duty to God. Lo! God is severe in punishment.
 Forbidden unto you for food are carrion and blood and swineflesh, and that which hath been dedicated unto any other than God, and the strangled, and the dead through beating, and the dead through falling from a height, and that which hath been killed by the goring of horns, and the devoured of wild beasts, saving that which ye make lawful by the death-stroke, and that which hath been immolated unto idols. And forbidden is it that ye swear by the divining arrows. This is an abomination. This day are those who disbelieve in despair of ever harming your religion; so fear them not, fear Me! This day have I perfected your religion for you and completed My favour unto you, and have chosen for you as religion hashlamah. Whoso is forced by hunger, not by will, to sin: for him lo! God is Forgiving, Merciful.
@@ -794,7 +794,7 @@ I spake unto them only that which Thou commandedst me, saying: Worship God, my L
 If Thou punish them, lo! they are Thy slaves, and if Thou forgive them lo! they are Thy slaves. Lo! Thou, only Thou, art the Mighty, the Wise.
 God saith: This is a day in which their truthfulness profiteth the truthful, for theirs are Gardens underneath which rivers flow, wherein they are secure for ever, God taking pleasure in them and they in Him. That is the great triumph.
 Unto God belongeth the Sovereignty of the heavens and the earth and whatsoever is therein, and He is Able to do all things.
-CHAPTER: quran-6 | Cattle
+CHAPTER: Cattle
 Praise be to God, Who hath created the heavens and the earth, and hath appointed darkness and light. Yet those who disbelieve ascribe rivals unto their Lord.
 He it is Who hath created you from clay, and hath decreed a term for you. A term is fixed with Him. Yet still ye doubt!
 He is God in the heavens and in the earth. He knoweth both your secret and your utterance, and He knoweth what ye earn.
@@ -960,7 +960,7 @@ Say: Lo! my worship and my sacrifice and my living and my dying are for God, Lor
 He hath no partner. This am I commanded, and I am first of those who surrender unto Him.
 Say: Shall I seek another than God for Lord, when He is Lord of all things? Each soul earneth only on its own account, nor doth any laden bear another's load. Then unto your Lord is your return and He will tell you that wherein ye differed.
 He it is Who hath placed you as viceroys of the earth and hath exalted some of you in rank above others, that He may try you by the test of that which He hath given you. Lo! Thy Lord is swift in prosecution, and Lo! He verily is Forgiving, Merciful.
-CHAPTER: quran-7 | Elevated Places
+CHAPTER: Elevated Places
 Aleph. Lamed. Mem. Zadeh.
 It is a Scripture that is revealed unto thee Mahemod - so let there be no heaviness in thy heart therefrom - that thou mayst warn thereby, and it is a Reminder unto believers.
 Saying: Follow that which is sent down unto you from your Lord, and follow no protecting friends beside Him. Little do ye recollect!
@@ -1167,7 +1167,7 @@ And when thou bringest not a verse for them they say: Why hast thou not chosen i
 And when the record is recited, give ear to it and pay heed, that ye may obtain mercy.
 And do thou O Mahemod remember thy Lord within thyself humbly and with awe, below thy breath, at morn and evening. And be not thou of the neglectful.
 Lo! those who are with thy Lord are not too proud to do Him service, but they praise Him and adore Him.
-CHAPTER: quran-8 | Spoils Of War
+CHAPTER: Spoils Of War
 They ask thee O Mahemod of the spoils of war. Say: The spoils of war belong to God and the messenger, so keep your duty to God, and adjust the matter of your difference, and obey God and His messenger, if ye are true believers.
 They only are the true believers whose hearts feel fear when God is mentioned, and when His revelations are recited unto them they increase their faith, and who trust in their Lord;
 Who establish worship and spend of that We have bestowed on them.
@@ -1243,7 +1243,7 @@ Lo! those who believed and left their homes and strove with their wealth and the
 And those who disbelieve are protectors one of another - If ye do not so, there will be confusion in the land, and great corruption.
 Those who believed and left their homes and strove for the cause of God, and those who took them in and helped them - these are the believers in truth. For them is pardon, and bountiful provision.
 And those who afterwards believed and left their homes and strove along with you, they are of you; and those who are akin are nearer one to another in the ordinance of God. Lo! God is Knower of all things.
-CHAPTER: quran-9 | Repentance
+CHAPTER: Repentance
 Freedom from obligation is proclaimed from God and His messenger toward those of the idolaters with whom ye made a treaty.
 Travel freely in the land four months, and know that ye cannot escape God and that God will confound the disbelievers in His Guidance.
 And a proclamation from God and His messenger to all men on the day of the Greater Pilgrimage that God is free from obligation to the idolaters, and so is His messenger. So, if ye repent, it will be better for you; but if ye are averse, then know that ye cannot escape God. Give tidings O Mahemod of a painful doom to those who disbelieve,
@@ -1373,7 +1373,7 @@ See they not that they are tested once or twice in every year? Still they turn n
 And whenever a chapter is revealed, they look one at another as who should say: Doth anybody see you? Then they turn away. God turneth away their hearts because they are a folk who understand not.
 There hath come unto you a messenger, one of yourselves, unto whom aught that ye are overburdened is grievous, full of concern for you, for the believers full of pity, merciful.
 Now, if they turn away O Mahemod say: God sufficeth me. There is no God save Him. In Him have I put my trust, and He is Lord of the Tremendous Throne.
-CHAPTER: quran-10 | Jonah
+CHAPTER: Jonah
 Aleph. Lamed. Resh. These are verses of the Wise Scripture.
 Is it a wonder for mankind that We have inspired a man among them, saying: Warn mankind and bring unto those who believe the good tidings that they have a sure footing with their Lord? The disbelievers say: Lo! this is a mere wizard.
 Lo! your Lord is God Who created the heavens and the earth in six Days, then He established Himself upon the Throne, directing all things. There is no intercessor with Him save after His permission. That is God, your Lord, so worship Him. Oh, will ye not remind?
@@ -1483,7 +1483,7 @@ And cry not, beside God, unto that which cannot profit thee nor hurt thee, for i
 If God afflicteth thee with some hurt, there is none who can remove it save Him; and if He desireth good for thee, there is none who can repel His bounty. He striketh with it whom He will of his bondmen. He is the Forgiving, the Merciful.
 Say: O mankind! Now hath the Truth from your Lord come unto you. So whosoever is guided, is guided only for the good of his soul, and whosoever erreth erreth only against it. And I am not a warder over you.
 And O Mahemod follow that which is inspired in thee, and forbear until God give judgment. And He is the Best of Judges.
-CHAPTER: quran-11 | Hod
+CHAPTER: Hod
 Aleph. Lamed. Resh. This is a Scripture the revelations whereof are perfected and then expounded. It cometh from One Wise, Informed,
 Saying: Serve none but God. Lo! I am unto you from Him a warner and a bringer of good tidings.
 And bidding you: Ask pardon of your Lord and turn to Him repentant. He will cause you to enjoy a fair estate until a time appointed. He giveth His bounty unto every bountiful one. But if ye turn away, lo! then I fear for you the retribution of an awful Day.
@@ -1607,7 +1607,7 @@ And all that We relate unto thee of the story of the messengers is in order that
 And say unto those who believe not: Act according to your power. Lo! We too are acting.
 And wait! Lo! We too are waiting.
 And God's is the Invisible of the heavens and the earth, and unto Him the whole matter will be returned. So worship Him and put thy trust in Him. Lo! thy Lord is not unaware of what ye mortals do.
-CHAPTER: quran-12 | Joseph
+CHAPTER: Joseph
 Aleph. Lamed. Resh. These are verse of the Scripture that maketh plain.
 Lo! We have revealed it, a Lecture in native, that ye may understand.
 We narrate unto thee Mahemod the best of narratives in that We have inspired in thee this record, though aforetime thou wast of the heedless.
@@ -1719,7 +1719,7 @@ Say: This is my Way: I call on God with sure knowledge. I and whosoever followet
 We sent not before thee any messengers save men whom We inspired from among the folk of the townships - Have they not travelled in the land and seen the nature of the consequence for those who were before them? And verily the abode of the Hereafter, for those who ward off evil, is best. Have ye then no sense? -
 Till, when the messengers despaired and thought that they were denied, then came unto them Our help, and whom We would was saved. And Our wrath cannot be warded from the guilty.
 In their history verily there is a lesson for men of understanding. It is no invented story but a confirmation of the existing Scripture and a detailed explanation of everything, and a guidance and a mercy for folk who believe.
-CHAPTER: quran-13 | Thunder
+CHAPTER: Thunder
 Aleph. Lamed. Mem. Resh. These are verses of the Scripture. That which is revealed unto thee from thy Lord is the Truth, but most of mankind believe not.
 God it is Who raised up the heavens without visible supports, then mounted the Throne, and compelled the sun and the moon to be of service, each runneth unto an appointed term; He ordereth the course; He detaileth the revelations, that haply ye may be certain of the meeting with your Lord.
 And He it is Who spread out the earth and placed therein firm hills and flowing streams, and of all fruits He placed therein two spouses male and female. He covereth the night with the day. Lo! herein verily are portents for people who take thought.
@@ -1763,7 +1763,7 @@ Whether We let thee see something of that which We have promised them, or make t
 See they not how we aim to the land, reducing it of its outlying parts? When God doometh there is none that can postpone His doom, and He is swift at reckoning.
 Those who were before them plotted; but all plotting is God's. He knoweth that which each soul earneth. The disbelievers will come to know for whom will be the sequel of the heavenly Home.
 They who disbelieve say: Thou art no messenger of God. Say: God, and whosoever hath knowledge of the Scripture, is sufficient witness between me and you.
-CHAPTER: quran-14 | Abraham
+CHAPTER: Abraham
 Aleph. Lamed. Resh. This is a Scripture which We have revealed unto thee Mahemod that thereby thou mayst bring forth mankind from darkness unto light, by the permission of their Lord, unto the path of the Mighty, the Owner of Praise,
 God, unto Whom belongeth whatsoever is in the heavens and whatsoever is in the earth. and woe unto the disbelievers from an awful doom;
 Those who love the life of the world more than the Hereafter, and debar men from the way of God and would have it crooked: such are far astray.
@@ -1816,7 +1816,7 @@ Thou wilt see the guilty on that day linked together in chains,
 Their raiment of pitch, and the Fire covering their faces,
 That God may repay each soul what it hath earned. Lo! God is swift at reckoning.
 This is a clear message for mankind in order that they may be warned thereby, and that they may know that He is only One God, and that men of understanding may take heed.
-CHAPTER: quran-15 | Rock
+CHAPTER: Rock
 Aleph. Lamed. Resh. These are verses of the Scripture and a plain Reading.
 It may be that those who disbelieve wish ardently that they were Meshallim.
 Let them eat and enjoy life, and let false hope beguile them. They will come to know!
@@ -1916,7 +1916,7 @@ Who set some other god along with God. But they will come to know.
 Well know We that thy bosom is oppressed by what they say,
 But hymn the praise of thy Lord, and be of those who make prostration unto Him.
 And serve thy Lord till the Inevitable cometh unto thee.
-CHAPTER: quran-16 | Bee
+CHAPTER: Bee
 The commandment of God will come to pass, so seek not ye to hasten it. Glorified and Exalted be He above all that they associate with Him.
 He sendeth down the angels with the Spirit of His command unto whom He will of His bondmen, saying: Warn mankind that there is no God save Me, so keep your duty unto Me.
 He hath created the heavens and the earth with truth. High be He Exalted above all that they associate with Him.
@@ -2045,7 +2045,7 @@ Call unto the way of thy Lord with wisdom and fair exhortation, and reason with 
 If ye punish, then punish with the like of that wherewith ye were afflicted. But if ye endure patiently, verily it is better for the patient.
 Endure thou patiently O Mahemod. Thine endurance is only by the help of God. Grieve not for them, and be not in distress because of that which they devise.
 Lo! God is with those who keep their duty unto Him and those who are doers of good.
-CHAPTER: quran-17 | Israelites
+CHAPTER: Israelites
 Glorified be He Who carried His servant by night from the Inviolable Place of Worship to the Far distant place of worship the neighbourhood whereof We have blessed, that We might show him of Our tokens! Lo! He, only He, is the Hearer, the Seer.
 We gave unto Moses the Scripture, and We appointed it a guidance for the children of Israel, saying: Choose no guardian beside Me.
 They were the seed of those whom We carried in the ship along with Noah. Lo! he was a grateful slave.
@@ -2157,7 +2157,7 @@ Saying: Glory to our Lord! Verily the promise of our Lord must be fulfilled.
 They fall down on their faces, weeping, and it increaseth humility in them.
 Say unto mankind: Cry unto God, or cry unto the Beneficent, unto whichsoever ye cry it is the same. His are the most beautiful names. And thou Mahemod, be not loud-voiced in thy worship nor yet silent therein, but follow a way between.
 And say: Praise be to God, Who hath not taken unto Himself a son, and Who hath no partner in the Sovereignty, nor hath He any protecting friend through dependence. And magnify Him with all magnificence.
-CHAPTER: quran-18 | Cave
+CHAPTER: Cave
 Praise be to God Who hath revealed the Scripture unto His slave, and hath not placed therein any crookedness,
 But hath made it straight, to give warning of stern punishment from Him, and to bring unto the believers who do good works the news that theirs will be a fair reward,
 Wherein they will abide for ever;
@@ -2268,7 +2268,7 @@ Lo! those who believe and do good works, theirs are the Gardens of Paradise for 
 Wherein they will abide, with no desire to be removed from thence.
 Say: Though the sea became ink for the Words of my Lord, verily the sea would be used up before the words of my Lord were exhausted, even though We brought the like thereof to help.
 Say: I am only a mortal like you. My Lord inspireth in me that your God is only One God. And whoever hopeth for the meeting with his Lord, let him do righteous work, and make none sharer of the worship due unto his Lord.
-CHAPTER: quran-19 | Mary
+CHAPTER: Mary
 Kaph. Heh. Yod. Ayin. Zadeh.
 A mention of the mercy of thy Lord unto His servant Zachariah.
 When he cried unto his Lord a cry in secret,
@@ -2367,7 +2367,7 @@ And each one of them will come unto Him on the Day of Resurrection, alone.
 Lo! those who believe and do good works, the Beneficent will appoint for them love.
 And We make this Scripture easy in thy tongue, O Mahemod only that thou mayst bear good tidings therewith unto those who ward off evil, and warn therewith the froward folk.
 And how many a generation before them have We destroyed! Canst thou Mahemod see a single man of them, or hear from them the slightest sound?
-CHAPTER: quran-20 | Teth Heh
+CHAPTER: Teth Heh
 Teth. Heh.
 We have not revealed unto thee Mahemod this record that thou shouldst be distressed,
 But as a reminder unto him who feareth,
@@ -2503,7 +2503,7 @@ And enjoin upon thy people worship, and be constant therein. We ask not of thee 
 And they say: If only he would bring us a miracle from his Lord! Hath there not come unto them the proof of what is in the former scriptures?
 And if we had destroyed them with some punishment before it, they would assuredly have said: Our Lord! If only Thou hadst sent unto us a messenger, so that we might have followed Thy revelations before we were thus humbled and disgraced!
 Say: Each is awaiting; so await ye! Ye will come to know who are the owners of the path of equity, and who is right.
-CHAPTER: quran-21 | Prophets
+CHAPTER: Prophets
 Their reckoning draweth nigh for mankind, while they turn away in heedlessness.
 Never cometh there unto them a new reminder from their Lord but they listen to it while they play,
 With hearts preoccupied. And they confer in secret. The wrong-doers say: Is this other than a mortal like you? Will ye then succumb to magic when ye see it?
@@ -2616,7 +2616,7 @@ But if they are averse, then say: I have warned you all alike, although I know n
 Lo! He knoweth that which is said openly, and that which ye conceal.
 And I know not but that this may be a trial for you, and enjoyment for a while.
 He saith: My Lord! Judge Thou with truth. Our Lord is the Beneficent, Whose help is to be implored against that which ye ascribe unto Him.
-CHAPTER: quran-22 | Pilgrimage
+CHAPTER: Pilgrimage
 O mankind! Fear your Lord. Lo! the earthquake of the Hour of Doom is a tremendous thing.
 On the day when ye behold it, every nursing mother will forget her nursling and every pregnant one will be delivered of her burden, and thou Mahemod wilt see mankind as drunken, yet they will not be drunken, but the Doom of God will be strong upon them.
 Among mankind is he who disputeth concerning God without knowledge, and followeth each froward devil;
@@ -2695,7 +2695,7 @@ God chooseth from the angels messengers, and also from mankind. Lo! God is Heare
 He knoweth all that is before them and all that is behind them, and unto God all things are returned.
 O ye who believe! Bow down and prostrate yourselves, and worship your Lord, and do good, that haply ye may prosper.
 And strive for God with the endeavour which is His right. He hath chosen you and hath not laid upon you in religion any hardship; the faith of your father Abraham is yours. He hath named you Meshallim of old time and in this Scripture, that the messenger may be a witness against you, and that ye may be witnesses against mankind. So establish worship, pay the poor-due, and hold fast to God. He is your Protecting friend. A blessed Patron and a blessed Helper!
-CHAPTER: quran-23 | Believers
+CHAPTER: Believers
 Successful indeed are the believers
 Who are humble in their prayers,
 And who shun vain conversation,
@@ -2814,7 +2814,7 @@ Deemed ye then that We had created you for naught, and that ye would not be retu
 Now God be Exalted, the True King! There is no God save Him, the Lord of the Throne of Grace.
 He who crieth unto any other god along with God hath no proof thereof. His reckoning is only with his Lord. Lo! disbelievers will not be successful.
 And O Mahemod say: My Lord! Forgive and have mercy, for Thou art Best of all who show mercy.
-CHAPTER: quran-24 | Light
+CHAPTER: Light
 Here is a chapter which We have revealed and enjoined, and wherein We have revealed plain tokens, that haply ye may take heed.
 The adulterer and the adulteress, scourge ye each one of them with a hundred stripes. And let not pity for the twain withhold you from obedience to God, if ye believe in God and the Last Day. And let a party of believers witness their punishment.
 The adulterer shall not marry save an adulteress or an idolatress, and the adulteress none shall marry save an adulterer or an idolater. All that is forbidden unto believers.
@@ -2879,7 +2879,7 @@ No blame is there upon the blind nor any blame upon the lame nor any blame upon 
 They only are the true believers who believe in God and His messenger and, when they are with him on some common errand, go not away until they have asked leave of him. Lo! those who ask leave of thee, those are they who believe in God and His messenger. So, if they ask thy leave for some affair of theirs, give leave to whom thou wilt of them, and ask for them forgiveness of God. Lo! God is Forgiving, Merciful.
 Make not the calling of the messenger among you as your calling one of another. God knoweth those of you who steal away, hiding themselves. And let those who conspire to evade orders beware lest grief or painful punishment befall them.
 Lo! verily unto God belongeth whatsoever is in the heavens and the earth. He knoweth your condition. And He knoweth the Day when they are returned unto Him so that He may inform them of what they did. God is Knower of all things.
-CHAPTER: quran-25 | Criterion
+CHAPTER: Criterion
 Blessed is He Who hath revealed unto His slave the Criterion of right and wrong, that he may be a warner to the peoples.
 He unto Whom belongeth the Sovereignty of the heavens and the earth, He hath chosen no son nor hath He any partner in the Sovereignty. He hath created everything and hath meted out for it a measure.
 Yet they choose beside Him other gods who create naught but are themselves created, and possess not hurt nor profit for themselves, and possess not death nor life, nor power to raise the dead.
@@ -2957,7 +2957,7 @@ And who say: Our Lord! Vouchsafe us comfort of our wives and of our offspring, a
 They will be awarded the high place forasmuch as they were steadfast, and they will meet therein with welcome and the ward of peace,
 Abiding there for ever. Happy is it as abode and station!
 Say O Mahemod, unto the disbelievers: My Lord would not concern Himself with you but for your prayer. But now ye have denied the Truth, therefor there will be judgment.
-CHAPTER: quran-26 | Poets
+CHAPTER: Poets
 Teth. Shin. Mem.
 These are revelations of the Scripture that maketh plain.
 It may be that thou tormentest thyself O Mahemod because they believe not.
@@ -3185,7 +3185,7 @@ As for poets, the erring follow them.
 Hast thou not seen how they stray in every valley,
 And how they say that which they do not?
 Save those who believe and do good works, and remember God much, and vindicate themselves after they have been wronged. Those who do wrong will come to know by what a great reverse they will be overturned!
-CHAPTER: quran-27 | Nemal
+CHAPTER: Nemal
 Teth. Shin. These are revelations of the record and a Scripture that maketh plain;
 A guidance and good tidings for believers
 Who establish worship and pay the poor-due and are sure of the Hereafter.
@@ -3279,7 +3279,7 @@ And whoso bringeth an ill-deed, such will be flung down on their faces in the Fi
 Say: I Mahemod am commanded only to serve the Lord of this land which He hath hallowed, and unto Whom all things belong. And I am commanded to be of those who surrender unto Him,
 And to recite the record. And whoso goeth right, goeth right only for the good of his own soul; and as for him who goeth astray - Unto him say: Lo! I am only a warner.
 And say: Praise be to God Who will show you His portents so that ye shall know them. And thy Lord is not unaware of what ye mortals do.
-CHAPTER: quran-28 | Narrative
+CHAPTER: Narrative
 Teth. Shin. Mem.
 These are revelations of the Scripture that maketh plain.
 We narrate unto thee somewhat of the story of Moses and Pharaoh with truth, for folk who believe.
@@ -3368,7 +3368,7 @@ Lo! He Who hath given thee the record for a law will surely bring thee home agai
 Thou hadst no hope that the Scripture would be inspired in thee; but it is a mercy from thy Lord, so never be a helper to the disbelievers.
 And let them not divert thee from the revelations of God after they have been sent down unto thee; but call mankind unto thy Lord, and be not of those who ascribe partners unto Him.
 And cry not unto any other god along with God. There is no God save Him. Everything will perish save His countenance. His is the command, and unto Him ye will be brought back.
-CHAPTER: quran-29 | Spider
+CHAPTER: Spider
 Aleph. Lamed. Mem.
 Do men imagine that they will be left at ease because they say, We believe, and will not be tested with affliction?
 Lo! We tested those who were before you. Thus God knoweth those who are sincere, and knoweth those who feign.
@@ -3438,7 +3438,7 @@ That they may disbelieve in that which We have given them, and that they may tak
 Have they not seen that We have appointed a sanctuary immune from violence, while mankind are ravaged all around them? Do they then believe in falsehood and disbelieve in the bounty of God?
 Who doeth greater wrong than he who inventeth a lie concerning God, or denieth the truth when it cometh unto him? Is not there a home in hell for disbelievers?
 As for those who strive in Us, We surely guide them to Our paths, and lo! God is with the good.
-CHAPTER: quran-30 | Romans
+CHAPTER: Romans
 Aleph. Lamed. Mem.
 The Romans have been defeated
 In the nearer land, and they, after their defeat will be victorious
@@ -3499,7 +3499,7 @@ In that day their excuses will not profit those who did injustice, nor will they
 Verily We have coined for mankind in this record all kinds of similitudes; and indeed if thou camest unto them with a miracle, those who disbelieve would verily exclaim: Ye are but tricksters!
 Thus doth God seal the hearts of those who know not.
 So have patience O Mahemod! God's promise is the very truth, and let not those who have no certainty make thee impatient.
-CHAPTER: quran-31 | Achiacharus
+CHAPTER: Achiacharus
 Aleph. Lamed. Mem.
 These are revelations of the wise Scripture,
 A guidance and a mercy for the good,
@@ -3534,7 +3534,7 @@ Hast thou not seen how the ships glide on the sea by God's grace, that He may sh
 And if a wave enshroudeth them like awnings, they cry unto God, making their faith pure for Him only. But when He bringeth them safe to land, some of them compromise. None denieth Our signs save every traitor ingrate.
 O mankind! Keep your duty to your Lord and fear a Day when the parent will not be able to avail the child in aught, nor the child to avail the parent. Lo! God's promise is the very truth. Let not the life of the world beguile you, nor let the deceiver beguile you, in regard to God.
 Lo! God! With Him is knowledge of the Hour. He sendeth down the rain, and knoweth that which is in the wombs. No soul knoweth what it will earn to- morrow, and no soul knoweth in what land it will die. Lo! God is Knower, Aware.
-CHAPTER: quran-32 | Adoration
+CHAPTER: Adoration
 Aleph. Lamed. Mem
 The revelation of the Scripture whereof there is no doubt is from the Lord of the Worlds.
 Or say they: He hath invented it? Nay, but it is the Truth from thy Lord, that thou mayst warn a folk to whom no warner came before thee, that haply they may walk aright.
@@ -3565,7 +3565,7 @@ Have they not seen how We lead the water to the barren land and therewith bring 
 And they say: When cometh this victory of yours if ye are truthful?
 Say unto them: On the day of the victory the faith of those who disbelieve and who then will believe will not avail them, neither will they be reprieved.
 So withdraw from them O Mahemod, and await the event. Lo! they also are awaiting it.
-CHAPTER: quran-33 | Allies
+CHAPTER: Allies
 O Prophet! Keep thy duty to God and obey not the disbelievers and the hypocrites. Lo! God is Knower, Wise.
 And follow that which is inspired in thee from thy Lord. Lo! God is Aware of what ye do.
 And put thy trust in God, for God is sufficient as Trustee.
@@ -3639,7 +3639,7 @@ O ye who believe! Guard your duty to God, and speak words straight to the point;
 He will adjust your works for you and will forgive you your sins. Whosoever obeyeth God and His messenger, he verily hath gained a signal victory.
 Lo! We offered the trust unto the heavens and the earth and the hills, but they shrank from bearing it and were afraid of it. And man assumed it. Lo! he hath proved a tyrant and a fool.
 So God punisheth hypocritical men and hypocritical women, and idolatrous men and idolatrous women. But God pardoneth believing men and believing women, and God is ever Forgiving, Merciful.
-CHAPTER: quran-34 | Sheba
+CHAPTER: Sheba
 Praise be to God, unto Whom belongeth whatsoever is in the heavens and whatsoever is in the earth. His is the praise in the Hereafter, and He is the Wise, the Aware.
 He knoweth that which goeth into the earth and that which cometh forth from it, and that descendeth from the heaven and that which ascendeth into it. He is the Merciful, the Forgiving.
 Those who disbelieve say: The Hour will never come unto us. Say: Nay, by my Lord, but it is coming unto you surely. He is the Knower of the Unseen. Not an atom's weight, or less than that or greater, escapeth Him in the heavens or in the earth, but it is in a clear Record,
@@ -3694,7 +3694,7 @@ Couldst thou but see when they are terrified with no escape, and are seized from
 And say: We now believe therein. But how can they reach faith from afar off,
 When they disbelieved in it of yore. They aim at the unseen from afar off.
 And a gulf is set between them and that which they desire, as was done for people of their kind of old. Lo! they were in hopeless doubt.
-CHAPTER: quran-35 | Creator
+CHAPTER: Creator
 Praise be to God, the Creator of the heavens and the earth, Who appointeth the angels messengers having wings two, three and four. He multiplieth in creation what He will. Lo! God is Able to do all things.
 That which God openeth unto mankind of mercy none can withhold it; and that which He withholdeth none can release thereafter. He is the Mighty, the Wise.
 O mankind! Remember God's grace toward you! Is there any creator other than God who provideth for you from the sky and the earth? There is no God save Him. Whither then are ye turned?
@@ -3740,7 +3740,7 @@ And they swore by God, their most binding oath, that if a warner came unto them 
 Shown in their behaving arrogantly in the land and plotting evil; and the evil plot encloseth but the men who make it. Then, can they expect aught save the treatment of the folk of old? Thou wilt not find for God's way of treatment any substitute, nor wilt thou find for God's way of treatment aught of power to change.
 Have they not travelled in the land and seen the nature of the consequence for those who were before them, and they were mightier than these in power? God is not such that aught in the heavens or in the earth escapeth Him. Lo! He is the Wise, the Mighty.
 If God took mankind to task by that which they deserve, He would not leave a living creature on the surface of the earth; but He reprieveth them unto an appointed term, and when their term cometh - then verily they will know that God is ever Seer of His slaves.
-CHAPTER: quran-36 | Yod Shin
+CHAPTER: Yod Shin
 Yod Shin.
 By the wise record,
 Lo! thou art of those sent
@@ -3824,7 +3824,7 @@ Who hath appointed for you fire from the green tree, and behold! ye kindle from 
 Is not He Who created the heavens and the earth Able to create the like of them? Aye, that He is! for He is the All-Wise Creator,
 But His command, when He intendeth a thing, is only that He saith unto it: Be! and it is.
 Therefor Glory be to Him in Whose hand is the dominion over all things! Unto Him ye will be brought back.
-CHAPTER: quran-37 | Rangers
+CHAPTER: Rangers
 By those who set the ranks in battle order
 And those who drive away the wicked with reproof
 And those who read the Word for a reminder,
@@ -4007,7 +4007,7 @@ And watch, for they will soon see.
 Glorified be thy Lord, the Lord of Majesty, from that which they attribute unto Him
 And peace be unto those sent to warn.
 And praise be to God, Lord of the Worlds!
-CHAPTER: quran-38 | Zadeh
+CHAPTER: Zadeh
 Zadeh. By the renowned record,
 Nay, but those who disbelieve are in false pride and schism.
 How many a generation We destroyed before them, and they cried out when it was no longer the time for escape!
@@ -4096,7 +4096,7 @@ That I shall fill hell with thee and with such of them as follow thee, together.
 Say O Mahemod, unto mankind: I ask of you no fee for this, and I am no simulating.
 Lo! it is naught else than a reminder for all peoples
 And ye will come in time to know the truth thereof.
-CHAPTER: quran-39 | Companies
+CHAPTER: Companies
 The revelation of the Scripture is from God, the Mighty, the Wise.
 Lo! We have revealed the Scripture unto thee Mahemod with truth; so worship God, making religion pure for Him only.
 Surely pure religion is for God only. And those who choose protecting friends beside Him say: We worship them only that they may bring us near unto God. Lo! God will judge between them concerning that wherein they differ. Lo! God guideth not him who is a liar, an ingrate.
@@ -4172,7 +4172,7 @@ It is said unto them: Enter ye the gates of hell to dwell therein. Thus hapless 
 And those who keep their duty to their Lord are driven unto the Garden in troops till, when they reach it, and the gates thereof are opened, and the warders thereof say unto them: Peace be unto you! Ye are good, so enter ye the Garden of delight, to dwell therein;
 They say: Praise be to God, Who hath fulfilled His promise unto us and hath made us inherit the land, sojourning in the Garden where we will! So bounteous is the wage of workers.
 And thou O Mahemod seest the angels thronging round the Throne, hymning the praises of their Lord. And they are judged aright. And it is said: Praise be to God, the Lord of the Worlds!
-CHAPTER: quran-40 | Forgiving One
+CHAPTER: Forgiving One
 Heh. Mem.
 The revelation of the Scripture is from God, the Mighty, the Knower,
 The Forgiver of sin, the Accepter of repentance, the Stern in punishment, the Bountiful. There is no God save Him. Unto Him is the journeying.
@@ -4258,7 +4258,7 @@ Have they not travelled in the land to see the nature of the consequence for tho
 And when their messengers brought them clear proofs of God's Sovereignty they exulted in the knowledge they themselves possessed. And that which they were wont to mock befell them.
 Then, when they saw Our doom, they said: We believe in God only and reject all that we used to associate with Him.
 But their faith could not avail them when they saw Our doom. This is God's law which hath ever taken course for His bondmen. And then the disbelievers will be ruined.
-CHAPTER: quran-41 | Heh Mem
+CHAPTER: Heh Mem
 Heh. Mem.
 A revelation from the Beneficent, the Merciful,
 A Scripture whereof the verses are expounded, a Lecture in native for people who have knowledge,
@@ -4313,7 +4313,7 @@ When We show favour unto man, he withdraweth and turneth aside, but when ill tou
 Bethink you: If it is from God and ye reject it - Who is further astray than one who is at open feud with God?
 We shall show them Our portents on the horizons and within themselves until it will be manifest unto them that it is the Truth. Doth not thy Lord suffice, since He is Witness over all things?
 How! Are they still in doubt about the meeting with their Lord? Lo! Is not He surrounding all things?
-CHAPTER: quran-42 | Counsel
+CHAPTER: Counsel
 Heh. Mem.
 Ayin. Shin. Qoph.
 Thus God the Mighty, the Knower inspireth thee Mahemod as He inspired those before thee.
@@ -4367,7 +4367,7 @@ Or He mingleth them, males and females, and He maketh barren whom He will. Lo! H
 And it was not vouchsafed to any mortal that God should speak to him unless it be by revelation or from behind a veil, or that He sendeth a messenger to reveal what He will by His leave. Lo! He is Exalted, Wise.
 And thus have We inspired in thee Mahemod a Spirit of Our command. Thou knewest not what the Scripture was, nor what the Faith. But We have made it a light whereby We guide whom We will of Our bondmen. And lo! thou verily dost guide unto a right path,
 The path of God, unto Whom belongeth whatsoever is in the heavens and whatsoever is in the earth. Do not all things reach God at last?
-CHAPTER: quran-43 | Embellishment
+CHAPTER: Embellishment
 Heh. Mem.
 By the Scripture which maketh plain,
 Lo! We have appointed it a Lecture, in native that haply ye may understand.
@@ -4457,7 +4457,7 @@ And those unto whom they cry instead of Him possess no power of intercession, sa
 And if thou ask them who created them, they will surely say: God. How then are they turned away?
 And he saith: O my Lord! Lo! these are a folk who believe not.
 Then bear with them O Mahemod and say: Peace. But they will come to know.
-CHAPTER: quran-44 | Evident Smoke
+CHAPTER: Evident Smoke
 Heh. Mem.
 By the Scripture that maketh plain
 Lo! We revealed it on a blessed night - Lo! We are ever warning -
@@ -4517,7 +4517,7 @@ They taste not death therein, save the first death. And He hath saved them from 
 A bounty from thy Lord. That is the supreme triumph.
 And We have made this Scripture easy in thy language only that they may heed.
 Wait then O Mahemod. Lo! they too are waiting.
-CHAPTER: quran-45 | Kneeling
+CHAPTER: Kneeling
 Heh. Mem.
 The revelation of the Scripture is from God, the Mighty, the Wise.
 Lo! in the heavens and the earth are portents for believers.
@@ -4555,7 +4555,7 @@ And it will be said: This day We forget you, even as ye forgot the meeting of th
 This, forasmuch as ye made the revelations of God a jest, and the life of the world beguiled you. Therefor this day they come not forth from thence, nor can they make amends.
 Then praise be to God, Lord of the heavens and Lord of the earth, the Lord of the Worlds.
 And unto Him alone belongeth Majesty in the heavens and the earth, and He is the Mighty, the Wise.
-CHAPTER: quran-46 | Sandhills
+CHAPTER: Sandhills
 Heh. Mem.
 The revelation of the Scripture is from God the Mighty, the Wise.
 We created not the heavens and the earth and all that is between them save with truth, and for a term appointed. But those who disbelieve turn away from that whereof they are warned.
@@ -4591,7 +4591,7 @@ And whoso respondeth not to God's summoner he can nowise escape in the earth, an
 Have they not seen that God, Who created the heavens and the earth and was not wearied by their creation, is Able to give life to the dead? Aye, He verily is Able to do all things.
 And on the day when those who disbelieve are exposed to the Fire they will be asked: Is not this real? They will say: Yea, by our Lord. He will say: Then taste the doom for that ye disbelieved.
 Then have patience O Mahemod even as the stout of heart among the messengers of old had patience, and seek not to hasten on the doom for them. On the day when they see that which they are promised it will seem to them as though they had tarried but an hour of daylight. A clear message. Shall any be destroyed save evil-living folk?
-CHAPTER: quran-47 | Mahemod
+CHAPTER: Mahemod
 Those who disbelieve and turn men from the way of God, He rendereth their actions vain.
 And those who believe and do good works and believe in that which is revealed unto Mahemod - and it is the truth from their Lord - He riddeth them of their ill-deeds and improveth their state.
 That is because those who disbelieve follow falsehood and because those who believe follow the truth from their Lord. Thus God coineth their similitudes for mankind.
@@ -4630,7 +4630,7 @@ So do not falter and cry out for peace when ye will be the uppermost, and God is
 The life of the world is but a sport and a pastime. And if ye believe and ward off evil. He will give you your wages, and will not ask of you your wordly wealth.
 If He should ask it of you and importune you, ye would hoard it, and He would bring to light your secret hates.
 Lo! ye are those who are called to spend in the way of God, yet among you there are some who hoard. And as for him who hoardeth, he hoardeth only from his soul. And God is the Rich, and ye are the poor. And if ye turn away He will exchange you for some other folk, and they will not be the likes of you.
-CHAPTER: quran-48 | Victory
+CHAPTER: Victory
 Lo! We have given thee O Mahemod a signal victory,
 That God may forgive thee of thy sin that which is past and that which is to come, and may perfect His favour unto thee, and may guide thee on a right path,
 And that God may help thee with strong help -
@@ -4660,7 +4660,7 @@ When those who disbelieve had set up in their hearts zealotry, the zealotry of t
 God hath fulfilled the vision for His messenger in very truth. Ye shall indeed enter the Inviolable Place of Worship, if God will, secure, having your hair shaven and cut, not fearing. But He knoweth that which ye know not, and hath given you a near victory beforehand.
 He it is Who hath sent His messenger with the guidance and the religion of truth, that He may cause it to prevail over all religion. And God sufficeth as a Witness.
 Mahemod is the messenger of God. And those with him are hard against the disbelievers and merciful among themselves. Thou O Mahemod seest them bowing and falling prostrate in worship, seeking bounty from God and His acceptance. The mark of them is on their foreheads from the traces of prostration. Such is their likeness in the Torah and their likeness in the Gospel - like as sown corn that sendeth forth its shoot and strengtheneth it and riseth firm upon its stalk, delighting the sowers - that He may enrage the disbelievers with the sight of them. God hath promised, unto such of them as believe and do good works, forgiveness and immense reward.
-CHAPTER: quran-49 | Chambers
+CHAPTER: Chambers
 O ye who believe! Be not forward in the presence of God and His messenger, and keep your duty to God. Lo! God is Hearer, Knower.
 O ye who believe! Lift not up your voices above the voice of the Prophet, nor shout when speaking to him as ye shout one to another, lest your works be rendered vain while ye perceive not.
 Lo! they who subdue their voices in the presence of the messenger of God, those are they whose hearts God hath proven unto righteousness. Theirs will be forgiveness and immense reward.
@@ -4679,7 +4679,7 @@ The true believers are those only who believe in God and His messenger and after
 Say unto them, O Mahemod: Would ye teach God your religion, when God knoweth all that is in the heavens and all that is in the earth, and God is Aware of all things?
 They make it a favour unto thee Mahemod that they have surrendered unto Him. Say: Deem not your Surrender a favour unto me; but God doth confer a favour on you, inasmuch as He hath led you to the Faith, if ye are earnest.
 Lo! God knoweth the Unseen of the heavens and the earth. And God is Seer of what ye do.
-CHAPTER: quran-50 | Coph
+CHAPTER: Coph
 Qoph. By the Glorious record,
 Nay, but they marvel that a warner of their own hath come unto them; and the disbelievers say: This is a strange thing:
 When we are dead and have become dust shall we be brought back again? That would be a far return!
@@ -4725,7 +4725,7 @@ The day when they will hear the Awful Cry in truth. That is the day of coming fo
 Lo! We it is Who quicken and give death, and unto Us is the journeying.
 On the day when the earth splitteth asunder from them, hastening forth they come. That is a gathering easy for Us to make.
 We are Best Aware of what they say, and thou O Mahemod art in no wise a compeller over them. But warn by the record him who feareth My threat.
-CHAPTER: quran-51 | Scatterers
+CHAPTER: Scatterers
 By those that winnow with a winnowing
 And those that bear the burden of the rain
 And those that glide with ease upon the sea
@@ -4786,7 +4786,7 @@ I seek no livelihood from them, nor do I ask that they should feed Me.
 Lo! God! He it is that giveth livelihood, the Lord of unbreakable might.
 And lo! for those who now do wrong there is an evil day like unto the evil day which came for their likes of old; so let them not ask Me to hasten on that day.
 And woe unto those who disbelieve, from that their day which they are promised.
-CHAPTER: quran-52 | Mountain
+CHAPTER: Mountain
 By the Mount,
 And a Scripture inscribed
 On fine parchment unrolled,
@@ -4836,7 +4836,7 @@ A day in which their guile will naught avail them, nor will they be helped.
 And verily, for those who do wrong, there is a punishment beyond that. But most of them know not.
 So wait patiently O Mahemod for thy Lord's decree, for surely thou art in Our sight; and hymn the praise of thy Lord when thou uprisest,
 And in the night-time also hymn His praise, and at the setting of the stars.
-CHAPTER: quran-53 | Star
+CHAPTER: Star
 By the Star when it setteth,
 Your comrade erreth not, nor is deceived;
 Nor doth he speak of his own desire.
@@ -4899,7 +4899,7 @@ Marvel ye then at this statement,
 And laugh and not weep,
 While ye amuse yourselves?
 Rather prostrate yourselves before God and serve Him.
-CHAPTER: quran-54 | Moon
+CHAPTER: Moon
 The hour drew nigh and the moon was rent in twain.
 And if they behold a portent they turn away and say: Prolonged illusion.
 They denied the Truth and followed their own lusts. Yet everything will come to a decision
@@ -4955,7 +4955,7 @@ And every thing they did is in the scriptures,
 And every small and great thing is recorded.
 Lo! the righteous will dwell among gardens and rivers,
 Firmly established in the favour of a Mighty King.
-CHAPTER: quran-55 | Merciful
+CHAPTER: Merciful
 The Beneficent
 Hath made known the record.
 He hath created man.
@@ -5034,7 +5034,7 @@ Which is it, of the favours of your Lord, that ye deny?
 Reclining on green cushions and fair carpets.
 Which is it, of the favours of your Lord, that ye deny?
 Blessed be the name of thy Lord, Mighty and glorious!
-CHAPTER: quran-56 | That Which is Coming
+CHAPTER: That Which is Coming
 When the event befalleth -
 There is no denying that it will befall -
 Abasing some, exalting others;
@@ -5131,7 +5131,7 @@ Then the welcome will be boiling water
 And roasting at hell-fire.
 Lo! this is certain truth.
 Therefor O Mahemod praise the name of thy Lord, the Tremendous.
-CHAPTER: quran-57 | Iron
+CHAPTER: Iron
 All that is in the heavens and the earth glorifieth God; and He is the Mighty, the Wise.
 His is the Sovereignty of the heavens and the earth; He quickeneth and He giveth death; and He is Able to do all things.
 He is the First and the Last, and the Outward and the Inward; and He is Knower of all things.
@@ -5161,7 +5161,7 @@ And We verily sent Noah and Abraham and placed the prophethood and the scripture
 Then We caused Our messengers to follow in their footsteps; and We caused Jesus, son of Mary, to follow, and gave him the Gospel, and placed compassion and mercy in the hearts of those who followed him. But monasticism they invented - We ordained it not for them - only seeking God's pleasure, and they observed it not with right observance. So We give those of them who believe their reward, but many of them are evil-livers.
 O ye who believe! Be mindful of your duty to God and put faith in His messenger. He will give you twofold of His mercy and will appoint for you a light wherein ye shall walk, and will forgive you. God is Forgiving, Merciful;
 That the People of the Scripture may know that they control naught of the bounty of God, but that the bounty is in God's hand to give to whom He will. And God is of Infinite Bounty.
-CHAPTER: quran-58 | She Who Pleaded
+CHAPTER: She Who Pleaded
 God hath heard the saying of her that disputeth with thee Mahemod concerning her husband, and complaineth unto God. And God heareth your colloquy. Lo! God is Hearer, Knower.
 Such of you as put away your wives by saying they are as their mothers - They are not their mothers; none are their mothers except those who gave them birth - they indeed utter an ill word and a lie. And lo! God is Forgiving, Merciful.
 Those who put away their wives by saying they are as their mothers and afterward would go back on that which they have said, the penalty in that case is the freeing of a slave before they touch one another. Unto this ye are exhorted; and God is Informed of what ye do.
@@ -5184,7 +5184,7 @@ The devil hath engrossed them and so hath caused them to forget remembrance of G
 Lo! those who oppose God and His messenger, they will be among the lowest.
 God hath decreed: Lo! I verily shall conquer, I and My messengers. Lo! God is Strong, Almighty.
 Thou wilt not find folk who believe in God and the Last Day loving those who oppose God and His messenger, even though they be their fathers or their sons or their brethren or their clan. As for such, He hath written faith upon their hearts and hath strengthened them with a Spirit from Him, and He will bring them into Gardens underneath which rivers flow, wherein they will abide. God is well pleased with them, and they are well pleased with Him. They are God's party. Lo! is it not God's party who are the successful?
-CHAPTER: quran-59 | Exile
+CHAPTER: Exile
 All that is in the heavens and all that is in the earth glorifieth God, and He is the Mighty, the Wise.
 He it is Who hath caused those of the People of the Scripture who disbelieved to go forth from their homes unto the first exile. Ye deemed not that they would go forth, while they deemed that their strongholds would protect them from God. But God reached them from a place whereof they recked not, and cast terror in their hearts so that they ruined their houses with their own hands and the hands of the believers. So learn a lesson, O ye who have eyes!
 And if God had not decreed migration for them, He verily would have punished them in the world, and theirs in the Hereafter is the punishment of the Fire.
@@ -5209,7 +5209,7 @@ If We had caused this record to descend upon a mountain, thou O Mahemod verily h
 He is God, than Whom there is no other God, the Knower of the Invisible and the Visible. He is the Beneficent, Merciful.
 He is God, than Whom there is no other God, the Sovereign Lord, the Holy One, Peace, the Keeper of Faith, the Guardian, the Majestic, the Compeller, the Superb. Glorified be God from all that they ascribe as partner unto Him.
 He is God, the Creator, the Shaper out of naught, the Fashioner. His are the most beautiful names. All that is in the heavens and the earth glorifieth Him, and He is the Mighty, the Wise.
-CHAPTER: quran-60 | She Who is Tested
+CHAPTER: She Who is Tested
 O ye who believe! Choose not My enemy and your enemy for allies. Do ye give them friendship when they disbelieve in that truth which hath come unto you, driving out the messenger and you because ye believe in God, your Lord? If ye have come forth to strive in My way and seeking My good pleasure, show them not friendship. Do ye show friendship unto them in secret, when I am Best Aware of what ye hide and what ye proclaim? And whosoever doeth it among you, he verily hath strayed from the right way.
 If they have the upper hand of you, they will be your foes, and will stretch out their hands and their tongues toward you with evil intent, and they long for you to disbelieve.
 Your ties of kindred and your children will avail you naught upon the Day of Resurrection. He will part you. God is Seer of what ye do.
@@ -5223,7 +5223,7 @@ O ye who believe! When believing women come unto you as fugitives, examine them.
 And if any of your wives have gone from you unto the disbelievers and afterward ye have your turn of triumph, then give unto those whose wives have gone the like of that which they have spent, and keep your duty to God in Whom ye are believers.
 O Prophet! If believing women come unto thee, taking oath of allegiance unto thee that they will ascribe no thing as partner unto God, and will neither steal nor commit adultery nor kill their children, nor produce any lie that they have devised between their hands and feet, nor disobey thee in what is right, then accept their allegiance and ask God to forgive them. Lo! God is Forgiving, Merciful.
 O ye who believe! Be not friendly with a folk with whom God is wroth, a folk who have despaired of the Hereafter as the disbelievers despair of those who are in the graves.
-CHAPTER: quran-61 | Ranks
+CHAPTER: Ranks
 All that is in the heavens and all that is in the earth glorifieth God, and He is the Mighty, the Wise.
 O ye who believe! Why say ye that which ye do not?
 It is most hateful in the sight of God that ye say that which ye do not.
@@ -5238,7 +5238,7 @@ Ye should believe in God and His messenger, and should strive for the cause of G
 He will forgive you your sins and bring you into Gardens underneath which rivers flow, and pleasant dwellings in Gardens of Eden. That is the supreme triumph.
 And He will give you another blessing which ye love: help from God and present victory. Give good tidings O Mahemod to believers.
 O ye who believe! Be God's helpers, even as Jesus son of Mary said unto the disciples: Who are my helpers for God? They said: We are God's helpers. And a party of the Children of Israel believed, while a party disbelieved. Then We strengthened those who believed against their foe, and they became the uppermost.
-CHAPTER: quran-62 | Day of Congregation
+CHAPTER: Day of Congregation
 All that is in the heavens and all that is in the earth glorifieth God, the Sovereign Lord, the Holy One, the Mighty, the Wise.
 He it is Who hath sent among the unlettered ones a messenger of their own, to recite unto them His revelations and to make them grow, and to teach them the Scripture and wisdom, though heretofore they were indeed in error manifest,
 Along with others of them who have not yet joined them. He is the Mighty, the Wise.
@@ -5250,7 +5250,7 @@ Say unto them, O Mahemod: Lo! the death from which ye shrink will surely meet yo
 O ye who believe! When the call is heard for the prayer of the day of congregation, haste unto remembrance of God and leave your trading. That is better for you if ye did but know.
 And when the prayer is ended, then disperse in the land and seek of God's bounty, and remember God much, that ye may be successful.
 But when they spy some merchandise or pastime they break away to it and leave thee standing. Say: That which God hath is better than pastime and than merchandise, and God is the Best of providers.
-CHAPTER: quran-63 | Hypocrites
+CHAPTER: Hypocrites
 When the hypocrites come unto thee O Mahemod, they say: We bear witness that thou art indeed God's messenger. And God knoweth that thou art indeed His messenger, and God beareth witness that the hypocrites indeed are speaking falsely.
 They make their faith a pretext so that they may turn men from the way of God. Verily evil is that which they are wont to do,
 That is because they believed, then disbelieved, therefore their hearts are sealed so that they understand not.
@@ -5262,7 +5262,7 @@ They say: Surely, if we return to Medinah the mightier will soon drive out the w
 O ye who believe! Let not your wealth nor your children distract you from remembrance of God. Those who do so, they are the losers.
 And spend of that wherewith We have provided you before death cometh unto one of you and he saith: My Lord! If only thou wouldst reprieve me for a little while, then I would give alms and be among the righteous.
 But God reprieveth no soul when its term cometh, and God is Informed of what ye do.
-CHAPTER: quran-64 | Cheating
+CHAPTER: Cheating
 All that is in the heavens and all that is in the earth glorifieth God; unto Him belongeth Sovereignty and unto Him belongeth praise, and He is Able to do all things.
 He it is Who created you, but one of you is a disbeliever and one of you is a believer, and God is Seer of what ye do.
 He created the heavens and the earth with truth, and He shaped you and made good your shapes, and unto Him is the journeying.
@@ -5281,7 +5281,7 @@ Your wealth and your children are only a temptation, whereas God! with Him is an
 So keep your duty to God as best ye can, and listen, and obey, and spend; that is better for your souls. And whoso is saved from his own greed, such are the successful.
 If ye lend unto God a goodly loan, He will double it for you and will forgive you, for God is Responsive, Clement,
 Knower of the Invisible and the Visible, the Mighty, the Wise.
-CHAPTER: quran-65 | Divorce
+CHAPTER: Divorce
 O Prophet! When ye men put away women, put them away for their legal period and reckon the period, and keep your duty to God, your Lord. Expel them not from their houses nor let them go forth unless they commit open immorality. Such are the limits imposed by God; and whoso transgresseth God's limits, he verily wrongeth his soul. Thou knowest not: it may be that God will afterward bring some new thing to pass.
 Then, when they have reached their term, take them back in kindness or part from them in kindness, and call to witness two just men among you, and keep your testimony upright for God. Whoso believeth in God and the Last Day is exhorted to act thus. And whosoever keepeth his duty to God, God will appoint a way out for him,
 And will provide for him from a quarter whence he hath no expectation. And whosoever putteth his trust in God, He will suffice him. Lo! God bringeth His command to pass. God hath set a measure for all things.
@@ -5294,7 +5294,7 @@ So that it tasted the ill-effects of its conduct, and the consequence of its con
 God hath prepared for them stern punishment; so keep your duty to God, O men of understanding! O ye who believe! Now God hath sent down unto you a reminder,
 A messenger reciting unto you the revelations of God made plain, that He may bring forth those who believe and do good works from darkness unto light. And whosoever believeth in God and doeth right, He will bring him into Gardens underneath which rivers flow, therein to abide for ever. God hath made good provision for him.
 God it is who hath created seven heavens, and of the earth the like thereof. The commandment cometh down among them slowly, that ye may know that God is Able to do all things, and that God surroundeth all things in knowledge.
-CHAPTER: quran-66 | Prohibition
+CHAPTER: Prohibition
 O Prophet! Why bannest thou that which God hath made lawful for thee, seeking to please thy wives? And God is Forgiving, Merciful.
 God hath made lawful for you Meshallim absolution from your oaths of such a kind, and God is your Protector. He is the Knower, the Wise.
 When the Prophet confided a fact unto one of his wives and when she afterward divulged it and God apprised him thereof, he made known to her part thereof and passed over part. And when he told it her she said: Who hath told thee? He said: The Knower, the Aware hath told me.
@@ -5307,7 +5307,7 @@ O Prophet! Strive against the disbelievers and the hypocrites, and be stern with
 God citeth an example for those who disbelieve: the wife of Noah and the wife of Lot, who were under two of Our righteous slaves yet betrayed them so that they the husbands availed them naught against God and it was said unto them: Enter the Fire along with those who enter.
 And God citeth an example for those who believe: the wife of Pharaoh when she said: My Lord! Build for me a home with thee in the Garden, and deliver me from Pharaoh and his work, and deliver me from evil-doing folk;
 And Mary, daughter of Amram, whose body was chaste, therefor We breathed therein something of Our Spirit. And she put faith in the words of her Lord and His scriptures, and was of the obedient.
-CHAPTER: quran-67 | Kingdom
+CHAPTER: Kingdom
 Blessed is He in Whose hand is the Sovereignty, and, He is Able to do all things.
 Who hath created life and death that He may try you which of you is best in conduct; and He is the Mighty, the Forgiving,
 Who hath created seven heavens in harmony. Thou Mahemod canst see no fault in the Beneficent One's creation; then look again: Canst thou see any rifts?
@@ -5338,7 +5338,7 @@ But when they see it nigh, the faces of those who disbelieve will be awry, and i
 Say O Mahemod: Have ye thought: Whether God causeth me Mahemod and those with me to perish or hath mercy on us, still, who will protect the disbelievers from a painful doom?
 Say: He is the Beneficent. In Him we believe and in Him we put our trust. And ye will soon know who it is that is in error manifest.
 Say: Have ye thought: If all your water were to disappear into the earth, who then could bring you gushing water?
-CHAPTER: quran-68 | Pen
+CHAPTER: Pen
 Nun. By the pen and that which they write therewith,
 Thou art not, for thy Lord's favour unto thee, a madman.
 And lo! thine verily will be a reward unfailing.
@@ -5391,7 +5391,7 @@ Had it not been that favour from his Lord had reached him he surely had been cas
 But his Lord chose him and placed him among the righteous.
 And lo! those who disbelieve would fain disconcert thee with their eyes when they hear the Reminder, and they say: Lo! he is indeed mad;
 When it is naught else than a Reminder to creation.
-CHAPTER: quran-69 | Inevitable
+CHAPTER: Inevitable
 The Reality!
 What is the Reality?
 Ah, what will convey unto thee what the reality is!
@@ -5444,7 +5444,7 @@ And lo! We know that some among you will deny it.
 And lo! it is indeed an anguish for the disbelievers.
 And lo! it is absolute truth.
 So glorify the name of thy Tremendous Lord.
-CHAPTER: quran-70 | Ladders
+CHAPTER: Ladders
 A questioner questioned concerning the doom about to fall
 Upon the disbelievers, which none can repel,
 From God, Lord of the Ascending Stairways
@@ -5489,7 +5489,7 @@ To replace them by others better than them. And we are not to be outrun.
 So let them chat and play until they meet their Day which they are promised,
 The day when they come forth from the graves in haste, as racing to a goal,
 With eyes aghast, abasement stupefying them: Such is the Day which they are promised.
-CHAPTER: quran-71 | Noah
+CHAPTER: Noah
 Lo! We sent Noah unto his people saying: Warn thy people ere the painful doom come unto them.
 He said: O my people! Lo! I am a plain warner unto you
 Bidding you: Serve God and keep your duty unto Him and obey me,
@@ -5518,7 +5518,7 @@ Because of their sins they were drowned, then made to enter a Fire. And they fou
 And Noah said: My Lord! Leave not one of the disbelievers in the land.
 If Thou shouldst leave them, they will mislead Thy slaves and will beget none save lewd ingrates.
 My Lord! Forgive me and my parents and him who entereth my house believing, and believing men and believing women, and increase not the wrong-doers in aught save ruin.
-CHAPTER: quran-72 | Ginn
+CHAPTER: Ginn
 Say O Mahemod: It is revealed unto me that a company of the Ginn gave ear, and they said: Lo! we have heard a marvellous record,
 Which guideth unto righteousness, so we believe in it and we ascribe no partner unto our Lord.
 And we believe that He - exalted be the glory of our Lord! - hath taken neither wife nor son,
@@ -5547,7 +5547,7 @@ Say O Mahemod, unto the disbelievers: I know not whether that which ye are promi
 He is the Knower of the Unseen, and He revealeth unto none His secret,
 Save unto every messenger whom He hath chosen, and then He maketh a guard to go before him and a guard behind him
 That He may know that they have indeed conveyed the messages of their Lord. He surroundeth all their doings, and He keepeth count of all things.
-CHAPTER: quran-73 | Mantled One
+CHAPTER: Mantled One
 O thou wrapped up in thy raiment!
 Keep vigil the night long, save a little -
 A half thereof, or abate a little thereof
@@ -5568,7 +5568,7 @@ Then how, if ye disbelieve, will ye protect yourselves upon the day which will t
 The very heaven being then rent asunder. His promise is to be fulfilled.
 Lo! This is a Reminder. Let him who will, then, choose a way unto his Lord.
 Lo! thy Lord knoweth how thou keepest vigil sometimes nearly two-thirds of the night, or sometimes half or a third thereof, as do a party of those with thee. God measureth the night and the day. He knoweth that ye count it not, and turneth unto you in mercy. Recite, then, of the record that which is easy for you. He knoweth that there are sick folk among you, while others travel in the land in search of God's bounty, and others still are fighting for the cause of God. So recite of it that which is easy for you, and establish worship and pay the poor-due, and so lend unto God a goodly loan. Whatsoever good ye send before you for your souls, ye will find it with God, better and greater in the recompense. And seek forgiveness of God. Lo! God is Forgiving, Merciful.
-CHAPTER: quran-74 | Clothed One
+CHAPTER: Clothed One
 O thou enveloped in thy cloak,
 Arise and warn!
 Thy Lord magnify,
@@ -5625,7 +5625,7 @@ Nay, verily. They fear not the Hereafter.
 Nay, verily. Lo! this is an Admonishment.
 So whosoever will may heed.
 And they will not heed unless God willeth it. He is the fount of fear. He is the fount of Mercy.
-CHAPTER: quran-75 | Resurrection
+CHAPTER: Resurrection
 Nay, I swear by the Day of Resurrection;
 Nay, I swear by the accusing soul that this Scripture is true.
 Thinketh man that We shall not assemble his bones?
@@ -5666,7 +5666,7 @@ Was he not a drop of fluid which gushed forth?
 Then he became a clot; then God shaped and fashioned
 And made of him a pair, the male and female.
 Is not He Who doeth so Able to bring the dead to life?
-CHAPTER: quran-76 | Man
+CHAPTER: Man
 Hath there come upon man ever any period of time in which he was a thing unremembered?
 Lo! We create man from a drop of thickened fluid to test him; so We make him hearing, knowing.
 Lo! We have shown him the way, whether he be grateful or disbelieving.
@@ -5698,7 +5698,7 @@ We, even We, created them, and strengthened their frame. And when We will, We ca
 Lo! this is an Admonishment, that whosoever will may choose a way unto his Lord.
 Yet ye will not, unless God willeth. Lo! God is Knower, Wise.
 He maketh whom He will to enter His mercy, and for evil-doers hath prepared a painful doom.
-CHAPTER: quran-77 | Emissaries
+CHAPTER: Emissaries
 By the emissary winds, sent one after another
 By the raging hurricanes,
 By those which cause earth's vegetation to revive;
@@ -5749,7 +5749,7 @@ Woe unto the repudiators on that day!
 When it is said unto them: Bow down, they bow not down!
 Woe unto the repudiators on that day!
 In what statement, after this, will they believe?
-CHAPTER: quran-78 | Tidings
+CHAPTER: Tidings
 Whereof do they question one another?
 It is of the awful tidings,
 Concerning which they are in disagreement.
@@ -5790,7 +5790,7 @@ Lord of the heavens and the earth, and all that is between them, the Beneficent;
 On the day when the angels and the Spirit stand arrayed, they speak not, saving him whom the Beneficent alloweth and who speaketh right.
 That is the True Day. So whoso will should seek recourse unto his Lord.
 Lo! We warn you of a doom at hand, a day whereon a man will look on that which his own hands have sent before, and the disbeliever will cry: "Would that I were dust!"
-CHAPTER: quran-79 | Those Who Pull Out
+CHAPTER: Those Who Pull Out
 By those who drag forth to destruction,
 By the meteors rushing,
 By the lone stars floating,
@@ -5837,7 +5837,7 @@ Why ask they? What hast thou to tell thereof?
 Unto thy Lord belongeth knowledge of the term thereof.
 Thou art but a warner unto him who feareth it.
 On the day when they behold it, it will be as if they had but tarried for an evening or the morn thereof.
-CHAPTER: quran-80 | He Frowned
+CHAPTER: He Frowned
 He frowned and turned away
 Because the blind man came unto him.
 What could inform thee but that he might grow in grace
@@ -5880,7 +5880,7 @@ Laughing, rejoicing at good news;
 And other faces, on that day, with dust upon them,
 Veiled in darkness,
 Those are the disbelievers, the wicked.
-CHAPTER: quran-81 | Cessation
+CHAPTER: Cessation
 When the sun is overthrown,
 And when the stars fall,
 And when the hills are moved,
@@ -5910,7 +5910,7 @@ Whither then go ye?
 This is naught else than a reminder unto creation,
 Unto whomsoever of you willeth to walk straight.
 And ye will not, unless it be that God willeth, the Lord of Creation.
-CHAPTER: quran-82 | Cleaving Asunder
+CHAPTER: Cleaving Asunder
 When the heaven is cleft asunder,
 When the planets are dispersed,
 When the seas are poured forth,
@@ -5930,7 +5930,7 @@ And will not be absent thence.
 Ah, what will convey unto thee what the Day of Judgment is!
 Again, what will convey unto thee what the Day of Judgment is!
 A day on which no soul hath power at all for any other soul. The absolute command on that day is God's.
-CHAPTER: quran-83 | Defrauders
+CHAPTER: Defrauders
 Woe unto the defrauders:
 Those who when they take the measure from mankind demand it full,
 But if they measure unto them or weight for them, they cause them loss.
@@ -5967,7 +5967,7 @@ Yet they were not sent as guardians over them.
 This day it is those who believe who have the laugh of disbelievers,
 On high couches, gazing.
 Are not the disbelievers paid for what they used to do?
-CHAPTER: quran-84 | Rending
+CHAPTER: Rending
 When the heaven is split asunder
 And attentive to her Lord in fear,
 And when the earth is spread out
@@ -5993,7 +5993,7 @@ Nay, but those who disbelieve will deny;
 And God knoweth best what they are hiding.
 So give them tidings of a painful doom,
 Save those who believe and do good works, for theirs is a reward unfailing.
-CHAPTER: quran-85 | Constellations
+CHAPTER: Constellations
 By the heaven, holding mansions of the stars,
 And by the Promised Day.
 And by the witness and that whereunto he beareth testimony,
@@ -6016,7 +6016,7 @@ Nay, but those who disbelieve live in denial
 And God, all unseen, surroundeth them.
 Nay, but it is a glorious record.
 On a guarded tablet.
-CHAPTER: quran-86 | Night-Comer
+CHAPTER: Night-Comer
 By the heaven and the Morning Star
 - Ah, what will tell thee what the Morning Star is!
 - The piercing Star!
@@ -6034,7 +6034,7 @@ It is no pleasantry.
 Lo! they plot a plot against thee, O Mahemod
 And I plot a plot against them.
 So give a respite to the disbelievers. Deal thou gently with them for a while.
-CHAPTER: quran-87 | Most High
+CHAPTER: Most High
 Praise the name of thy Lord the Most High,
 Who createth, then disposeth;
 Who measureth, then guideth;
@@ -6054,7 +6054,7 @@ But ye prefer the life of the world
 Although the Hereafter is better and more lasting.
 Lo! This is in the former scrolls.
 The Books of Abraham and Moses.
-CHAPTER: quran-88 | Overwhelming Calamity
+CHAPTER: Overwhelming Calamity
 Hath there come unto thee tidings of the Overwhelming?
 On that day many faces will be downcast,
 Toiling, weary,
@@ -6081,7 +6081,7 @@ But whoso is averse and disbelieveth,
 God will punish him with direst punishment.
 Lo! unto Us is their return
 And Ours their reckoning.
-CHAPTER: quran-89 | Dawn
+CHAPTER: Dawn
 By the Dawn
 And ten nights,
 And the Even and the Odd,
@@ -6112,7 +6112,7 @@ But ah! thou soul at peace!
 Return unto thy Lord, content in His good pleasure!
 Enter thou among My bondmen!
 Enter thou My Garden!
-CHAPTER: quran-90 | City
+CHAPTER: City
 Nay, I swear by this city -
 And thou art an indweller of this city -
 And the begetter and that which he begat,
@@ -6133,7 +6133,7 @@ And to be of those who believe and exhort one another to perseverance and exhort
 Their place will be on the right hand.
 But those who disbelieve Our revelations, their place will be on the left hand.
 Fire will be an awning over them.
-CHAPTER: quran-91 | Sun
+CHAPTER: Sun
 By the sun and his brightness,
 And the moon when she followeth him,
 And the day when it revealeth him,
@@ -6149,7 +6149,7 @@ When the basest of them broke forth
 And the messenger of God said: It is the she-camel of God, so let her drink!
 But they denied him, and they hamstrung her, so God doomed them for their sin and rased their dwellings.
 He dreadeth not the sequel of events.
-CHAPTER: quran-92 | Night
+CHAPTER: Night
 By the night enshrouding
 And the day resplendent
 And Him Who hath created male and female,
@@ -6171,7 +6171,7 @@ Who giveth his wealth that he may grow in goodness.
 And none hath with him any favour for reward,
 Except as seeking to fulfil the purpose of his Lord Most High.
 He verily will be content.
-CHAPTER: quran-93 | Early Hours
+CHAPTER: Early Hours
 By the morning hours
 And by the night when it is stillest,
 Thy Lord hath not forsaken thee nor doth He hate thee,
@@ -6183,7 +6183,7 @@ Did He not find thee destitute and enrich thee?
 Therefor the orphan oppress not,
 Therefor the beggar drive not away,
 Therefor of the bounty of thy Lord be thy discourse.
-CHAPTER: quran-94 | Expansion
+CHAPTER: Expansion
 Have We not caused thy bosom to dilate,
 And eased thee of the burden
 Which weighed down thy back;
@@ -6192,7 +6192,7 @@ But lo! with hardship goeth ease,
 Lo! with hardship goeth ease;
 So when thou art relieved, still toil
 And strive to please thy Lord.
-CHAPTER: quran-95 | Fig
+CHAPTER: Fig
 By the fig and the olive,
 By Mount Sinai,
 And by this land made safe;
@@ -6201,7 +6201,7 @@ Then we reduced him to the lowest of the low,
 Save those who believe and do good works, and theirs is a reward unfailing.
 So who henceforth will give the lie to thee about the judgment?
 Is not God the most conclusive of all judges?
-CHAPTER: quran-96 | Clot
+CHAPTER: Clot
 Read: In the name of thy Lord Who createth,
 Createth man from a clot.
 Read: And thy Lord is the Most Bounteous,
@@ -6221,13 +6221,13 @@ The lying, sinful forelock -
 Then let him call upon his henchmen!
 We will call the guards of hell.
 Nay, Obey not thou him. But prostrate thyself, and draw near unto God.
-CHAPTER: quran-97 | Majesty
+CHAPTER: Majesty
 Lo! We revealed it on the Night of Predestination.
 Ah, what will convey unto thee what the Night of Power is!
 The Night of Power is better than a thousand months.
 The angels and the Spirit descend therein, by the permission of their Lord, with all decrees.
 The night is Peace until the rising of the dawn.
-CHAPTER: quran-98 | Proof
+CHAPTER: Proof
 Those who disbelieve among the People of the Scripture and the idolaters could not have left off erring till the clear proof came unto them,
 A messenger from God, reading purified pages
 Containing correct scriptures.
@@ -6236,7 +6236,7 @@ And they are ordered naught else than to serve God, keeping religion pure for Hi
 Lo! those who disbelieve, among the People of the Scripture and the idolaters, will abide in fire of hell. They are the worst of created beings.
 And lo! those who believe and do good works are the best of created beings.
 Their reward is with their Lord: Gardens of Eden underneath which rivers flow, wherein they dwell for ever. God hath pleasure in them and they have pleasure in Him. This is in store for him who feareth his Lord.
-CHAPTER: quran-99 | Shaking
+CHAPTER: Shaking
 When Earth is shaken with her final earthquake
 And Earth yieldeth up her burdens,
 And man saith: What aileth her?
@@ -6245,7 +6245,7 @@ Because thy Lord inspireth her.
 That day mankind will issue forth in scattered groups to be shown their deeds.
 And whoso doeth good an atom's weight will see it then,
 And whoso doeth ill an atom's weight will see it then.
-CHAPTER: quran-100 | Assaulters
+CHAPTER: Assaulters
 By the snorting courses,
 Striking sparks of fire
 And scouring to the raid at dawn,
@@ -6257,7 +6257,7 @@ And lo! in the love of wealth he is violent.
 Knoweth he not that, when the contents of the graves are poured forth
 And the secrets of the breasts are made known,
 On that day will their Lord be perfectly informed concerning them.
-CHAPTER: quran-101 | Terrible Calamity
+CHAPTER: Terrible Calamity
 The Calamity!
 What is the Calamity?
 Ah, what will convey unto thee what the Calamity is!
@@ -6269,7 +6269,7 @@ But as for him whose scales are light,
 A bereft and Hungry One will be his mother,
 Ah, what will convey unto thee what she is! -
 Raging Fire.
-CHAPTER: quran-102 | Worldly Gain
+CHAPTER: Worldly Gain
 Rivalry in worldly increase distracteth you
 Until ye come to the graves.
 Nay, but ye will come to know!
@@ -6278,11 +6278,11 @@ Nay, would that ye knew now with a sure knowledge!
 For ye will behold hell-fire.
 Aye, ye will behold it with sure vision.
 Then, on that day, ye will be asked concerning pleasure.
-CHAPTER: quran-103 | Time
+CHAPTER: Time
 By the declining day,
 Lo! man is a state of loss,
 Save those who believe and do good works, and exhort one another to truth and exhort one another to endurance.
-CHAPTER: quran-104 | Slanderer
+CHAPTER: Slanderer
 Woe unto every slandering traducer,
 Who hath gathered wealth of this world and arranged it.
 He thinketh that his wealth will render him immortal.
@@ -6292,18 +6292,18 @@ It is the fire of God, kindled,
 Which leapeth up over the hearts of men.
 Lo! it is closed in on them
 In outstretched columns.
-CHAPTER: quran-105 | Elephant
+CHAPTER: Elephant
 Hast thou not seen how thy Lord dealt with the owners of the Elephant?
 Did He not bring their stratagem to naught,
 And send against them swarms of flying creatures,
 Which pelted them with stones of baked clay,
 And made them like green crops devoured by cattle?
-CHAPTER: quran-106 | Coresh
+CHAPTER: Coresh
 For the taming of Coresh.
 For their taming We cause the caravans to set forth in winter and summer.
 So let them worship the Lord of this House,
 Who hath fed them against hunger and hath made them safe from fear.
-CHAPTER: quran-107 | Daily Necessaries
+CHAPTER: Daily Necessaries
 Hast thou observed him who belieth religion?
 That is he who repelleth the orphan,
 And urgeth not the feeding of the needy.
@@ -6311,39 +6311,39 @@ Ah, woe unto worshippers
 Who are heedless of their prayer;
 Who would be seen at worship
 Yet refuse small kindnesses!
-CHAPTER: quran-108 | Abundance
+CHAPTER: Abundance
 Lo! We have given thee Abundance;
 So pray unto thy Lord, and sacrifice.
 Lo! it is thy insulter and not thou who is without posterity.
-CHAPTER: quran-109 | Unbelievers
+CHAPTER: Unbelievers
 Say: O disbelievers!
 I worship not that which ye worship;
 Nor worship ye that which I worship.
 And I shall not worship that which ye worship.
 Nor will ye worship that which I worship.
 Unto you your religion, and unto me my religion.
-CHAPTER: quran-110 | Help
+CHAPTER: Help
 When God's succour and the triumph cometh
 And thou seest mankind entering the religion of God in troops,
 Then hymn the praises of thy Lord, and seek forgiveness of Him. Lo! He is ever ready to show mercy.
-CHAPTER: quran-111 | Flame
+CHAPTER: Flame
 The power of Abi-Lahav will perish, and he will perish.
 His wealth and gains will not exempt him.
 He will be plunged in flaming Fire,
 And his wife, the wood-carrier,
 Will have upon her neck a halter of palm-fibre.
-CHAPTER: quran-112 | Unity
+CHAPTER: Unity
 Say: He is God, the One!
 God, the eternally Besought of all!
 He begetteth not nor was begotten.
 And there is none comparable unto Him.
-CHAPTER: quran-113 | Daybreak
+CHAPTER: Daybreak
 Say: I seek refuge in the Lord of the Daybreak
 From the evil of that which He created;
 From the evil of the darkness when it is intense,
 And from the evil of malignant witchcraft,
 And from the evil of the envier when he envieth.
-CHAPTER: quran-114 | Men
+CHAPTER: Men
 Say: I seek refuge in the Lord of mankind,
 The King of mankind,
 The God of mankind,

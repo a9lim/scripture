@@ -1,6 +1,6 @@
 WORK: bund | Bundahishn
 BOOK: bund | Bundahishn
-CHAPTER: bund-1 | In the name of the creator Ohrmazd
+CHAPTER: In the name of the creator Ohrmazd
 The Zand-akas, which is first about Ohrmazd's original creation and the antagonism of the evil spirit, and afterwards about the nature of the creatures from the original creation till the end, which is the future existence.
 As revealed by the religion of the Mazdayasnians, so it is declared that Ohrmazd is supreme in omniscience and goodness, and unrivaled in splendor; the region of light is the place of Ohrmazd, which they call 'endless light,' and the omniscience and goodness of the unrivaled Ohrmazd is what they call 'revelation.'
 Revelation is the explanation of both spirits together; one is he who is independent of unlimited time, because Ohrmazd and the region, religion, and time of Ohrmazd were and are and ever will be; while Ahriman in darkness, with backward understanding and desire for destruction, was in the abyss, and it is he who will not be; and the place of that destruction, and also of that darkness, is what they call the 'endlessly dark.'
@@ -29,7 +29,7 @@ The first of Ohrmazd's creatures of the world was the sky, and his good thought,
 Afterwards arose Ardwahisht, and then Shahrewar, and then Spandarmad, and then Hordad, and then Amurdad.
 From the dark world of Ahriman were Akoman and Andar, and then Sovar, and then Nakahed, and then Tairev and Zairik.
 Of Ohrmazd's creatures of the world, the first was the sky; the second, water; the third, earth; the fourth, plants; the fifth, animals; the sixth, mankind.
-CHAPTER: bund-2 | On the formation of the luminaries
+CHAPTER: On the formation of the luminaries
 Ohrmazd produced illumination between the sky and the earth, the constellation stars and those also not of the constellations, then the moon, and afterwards the sun, as I shall relate.
 First he produced the celestial sphere, and the constellation stars are assigned to it by him; especially these twelve whose names are Varak, Tora, Do-patkar, Kalachang, Sher, Khushak, Tarazhuk, Gazdum, Nimasp, Vahik, Dul, and Mahik;
 which, from their original creation, were divided into the twenty-eight subdivisions of the astronomers, of which the names are Padevar, Pesh-Parviz, Parviz, Paha, Avesar, Beshn, Rakhvad, Taraha, Avra, Nahn, Miyan, Avdem, Mashaha, Spur, Husru, Srob, Nur, Gel, Garafsha Varant, Gau, Goi, Muru, Bunda, Kahtsar, Vaht, Miyan, Kaht.
@@ -41,7 +41,7 @@ The great one which they call a Gah, which they say is the great one of the midd
 Ohrmazd performed the spiritual Yazishn ceremony with the archangels in the Rapithwin Gah, and in the Yazishn he supplied every means necessary for overcoming the adversary.
 He deliberated with the consciousness and guardian spirits of men, and the omniscient wisdom, brought forward among men, spoke thus: 'Which seems to you the more advantageous, when I shall present you to the world? that you shall contend in a bodily form with the fiend, and the fiend shall perish, and in the end I shall have you prepared again perfect and immortal, and in the end give you back to the world, and you will be wholly immortal, undecaying, and undisturbed; or that it be always necessary to provide you protection from the destroyer?'
 Thereupon, the guardian spirits of men became of the same opinion with the omniscient wisdom about going to the world, on account of the evil that comes upon them, in the world, from the fiend Ahriman, and their becoming, at last, again unpersecuted by the adversary, perfect, and immortal, in the future existence, for ever and everlasting.
-CHAPTER: bund-3
+CHAPTER:
 On the rush of the destroyer at the creatures it is said, in revelation, that the evil spirit, when he saw the impotence of himself and the confederate demons, owing to the righteous man, became confounded, and seemed in confusion three thousand years.
 During that confusion the arch-fiends of the demons severally shouted thus: 'Rise up, thou father of us! for we will cause a conflict in the world, the distress and injury from which will become those of Ohrmazd and the archangels.'
 Severally they twice recounted their own evil deeds, and it pleased him not; and that wicked evil spirit, through fear of the righteous man, was not able to lift up his head until the wicked Jeh came, at the completion of the three thousand years.
@@ -69,13 +69,13 @@ And, afterwards, he came to fire, and he mingled smoke and darkness with it.
 The planets, with many demons, dashed against the celestial sphere, and they mixed the constellations; and the whole creation was as disfigured as though fire disfigured every place and smoke arose over it.
 And ninety days and nights the heavenly angels were contending in the world with the confederate demons of the evil spirit, and hurled them confounded to hell; and the rampart of the sky was formed so that the adversary should not be able to mingle with it.
 Hell is in the middle of the earth; there where the evil spirit pierced the earth and rushed in upon it, as all the possessions of the world were changing into duality, and persecution, contention, and mingling of high and low became manifest.
-CHAPTER: bund-4
+CHAPTER:
 This also is said, that when the primeval ox passed away it fell to the right hand, and Gayomard afterwards, when he passed away, to the left hand.
 Goshorun, as the soul of the primeval ox came out from the body of the ox, stood up before the ox and cried to Ohrmazd, as much as a thousand men when they sustain a cry at one time, thus: 'With whom is the guardianship of the creatures left by thee, when ruin has broken into the earth and vegetation is withered, and water is troubled? Where is the man of whom it was said by thee thus: I will produce him, so that he may preach carefulness?'
 And Ohrmazd spoke thus: 'You are made ill, O Goshorun! you have the illness which the evil spirit brought on; if it were proper to produce that man in this earth at this time, the evil spirit would not have been oppressive in it.'
 Forth Goshorun walked to the star station and cried in the same manner, and forth to the moon station and cried in the same manner, and forth to the sun station, and then the guardian spirit of Zartosht was exhibited to her, and Ohrmazd said thus: 'I will produce for the world him who will preach carefulness.'
 Contented became the spirit Goshorun, and assented thus: 'I will nourish the creatures;' that is, she became again consenting to a worldly creation in the world.
-CHAPTER: bund-5
+CHAPTER:
 Seven chieftains of the planets have come unto the seven chieftains of the constellations, as the planet Mercury unto Tishtar, the planet Mars unto Haptoring, the planet Jupiter unto Vanand, the planet Venus unto Sataves, the planet Saturn unto the great one of the middle of the sky, Gochihr and the thievish Mushpar, provided with tails, unto the sun and moon and stars.
 The sun has attached Mushpar to its own radiance by mutual agreement, so that he may be less able to do harm.
 Of Mount Alburz it is declared, that around the world and Mount Terak, which is the middle of the world, the revolution of the sun is like a moat around the world; it turns back in a circuit owing to the enclosure of Mount Alburz around Terak.
@@ -85,12 +85,12 @@ And twice in every year the day and night are equal, for on the original attack,
 So that when it comes back to Varak, in three hundred and sixty days and the five Gatha days, it goes in and comes out through one and the same aperture; the aperture is not mentioned, for if it had been mentioned the demons would have known the secret, and been able to introduce disaster.
 From there where the sun comes on on the longest day to where it comes on on the shortest day is the east region Sawahi; from there where it comes on on the shortest day to where it goes off on the shortest day is the direction of the south regions Fradadhafshu and Widadhafshu; from there where it goes in on the shortest day to where it goes in on the longest day is the west region Arezahi; from there where it comes in on the longest day to there where it goes in on the longest day are the north regions Wourubareshti and Wourujareshti.
 When the sun comes on, it illumines the regions of Sawahi, Fradadhafshu, Widadhafshu, and half of Xwaniratha; when it goes in on the dark side, it illumines the regions of Arezahi, Wourubareshti, Wourujareshti, and one half of Xwaniratha; when it is day here it is night there.
-CHAPTER: bund-6
+CHAPTER:
 On the conflict of the creations of the world with the antagonism of the evil spirit it is said in revelation, that the evil spirit, even as he rushed in and looked upon the pure bravery of the angels and his own violence, wished to rush back.
 The spirit of the sky is himself like one of the warriors who has put on armor; he arrayed the sky against the evil spirit, and led on in the contest, until Ohrmazd had completed a rampart around, stronger than the sky and in front of the sky.
 And his guardian spirits of warriors and the righteous, on war horses and spear in hand, were around the sky; such-like as the hair on the head is the similitude of those who hold the watch of the rampart.
 And no passage was found by the evil spirit, who rushed back; and he beheld the annihilation of the demons and his own impotence, as Ohrmazd did his own final triumph, producing the renovation of universe for ever and everlasting.
-CHAPTER: bund-7
+CHAPTER:
 The second conflict was waged with the water, because, as the star Tishtar was in Cancer, the water which is in the subdivision they call Avrak was pouring, on the same day when the destroyer rushed in, and came again into notice for mischief in the direction of the west.
 For every single month is the owner of one constellation; the month Tir is the fourth month of the year, and Cancer the fourth constellation from Aries, so it is the owner of Cancer, into which Tishtar sprang, and displayed the characteristics of a producer of rain; and he brought on the water aloft by the strength of the wind.
 Co-operators wlth Tishtar were Vohuman and the angel Hom, with the assistance of the angel Burj and the righteous guardian spirits in orderly arrangement.
@@ -108,32 +108,32 @@ Afterwards, the wind, in the same manner as before, restrained the water, at the
 And at its north side two rivers flowed out, and went one to the east and one to the west; they are the Arag river and the Veh river; as it is said thus: 'Through those finger-breadth tricklings do thou pour and draw forth two such waters, O Ohrmazd!'
 Both those rivers wind about through all the extremities of the earth, and intermingle again with the water of the wide-formed ocean.
 As those two rivers flowed out, and from the same place of origin as theirs, eighteen navigable rivers flowed out, and after the other waters have flowed out from those navigable streams they all flow back to the Arag river and Veh river, whose fertilization of the world arises therefrom.
-CHAPTER: bund-8 | On the conflict which the evil spirit waged with the earth
+CHAPTER: On the conflict which the evil spirit waged with the earth
 As the evil spirit rushed in, the earth shook, and the substance of mountains was created in the earth.
 First, Mount Alburz arose; afterwards, the other ranges of mountains of the middle of the earth; for as Alburz grew forth all the mountains remained in motion, for they have all grown forth from the root of Alburz.
 At that time they came up from the earth, like a tree which has grown up to the clouds and its root to the bottom; and their root passed on that way from one to the other, and they are arranged in mutual connection.
 Afterwards, about that wonderful shaking out from the earth, they say that a great mountain is the knot of lands; and the passage for the waters within the mountains is the root which is below the mountains; they forsake the upper parts so that they may flow into it, just as the roots of trees pass into the earth; a counterpart of the blood in the arteries of men, which gives strength to the whole body.
 In numbers, apart from Alburz, all the mountains grew up out of the earth in eighteen years, from which arises the perfection of men's advantage.
-CHAPTER: bund-9
+CHAPTER:
 The conflict waged with plants was that when they became quite dry.
 Amerodad the archangel, as the vegetation was his own, pounded the plants small, and mixed them up with the water which Tishtar seized, and Tishtar made that water rain down upon the whole earth.
 On the whole earth plants grew up like hair upon the heads of men.
 Ten thousand of them grew forth of one special description, for keeping away the ten thousand species of disease which the evil spirit produced for the creatures; and from those ten thousand, the 100,000 species of plants have grown forth.
 From that same germ of plants the tree of all germs was given forth, and grew up in the wide-formed ocean, from which the germs of all species of plants ever increased.
 And near to that tree of all germs, the Gokard =Gokaren tree was produced, for keeping away deformed decrepitude; and the full perfection of the world arose therefrom.
-CHAPTER: bund-10 | On the conflict waged with the primeval ox
+CHAPTER: On the conflict waged with the primeval ox
 As it passed away, owing to the vegetable principle proceeding from every limb of the ox, fifty and five species of grain and twelve species of medicinal plants grew forth from the earth, and their splendour and strength were the seminal energy of the ox.
 Delivered to the moon station, that seed was thoroughly purified by the light of the moon, fully prepared in every way, and produced life in a body.
 Thence arose two oxen, one male and one female; and, afterwards, two hundred and eighty-two species of each kind became manifest upon the earth.
 The dwelling of the birds is in the air, and the fish are in the midst of the water.
-CHAPTER: bund-11
+CHAPTER:
 On the nature of the earth it says in revelation, that there are thirty and three kinds of land.
 On the day when Tishtar produced the rain, when its seas arose therefrom, the whole place, half taken up by water, was converted into seven portions; this portion, as much as one-half, is the middle, and six portions are around; those six portions are together as much as Khvaniras.
 The name keshvar is also applied to them, and they existed side by side; as on the east side of this portion is the Savah region, on the west is the Arzah region; the two portions on the south side are the Fradadafsh and Vidadafsh regions, the two portions on the north side are the Vorubarsht and Vorujarsst regions, and that in the middle is Khvaniras.
 And Khvaniras has the sea, for one part of the wide-formed ocean wound about around it; and from Vorubarsht and Vorujarsht a lofty mountain grew up; so that it is not possible for any one to go from region to region.
 And of these seven regions every benefit was created most in Khvaniras, and the evil spirit also produced most for Khvaniras, on account of the superiority which he saw in it.
 For the Kayanians and heroes were created in Khvaniras; and the good religion of the Mazdayasnians was created in Khvaniras, and afterwards conveyed to the other regions; Soshyans is born in Khvaniras, who makes the evil spirit impotent, and causes the resurrection and future existence.
-CHAPTER: bund-12
+CHAPTER:
 On the nature of mountains it says in revelation, that, at first, the mountains have grown forth in eighteen years; and Alburz ever grew till the completion of eight hundred years; two hundred years up to the star station, two hundred years to the moon station, two hundred years to the sun station, and two hundred years to the endless light.
 While the other mountains have grown out of Alburz, in number 2244 mountains, and are Hugar the lofty, Terak of Alburz, Chakad-i Daitik, and the Arezur ridge, the Ausindom mountain, Mount Aparsen which they say is the mountain of Pars, Mount Zarid also which is Mount Manush, Mount Airach, Mount Kaf, Mount Vadges, Mount Aushdashtar, Mount Arezur-bum, Mount Royishn-homand, Mount Padashkhvargar which is the greatest in Khvarih, the mountain which they call Chino, Mount Revand, Mount Darspet the Bakyir mountain, Mount Kabed-shikaft, Mount Siyak-muimand, Mount Vafar-homand, Mount Spendyad and Kondrasp, Mount Asnavand and Kondras, Mount Sichidav, a mountain among those which are in Kangdez, of which they say that they are a comfort and delight of the good creator, the smaller hills.
 I will mention them also a second time; Alburz is around this earth and is connected with the sky.
@@ -175,7 +175,7 @@ Mount Marak is in Laran.
 Mount Zarin is in Turkistan.
 Mount Bakht-tan is in Spahan.
 The rest, apart from this enumeration, which they reckon as fostering hills of the country in the religion of the Mazdayasnians, are the small hills, those which have grown piecemeal in places.
-CHAPTER: bund-13
+CHAPTER:
 On the nature of seas it says in revelation, that the wide-formed ocean keeps one-third of this earth on the south side of the border of Alburz, and so wide-formed is the ocean that the water of a thousand lakes is held by it, such as the source Aredvivsur, which some say is the fountain lake.
 Every particular lake is of a particular kind, some are great, and some are small; some are so large that a man with a horse might compass them around in forty days, which is 1700 leagues in extent.
 Through the warmth and clearness of the water, purifying more than other waters, everything continually flows from the source Aredvivsur.
@@ -193,7 +193,7 @@ In the other seas there is nothing of the nature of a revolution of the moon the
 The sea of Kamrud is that which they pass by, in the north, in Taparistan; that of Shahi-bun is in Arum.
 Of the small seas that which was most wholesome was the sea Kyansih, such as is in Sagastan; at first, noxious creatures, snakes, and lizards were not in it, and the water was sweeter than in any of the other seas; later it became salt; at the closest, on account of the stench, it is not possible to go so near as one league, so very great are the stench and saltness through the violence of the hot wind.
 When the renovation of the universe occurs it will again become sweet.
-CHAPTER: bund-14
+CHAPTER:
 On the nature of the five classes of animals it says in revelation, that, when the primeval ox passed away, there where the marrow came out grain grew up of fifty and five species, and twelve species of medicinal plants grew; as it says, that out of the marrow is every separate creature, every single thing whose lodgment is in the marrow.
 From the horns arose peas, from the nose the leek, from the blood the grapevine from which they make wine -- on this account wine abounds with blood -- from the lungs the rue-like herbs, from the middle of the heart thyme for keeping away stench, and every one of the others as revealed in the Avesta.
 The seed of the ox was carried up to the moon station; there it was thoroughly purified, and produced the manifold species of animals.
@@ -225,7 +225,7 @@ Of the dog they say that out of the star station, that is, away from the directi
 The twelfth is the sharp-toothed beast of which the leader of the flock is in such great fear, for that flock of sheep is very badly maintained which has no dog.
 Ohrmazd said when the bird Varesha was created by him, which is a bird of prey, thus: 'Thou art created by me, O bird Varesha! so that my vexation may be greater than my satisfaction with thee, for thou doest the will of the evil spirit more than that of me; like the wicked man who did not become satiated with wealth, thou also dost not become satiated with the slaughter of birds; but if thou be not created by me, O bird Varesha! thou wouldst be created by him, the evil spirit, as a kite with the body of a Varpa, by which no creature would be left alive.'
 Many animals are created in all these species for this reason, that when one shall be perishing through the evil spirit, one shall remain.
-CHAPTER: bund-15
+CHAPTER:
 On the nature of men it says in revelation, that Gayomard, in passing away, gave forth seed; that seed was thoroughly purified by the motion of the light of the sun, and Neryosang kept charge of two portions, and Spandarmad received one portion.
 And in forty years, with the shape of a one-stemmed Rivas-plant, and the fifteen years of its fifteen leaves, Matro Mashye and Matroyao Mashyane grew up from the earth in such a manner that their arms rested, behind on their shoulders, and one joined to the other they were connected together and both alike.
 And the waists of both of them were brought close and so connected together that it was not clear which is the male and which the female, and which is the one whose living soul of Ohrmazd is not away.
@@ -257,7 +257,7 @@ Of those six races the name of the man of one pair was Tazh and of the woman Taz
 Among the number were those who are in the countries of Surak, those who are in the country of Aner, those who are in the countries of Tur, those who are in the country of Salm which is Arum, those who are in the country of Seni, that which is Chinistan, those who are in the country of Dai, and those who are in the country of Sind.
 Those, indeed, throughout the seven regions are all from the lineage of Fravak, son of Siyamak, son of Mashye.
 As there were ten varieties of man, and fifteen races from Fravak, there were twenty-five races all from the seed of Gayomard; the varieties are such as those of the earth, of the water, the breast-eared, the breast-eyed, the one-legged, those also who have wings like a bat, those of the forest, with tails, and who have hair on the body.
-CHAPTER: bund-16
+CHAPTER:
 On the nature of generation it says in revelation, that a woman when she comes out from menstruation, during ten days and nights, when they go near unto her, soon becomes pregnant.
 When she is cleansed from her menstruation, and when the time for pregnancy has come, always when the seed of the man is the more powerful a son arises from it; when that of the woman is the more powerful, a daughter; when both seeds are equal, twins and triplets.
 If the male seed comes the sooner, it adds to the female, and she becomes robust; if the female seed comes the sooner, it becomes blood, and the leanness of the female arises therefrom.
@@ -265,7 +265,7 @@ The female seed is cold and moist, and its flow is from the loins, and the color
 All the seed of the females which issues beforehand, takes a place within the womb, and the seed of the males will remain above it, and will fill the space of the womb; whatever refrains therefrom becomes blood again, enters into the veins of the females, and at the time any one is born it becomes milk and nourishes him, as all milk arises from the seed of the males, and the blood is that of the females.
 These four things, they say, are male, and these female: the sky, metal, wind, and fire are male, and are never otherwise; the water, earth, plants, and fish are female, and are never otherwise; the remaining creation consists of male and female.
 As regards the fish it says that, at the time of excitement, they go forwards and come back in the water, two and two, the length of a mile, which is one-fourth of a league, in the running water; in that coming and going they then rub their bodies together, and a kind of sweat drops out betwixt them, and both become pregnant.
-CHAPTER: bund-17
+CHAPTER:
 On the nature of fire it says in revelation, that fire is produced of five kinds, namely, the fire Berezi-savang, the fire which shoots up before Ohrmazd the lord; the fire Vohu-fryan, the fire which is in the bodies of men and animals; the fire Urvazisht, the fire which is in plants; the fire Vazisht, the fire which is in a cloud which stands opposed to Spenjargak in conflict; the fire Spenisht, the fire which they keep in use in the world, likewise the fire of Warharan.
 Of those five fires one consumes both water and food, as that which is in the bodies of men; one consumes water and consumes no food, as that which is in plants, which live and grow through water; one consumes food and consumes no water, as that which they keep in use in the world, and likewise the fire of Warharan; one consumes no water and no food, as the fire Vazisht.
 The Berezi-savang is that in the earth and mountains and other things, which Ohrmazd created, in the original creation, like three breathing souls; through the watchfulness and protection due to them the world ever develops.
@@ -275,7 +275,7 @@ In the reign of King Vishtasp, upon revelation from the religion, it was establi
 The fire Adar Gushnasp, until the reign of Kay Khosraw, continually afforded the world protection in the manner aforesaid; and when Kay Khosraw was extirpating the idol-temples of Lake Chechast it settled upon the mane of his horse, and drove away the darkness and gloom, and made it quite light, so that they might extirpate the idol-temples; in the same locality the fire Adar Gushnasp was established at the appointed place on the Asnavand mountain.
 The fire Adar Burzin Mihr, until the reign of King Vishtasp, ever assisted, in like manner, in the world, and continually afforded protection; and when the glorified Zartosht was introduced to produce confidence in the progress of the religion, King Vishtasp and his offspring were steadfast in the religion of God, and Vishtasp established this fire at the appointed place on Mount Revand, where they say the Ridge of Vishtasp is.
 All those three fires are the whole body of the fire of Warharan, together with the fire of the world, and those breathing souls are lodged in them; a counterpart of the body of man when it forms in the womb of the mother. and a soul from the spirit-world settles within it, which controls the body while living; when that body dies, the body mingles with the earth, and the soul goes back to the spirit.
-CHAPTER: bund-18
+CHAPTER:
 On the nature of the tree they call Gokaren it says in revelation, that it was the first day when the tree they call Gokaren grew in the deep mud within the wide-formed ocean; and it is necessary as a producer of the renovation of the universe, for they prepare its immortality therefrom.
 The evil spirit has formed therein, among those which enter as opponents, a lizard as an opponent in that deep water, so that it may injure the Haoma.
 And for keeping away that lizard, Ohrmazd has created there ten Kar fish which, at all times, continually circle around the Haoma, so that the head of one of those fish is continually towards the lizard.
@@ -287,7 +287,7 @@ This, too, is said, that the creatures of the waters live also specially under i
 The tree of many seeds has grown amid the wide-formed ocean, and in its seed are all plants; some say it is the proper-curing, some the energetic-curing, some the all-curing.
 Between these trees of such kinds is formed the mountain with cavities, 9999 thousand myriads in number, each myriad being ten thousand.
 Unto that mountain is given the protection of the waters, so that water streams forth from there, in the rivulet channels, to the land of the seven regions, as the source of all the sea-water in the land of the seven regions is from there.
-CHAPTER: bund-19
+CHAPTER:
 Regarding the three-legged ass they say, that it stands amid the wide-formed ocean, and its feet are three, eyes six, mouths nine, ears two, and horn one, body white, food spiritual, and it is righteous.
 And two of its six eyes are in the position of eyes, two on the top of the head, and two in the position of the hump; with the sharpness of those six eyes it overcomes and destroys.
 Of the nine mouths three are in the head, three in the hump, and three in the inner part of the flanks; and each mouth is about the size of a cottage, and if is itself as large as Mount Alvand.
@@ -324,7 +324,7 @@ The cock is created in opposition to demons and wizards, cooperating with the do
 This, too, it says, that it would not have been managed if I had not created the shepherd's dog, which is the Pasush-haurva, and the house watch-dog, the Vish-haurva; for it says in revelation, that the dog is a destroyer of such a fiend as covetousness among those which are in the nature of man and of animals.
 Moreover it says, that, inasmuch as it will destroy all the disobedient, when it barks it will destroy pain; and its flesh and fat are remedies for driving away decay and pain from men.
 Ohrmazd created nothing useless whatever, for all these are created for advantage; when one does not understand the reason of them, it is necessary to ask the Dastur, for his five dispositions are created in this way that he may continually destroy the fiend.
-CHAPTER: bund-20
+CHAPTER:
 On the nature of rivers it says in revelation that these two rivers flow forth from the north, part from Alburz and part from the Alburz of Ohrmazd; one towards the west, that is the Arag; and one towards the east, that is the Veh river.
 After them eighteen rivers flowed forth from the same source, just as the remaining waters have flowed forth from them in great multitude; as they say that they flowed out so very fast, one from the other, as when a man recites one Ashem-vohu of a series.
 All of those, with the same water, are again mingled with these rivers, that is, the Arag river and Veh river.
@@ -348,7 +348,7 @@ The Khvejand river goes on through the midst of Samarkand and Pargana, and they 
 The Marv river, a glorious river in the east, flows out from the Aparsen range.
 The Balkh river comes out from the Aparsen mountain of Bamikan, and flows on to the Veh river.
 The Sped river is in Ataro-patakan; they say that Dahak Zohak begged a favor here from Ahriman and the demons. 24 The Tort river, which they call also the Koir, comes out from the sea of Giklan, and flows to the sea of Vergan. 25. The Zahavayi is the river which comes out from Ataro-patakan, and flows to the sea in Pars. 26. The sources of the Khvarae river are from Spahan; it passes on through Khujistan, flows forth to the Diglat river, and in Spahan they call it the Mesrkan river. 27. The Harhaz river is in Taparistan, and its sources are from Mount Damawand. 28. The Teremet river flows away to the Veh river. 29. The Vendesesh river is in that part of Pars which they call Sagastan. 30. The Kasak river comes out through a ravine in the province of Tus, and they call it there the Kasp river; more- over, the river, which is there the Veh, they call the Kasak; even in Sind they call it the Kasak. 31. The Pedak-miyan, which is the river Chatru-miyan, is that which is in Kangdez. 32. The Daraja river is in Eranvej, on the bank of which was the dwelling of Pourushasp, the father of Zartosht. 33. The other innumerable waters and rivers, springs and channels are one in origin with those; so in various districts and various places they call them by various names. 34. Regarding Frasiyav they say, that a thousand springs were conducted away by him into the sea Kyansih, suitable for horses, suitable for camels, suitable for oxen, suitable for asses, both great and small; and he conducted the spring Zarinmand, which is the Hetumand river they say, into the same sea; and he conducted the seven navigable waters of the source of the Vachaeni river into the same sea, and made men settle there.
-CHAPTER: bund-21
+CHAPTER:
 In revelation they mention seventeen species of liquid, as one liquid resides in plants; second, that which is flowing from the mountains that is, the rivers; third, that which is rain-water; fourth, that of tanks and other special constructions; fifth, the semen of animals and men, sixth, the urine of animals and men; seventh, the sweat of animals and men; the eighth liquid is that in the skin of animals and men; ninth, the tears of animals and men; tenth, the blood of animals and men; eleventh, the oil in animals and men, a necessary in both worlds; twelfth, the saliva of animals and men, with which they nourish the embryo; the thirteenth is that which is under the bark of plants, as it is said that every bark has a liquid, through which a drop appears on a twig when placed four finger-breadths before a fire; fourteenth, the milk of animals and men.
 All these, through growth, or the body which is formed, mingle again with the rivers, for the body which is formed and the growth are both one.
 This, too, they say, that of these three rivers, that is, the Arag river, the Marv river, and the Veh river, the spirits were dissatisfied, so that they would not flow into the world, owing to the defilement of stagnant water which they beheld, so that they were in tribulation through it until Zartosht was exhibited to them, whom I will create, who will pour six-fold holy-water into it and make it again wholesome; he will preach carefulness.
@@ -356,7 +356,7 @@ This, too, it says, that, of water whose holy-water is more and pollution less, 
 So, also, the growth of plants is connected, in this manner, strongly with the root; so, likewise, the blessings which the righteous utter, come back, in this proportion, to themselves.
 Regarding the river Nahvtak it says, that Frasiyav of Tur conducted it away; and when Ushedar comes it will flow again suitable for horses; so, also, will the fountains: of the sea Kyansih.
 Kyansih is the one where the home of the Kayanian race is.
-CHAPTER: bund-22
+CHAPTER:
 On the nature of lakes it says in revelation, that thus many fountains of waters have come into notice, which they call lakes; counterparts of the eyes of men are those fountains of waters; such as Lake Chechast, Lake Sovbar, Lake Khvarizhem, Lake Frazdan, Lake Zarinmand, Lake Asvast, Lake Husru, Lake Sataves, Lake Urvis.
 I will mention them also a second time: Lake Chechast is in Ataro-patakan, warm is the water and opposed to harm, so that nothing whatever is living in it, and its source is connected with the wide-formed ocean.
 Lake Sovbar is in the upper district and country on the summit of the mountain of Tus; as it says, that the Sud-bahar is propitious and good from which abounding liberality is produced.
@@ -368,11 +368,11 @@ Lake Husru is within fifty leagues of Lake Chechast.
 Lake Sataves is that already written about, between the wide-formed ocean and the Putik.
 It is said that in Kamindan is an abyss, from which everything they throw in always comes back, and it will not receive it unless alive; when they throw a living creature into it, it carries it down; men say that a fountain from hell is in it.
 Lake Urvis is on Hugar the lofty.
-CHAPTER: bund-23
+CHAPTER:
 On the nature of the ape and the bear they say, that Yim Jamshed, when reason departed from him, for fear of the demons took a demoness as wife, and gave Yimak, who was his sister, to a demon as wife; and from them have originated the tailed ape and bear and other species of degeneracy.
 This, too, they say, that in the reign of Azi Dahak Zohak a young woman was admitted to a demon, and a young man was admitted to a witch, and on seeing them they had intercourse; owing to that one intercourse the... arose from them.
 When Faridoon came to them they fled from the country of Iran, and settled upon the sea-coast; now, through the invasion of the Arabs, they are again diffused through the country of Iran.
-CHAPTER: bund-24
+CHAPTER:
 On the chieftainship of men and animals and every single thing it says in revelation, that first of the human species Gayomard was produced, brilliant and white, with eyes which looked out for the great one, him who was here the Zarathushtrotema; the chieftainship of all things was from Zartosht.
 The white ass-goat, which holds its head down, is the chief of goats, the first of those species created.
 The black sheep which is fat and white-jawed is the chief of sheep; it was the first of those species created.
@@ -403,7 +403,7 @@ Of trees the myrtle and date, on which model, it is said, trees were formed, are
 Of mountains Mount Aparsen's beginning is in Sagastan and end in Khujistan, some say it is all the mountains of Pars, and is chief of all mountains except Alburz.
 Of birds Chamros is chief, who is worth all the birds in Xwaniratha, except the griffin of three natures.
 The conclusion is this, that every one who performs a great duty has then much value.
-CHAPTER: bund-25
+CHAPTER:
 On matters of religion it says in revelation thus: 'The creatures of the world were created by me complete in three hundred and sixty-five days,' that is, the six periods of the Gahambars which are completed in a year.
 It is always necessary first to count the day and afterwards the night, for first the day goes off, and then the night comes on.
 And from the season of Maidyoshahem, which is the auspicious day Khwarshed of the month Tishtar, to the season of Maidyarem, which is the auspicious day Warharan of the month Din Dae-- the shortest day -- the night increases; and from the season of Maidyarem to the season of Maidyoshahem the night decreases and the day increases.
@@ -426,11 +426,11 @@ Whoever keeps the year by the revolution of the moon mingles summer with winter 
 This, too, it says, that the auspicious month Frawardin, the month Ardwahisht, and the month Hordad are spring; the month Tishtar, the month Amurdad, and the month Shahrewar are summer; the month Mihr, the month Aban, and the month Adar are autumn; the month Din, the month Vohuman, and the month Spandarmad are winter.
 And the sun comes from the sign of Aries, into which it proceeded in the beginning, back to that same place in three hundred and sixty-five days and six short times, which are one year.
 As every three months it advances through three constellations, more or less, the moon comes, in a hundred and eighty days, back to the place out of which it traveled in the beginning.
-CHAPTER: bund-26
+CHAPTER:
 A Hasar on the ground is a Parasang of one thousand steps of the two feet.
 A Parasang is a measure as much as a far-seeing man may look out, see a beast of burden, and make known that it is black or white.
 And the measure of a man is eight medium spans.
-CHAPTER: bund-27
+CHAPTER:
 On the nature of plants it says in revelation, that, before the coming of the destroyer, vegetation had no thorn and bark about it; and, afterwards, when the destroyer came, it became coated with bark and thorny, for antagonism mingled with every single thing; owing to that cause vegetation is also much mixed with poison, like Bish the height of hemp, that is poisonous, for men when they eat it die.
 In like manner even as the animals, with grain of fifty and five species and twelve species of medicinal plants, have arisen from the primeval ox, ten thousand species among the species of principal plants, and a hundred thousand species among ordinary plants have grown from all these seeds of the tree opposed to harm, the many-seeded, which has grown in the wide-formed ocean.
 When the seeds of all these plants, with those from the primeval ox, have arisen upon it, every year the bird strips that tree and mingles all the seeds in the water; Tishtar seizes them with the rain-water and rains them on to all regions.
@@ -456,7 +456,7 @@ Every one of all these plants which is so, they call medicinal.
 The principal fruits are of thirty kinds, and ten species of them are fit to eat inside and outside, as the fig, the apple, the quince, the citron, the grape, the mulberry, the pear, and others of this kind; ten are fit to eat outside, but not fit to eat inside, as the date, the peach, the white apricot, and others of this kind; those which are fit to eat inside, but not fit to eat outside, are the walnut, the almond, the pomegranate, the coconut, the filbert, the chestnut, the pistachio nut, the vargan, and whatever else of this description are very remarkable.
 This, too, it says, that every single flower is appropriate to an angel, as the white jasmine is for Vohuman, the myrtle and jasmine are Ohrmazd's own, the mouse-ear is Ardwahist's own, the basil-royal is Shahrewar's own, the musk flower is Spandarmad's, the lily is Hordad's, the chamba is Amurdad's, Din-pavan-Adar has the orange-scented mint, Adar has the marigold, the water-lily is Aban's, the white marv is Khwarshed's, the ranges is Mah's, the violet is Tishtar's, the meren is Gosh's, the karda is Din-pavan-Mihr's, all violets are Mihr's, the red chrysanthemum is Srosh's, the dog-rose is Rashn's, the cockscomb is Frawardin's, the sisebar is Warharan's, the yellow chrysanthemum is Ram's, the orange-scented mint is Wad's, the trigonella is Din-pavan-Din's, the hundred-petalled rose is Din's, all kinds of wild flowers are Ard's, Ashtad has all the white Haoma, the bread-baker's basil is Asman's, Zamyad has the crocus, Mahraspand has the flower of Ardashir, Anagran has this Haoma of the angel Haoma, of three kinds.
 It is concerning plants that every single kind with a drop of water on a twig they should hold four finger-breadths in front of the fire; most of all it is the lotos they speak of.
-CHAPTER: bund-28
+CHAPTER:
 On the evildoing of Ahriman and the demons it says in revelation, that the evil which the evil spirit has produced for the creation of Ohrmazd it is possible to tell by this winter; and his body is that of a lizard whose place is filth.
 He does not think, nor speak, nor act for the welfare of the creatures of Ohrmazd; and his business is unmercifulness and the destruction of this welfare, so that the creatures which Ohrmazd shall increase he will destroy; and his eyesight does not refrain from doing the creatures harm.
 As it says that, 'ever since a creature wag created by us, I, who am Ohrmazd, have not rested at ease, on account of providing protection for my own creatures; and likewise not even he, the evil spirit, on account of contriving evil for the creatures.'
@@ -505,7 +505,7 @@ And by them these ten worldly creations, that is, the sky, water, earth, vegetat
 They whom I have enumerated are furnished with the assistance and crafty nature of Ahriman.
 Regarding the cold, dry, stony, and dark interior of mysterious hell it says, that the darkness is fit to grasp with the hand, and the stench is fit to cut with a knife; and if they inflict the punishment of a thousand men within a single span, they think in this way, that they are alone; and the loneliness is worse than its punishment.
 And its connection is with the seven planets, be it through much cold like Saturn, be it through much heat like Ahriman; and their food is brimstone, and of succulents the lizard, and other evil and wretchedness.
-CHAPTER: bund-29
+CHAPTER:
 On the spiritual chieftainship of the regions of the earth it says in revelation, that every one of those six chieftainships has one spiritual chief; as the chief of Arezahi is Ashashagahad-e Hvandchan, the chief of Sawahi is Hoazarodathhri-hana Pareshtyaro, the chief of Fradadhafshu is Spitoid-i Ausposinan, the chief of Vidadhafshu is Airizh-rasp Ausposinan, the chief of Wourubareshti is Huvasp, the chief of Wourujareshti is Cakhravak.
 Zartosht is spiritual chief of the region of Xwaniratha, and also of all the regions; he is chief of the world of the righteous, and it is said that the whole religion was received by them from Zartosht.
 In the region of Xwaniratha are many places, from which, in this evil time of violent struggling with the adversary, a passage is constructed by the power of the spiritual world, and one calls them the beaten tracks of Xwaniratha.
@@ -521,7 +521,7 @@ Eranvej is in the direction of Ataro-patakan Azerbaijan.
 The land of Saukavastan is on the way from Turkistan to Chinistan, in the direction of the north.
 The enclosure formed by Yim Jamshed is in the middle of Pars, in Sruva; thus, they say, that what Yim Jamshed formed is below Mount Yimakan.
 Cashmere is in Hindustan.
-CHAPTER: bund-30
+CHAPTER:
 On the nature of the resurrection and future existence it says in revelation, that, whereas Mashye and Mashyane, who grew up from the earth, first fed upon water, then plants, then milk, and then meat, men also, when their time of death has come, first desist from eating meat, then milk, then from bread, till when they shall die they always feed upon water.
 So, likewise, in the millennium of Ushedarmah, the strength of appetite will thus diminish, when men will remain three days and nights in superabundance through one taste of consecrated food.
 Then they will desist from meat food, and eat vegetables and milk; afterwards, they abstain from milk food and abstain from vegetable food, and are feeding on water; and for ten years before Soshyant comes they remain without food, and do not die.
@@ -555,7 +555,7 @@ Then two fiends remain at large, Ahriman and Az; Ohrmazd comes to the world, him
 Gochihr burns the serpent in the melted metal, and the stench and pollution which were in hell are burned in that metal, and it becomes quite pure.
 He sets the vault into which the evil spirit fled, in that metal; he brings the land of hell back for the enlargement of the world; the renovation arises in the universe by his will, and the world is immortal for ever and everlasting.
 This, too, it says, that this earth becomes an iceless, slopeless plain; even the mountain, whose summit is the support of the Chinwad bridge, they keep down, and it will not exist.
-CHAPTER: bund-31 | On the race and genealogy of the Kayanians
+CHAPTER: On the race and genealogy of the Kayanians
 Hooshang was son of Fravak, son of Siyamak, son of Mashye, son of Gayomard.
 Tahmurasp was son of Vivangha, son of Yanghad, son of Hooshang.
 Yim Jamshed, Tahmurasp, Spitur, and Narsih, whom they also call 'the Rashnu of Chino,' were all brothers.
@@ -597,7 +597,7 @@ Of Avar-shatro this is said, that it is the district of Avarnak, and they offere
 To Damnak the governorship of Asuristan was given; sovereignty and arranging the law of sovereignty, willfulness and the stubborn defects they would bring, were among them.
 To Sparnak the governorship of Spahan was given to Khosraw the governorship of Rai was given; to Margandak the kingdom, forest settlements, and mountain settlements of Padashkhvargar were given; where they travel nomadically, and there are the forming of sheep-folds, prolificness, easy procreation, and continual triumph over enemies.
 From Dastan proceeded Rudastam and Huzavarak.
-CHAPTER: bund-32
+CHAPTER:
 On the kindred of Pourushasp, son of Paitirasp, son of Aurvadasp, son of Haechadasp, son of Chakhshnush, son of Paitirasp, son of Hardarshn, son of Hardar, son of Spitaman, son of Vidasht, son of Ayazem, son of Rajan, son of Durasrobo, son of Manuschihar.
 As Paitirasp had two sons, one Pourushasp and one Arasti, by Pourushasp was Zartosht begotten for a sanctuary of good religion, and by Arasti was Maidyok-mah begotten.
 Zartosht, when he brought the religion, first celebrated worship and expounded in Eranvej, and Maidyok-mah received the religion from him.
@@ -608,7 +608,7 @@ By Isadvastar was begotten a son whose name was Ururvija, and they call him Aran
 This, too, one knows, that three sons of Zartosht, namely, Ushedar, Ushedarmah, and Soshyant, were from Hvov; as it says, that Zartosht went near unto Hvov three times, and each time the seed went to the ground; the angel Neryosang received the brilliance and strength of that seed, delivered it with care to the angel Anahid, and in time will blend it with a mother.
 Nine thousand, nine hundred, and ninety-nine, and nine myriads of the guardian spirits of the righteous are entrusted with its protection, so that the demons may not injure it.
 The name of the mother of Zartosht was Dogdo, and the name of the father of the mother of Zartosht was Frahimrava.
-CHAPTER: bund-33 | The family of the Mobads
+CHAPTER: The family of the Mobads
 Bahak was son of Hubakht, son of Ataro-bondak, son of Mahdad, son of Maidok-mah, son of Frah-vakhsh-vindad, son of Maidok-mah, son of Kad, son of Maidok-mah, son of Arastih, son of Paitirasp.
 As Bahak was Mobed of Mobads unto Shahpuhr, son of Ohrmazd, so Kad was the great preceptor unto Darai.
 Adarbad Mahraspandan was son of Mahraspand, son of Dadarda, son of Dadirad, son of Hudino, son of Adarbad, son of Manuschihar, son of Vohuman-chihar, son of Fryano, son of Bahak, son of Faridoon, son of Frashaitar, son of Pourushasp, son of Vinasp, son of Nivar, son of Vakhsh, son of Vahidhros, son of Frasht, son of Gak, son of Vakhsh, son of Fryan, son of Rajan, son of Durasrobo, son of Manuschihar.
@@ -621,7 +621,7 @@ All the other Mobads who have been renowned in the empire were from the same fam
 Those Mobads, likewise, who now exist are all from the same family they assert, and I, too, they boast, whom they call 'the administration of perfect rectitude'.
 Yudan-Yim son of Vahram-shad, son of Zartosht, Adarbad son of Mahraspand, son of Zadspram, Zadspram son of Yudan-Yim, Adarbad son of Hamid, Ashovahisht son of Freh-Srosh, and the other Mobads have sprung from the same family.
 This, too, it says, that 'in one winter I will locate the religion of the Mazdayasnians, which came out into the other six regions.'
-CHAPTER: bund-34 | On the reckoning of the years
+CHAPTER: On the reckoning of the years
 Time was for twelve thousand years; and it says in revelation, that three thousand years was the duration of the spiritual state, where the creatures were unthinking, unmoving, and intangible; and three thousand years was the duration of Gayomard, with the ox, in the world.
 As this was six thousand years the series of millennium reigns of Cancer, Leo, and Virgo had elapsed, because it was six thousand years when the millennium reign came to Libra, the adversary rushed in, and Gayomard lived thirty years in tribulation.
 After the thirty years Mashye and Mashyane grew up; it was fifty years while they were not wife and husband, and they were ninety-three years together as wife and husband till the time when Hooshang came.

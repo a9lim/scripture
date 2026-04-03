@@ -38,9 +38,11 @@ def main():
         for book in manifest['books']:
             lines.append(f'BOOK: {book["id"]} | {book["name"]}')
 
-            start = book.get('start', 1)
+            ch_start = book.get('start', 1)
+            if ch_start != 1:
+                lines.append(f'START: {ch_start}')
             for i in range(book['chapters']):
-                ch_id = f"{book['id']}-{start + i}"
+                ch_id = f"{book['id']}-{ch_start + i}"
                 ch_path = os.path.join(work_dir, 'chapters', f'{ch_id}.json')
                 with open(ch_path) as f:
                     ch = json.load(f)

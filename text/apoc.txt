@@ -1,6 +1,6 @@
 WORK: apoc | Apocrypha
 BOOK: tobit | Tobit
-CHAPTER: tobit-1
+CHAPTER:
 The book of the words of Tobit, son of Tobiel, the son of Ananiel, the son of Aduel, the son of Gabael, of the seed of Asael, of the tribe of Nephthali;
 Who in the time of Enemessar king of the Assyrians was led captive out of Thisbe, which is at the right hand of that city, which is called properly Nephthali in Galilee above Aser.
 I Tobit have walked all the days of my life in the ways of truth and justice, and I did many almsdeeds to my brethren, and my nation, who came with me to Nineve, into the land of the Assyrians.
@@ -23,7 +23,7 @@ And when one of the Ninevites went and complained of me to the king, that I buri
 Then all my goods were forcibly taken away, neither was there any thing left me, beside my wife Anna and my son Tobias.
 And there passed not five and fifty days, before two of his sons killed him, and they fled into the mountains of Ararath; and Sarchedonus his son reigned in his stead; who appointed over his father’s accounts, and over all his affairs, Achiacharus my brother Anael’s son.
 And Achiacharus entreating for me, I returned to Nineve. Now Achiacharus was cupbearer, and keeper of the signet, and steward, and overseer of the accounts: and Sarchedonus appointed him next unto him: and he was my brother’s son.
-CHAPTER: tobit-2
+CHAPTER:
 Now when I was come home again, and my wife Anna was restored unto me, with my son Tobias, in the feast of Pentecost, which is the holy feast of the seven weeks, there was a good dinner prepared me, in the which I sat down to eat.
 And when I saw abundance of meat, I said to my son, Go and bring what poor man soever thou shalt find out of our brethren, who is mindful of the Lord; and, lo, I tarry for thee.
 But he came again, and said, Father, one of our nation is strangled, and is cast out in the marketplace.
@@ -38,7 +38,7 @@ And my wife Anna did take women’s works to do.
 And when she had sent them home to the owners, they paid her wages, and gave her also besides a kid.
 And when it was in my house, and began to cry, I said unto her, From whence is this kid? is it not stolen? render it to the owners; for it is not lawful to eat any thing that is stolen.
 But she replied upon me, It was given for a gift more than the wages. Howbeit I did not believe her, but bade her render it to the owners: and I was abashed at her. But she replied upon me, Where are thine alms and thy righteous deeds? behold, thou and all thy works are known.
-CHAPTER: tobit-3
+CHAPTER:
 Then I being grieved did weep, and in my sorrow prayed, saying,
 O Lord, thou art just, and all thy works and all thy ways are mercy and truth, and thou judgest truly and justly for ever.
 Remember me, and look on me, punish me not for my sins and ignorances, and the sins of my fathers, who have sinned before thee:
@@ -56,7 +56,7 @@ Thou knowest, Lord, that I am pure from all sin with man,
 And that I never polluted my name, nor the name of my father, in the land of my captivity: I am the only daughter of my father, neither hath he any child to be his heir, neither any near kinsman, nor any son of his alive, to whom I may keep myself for a wife: my seven husbands are already dead; and why should I live? but if it please not thee that I should die, command some regard to be had of me, and pity taken of me, that I hear no more reproach.
 So the prayers of them both were heard before the majesty of the great God.
 And Raphael was sent to heal them both, that is, to scale away the whiteness of Tobit’s eyes, and to give Sara the daughter of Raguel for a wife to Tobias the son of Tobit; and to bind Asmodeus the evil spirit; because she belonged to Tobias by right of inheritance. The selfsame time came Tobit home, and entered into his house, and Sara the daughter of Raguel came down from her upper chamber.
-CHAPTER: tobit-4
+CHAPTER:
 In that day Tobit remembered the money which he had committed to Gabael in Rages of Media,
 And said with himself, I have wished for death; wherefore do I not call for my son Tobias that I may signify to him of the money before I die?
 And when he had called him, he said, My son, when I am dead, bury me; and despise not thy mother, but honour her all the days of thy life, and do that which shall please her, and grieve her not.
@@ -78,7 +78,7 @@ Ask counsel of all that are wise, and despise not any counsel that is profitable
 Bless the Lord thy God alway, and desire of him that thy ways may be directed, and that all thy paths and counsels may prosper: for every nation hath not counsel; but the Lord himself giveth all good things, and he humbleth whom he will, as he will; now therefore, my son, remember my commandments, neither let them be put out of thy mind.
 And now I signify this to they that I committed ten talents to Gabael the son of Gabrias at Rages in Media.
 And fear not, my son, that we are made poor: for thou hast much wealth, if thou fear God, and depart from all sin, and do that which is pleasing in his sight.
-CHAPTER: tobit-5
+CHAPTER:
 Tobias then answered and said, Father, I will do all things which thou hast commanded me:
 But how can I receive the money, seeing I know him not?
 Then he gave him the handwriting, and said unto him, Seek thee a man which may go with thee, whiles I yet live, and I will give him wages: and go and receive the money.
@@ -101,7 +101,7 @@ For that which the Lord hath given us to live with doth suffice us.
 Then said Tobit to her, Take no care, my sister; he shall return in safety, and thine eyes shall see him.
 For the good angel will keep him company, and his journey shall be prosperous, and he shall return safe.
 Then she made an end of weeping.
-CHAPTER: tobit-6
+CHAPTER:
 And as they went on their journey, they came in the evening to the river Tigris, and they lodged there.
 And when the young man went down to wash himself, a fish leaped out of the river, and would have devoured him.
 Then the angel said unto him, Take the fish. And the young man laid hold of the fish, and drew it to land.
@@ -119,7 +119,7 @@ And now I am the only son of my father, and I am afraid, lest if I go in unto he
 Then the angel said unto him, Dost thou not remember the precepts which thy father gave thee, that thou shouldest marry a wife of thine own kindred? wherefore hear me, O my brother; for she shall be given thee to wife; and make thou no reckoning of the evil spirit; for this same night shall she be given thee in marriage.
 And when thou shalt come into the marriage chamber, thou shalt take the ashes of perfume, and shalt lay upon them some of the heart and liver of the fish, and shalt make a smoke with it:
 And the devil shall smell it, and flee away, and never come again any more: but when thou shalt come to her, rise up both of you, and pray to God which is merciful, who will have pity on you, and save you: fear not, for she is appointed unto thee from the beginning; and thou shalt preserve her, and she shall go with thee. Moreover I suppose that she shall bear thee children. Now when Tobias had heard these things, he loved her, and his heart was effectually joined to her.
-CHAPTER: tobit-7
+CHAPTER:
 And when they were come to Ecbatane, they came to the house of Raguel, and Sara met them: and after they had saluted one another, she brought them into the house.
 Then said Raguel to Edna his wife, How like is this young man to Tobit my cousin!
 And Raguel asked them, From whence are ye, brethren? To whom they said, We are of the sons of Nephthalim, which are captives in Nineve.
@@ -138,7 +138,7 @@ Then they began to eat.
 After Raguel called his wife Edna, and said unto her, Sister, prepare another chamber, and bring her in thither.
 Which when she had done as he had bidden her, she brought her thither: and she wept, and she received the tears of her daughter, and said unto her,
 Be of good comfort, my daughter; the Lord of heaven and earth give thee joy for this thy sorrow: be of good comfort, my daughter.
-CHAPTER: tobit-8
+CHAPTER:
 And when they had supped, they brought Tobias in unto her.
 And as he went, he remembered the words of Raphael, and took the ashes of the perfumes, and put the heart and the liver of the fish thereupon, and made a smoke therewith.
 The which smell when the evil spirit had smelled, he fled into the utmost parts of Egypt, and the angel bound him.
@@ -160,14 +160,14 @@ Then Raguel bade his servants to fill the grave.
 And he kept the wedding feast fourteen days.
 For before the days of the marriage were finished, Raguel had said unto him by an oath, that he should not depart till the fourteen days of the marriage were expired;
 And then he should take the half of his goods, and go in safety to his father; and should have the rest when I and my wife be dead.
-CHAPTER: tobit-9
+CHAPTER:
 Then Tobias called Raphael, and said unto him,
 Brother Azarias, take with thee a servant, and two camels, and go to Rages of Media to Gabael, and bring me the money, and bring him to the wedding.
 For Raguel hath sworn that I shall not depart.
 But my father counteth the days; and if I tarry long, he will be very sorry.
 So Raphael went out, and lodged with Gabael, and gave him the handwriting: who brought forth bags which were sealed up, and gave them to him.
 And early in the morning they went forth both together, and came to the wedding: and Tobias blessed his wife.
-CHAPTER: tobit-10
+CHAPTER:
 Now Tobit his father counted every day: and when the days of the journey were expired, and they came not,
 Then Tobit said, Are they detained? or is Gabael dead, and there is no man to give him the money?
 Therefore he was very sorry.
@@ -180,7 +180,7 @@ But Tobias said, No; but let me go to my father.
 Then Raguel arose, and gave him Sara his wife, and half his goods, servants, and cattle, and money:
 And he blessed them, and sent them away, saying, The God of heaven give you a prosperous journey, my children.
 And he said to his daughter, Honour thy father and thy mother in law, which are now thy parents, that I may hear good report of thee. And he kissed her. Edna also said to Tobias, The Lord of heaven restore thee, my dear brother, and grant that I may see thy children of my daughter Sara before I die, that I may rejoice before the Lord: behold, I commit my daughter unto thee of special trust; where are do not entreat her evil.
-CHAPTER: tobit-11
+CHAPTER:
 After these things Tobias went his way, praising God that he had given him a prosperous journey, and blessed Raguel and Edna his wife, and went on his way till they drew near unto Nineve.
 Then Raphael said to Tobias, Thou knowest, brother, how thou didst leave thy father:
 Let us haste before thy wife, and prepare the house.
@@ -200,7 +200,7 @@ Then Tobit went out to meet his daughter in law at the gate of Nineve, rejoicing
 But Tobias gave thanks before them, because God had mercy on him. And when he came near to Sara his daughter in law, he blessed her, saying, Thou art welcome, daughter: God be blessed, which hath brought thee unto us, and blessed be thy father and thy mother. And there was joy among all his brethren which were at Nineve.
 And Achiacharus, and Nasbas his brother’s son, came:
 And Tobias’ wedding was kept seven days with great joy.
-CHAPTER: tobit-12
+CHAPTER:
 Then Tobit called his son Tobias, and said unto him, My son, see that the man have his wages, which went with thee, and thou must give him more.
 And Tobias said unto him, O father, it is no harm to me to give him half of those things which I have brought:
 For he hath brought me again to thee in safety, and made whole my wife, and brought me the money, and likewise healed thee.
@@ -223,7 +223,7 @@ All these days I did appear unto you; but I did neither eat nor drink, but ye di
 Now therefore give God thanks: for I go up to him that sent me; but write all things which are done in a book.
 And when they arose, they saw him no more.
 Then they confessed the great and wonderful works of God, and how the angel of the Lord had appeared unto them.
-CHAPTER: tobit-13
+CHAPTER:
 Then Tobit wrote a prayer of rejoicing, and said, Blessed be God that liveth for ever, and blessed be his kingdom.
 For he doth scourge, and hath mercy: he leadeth down to hell, and bringeth up again: neither is there any that can avoid his hand.
 Confess him before the Gentiles, ye children of Israel: for he hath scattered us among them.
@@ -242,7 +242,7 @@ Let my soul bless God the great King.
 For Jerusalem shall be built up with sapphires and emeralds, and precious stone: thy walls and towers and battlements with pure gold.
 And the streets of Jerusalem shall be paved with beryl and carbuncle and stones of Ophir.
 And all her streets shall say, Alleluia; and they shall praise him, saying, Blessed be God, which hath extolled it for ever.
-CHAPTER: tobit-14
+CHAPTER:
 So Tobit made an end of praising God.
 And he was eight and fifty years old when he lost his sight, which was restored to him after eight years: and he gave alms, and he increased in the fear of the Lord God, and praised him.
 And when he was very aged he called his son, and the sons of his son, and said to him, My son, take thy children; for, behold, I am aged, and am ready to depart out of this life.
@@ -259,7 +259,7 @@ Where he became old with honour, and he buried his father and mother in law hono
 And he died at Ecbatane in Media, being an hundred and seven and twenty years old.
 But before he died he heard of the destruction of Nineve, which was taken by Nabuchodonosor and Assuerus: and before his death he rejoiced over Nineve.
 BOOK: judith | Judith
-CHAPTER: judith-1
+CHAPTER:
 In the twelfth year of the reign of Nabuchodonosor, who reigned in Nineve, the great city; in the days of Arphaxad, which reigned over the Medes in Ecbatane,
 And built in Ecbatane walls round about of stones hewn three cubits broad and six cubits long, and made the height of the wall seventy cubits, and the breadth thereof fifty cubits:
 And set the towers thereof upon the gates of it an hundred cubits high, and the breadth thereof in the foundation threescore cubits:
@@ -276,7 +276,7 @@ Then he marched in battle array with his power against king Arphaxad in the seve
 And became lord of his cities, and came unto Ecbatane, and took the towers, and spoiled the streets thereof, and turned the beauty thereof into shame.
 He took also Arphaxad in the mountains of Ragau, and smote him through with his darts, and destroyed him utterly that day.
 So he returned afterward to Nineve, both he and all his company of sundry nations being a very great multitude of men of war, and there he took his ease, and banqueted, both he and his army, an hundred and twenty days.
-CHAPTER: judith-2
+CHAPTER:
 And in the eighteenth year, the two and twentieth day of the first month, there was talk in the house of Nabuchodonosor king of the Assyrians that he should, as he said, avenge himself on all the earth.
 So he called unto him all his officers, and all his nobles, and communicated with them his secret counsel, and concluded the afflicting of the whole earth out of his own mouth.
 Then they decreed to destroy all flesh, that did not obey the commandment of his mouth.
@@ -305,7 +305,7 @@ And he took the borders of Cilicia, and killed all that resisted him, and came t
 He compassed also all the children of Madian, and burned up their tabernacles, and spoiled their sheepcotes.
 Then he went down into the plain of Damascus in the time of wheat harvest, and burnt up all their fields, and destroyed their flocks and herds, also he spoiled their cities, and utterly wasted their countries, and smote all their young men with the edge of the sword.
 Therefore the fear and dread of him fell upon all the inhabitants of the sea coasts, which were in Sidon and Tyrus, and them that dwelt in Sur and Ocina, and all that dwelt in Jemnaan; and they that dwelt in Azotus and Ascalon feared him greatly.
-CHAPTER: judith-3
+CHAPTER:
 So they sent ambassadors unto him to treat of peace, saying,
 Behold, we the servants of Nabuchodonosor the great king lie before thee; use us as shall be good in thy sight.
 Behold, our houses, and all our places, and all our fields of wheat, and flocks, and herds, and all the lodges of our tents lie before thy face; use them as it pleaseth thee.
@@ -316,7 +316,7 @@ So they and all the country round about received them with garlands, with dances
 Yet he did cast down their frontiers, and cut down their groves: for he had decreed to destroy all the gods of the land, that all nations should worship Nabuchodonosor only, and that all tongues and tribes should call upon him as god.
 Also he came over against Esdraelon near unto Judea, over against the great strait of Judea.
 And he pitched between Geba and Scythopolis, and there he tarried a whole month, that he might gather together all the carriages of his army.
-CHAPTER: judith-4
+CHAPTER:
 Now the children of Israel, that dwelt in Judea, heard all that Holofernes the chief captain of Nabuchodonosor king of the Assyrians had done to the nations, and after what manner he had spoiled all their temples, and brought them to nought.
 Therefore they were exceedingly afraid of him, and were troubled for Jerusalem, and for the temple of the Lord their God:
 For they were newly returned from the captivity, and all the people of Judea were lately gathered together: and the vessels, and the altar, and the house, were sanctified after the profanation.
@@ -332,7 +332,7 @@ And cried to the God of Israel all with one consent earnestly, that he would not
 So God heard their prayers, and looked upon their afflictions: for the people fasted many days in all Judea and Jerusalem before the sanctuary of the Lord Almighty.
 And Joacim the high priest, and all the priests that stood before the Lord, and they which ministered unto the Lord, had their loins girt with sackcloth, and offered the daily burnt offerings, with the vows and free gifts of the people,
 And had ashes on their mitres, and cried unto the Lord with all their power, that he would look upon all the house of Israel graciously.
-CHAPTER: judith-5
+CHAPTER:
 Then was it declared to Holofernes, the chief captain of the army of Assur, that the children of Israel had prepared for war, and had shut up the passages of the hill country, and had fortified all the tops of the high hills and had laid impediments in the champaign countries:
 Wherewith he was very angry, and called all the princes of Moab, and the captains of Ammon, and all the governors of the sea coast,
 And he said unto them, Tell me now, ye sons of Chanaan, who this people is, that dwelleth in the hill country, and what are the cities that they inhabit, and what is the multitude of their army, and wherein is their power and strength, and what king is set over them, or captain of their army;
@@ -357,7 +357,7 @@ But if there be no iniquity in their nation, let my lord now pass by, lest their
 And when Achior had finished these sayings, all the people standing round about the tent murmured, and the chief men of Holofernes, and all that dwelt by the sea side, and in Moab, spake that he should kill him.
 For, say they, we will not be afraid of the face of the children of Israel: for, lo, it is a people that have no strength nor power for a strong battle
 Now therefore, lord Holofernes, we will go up, and they shall be a prey to be devoured of all thine army.
-CHAPTER: judith-6
+CHAPTER:
 And when the tumult of men that were about the council was ceased, Holofernes the chief captain of the army of Assur said unto Achior and all the Moabites before all the company of other nations,
 And who art thou, Achior, and the hirelings of Ephraim, that thou hast prophesied against us as to day, and hast said, that we should not make war with the people of Israel, because their God will defend them? and who is God but Nabuchodonosor?
 He will send his power, and will destroy them from the face of the earth, and their God shall not deliver them: but we his servants will destroy them as one man; for they are not able to sustain the power of our horses.
@@ -379,7 +379,7 @@ Then the people fell down and worshipped God, and cried unto God. saying,
 O Lord God of heaven, behold their pride, and pity the low estate of our nation, and look upon the face of those that are sanctified unto thee this day.
 Then they comforted Achior, and praised him greatly.
 And Ozias took him out of the assembly unto his house, and made a feast to the elders; and they called on the God of Israel all that night for help.
-CHAPTER: judith-7
+CHAPTER:
 The next day Holofernes commanded all his army, and all his people which were come to take his part, that they should remove their camp against Bethulia, to take aforehand the ascents of the hill country, and to make war against the children of Israel.
 Then their strong men removed their camps in that day, and the army of the men of war was an hundred and seventy thousand footmen, and twelve thousand horsemen, beside the baggage, and other men that were afoot among them, a very great multitude.
 And they camped in the valley near unto Bethulia, by the fountain, and they spread themselves in breadth over Dothaim even to Belmaim, and in length from Bethulia unto Cynamon, which is over against Esdraelon.
@@ -412,7 +412,7 @@ Then there was great weeping with one consent in the midst of the assembly; and 
 Then said Ozias to them, Brethren, be of good courage, let us yet endure five days, in the which space the Lord our God may turn his mercy toward us; for he will not forsake us utterly.
 And if these days pass, and there come no help unto us, I will do according to your word.
 And he dispersed the people, every one to their own charge; and they went unto the walls and towers of their city, and sent the women and children into their houses: and they were very low brought in the city.
-CHAPTER: judith-8
+CHAPTER:
 Now at that time Judith heard thereof, which was the daughter of Merari, the son of Ox, the son of Joseph, the son of Ozel, the son of Elcia, the son of Ananias, the son of Gedeon, the son of Raphaim, the son of Acitho, the son of Eliu, the son of Eliab, the son of Nathanael, the son of Samael, the son of Salasadal, the son of Israel.
 And Manasses was her husband, of her tribe and kindred, who died in the barley harvest.
 For as he stood overseeing them that bound sheaves in the field, the heat came upon his head, and he fell on his bed, and died in the city of Bethulia: and they buried him with his fathers in the field between Dothaim and Balamo.
@@ -449,7 +449,7 @@ Ye shall stand this night in the gate, and I will go forth with my waitingwoman:
 But inquire not ye of mine act: for I will not declare it unto you, till the things be finished that I do.
 Then said Ozias and the princes unto her, Go in peace, and the Lord God be before thee, to take vengeance on our enemies.
 So they returned from the tent, and went to their wards.
-CHAPTER: judith-9
+CHAPTER:
 Judith fell upon her face, and put ashes upon her head, and uncovered the sackcloth wherewith she was clothed; and about the time that the incense of that evening was offered in Jerusalem in the house of the Lord Judith cried with a loud voice, and said,
 O Lord God of my father Simeon, to whom thou gavest a sword to take vengeance of the strangers, who loosened the girdle of a maid to defile her, and discovered the thigh to her shame, and polluted her virginity to her reproach; for thou saidst, It shall not be so; and yet they did so:
 Wherefore thou gavest their rulers to be slain, so that they dyed their bed in blood, being deceived, and smotest the servants with their lords, and the lords upon their thrones;
@@ -464,7 +464,7 @@ For thy power standeth not in multitude nor thy might in strong men: for thou ar
 I pray thee, I pray thee, O God of my father, and God of the inheritance of Israel, Lord of the heavens and earth, Creator of the waters, king of every creature, hear thou my prayer:
 And make my speech and deceit to be their wound and stripe, who have purposed cruel things against thy covenant, and thy hallowed house, and against the top of Sion, and against the house of the possession of thy children.
 And make every nation and tribe to acknowledge that thou art the God of all power and might, and that there is none other that protecteth the people of Israel but thou.
-CHAPTER: judith-10
+CHAPTER:
 Now after that she had ceased to cry unto the God of Israel, and had made an end of all these words.
 She rose where she had fallen down, and called her maid, and went down into the house in the which she abode in the sabbath days, and in her feast days,
 And pulled off the sackcloth which she had on, and put off the garments of her widowhood, and washed her body all over with water, and anointed herself with precious ointment, and braided the hair of her head, and put on a tire upon it, and put on her garments of gladness, wherewith she was clad during the life of Manasses her husband.
@@ -488,7 +488,7 @@ And they that lay near Holofernes went out, and all his servants and they brough
 Now Holofernes rested upon his bed under a canopy, which was woven with purple, and gold, and emeralds, and precious stones.
 So they shewed him of her; and he came out before his tent with silver lamps going before him.
 And when Judith was come before him and his servants they all marvelled at the beauty of her countenance; and she fell down upon her face, and did reverence unto him: and his servants took her up.
-CHAPTER: judith-11
+CHAPTER:
 Then said Holofernes unto her, Woman, be of good comfort, fear not in thine heart: for I never hurt any that was willing to serve Nabuchodonosor, the king of all the earth.
 Now therefore, if thy people that dwelleth in the mountains had not set light by me, I would not have lifted up my spear against them: but they have done these things to themselves.
 But now tell me wherefore thou art fled from them, and art come unto us: for thou art come for safeguard; be of good comfort, thou shalt live this night, and hereafter:
@@ -512,7 +512,7 @@ Then her words pleased Holofernes and all his servants; and they marvelled at he
 There is not such a woman from one end of the earth to the other, both for beauty of face, and wisdom of words.
 Likewise Holofernes said unto her. God hath done well to send thee before the people, that strength might be in our hands and destruction upon them that lightly regard my lord.
 And now thou art both beautiful in thy countenance, and witty in thy words: surely if thou do as thou hast spoken thy God shall be my God, and thou shalt dwell in the house of king Nabuchodonosor, and shalt be renowned through the whole earth.
-CHAPTER: judith-12
+CHAPTER:
 Then he commanded to bring her in where his plate was set; and bade that they should prepare for her of his own meats, and that she should drink of his own wine.
 And Judith said, I will not eat thereof, lest there be an offence: but provision shall be made for me of the things that I have brought.
 Then Holofernes said unto her, If thy provision should fail, how should we give thee the like? for there be none with us of thy nation.
@@ -533,7 +533,7 @@ Then said Holofernes unto her, Drink now, and be merry with us.
 So Judith said, I will drink now, my lord, because my life is magnified in me this day more than all the days since I was born.
 Then she took and ate and drank before him what her maid had prepared.
 And Holofernes took great delight in her, and drank more wine than he had drunk at any time in one day since he was born.
-CHAPTER: judith-13
+CHAPTER:
 Now when the evening was come, his servants made haste to depart, and Bagoas shut his tent without, and dismissed the waiters from the presence of his lord; and they went to their beds: for they were all weary, because the feast had been long.
 And Judith was left alone in the tent, and Holofernes lying alone upon his bed: for he was filled with wine.
 Now Judith had commanded her maid to stand without her bedchamber, and to wait for her. coming forth, as she did daily: for she said she would go forth to her prayers, and she spake to Bagoas according to the same purpose.
@@ -554,7 +554,7 @@ Then all the people were wonderfully astonished, and bowed themselves and worshi
 Then said Ozias unto her, O daughter, blessed art thou of the most high God above all the women upon the earth; and blessed be the Lord God, which hath created the heavens and the earth, which hath directed thee to the cutting off of the head of the chief of our enemies.
 For this thy confidence shall not depart from the heart of men, which remember the power of God for ever.
 And God turn these things to thee for a perpetual praise, to visit thee in good things because thou hast not spared thy life for the affliction of our nation, but hast revenged our ruin, walking a straight way before our God. And all the people said; So be it, so be it.
-CHAPTER: judith-14
+CHAPTER:
 Then said Judith unto them, Hear me now, my brethren, and take this head, and hang it upon the highest place of your walls.
 And so soon as the morning shall appear, and the sun shall come forth upon the earth, take ye every one his weapons, and go forth every valiant man out of the city, and set ye a captain over them, as though ye would go down into the field toward the watch of the Assyrians; but go not down.
 Then they shall take their armour, and shall go into their camp, and raise up the captains of the army of Assur, and shall run to the tent of Holofernes, but shall not find him: then fear shall fall upon them, and they shall flee before your face.
@@ -574,7 +574,7 @@ Therefore he cried with a loud voice, with weeping, and sighing, and a mighty cr
 After he went into the tent where Judith lodged: and when he found her not, he leaped out to the people, and cried,
 These slaves have dealt treacherously; one woman of the Hebrews hath brought shame upon the house of king Nabuchodonosor: for, behold, Holofernes lieth upon the ground without a head.
 When the captains of the Assyrians’ army heard these words, they rent their coats and their minds were wonderfully troubled, and there was a cry and a very great noise throughout the camp.
-CHAPTER: judith-15
+CHAPTER:
 And when they that were in the tents heard, they were astonished at the thing that was done.
 And fear and trembling fell upon them, so that there was no man that durst abide in the sight of his neighbour, but rushing out all together, they fled into every way of the plain, and of the hill country.
 They also that had camped in the mountains round about Bethulia fled away. Then the children of Israel, every one that was a warrior among them, rushed out upon them.
@@ -588,7 +588,7 @@ Thou hast done all these things by thine hand: thou hast done much good to Israe
 And the people spoiled the camp the space of thirty days: and they gave unto Judith Holofernes his tent, and all his plate, and beds, and vessels, and all his stuff: and she took it and laid it on her mule; and made ready her carts, and laid them thereon.
 Then all the women of Israel ran together to see her, and blessed her, and made a dance among them for her: and she took branches in her hand, and gave also to the women that were with her.
 And they put a garland of olive upon her and her maid that was with her, and she went before all the people in the dance, leading all the women: and all the men of Israel followed in their armour with garlands, and with songs in their mouths.
-CHAPTER: judith-16
+CHAPTER:
 Then Judith began to sing this thanksgiving in all Israel, and all the people sang after her this song of praise.
 And Judith said, Begin unto my God with timbrels, sing unto my Lord with cymbals: tune unto him a new psalm: exalt him, and call upon his name.
 For God breaketh the battles: for among the camps in the midst of the people he hath delivered me out of the hands of them that persecuted me.
@@ -615,7 +615,8 @@ But she increased more and more in honour, and waxed old in her husband’s hous
 And the house of Israel lamented her seven days: and before she died, she did distribute her goods to all them that were nearest of kindred to Manasses her husband, and to them that were the nearest of her kindred.
 And there was none that made the children of Israel any more afraid in the days of Judith, nor a long time after her death.
 BOOK: add-esth | Additions to Esther
-CHAPTER: add-esth-10
+START: 10
+CHAPTER:
 @ 4
 Then Mardocheus said, God hath done these things.
 For I remember a dream which I saw concerning these matters, and nothing thereof hath failed.
@@ -627,7 +628,7 @@ Therefore hath he made two lots, one for the people of God, and another for all 
 And these two lots came at the hour, and time, and day of judgment, before God among all nations.
 So God remembered his people, and justified his inheritance.
 Therefore those days shall be unto them in the month Adar, the fourteenth and fifteenth day of the same month, with an assembly, and joy, and with gladness before God, according to the generations for ever among his people.
-CHAPTER: add-esth-11
+CHAPTER:
 In the fourth year of the reign of Ptolemeus and Cleopatra, Dositheus, who said he was a priest and Levite, and Ptolemeus his son, brought this epistle of Phurim, which they said was the same, and that Lysimachus the son of Ptolemeus, that was in Jerusalem, had interpreted it.
 In the second year of the reign of Artexerxes the great, in the first day of the month Nisan, Mardocheus the son of Jairus, the son of Semei, the son of Cisai, of the tribe of Benjamin, had a dream;
 Who was a Jew, and dwelt in the city of Susa, a great man, being a servitor in the king’s court.
@@ -640,14 +641,14 @@ And the whole righteous nation was troubled, fearing their own evils, and were r
 Then they cried unto God, and upon their cry, as it were from a little fountain, was made a great flood, even much water.
 The light and the sun rose up, and the lowly were exalted, and devoured the glorious.
 Now when Mardocheus, who had seen this dream, and what God had determined to do, was awake, he bare this dream in mind, and until night by all means was desirous to know it.
-CHAPTER: add-esth-12
+CHAPTER:
 And Mardocheus took his rest in the court with Gabatha and Tharra, the two eunuchs of the king, and keepers of the palace.
 And he heard their devices, and searched out their purposes, and learned that they were about to lay hands upon Artexerxes the king; and so he certified the king of them.
 Then the king examined the two eunuchs, and after that they had confessed it, they were strangled.
 And the king made a record of these things, and Mardocheus also wrote thereof.
 So the king commanded, Mardocheus to serve in the court, and for this he rewarded him.
 Howbeit Aman the son of Amadathus the Agagite, who was in great honour with the king, sought to molest Mardocheus and his people because of the two eunuchs of the king.
-CHAPTER: add-esth-13
+CHAPTER:
 The copy of the letters was this: The great king Artexerxes writeth these things to the princes and governours that are under him from India unto Ethiopia in an hundred and seven and twenty provinces.
 After that I became lord over many nations and had dominion over the whole world, not lifted up with presumption of my authority, but carrying myself always with equity and mildness, I purposed to settle my subjects continually in a quiet life, and making my kingdom peaceable, and open for passage to the utmost coasts, to renew peace, which is desired of all men.
 Now when I asked my counsellors how this might be brought to pass, Aman, that excelled in wisdom among us, and was approved for his constant good will and steadfast fidelity, and had the honour of the second place in the kingdom,
@@ -666,7 +667,7 @@ And now, O Lord God and King, spare thy people: for their eyes are upon us to br
 Despise not the portion, which thou hast delivered out of Egypt for thine own self.
 Hear my prayer, and be merciful unto thine inheritance: turn our sorrow into joy, that we may live, O Lord, and praise thy name: and destroy not the mouths of them that praise thee, O Lord.
 All Israel in like manner cried most earnestly unto the Lord, because their death was before their eyes.
-CHAPTER: add-esth-14
+CHAPTER:
 Queen Esther also, being in fear of death, resorted unto the Lord:
 And laid away her glorious apparel, and put on the garments of anguish and mourning: and instead of precious ointments, she covered her head with ashes and dung, and she humbled her body greatly, and all the places of her joy she filled with her torn hair.
 And she prayed unto the Lord God of Israel, saying, O my Lord, thou only art our King: help me, desolate woman, which have no helper but thee:
@@ -686,7 +687,7 @@ Thou knowest my necessity: for I abhor the sign of my high estate, which is upon
 And that thine handmaid hath not eaten at Aman’s table, and that I have not greatly esteemed the king’s feast, nor drunk the wine of the drink offerings.
 Neither had thine handmaid any joy since the day that I was brought hither to this present, but in thee, O Lord God of Abraham.
 O thou mighty God above all, hear the voice of the forlorn and deliver us out of the hands of the mischievous, and deliver me out of my fear.
-CHAPTER: add-esth-15
+CHAPTER:
 And upon the third day, when she had ended her prayers, she laid away her mourning garments, and put on her glorious apparel.
 And being gloriously adorned, after she had called upon God, who is the beholder and saviour of all things, she took two maids with her:
 And upon the one she leaned, as carrying herself daintily;
@@ -703,7 +704,7 @@ Then said she unto him, I saw thee, my lord, as an angel of God, and my heart wa
 For wonderful art thou, lord, and thy countenance is full of grace.
 And as she was speaking, she fell down for faintness.
 Then the king was troubled, and all his servants comforted her.
-CHAPTER: add-esth-16
+CHAPTER:
 The great king Artexerxes unto the princes and governors of an hundred and seven and twenty provinces from India unto Ethiopia, and unto all our faithful subjects, greeting.
 Many, the more often they are honoured with the great bounty of their gracious princes, the more proud they are waxen,
 And endeavour to hurt not our subjects only, but not being able to bear abundance, do take in hand to practise also against those that do them good:
@@ -729,7 +730,7 @@ Ye shall therefore among your solemn feasts keep it an high day with all feastin
 That both now and hereafter there may be safety to us and the well affected Persians; but to those which do conspire against us a memorial of destruction.
 Therefore every city and country whatsoever, which shall not do according to these things, shall be destroyed without mercy with fire and sword, and shall be made not only unpassable for men, but also most hateful to wild beasts and fowls for ever.
 BOOK: wis | Wisdom of Solomon
-CHAPTER: wis-1
+CHAPTER:
 Love righteousness, ye that be judges of the earth: think of the Lord with a good heart, and in simplicity of heart seek him.
 For he will be found of them that tempt him not; and sheweth himself unto such as do not distrust him.
 For froward thoughts separate from God: and his power, when it is tried, reproveth the unwise.
@@ -746,7 +747,7 @@ For God made not death: neither hath he pleasure in the destruction of the livin
 For he created all things, that they might have their being: and the generations of the world were healthful; and there is no poison of destruction in them, nor the kingdom of death upon the earth:
 For righteousness is immortal:
 But ungodly men with their works and words called it to them: for when they thought to have it their friend, they consumed to nought, and made a covenant with it, because they are worthy to take part with it.
-CHAPTER: wis-2
+CHAPTER:
 For the ungodly said, reasoning with themselves, but not aright, Our life is short and tedious, and in the death of a man there is no remedy: neither was there any man known to have returned from the grave.
 For we are born at all adventure: and we shall be hereafter as though we had never been: for the breath in our nostrils is as smoke, and a little spark in the moving of our heart:
 Which being extinguished, our body shall be turned into ashes, and our spirit shall vanish as the soft air,
@@ -771,7 +772,7 @@ Such things they did imagine, and were deceived: for their own wickedness hath b
 As for the mysteries of God, they knew them not: neither hoped they for the wages of righteousness, nor discerned a reward for blameless souls.
 For God created man to be immortal, and made him to be an image of his own eternity.
 Nevertheless through envy of the devil came death into the world: and they that do hold of his side do find it.
-CHAPTER: wis-3
+CHAPTER:
 But the souls of the righteous are in the hand of God, and there shall no torment touch them.
 In the sight of the unwise they seemed to die: and their departure is taken for misery,
 And their going from us to be utter destruction: but they are in peace.
@@ -791,7 +792,7 @@ As for the children of adulterers, they shall not come to their perfection, and 
 For though they live long, yet shall they be nothing regarded: and their last age shall be without honour.
 Or, if they die quickly, they have no hope, neither comfort in the day of trial.
 For horrible is the end of the unrighteous generation.
-CHAPTER: wis-4
+CHAPTER:
 Better it is to have no children, and to have virtue: for the memorial thereof is immortal: because it is known with God, and with men.
 When it is present, men take example at it; and when it is gone, they desire it: it weareth a crown, and triumpheth for ever, having gotten the victory, striving for undefiled rewards.
 But the multiplying brood of the ungodly shall not thrive, nor take deep rooting from bastard slips, nor lay any fast foundation.
@@ -812,7 +813,7 @@ For they shall see the end of the wise, and shall not understand what God in his
 They shall see him, and despise him; but God shall laugh them to scorn: and they shall hereafter be a vile carcase, and a reproach among the dead for evermore.
 For he shall rend them, and cast them down headlong, that they shall be speechless; and he shall shake them from the foundation; and they shall be utterly laid waste, and be in sorrow; and their memorial shall perish.
 And when they cast up the accounts of their sins, they shall come with fear: and their own iniquities shall convince them to their face.
-CHAPTER: wis-5
+CHAPTER:
 Then shall the righteous man stand in great boldness before the face of such as have afflicted him, and made no account of his labours.
 When they see it, they shall be troubled with terrible fear, and shall be amazed at the strangeness of his salvation, so far beyond all that they looked for.
 And they repenting and groaning for anguish of spirit shall say within themselves, This was he, whom we had sometimes in derision, and a proverb of reproach:
@@ -836,7 +837,7 @@ His severe wrath shall he sharpen for a sword, and the world shall fight with hi
 Then shall the right aiming thunderbolts go abroad; and from the clouds, as from a well drawn bow, shall they fly to the mark.
 And hailstones full of wrath shall be cast as out of a stone bow, and the water of the sea shall rage against them, and the floods shall cruelly drown them.
 Yea, a mighty wind shall stand up against them, and like a storm shall blow them away: thus iniquity shall lay waste the whole earth, and ill dealing shall overthrow the thrones of the mighty.
-CHAPTER: wis-6
+CHAPTER:
 Hear therefore, O ye kings, and understand; learn, ye that be judges of the ends of the earth.
 Give ear, ye that rule the people, and glory in the multitude of nations.
 For power is given you of the Lord, and sovereignty from the Highest, who shall try your works, and search out your counsels.
@@ -862,7 +863,7 @@ As for wisdom, what she is, and how she came up, I will tell you, and will not h
 Neither will I go with consuming envy; for such a man shall have no fellowship with wisdom.
 But the multitude of the wise is the welfare of the world: and a wise king is the upholding of the people.
 Receive therefore instruction through my words, and it shall do you good.
-CHAPTER: wis-7
+CHAPTER:
 I myself also am a mortal man, like to all, and the offspring of him that was first made of the earth,
 And in my mother’s womb was fashioned to be flesh in the time of ten months, being compacted in blood, of the seed of man, and the pleasure that came with sleep.
 And when I was born, I drew in the common air, and fell upon the earth, which is of like nature, and the first voice which I uttered was crying, as all others do.
@@ -893,7 +894,7 @@ And being but one, she can do all things: and remaining in herself, she maketh a
 For God loveth none but him that dwelleth with wisdom.
 For she is more beautiful than the sun, and above all the order of stars: being compared with the light, she is found before it.
 For after this cometh night: but vice shall not prevail against wisdom.
-CHAPTER: wis-8
+CHAPTER:
 Wisdom reacheth from one end to another mightily: and sweetly doth she order all things.
 I loved her, and sought her out from my youth, I desired to make her my spouse, and I was a lover of her beauty.
 In that she is conversant with God, she magnifieth her nobility: yea, the Lord of all things himself loved her.
@@ -915,7 +916,7 @@ And great pleasure it is to have her friendship; and in the works of her hands a
 For I was a witty child, and had a good spirit.
 Yea rather, being good, I came into a body undefiled.
 Nevertheless, when I perceived that I could not otherwise obtain her, except God gave her me; and that was a point of wisdom also to know whose gift she was; I prayed unto the Lord, and besought him, and with my whole heart I said,
-CHAPTER: wis-9
+CHAPTER:
 O God of my fathers, and Lord of mercy, who hast made all things with thy word,
 And ordained man through thy wisdom, that he should have dominion over the creatures which thou hast made,
 And order the world according to equity and righteousness, and execute judgment with an upright heart:
@@ -934,7 +935,7 @@ For the corruptible body presseth down the soul, and the earthy tabernacle weigh
 And hardly do we guess aright at things that are upon earth, and with labour do we find the things that are before us: but the things that are in heaven who hath searched out?
 And thy counsel who hath known, except thou give wisdom, and send thy Holy Spirit from above?
 For so the ways of them which lived on the earth were reformed, and men were taught the things that are pleasing unto thee, and were saved through wisdom.
-CHAPTER: wis-10
+CHAPTER:
 She preserved the first formed father of the world, that was created alone, and brought him out of his fall,
 And gave him power to rule all things.
 But when the unrighteous went away from her in his anger, he perished also in the fury wherewith he murdered his brother.
@@ -956,7 +957,7 @@ Brought them through the Red sea, and led them through much water:
 But she drowned their enemies, and cast them up out of the bottom of the deep.
 Therefore the righteous spoiled the ungodly, and praised thy holy name, O Lord, and magnified with one accord thine hand, that fought for them.
 For wisdom opened the mouth of the dumb, and made the tongues of them that cannot speak eloquent.
-CHAPTER: wis-11
+CHAPTER:
 She prospered their works in the hand of the holy prophet.
 They went through the wilderness that was not inhabited, and pitched tents in places where there lay no way.
 They stood against their enemies, and were avenged of their adversaries.
@@ -983,7 +984,7 @@ But thou hast mercy upon all; for thou canst do all things, and winkest at the s
 For thou lovest all the things that are, and abhorrest nothing which thou hast made: for never wouldest thou have made any thing, if thou hadst hated it.
 And how could any thing have endured, if it had not been thy will? or been preserved, if not called by thee?
 But thou sparest all: for they are thine, O Lord, thou lover of souls.
-CHAPTER: wis-12
+CHAPTER:
 For thine incorruptible Spirit is in all things.
 Therefore chastenest thou them by little and little that offend, and warnest them by putting them in remembrance wherein they have offended, that leaving their wickedness they may believe on thee, O Lord.
 For it was thy will to destroy by the hands of our fathers both those old inhabitants of thy holy land,
@@ -1011,7 +1012,7 @@ For they went astray very far in the ways of error, and held them for gods, whic
 Therefore unto them, as to children without the use of reason, thou didst send a judgment to mock them.
 But they that would not be reformed by that correction, wherein he dallied with them, shall feel a judgment worthy of God.
 For, look, for what things they grudged, when they were punished, that is, for them whom they thought to be gods; now being punished in them, when they saw it, they acknowledged him to be the true God, whom before they denied to know: and therefore came extreme damnation upon them.
-CHAPTER: wis-13
+CHAPTER:
 Surely vain are all men by nature, who are ignorant of God, and could not out of the good things that are seen know him that is: neither by considering the works did they acknowledge the workmaster;
 But deemed either fire, or wind, or the swift air, or the circle of the stars, or the violent water, or the lights of heaven, to be the gods which govern the world.
 With whose beauty if they being delighted took them to be gods; let them know how much better the Lord of them is: for the first author of beauty hath created them.
@@ -1031,7 +1032,7 @@ For he provided for it that it might not fall, knowing that it was unable to hel
 Then maketh he prayer for his goods, for his wife and children, and is not ashamed to speak to that which hath no life.
 For health he calleth upon that which is weak: for life prayeth to that which is dead; for aid humbly beseecheth that which hath least means to help: and for a good journey he asketh of that which cannot set a foot forward:
 And for gaining and getting, and for good success of his hands, asketh ability to do of him, that is most unable to do any thing.
-CHAPTER: wis-14
+CHAPTER:
 Again, one preparing himself to sail, and about to pass through the raging waves, calleth upon a piece of wood more rotten than the vessel that carrieth him.
 For verily desire of gain devised that, and the workman built it by his skill.
 But thy providence, O Father, governeth it: for thou hast made a way in the sea, and a safe path in the waves;
@@ -1063,7 +1064,7 @@ For either they are mad when they be merry, or prophesy lies, or live unjustly, 
 For insomuch as their trust is in idols, which have no life; though they swear falsely, yet they look not to be hurt.
 Howbeit for both causes shall they be justly punished: both because they thought not well of God, giving heed unto idols, and also unjustly swore in deceit, despising holiness.
 For it is not the power of them by whom they swear: but it is the just vengeance of sinners, that punisheth always the offence of the ungodly.
-CHAPTER: wis-15
+CHAPTER:
 But thou, O God, art gracious and true, longsuffering, and in mercy ordering all things,
 For if we sin, we are thine, knowing thy power: but we will not sin, knowing that we are counted thine.
 For to know thee is perfect righteousness: yea, to know thy power is the root of immortality.
@@ -1083,7 +1084,7 @@ For man made them, and he that borrowed his own spirit fashioned them: but no ma
 For being mortal, he worketh a dead thing with wicked hands: for he himself is better than the things which he worshippeth: whereas he lived once, but they never.
 Yea, they worshipped those beasts also that are most hateful: for being compared together, some are worse than others.
 Neither are they beautiful, so much as to be desired in respect of beasts: but they went without the praise of God and his blessing.
-CHAPTER: wis-16
+CHAPTER:
 Therefore by the like were they punished worthily, and by the multitude of beasts tormented.
 Instead of which punishment, dealing graciously with thine own people, thou preparedst for them meat of a strange taste, even quails to stir up their appetite:
 To the end that they, desiring food, might for the ugly sight of the beasts sent among them lothe even that, which they must needs desire; but these, suffering penury for a short space, might be made partakers of a strange taste.
@@ -1113,7 +1114,7 @@ That thy children, O Lord, whom thou lovest, might know, that it is not the grow
 For that which was not destroyed of the fire, being warmed with a little sunbeam, soon melted away:
 That it might be known, that we must prevent the sun to give thee thanks, and at the dayspring pray unto thee.
 For the hope of the unthankful shall melt away as the winter’s hoar frost, and shall run away as unprofitable water.
-CHAPTER: wis-17
+CHAPTER:
 For great are thy judgments, and cannot be expressed: therefore unnurtured souls have erred.
 For when unrighteous men thought to oppress the holy nation; they being shut up in their houses, the prisoners of darkness, and fettered with the bonds of a long night, lay there exiled from the eternal providence.
 For while they supposed to lie hid in their secret sins, they were scattered under a dark veil of forgetfulness, being horribly astonished, and troubled with strange apparitions.
@@ -1135,7 +1136,7 @@ Whether it were a whistling wind, or a melodious noise of birds among the spread
 Or a terrible sound of stones cast down, or a running that could not be seen of skipping beasts, or a roaring voice of most savage wild beasts, or a rebounding echo from the hollow mountains; these things made them to swoon for fear.
 For the whole world shined with clear light, and none were hindered in their labour:
 Over them only was spread an heavy night, an image of that darkness which should afterward receive them: but yet were they unto themselves more grievous than the darkness.
-CHAPTER: wis-18
+CHAPTER:
 Nevertheless thy saints had a very great light, whose voice they hearing, and not seeing their shape, because they also had not suffered the same things, they counted them happy.
 But for that they did not hurt them now, of whom they had been wronged before, they thanked them, and besought them pardon for that they had been enemies.
 Instead whereof thou gavest them a burning pillar of fire, both to be a guide of the unknown journey, and an harmless sun to entertain them honourably.
@@ -1161,7 +1162,7 @@ So he overcame the destroyer, not with strength of body, nor force of arms, but 
 For when the dead were now fallen down by heaps one upon another, standing between, he stayed the wrath, and parted the way to the living.
 For in the long garment was the whole world, and in the four rows of the stones was the glory of the fathers graven, and thy Majesty upon the diadem of his head.
 Unto these the destroyer gave place, and was afraid of them: for it was enough that they only tasted of the wrath.
-CHAPTER: wis-19
+CHAPTER:
 As for the ungodly, wrath came upon them without mercy unto the end: for he knew before what they would do;
 How that having given them leave to depart, and sent them hastily away, they would repent and pursue them.
 For whilst they were yet mourning and making lamentation at the graves of the dead, they added another foolish device, and pursued them as fugitives, whom they had entreated to be gone.
@@ -1185,7 +1186,7 @@ The fire had power in the water, forgetting his own virtue: and the water forgat
 On the other side, the flames wasted not the flesh of the corruptible living things, though they walked therein; neither melted they the icy kind of heavenly meat that was of nature apt to melt.
 For in all things, O Lord, thou didst magnify thy people, and glorify them, neither didst thou lightly regard them: but didst assist them in every time and place.
 BOOK: sir | Sirach
-CHAPTER: sir-1
+CHAPTER:
 All wisdom cometh from the Lord, and is with him for ever.
 Who can number the sand of the sea, and the drops of rain, and the days of eternity?
 Who can find out the height of heaven, and the breadth of the earth, and the deep, and wisdom?
@@ -1216,7 +1217,7 @@ For the fear of the Lord is wisdom and instruction: and faith and meekness are h
 Distrust not the fear of the Lord when thou art poor: and come not unto him with a double heart.
 Be not an hypocrite in the sight of men, and take good heed what thou speakest.
 Exalt not thyself, lest thou fall, and bring dishonour upon thy soul, and so God discover thy secrets, and cast thee down in the midst of the congregation, because thou camest not in truth to the fear of the Lord, but thy heart is full of deceit.
-CHAPTER: sir-2
+CHAPTER:
 My son, if thou come to serve the Lord, prepare thy soul for temptation.
 Set thy heart aright, and constantly endure, and make not haste in time of trouble.
 Cleave unto him, and depart not away, that thou mayest be increased at thy last end.
@@ -1235,7 +1236,7 @@ They that fear the Lord will not disobey his Word; and they that love him will k
 They that fear the Lord will seek that which is well, pleasing unto him; and they that love him shall be filled with the law.
 They that fear the Lord will prepare their hearts, and humble their souls in his sight,
 Saying, We will fall into the hands of the Lord, and not into the hands of men: for as his majesty is, so is his mercy.
-CHAPTER: sir-3
+CHAPTER:
 Hear me your father, O children, and do thereafter, that ye may be safe.
 For the Lord hath given the father honour over the children, and hath confirmed the authority of the mother over the sons.
 Whoso honoureth his father maketh an atonement for his sins:
@@ -1267,7 +1268,7 @@ In the punishment of the proud there is no remedy; for the plant of wickedness h
 The heart of the prudent will understand a parable; and an attentive ear is the desire of a wise man.
 Water will quench a flaming fire; and alms maketh an atonement for sins.
 And he that requiteth good turns is mindful of that which may come hereafter; and when he falleth, he shall find a stay.
-CHAPTER: sir-4
+CHAPTER:
 My son, defraud not the poor of his living, and make not the needy eyes to wait long.
 Make not an hungry soul sorrowful; neither provoke a man in his distress.
 Add not more trouble to an heart that is vexed; and defer not to give to him that is in need.
@@ -1299,7 +1300,7 @@ Strive for the truth unto death, and the Lord shall fight for thee.
 Be not hasty in thy tongue, and in thy deeds slack and remiss.
 Be not as a lion in thy house, nor frantick among thy servants.
 Let not thine hand be stretched out to receive, and shut when thou shouldest repay.
-CHAPTER: sir-5
+CHAPTER:
 Set thy heart upon thy goods; and say not, I have enough for my life.
 Follow not thine own mind and thy strength, to walk in the ways of thy heart:
 And say not, Who shall controul me for my works? for the Lord will surely revenge thy pride.
@@ -1315,7 +1316,7 @@ If thou hast understanding, answer thy neighbour; if not, lay thy hand upon thy 
 Honour and shame is in talk: and the tongue of man is his fall.
 Be not called a whisperer, and lie not in wait with thy tongue: for a foul shame is upon the thief, and an evil condemnation upon the double tongue.
 Be not ignorant of any thing in a great matter or a small.
-CHAPTER: sir-6
+CHAPTER:
 Instead of a friend become not an enemy; for thereby thou shalt inherit an ill name, shame, and reproach: even so shall a sinner that hath a double tongue.
 Extol not thyself in the counsel of thine own heart; that thy soul be not torn in pieces as a bull straying alone.
 Thou shalt eat up thy leaves, and lose thy fruit, and leave thyself as a dry tree.
@@ -1353,7 +1354,7 @@ Stand in the multitude of the elders; and cleave unto him that is wise.
 Be willing to hear every godly discourse; and let not the parables of understanding escape thee.
 And if thou seest a man of understanding, get thee betimes unto him, and let thy foot wear the steps of his door.
 Let thy mind be upon the ordinances of the Lord and meditate continually in his commandments: he shall establish thine heart, and give thee wisdom at thine owns desire.
-CHAPTER: sir-7
+CHAPTER:
 Do no evil, so shall no harm come unto thee.
 Depart from the unjust, and iniquity shall turn away from thee.
 My son, sow not upon the furrows of unrighteousness, and thou shalt not reap them sevenfold.
@@ -1390,7 +1391,7 @@ A gift hath grace in the sight of every man living; and for the dead detain it n
 Fail not to be with them that weep, and mourn with them that mourn.
 Be not slow to visit the sick: for that shall make thee to be beloved.
 Whatsoever thou takest in hand, remember the end, and thou shalt never do amiss.
-CHAPTER: sir-8
+CHAPTER:
 Strive not with a mighty man’ lest thou fall into his hands.
 Be not at variance with a rich man, lest he overweigh thee: for gold hath destroyed many, and perverted the hearts of kings.
 Strive not with a man that is full of tongue, and heap not wood upon his fire.
@@ -1410,7 +1411,7 @@ Strive not with an angry man, and go not with him into a solitary place: for blo
 Consult not with a fool; for he cannot keep counsel.
 Do no secret thing before a stranger; for thou knowest not what he will bring forth.
 Open not thine heart to every man, lest he requite thee with a shrewd turn.
-CHAPTER: sir-9
+CHAPTER:
 Be not jealous over the wife of thy bosom, and teach her not an evil lesson against thyself.
 Give not thy soul unto a woman to set her foot upon thy substance.
 Meet not with an harlot, lest thou fall into her snares.
@@ -1429,7 +1430,7 @@ Let thy talk be with the wise, and all thy communication in the law of the most 
 And let just men eat and drink with thee; and let thy glorying be in the fear of the Lord.
 For the hand of the artificer the work shall be commended: and the wise ruler of the people for his speech.
 A man of an ill tongue is dangerous in his city; and he that is rash in his talk shall be hated.
-CHAPTER: sir-10
+CHAPTER:
 A wise judge will instruct his people; and the government of a prudent man is well ordered.
 As the judge of the people is himself, so are his officers; and what manner of man the ruler of the city is, such are all they that dwell therein.
 An unwise king destroyeth his people; but through the prudence of them which are in authority the city shall be inhabited.
@@ -1461,7 +1462,7 @@ My son, glorify thy soul in meekness, and give it honour according to the dignit
 Who will justify him that sinneth against his own soul? and who will honour him that dishonoureth his own life?
 The poor man is honoured for his skill, and the rich man is honoured for his riches.
 He that is honoured in poverty, how much more in riches? and he that is dishonourable in riches, how much more in poverty?
-CHAPTER: sir-11
+CHAPTER:
 Wisdom lifteth up the head of him that is of low degree, and maketh him to sit among great men.
 Commend not a man for his beauty; neither abhor a man for his outward appearance.
 The bee is little among such as fly; but her fruit is the chief of sweet things.
@@ -1496,7 +1497,7 @@ For he lieth in wait, and turneth good into evil, and in things worthy praise wi
 Of a spark of fire a heap of coals is kindled: and a sinful man layeth wait for blood.
 Take heed of a mischievous man, for he worketh wickedness; lest he bring upon thee a perpetual blot.
 Receive a stranger into thine house, and he will disturb thee, and turn thee out of thine own.
-CHAPTER: sir-12
+CHAPTER:
 When thou wilt do good know to whom thou doest it; so shalt thou be thanked for thy benefits.
 Do good to the godly man, and thou shalt find a recompence; and if not from him, yet from the most High.
 There can no good come to him that is always occupied in evil, nor to him that giveth no alms.
@@ -1515,7 +1516,7 @@ For a while he will abide with thee, but if thou begin to fall, he will not tarr
 An enemy speaketh sweetly with his lips, but in his heart he imagineth how to throw thee into a pit: he will weep with his eyes, but if he find opportunity, he will not be satisfied with blood.
 If adversity come upon thee, thou shalt find him there first; and though he pretend to help thee, yet shall he undermine thee.
 He will shake his head, and clap his hands, and whisper much, and change his countenance.
-CHAPTER: sir-13
+CHAPTER:
 He that toucheth pitch shall be defiled therewith; and he that hath fellowship with a proud man shall be like unto him.
 Burden not thyself above thy power while thou livest; and have no fellowship with one that is mightier and richer than thyself: for how agree the kettle and the earthen pot together? for if the one be smitten against the other, it shall be broken.
 The rich man hath done wrong, and yet he threateneth withal: the poor is wronged, and he must entreat also.
@@ -1542,7 +1543,7 @@ When a rich man speaketh, every man holdeth his tongue, and, look, what he saith
 Riches are good unto him that hath no sin, and poverty is evil in the mouth of the ungodly.
 The heart of a man changeth his countenance, whether it be for good or evil: and a merry heart maketh a cheerful countenance.
 A cheerful countenance is a token of a heart that is in prosperity; and the finding out of parables is a wearisome labour of the mind.
-CHAPTER: sir-14
+CHAPTER:
 Blessed is the man that hath not slipped with his mouth, and is not pricked with the multitude of sins.
 Blessed is he whose conscience hath not condemned him, and who is not fallen from his hope in the Lord.
 Riches are not comely for a niggard: and what should an envious man do with money?
@@ -1570,7 +1571,7 @@ He that doth lodge near her house shall also fasten a pin in her walls.
 He shall pitch his tent nigh unto her, and shall lodge in a lodging where good things are.
 He shall set his children under her shelter, and shall lodge under her branches.
 By her he shall be covered from heat, and in her glory shall he dwell.
-CHAPTER: sir-15
+CHAPTER:
 He that feareth the Lord will do good, and he that hath the knowledge of the law shall obtain her.
 And as a mother shall she meet him, and receive him as a wife married of a virgin.
 With the bread of understanding shall she feed him, and give him the water of wisdom to drink.
@@ -1591,7 +1592,7 @@ Before man is life and death; and whether him liketh shall be given him.
 For the wisdom of the Lord is great, and he is mighty in power, and beholdeth all things:
 And his eyes are upon them that fear him, and he knoweth every work of man.
 He hath commanded no man to do wickedly, neither hath he given any man licence to sin.
-CHAPTER: sir-16
+CHAPTER:
 Desire not a multitude of unprofitable children, neither delight in ungodly sons.
 Though they multiply, rejoice not in them, except the fear of the Lord be with them.
 Trust not thou in their life, neither respect their multitude: for one that is just is better than a thousand; and better it is to die without children, than to have them that are ungodly.
@@ -1622,7 +1623,7 @@ He garnished his works for ever, and in his hand are the chief of them unto all 
 None of them hindereth another, and they shall never disobey his word.
 After this the Lord looked upon the earth, and filled it with his blessings.
 With all manner of living things hath he covered the face thereof; and they shall return into it again.
-CHAPTER: sir-17
+CHAPTER:
 The Lord created man of the earth, and turned him into it again.
 He gave them few days, and a short time, and power also over the things therein.
 He endued them with strength by themselves, and made them according to his image,
@@ -1655,7 +1656,7 @@ How great is the lovingkindness of the Lord our God, and his compassion unto suc
 For all things cannot be in men, because the son of man is not immortal.
 What is brighter than the sun? yet the light thereof faileth; and flesh and blood will imagine evil.
 He vieweth the power of the height of heaven; and all men are but earth and ashes.
-CHAPTER: sir-18
+CHAPTER:
 He that liveth for ever Hath created all things in general.
 The Lord only is righteous, and there is none other but he,
 Who governeth the world with the palm of his hand, and all things obey his will: for he is the King of all, by his power dividing holy things among them from profane.
@@ -1689,7 +1690,7 @@ Go not after thy lusts, but refrain thyself from thine appetites.
 If thou givest thy soul the desires that please her, she will make thee a laughingstock to thine enemies that malign thee.
 Take not pleasure in much good cheer, neither be tied to the expence thereof.
 Be not made a beggar by banqueting upon borrowing, when thou hast nothing in thy purse: for thou shalt lie in wait for thine own life, and be talked on.
-CHAPTER: sir-19
+CHAPTER:
 A labouring man that is given to drunkenness shall not be rich: and he that contemneth small things shall fall by little and little.
 Wine and women will make men of understanding to fall away: and he that cleaveth to harlots will become impudent.
 Moths and worms shall have him to heritage, and a bold man shall be taken away.
@@ -1720,7 +1721,7 @@ Casting down his countenance, and making as if he heard not: where he is not kno
 And if for want of power he be hindered from sinning, yet when he findeth opportunity he will do evil.
 A man may be known by his look, and one that hath understanding by his countenance, when thou meetest him.
 A man’s attire, and excessive laughter, and gait, shew what he is.
-CHAPTER: sir-20
+CHAPTER:
 There is a reproof that is not comely: again, some man holdeth his tongue, and he is wise.
 It is much better to reprove, than to be angry secretly: and he that confesseth his fault shall be preserved from hurt.
 How good is it, when thou art reproved, to shew repentance! for so shalt thou escape wilful sin.
@@ -1753,7 +1754,7 @@ Presents and gifts blind the eyes of the wise, and stop up his mouth that he can
 Wisdom that is hid, and treasure that is hoarded up, what profit is in them both?
 Better is he that hideth his folly than a man that hideth his wisdom.
 Necessary patience in seeking the Lord is better than he that leadeth his life without a guide.
-CHAPTER: sir-21
+CHAPTER:
 My son, hast thou sinned? do so no more, but ask pardon for thy former sins.
 Flee from sin as from the face of a serpent: for if thou comest too near it, it will bite thee: the teeth thereof are as the teeth of a lion, slaying the souls of men.
 All iniquity is as a two edged sword, the wounds whereof cannot be healed.
@@ -1782,7 +1783,7 @@ The lips of talkers will be telling such things as pertain not unto them: but th
 The heart of fools is in their mouth: but the mouth of the wise is in their heart.
 When the ungodly curseth Satan, he curseth his own soul.
 A whisperer defileth his own soul, and is hated wheresoever he dwelleth.
-CHAPTER: sir-22
+CHAPTER:
 A slothful man is compared to a filthy stone, and every one will hiss him out to his disgrace.
 A slothful man is compared to the filth of a dunghill: every man that takes it up will shake his hand.
 An evilnurtured man is the dishonour of his father that begat him: and a foolish daughter is born to his loss.
@@ -1810,7 +1811,7 @@ As the vapour and smoke of a furnace goeth before the fire; so reviling before b
 I will not be ashamed to defend a friend; neither will I hide myself from him.
 And if any evil happen unto me by him, every one that heareth it will beware of him.
 Who shall set a watch before my mouth, and a seal of wisdom upon my lips, that I fall not suddenly by them, and that my tongue destroy me not?
-CHAPTER: sir-23
+CHAPTER:
 O Lord, Father and Governor of all my whole life, leave me not to their counsels, and let me not fall by them.
 Who will set scourges over my thoughts, and the discipline of wisdom over mine heart? that they spare me not for mine ignorances, and it pass not by my sins:
 Lest mine ignorances increase, and my sins abound to my destruction, and I fall before mine adversaries, and mine enemy rejoice over me, whose hope is far from thy mercy.
@@ -1839,7 +1840,7 @@ Her children shall not take root, and her branches shall bring forth no fruit.
 She shall leave her memory to be cursed, and her reproach shall not be blotted out.
 And they that remain shall know that there is nothing better than the fear of the Lord, and that there is nothing sweeter than to take heed unto the commandments of the Lord.
 It is great glory to follow the Lord, and to be received of him is long life.
-CHAPTER: sir-24
+CHAPTER:
 Wisdom shall praise herself, and shall glory in the midst of her people.
 In the congregation of the most High shall she open her mouth, and triumph before his power.
 I came out of the mouth of the most High, and covered the earth as a cloud.
@@ -1874,7 +1875,7 @@ I said, I will water my best garden, and will water abundantly my garden bed: an
 I will yet make doctrine to shine as the morning, and will send forth her light afar off.
 I will yet pour out doctrine as prophecy, and leave it to all ages for ever.
 Behold that I have not laboured for myself only, but for all them that seek wisdom.
-CHAPTER: sir-25
+CHAPTER:
 In three things I was beautified, and stood up beautiful both before God and men: the unity of brethren, the love of neighbours, a man and a wife that agree together.
 Three sorts of men my soul hateth, and I am greatly offended at their life: a poor man that is proud, a rich man that is a liar, and an old adulterer that doateth.
 If thou hast gathered nothing in thy youth, how canst thou find any thing in thine age?
@@ -1901,7 +1902,7 @@ A wicked woman abateth the courage, maketh an heavy countenance and a wounded he
 Of the woman came the beginning of sin, and through her we all die.
 Give the water no passage; neither a wicked woman liberty to gad abroad.
 If she go not as thou wouldest have her, cut her off from thy flesh, and give her a bill of divorce, and let her go.
-CHAPTER: sir-26
+CHAPTER:
 Blessed is the man that hath a virtuous wife, for the number of his days shall be double.
 A virtuous woman rejoiceth her husband, and he shall fulfil the years of his life in peace.
 A good wife is a good portion, which shall be given in the portion of them that fear the Lord.
@@ -1931,7 +1932,7 @@ A woman that honoureth her husband shall be judged wise of all; but she that dis
 A loud crying woman and a scold shall be sought out to drive away the enemies.
 There be two things that grieve my heart; and the third maketh me angry: a man of war that suffereth poverty; and men of understanding that are not set by; and one that returneth from righteousness to sin; the Lord prepareth such an one for the sword.
 A merchant shall hardly keep himself from doing wrong; and an huckster shall not be freed from sin.
-CHAPTER: sir-27
+CHAPTER:
 Many have sinned for a small matter; and he that seeketh for abundance will turn his eyes away.
 As a nail sticketh fast between the joinings of the stones; so doth sin stick close between buying and selling.
 Unless a man hold himself diligently in the fear of the Lord, his house shall soon be overthrown.
@@ -1962,7 +1963,7 @@ He that worketh mischief, it shall fall upon him, and he shall not know whence i
 Mockery and reproach are from the proud; but vengeance, as a lion, shall lie in wait for them.
 They that rejoice at the fall of the righteous shall be taken in the snare; and anguish shall consume them before they die.
 Malice and wrath, even these are abominations; and the sinful man shall have them both.
-CHAPTER: sir-28
+CHAPTER:
 He that revengeth shall find vengeance from the Lord, and he will surely keep his sins in remembrance.
 Forgive thy neighbour the hurt that he hath done unto thee, so shall thy sins also be forgiven when thou prayest.
 One man beareth hatred against another, and doth he seek pardon from the Lord?
@@ -1989,7 +1990,7 @@ Such as forsake the Lord shall fall into it; and it shall burn in them, and not 
 Look that thou hedge thy possession about with thorns, and bind up thy silver and gold,
 And weigh thy words in a balance, and make a door and bar for thy mouth.
 Beware thou slide not by it, lest thou fall before him that lieth in wait.
-CHAPTER: sir-29
+CHAPTER:
 He that is merciful will lend unto his neighbour; and he that strengtheneth his hand keepeth the commandments.
 Lend to thy neighbour in time of his need, and pay thou thy neighbour again in due season.
 Keep thy word, and deal faithfully with him, and thou shalt always find the thing that is necessary for thee.
@@ -2018,7 +2019,7 @@ Thou shalt entertain, and feast, and have no thanks: moreover thou shalt hear bi
 Come, thou stranger, and furnish a table, and feed me of that thou hast ready.
 Give place, thou stranger, to an honourable man; my brother cometh to be lodged, and I have need of mine house.
 These things are grievous to a man of understanding; the upbraiding of houseroom, and reproaching of the lender.
-CHAPTER: sir-30
+CHAPTER:
 He that loveth his son causeth him oft to feel the rod, that he may have joy of him in the end.
 He that chastiseth his son shall have joy in him, and shall rejoice of him among his acquaintance.
 He that teacheth his son grieveth the enemy: and before his friends he shall rejoice of him.
@@ -2044,7 +2045,7 @@ The gladness of the heart is the life of man, and the joyfulness of a man prolon
 Love thine own soul, and comfort thy heart, remove sorrow far from thee: for sorrow hath killed many, and there is no profit therein.
 Envy and wrath shorten the life, and carefulness bringeth age before the time.
 A cheerful and good heart will have a care of his meat and diet.
-CHAPTER: sir-31
+CHAPTER:
 Watching for riches consumeth the flesh, and the care thereof driveth away sleep.
 Watching care will not let a man slumber, as a sore disease breaketh sleep,
 The rich hath great labour in gathering riches together; and when he resteth, he is filled with his delicates.
@@ -2076,7 +2077,7 @@ Wine measurably drunk and in season bringeth gladness of the heart, and cheerful
 But wine drunken with excess maketh bitterness of the mind, with brawling and quarrelling.
 Drunkenness increaseth the rage of a fool till he offend: it diminisheth strength, and maketh wounds.
 Rebuke not thy neighbour at the wine, and despise him not in his mirth: give him no despiteful words, and press not upon him with urging him to drink.
-CHAPTER: sir-32
+CHAPTER:
 If thou be made the master of a feast, lift not thyself up, but be among them as one of the rest; take diligent care for them, and so sit down.
 And when thou hast done all thy office, take thy place, that thou mayest be merry with them, and receive a crown for thy well ordering of the feast.
 Speak, thou that art the elder, for it becometh thee, but with sound judgment; and hinder not musick.
@@ -2101,7 +2102,7 @@ Be not confident in a plain way.
 And beware of thine own children.
 In every good work trust thy own soul; for this is the keeping of the commandments.
 He that believeth in the Lord taketh heed to the commandment; and he that trusteth in him shall fare never the worse.
-CHAPTER: sir-33
+CHAPTER:
 There shall no evil happen unto him that feareth the Lord; but in temptation even again he will deliver him.
 A wise man hateth not the law; but he that is an hypocrite therein is as a ship in a storm.
 A man of understanding trusteth in the law; and the law is faithful unto him, as an oracle.
@@ -2133,7 +2134,7 @@ Set him to work, as is fit for him: if he be not obedient, put on more heavy fet
 But be not excessive toward any; and without discretion do nothing.
 If thou have a servant, let him be unto thee as thyself, because thou hast bought him with a price.
 If thou have a servant, entreat him as a brother: for thou hast need of him, as of thine own soul: if thou entreat him evil, and he run from thee, which way wilt thou go to seek him?
-CHAPTER: sir-34
+CHAPTER:
 The hopes of a man void of understanding are vain and false: and dreams lift up fools.
 Whoso regardeth dreams is like him that catcheth at a shadow, and followeth after the wind.
 The vision of dreams is the resemblance of one thing to another, even as the likeness of a face to a face.
@@ -2160,7 +2161,7 @@ When one buildeth, and another pulleth down, what profit have they then but labo
 When one prayeth, and another curseth, whose voice will the Lord hear?
 He that washeth himself after the touching of a dead body, if he touch it again, what availeth his washing?
 So is it with a man that fasteth for his sins, and goeth again, and doeth the same: who will hear his prayer? or what doth his humbling profit him?
-CHAPTER: sir-35
+CHAPTER:
 He that keepeth the law bringeth offerings enough: he that taketh heed to the commandment offereth a peace offering.
 He that requiteth a goodturn offereth fine flour; and he that giveth alms sacrificeth praise.
 To depart from wickedness is a thing pleasing to the Lord; and to forsake unrighteousness is a propitiation.
@@ -2181,7 +2182,7 @@ The prayer of the humble pierceth the clouds: and till it come nigh, he will not
 For the Lord will not be slack, neither will the Mighty be patient toward them, till he have smitten in sunder the loins of the unmerciful, and repayed vengeance to the heathen; till he have taken away the multitude of the proud, and broken the sceptre of the unrighteous;
 Till he have rendered to every man according to his deeds, and to the works of men according to their devices; till he have judged the cause of his people, and made them to rejoice in his mercy.
 Mercy is seasonable in the time of affliction, as clouds of rain in the time of drought.
-CHAPTER: sir-36
+CHAPTER:
 Have mercy upon us, O Lord God of all, and behold us:
 And send thy fear upon all the nations that seek not after thee.
 Lift up thy hand against the strange nations, and let them see thy power.
@@ -2208,7 +2209,7 @@ If there be kindness, meekness, and comfort, in her tongue, then is not her husb
 He that getteth a wife beginneth a possession, a help like unto himself, and a pillar of rest.
 Where no hedge is, there the possession is spoiled: and he that hath no wife will wander up and down mourning.
 Who will trust a thief well appointed, that skippeth from city to city? so who will believe a man that hath no house, and lodgeth wheresoever the night taketh him?
-CHAPTER: sir-37
+CHAPTER:
 Every friend saith, I am his friend also: but there is a friend, which is only a friend in name.
 Is it not a grief unto death, when a companion and friend is turned to an enemy?
 O wicked imagination, whence camest thou in to cover the earth with deceit?
@@ -2240,7 +2241,7 @@ For all things are not profitable for all men, neither hath every soul pleasure 
 Be not unsatiable in any dainty thing, nor too greedy upon meats:
 For excess of meats bringeth sickness, and surfeiting will turn into choler.
 By surfeiting have many perished; but he that taketh heed prolongeth his life.
-CHAPTER: sir-38
+CHAPTER:
 Honour a physician with the honour due unto him for the uses which ye may have of him: for the Lord hath created him.
 For of the most High cometh healing, and he shall receive honour of the king.
 The skill of the physician shall lift up his head: and in the sight of great men he shall be in admiration.
@@ -2275,7 +2276,7 @@ All these trust to their hands: and every one is wise in his work.
 Without these cannot a city be inhabited: and they shall not dwell where they will, nor go up and down:
 They shall not be sought for in publick counsel, nor sit high in the congregation: they shall not sit on the judges’ seat, nor understand the sentence of judgment: they cannot declare justice and judgment; and they shall not be found where parables are spoken.
 But they will maintain the state of the world, and all their desire is in the work of their craft.
-CHAPTER: sir-39
+CHAPTER:
 But he that giveth his mind to the law of the most High, and is occupied in the meditation thereof, will seek out the wisdom of all the ancient, and be occupied in prophecies.
 He will keep the sayings of the renowned men: and where subtil parables are, he will be there also.
 He will seek out the secrets of grave sentences, and be conversant in dark parables.
@@ -2311,7 +2312,7 @@ Therefore from the beginning I was resolved, and thought upon these things, and 
 All the works of the Lord are good: and he will give every needful thing in due season.
 So that a man cannot say, This is worse than that: for in time they shall all be well approved.
 And therefore praise ye the Lord with the whole heart and mouth, and bless the name of the Lord.
-CHAPTER: sir-40
+CHAPTER:
 Great travail is created for every man, and an heavy yoke is upon the sons of Adam, from the day that they go out of their mother’s womb, till the day that they return to the mother of all things.
 Their imagination of things to come, and the day of death, trouble their thoughts, and cause fear of heart;
 From him that sitteth on a throne of glory, unto him that is humbled in earth and ashes;
@@ -2342,7 +2343,7 @@ The fear of the Lord is a fruitful garden, and covereth him above all glory.
 My son, lead not a beggar’s life; for better it is to die than to beg.
 The life of him that dependeth on another man’s table is not to be counted for a life; for he polluteth himself with other men’s meat: but a wise man well nurtured will beware thereof.
 Begging is sweet in the mouth of the shameless: but in his belly there shall burn a fire.
-CHAPTER: sir-41
+CHAPTER:
 O death, how bitter is the remembrance of thee to a man that liveth at rest in his possessions, unto the man that hath nothing to vex him, and that hath prosperity in all things: yea, unto him that is yet able to receive meat!
 O death, acceptable is thy sentence unto the needy, and unto him whose strength faileth, that is now in the last age, and is vexed with all things, and to him that despaireth, and hath lost patience!
 Fear not the sentence of death, remember them that have been before thee, and that come after; for this is the sentence of the Lord over all flesh.
@@ -2367,7 +2368,7 @@ And to turn away thy face from thy kinsman; or to take away a portion or a gift;
 Or to be overbusy with his maid, and come not near her bed; or of upbraiding speeches before friends; and after thou hast given, upbraid not;
 Or of iterating and speaking again that which thou hast heard; and of revealing of secrets.
 So shalt thou be truly shamefaced and find favour before all men.
-CHAPTER: sir-42
+CHAPTER:
 Of these things be not thou ashamed, and accept no person to sin thereby:
 Of the law of the most High, and his covenant; and of judgment to justify the ungodly;
 Of reckoning with thy partners and travellers; or of the gift of the heritage of friends;
@@ -2393,7 +2394,7 @@ Oh how desirable are all his works! and that a man may see even to a spark.
 All these things live and remain for ever for all uses, and they are all obedient.
 All things are double one against another: and he hath made nothing imperfect.
 One thing establisheth the good or another: and who shall be filled with beholding his glory?
-CHAPTER: sir-43
+CHAPTER:
 The pride of the height, the clear firmament, the beauty of heaven, with his glorious shew;
 The sun when it appeareth, declaring at his rising a marvellous instrument, the work of the most High:
 At noon it parcheth the country, and who can abide the burning heat thereof?
@@ -2427,7 +2428,7 @@ When ye glorify the Lord, exalt him as much as ye can; for even yet will he far 
 Who hath seen him, that he might tell us? and who can magnify him as he is?
 There are yet hid greater things than these be, for we have seen but a few of his works.
 For the Lord hath made all things; and to the godly hath he given wisdom.
-CHAPTER: sir-44
+CHAPTER:
 Let us now praise famous men, and our fathers that begat us.
 The Lord hath wrought great glory by them through his great power from the beginning.
 Such as did bear rule in their kingdoms, men renowned for their power, giving counsel by their understanding, and declaring prophecies:
@@ -2451,7 +2452,7 @@ Who kept the law of the most High, and was in covenant with him: he established 
 Therefore he assured him by an oath, that he would bless the nations in his seed, and that he would multiply him as the dust of the earth, and exalt his seed as the stars, and cause them to inherit from sea to sea, and from the river unto the utmost part of the land.
 With Isaac did he establish likewise for Abraham his father’s sake the blessing of all men, and the covenant,
 And made it rest upon the head of Jacob. He acknowledged him in his blessing, and gave him an heritage, and divided his portions; among the twelve tribes did he part them.
-CHAPTER: sir-45
+CHAPTER:
 And he brought out of him a merciful man, which found favour in the sight of all flesh, even Moses, beloved of God and men, whose memorial is blessed.
 He made him like to the glorious saints, and magnified him, so that his enemies stood in fear of him.
 By his words he caused the wonders to cease, and he made him glorious in the sight of kings, and gave him a commandment for his people, and shewed him part of his glory.
@@ -2478,7 +2479,7 @@ The third in glory is Phinees the son of Eleazar, because he had zeal in the fea
 Therefore was there a covenant of peace made with him, that he should be the chief of the sanctuary and of his people, and that he and his posterity should have the dignity of the priesthood for ever:
 According to the covenant made with David son of Jesse, of the tribe of Juda, that the inheritance of the king should be to his posterity alone: so the inheritance of Aaron should also be unto his seed.
 God give you wisdom in your heart to judge his people in righteousness, that their good things be not abolished, and that their glory may endure for ever.
-CHAPTER: sir-46
+CHAPTER:
 Jesus the son a Nave was valiant in the wars, and was the successor of Moses in prophecies, who according to his name was made great for the saving of the elect of God, and taking vengeance of the enemies that rose up against them, that he might set Israel in their inheritance.
 How great glory gat he, when he did lift up his hands, and stretched out his sword against the cities!
 Who before him so stood to it? for the Lord himself brought his enemies unto him.
@@ -2499,7 +2500,7 @@ And the Lord thundered from heaven, and with a great noise made his voice to be 
 And he destroyed the rulers of the Tyrians, and all the princes of the Philistines.
 And before his long sleep he made protestations in the sight of the Lord and his anointed, I have not taken any man’s goods, so much as a shoe: and no man did accuse him.
 And after his death he prophesied, and shewed the king his end, and lifted up his voice from the earth in prophecy, to blot out the wickedness of the people.
-CHAPTER: sir-47
+CHAPTER:
 And after him rose up Nathan to prophesy in the time of David.
 As is the fat taken away from the peace offering, so was David chosen out of the children of Israel.
 He played with lions as with kids, and with bears as with lambs.
@@ -2525,7 +2526,7 @@ But the Lord will never leave off his mercy, neither shall any of his works peri
 Thus rested Solomon with his fathers, and of his seed he left behind him Roboam, even the foolishness of the people, and one that had no understanding, who turned away the people through his counsel. There was also Jeroboam the son of Nebat, who caused Israel to sin, and shewed Ephraim the way of sin:
 And their sins were multiplied exceedingly, that they were driven out of the land.
 For they sought out all wickedness, till the vengeance came upon them.
-CHAPTER: sir-48
+CHAPTER:
 Then stood up Elias the prophet as fire, and his word burned like a lamp.
 He brought a sore famine upon them, and by his zeal he diminished their number.
 By the word of the Lord he shut up the heaven, and also three times brought down fire.
@@ -2551,7 +2552,7 @@ For Ezekias had done the thing that pleased the Lord, and was strong in the ways
 In his time the sun went backward, and he lengthened the king’s life.
 He saw by an excellent spirit what should come to pass at the last, and he comforted them that mourned in Sion.
 He shewed what should come to pass for ever, and secret things or ever they came.
-CHAPTER: sir-49
+CHAPTER:
 The remembrance of Josias is like the composition of the perfume that is made by the art of the apothecary: it is sweet as honey in all mouths, and as musick at a banquet of wine.
 He behaved himself uprightly in the conversion of the people, and took away the abominations of iniquity.
 He directed his heart unto the Lord, and in the time of the ungodly he established the worship of God.
@@ -2568,7 +2569,7 @@ And among the elect was Neemias, whose renown is great, who raised up for us the
 But upon the earth was no man created like Enoch; for he was taken from the earth.
 Neither was there a young man born like Joseph, a governor of his brethren, a stay of the people, whose bones were regarded of the Lord.
 Sem and Seth were in great honour among men, and so was Adam above every living thing in creation.
-CHAPTER: sir-50
+CHAPTER:
 Simon the high priest, the son of Onias, who in his life repaired the house again, and in his days fortified the temple:
 And by him was built from the foundation the double height, the high fortress of the wall about the temple:
 In his days the cistern to receive water, being in compass as the sea, was covered with plates of brass:
@@ -2598,7 +2599,7 @@ They that sit upon the mountain of Samaria, and they that dwell among the Philis
 Jesus the son of Sirach of Jerusalem hath written in this book the instruction of understanding and knowledge, who out of his heart poured forth wisdom.
 Blessed is he that shall be exercised in these things; and he that layeth them up in his heart shall become wise.
 For if he do them, he shall be strong to all things: for the light of the Lord leadeth him, who giveth wisdom to the godly. Blessed be the name of the Lord for ever. Amen, Amen.
-CHAPTER: sir-51
+CHAPTER:
 I will thank thee, O Lord and King, and praise thee, O God my Saviour: I do give praise unto thy name:
 For thou art my defender and helper, and has preserved my body from destruction, and from the snare of the slanderous tongue, and from the lips that forge lies, and has been mine helper against mine adversaries:
 And hast delivered me, according to the multitude of thy mercies and greatness of thy name, from the teeth of them that were ready to devour me, and out of the hands of such as sought after my life, and from the manifold afflictions which I had;
@@ -2630,7 +2631,7 @@ Get learning with a great sum of money, and get much gold by her.
 Let your soul rejoice in his mercy, and be not ashamed of his praise.
 Work your work betimes, and in his time he will give you your reward.
 BOOK: bar | Baruch
-CHAPTER: bar-1
+CHAPTER:
 And these are the words of the book, which Baruch the son of Nerias, the son of Maasias, the son of Sedecias, the son of Asadias, the son of Chelcias, wrote in Babylon,
 In the fifth year, and in the seventh day of the month, what time as the Chaldeans took Jerusalem, and burnt it with fire.
 And Baruch did read the words of this book in the hearing of Jechonias the son of Joachim king of Juda, and in the ears of all the people that came to hear the book,
@@ -2653,7 +2654,7 @@ Since the day that the Lord brought our forefathers out of the land of Egypt, un
 Wherefore the evils cleaved unto us, and the curse, which the Lord appointed by Moses his servant at the time that he brought our fathers out of the land of Egypt, to give us a land that floweth with milk and honey, like as it is to see this day.
 Nevertheless we have not hearkened unto the voice of the Lord our God, according unto all the words of the prophets, whom he sent unto us:
 But every man followed the imagination of his own wicked heart, to serve strange gods, and to do evil in the sight of the Lord our God.
-CHAPTER: bar-2
+CHAPTER:
 Therefore the Lord hath made good his word, which he pronounced against us, and against our judges that judged Israel, and against our kings, and against our princes, and against the men of Israel and Juda,
 To bring upon us great plagues, such as never happened under the whole heaven, as it came to pass in Jerusalem, according to the things that were written in the law of Moses;
 That a man should eat the flesh of his own son, and the flesh of his own daughter.
@@ -2689,7 +2690,7 @@ And they shall praise me in the land of their captivity, and think upon my name,
 And return from their stiff neck, and from their wicked deeds: for they shall remember the way of their fathers, which sinned before the Lord.
 And I will bring them again into the land which I promised with an oath unto their fathers, Abraham, Isaac, and Jacob, and they shall be lords of it: and I will increase them, and they shall not be diminished.
 And I will make an everlasting covenant with them to be their God, and they shall be my people: and I will no more drive my people of Israel out of the land that I have given them.
-CHAPTER: bar-3
+CHAPTER:
 O Lord Almighty, God of Israel, the soul in anguish the troubled spirit, crieth unto thee.
 Hear, O Lord, and have mercy; for thou art merciful: and have pity upon us, because we have sinned before thee.
 For thou endurest for ever, and we perish utterly.
@@ -2727,7 +2728,7 @@ The stars shined in their watches, and rejoiced: when he calleth them, they say,
 This is our God, and there shall none other be accounted of in comparison of him
 He hath found out all the way of knowledge, and hath given it unto Jacob his servant, and to Israel his beloved.
 Afterward did he shew himself upon earth, and conversed with men.
-CHAPTER: bar-4
+CHAPTER:
 This is the book of the commandments of God, and the law that endureth for ever: all they that keep it shall come to life; but such as leave it shall die.
 Turn thee, O Jacob, and take hold of it: walk in the presence of the light thereof, that thou mayest be illuminated.
 Give not thine honour to another, nor the things that are profitable unto thee to a strange nation.
@@ -2765,7 +2766,7 @@ For I will take away the rejoicing of her great multitude, and her pride shall b
 For fire shall come upon her from the Everlasting, long to endure; and she shall be inhabited of devils for a great time.
 O Jerusalem, look about thee toward the east, and behold the joy that cometh unto thee from God.
 Lo, thy sons come, whom thou sentest away, they come gathered together from the east to the west by the word of the Holy One, rejoicing in the glory of God.
-CHAPTER: bar-5
+CHAPTER:
 Put off, O Jerusalem, the garment of mourning and affliction, and put on the comeliness of the glory that cometh from God for ever.
 Cast about thee a double garment of the righteousness which cometh from God; and set a diadem on thine head of the glory of the Everlasting.
 For God will shew thy brightness unto every country under heaven.
@@ -2775,7 +2776,7 @@ For they departed from thee on foot, and were led away of their enemies: but God
 For God hath appointed that every high hill, and banks of long continuance, should be cast down, and valleys filled up, to make even the ground, that Israel may go safely in the glory of God,
 Moreover even the woods and every sweetsmelling tree shall overshadow Israel by the commandment of God.
 For God shall lead Israel with joy in the light of his glory with the mercy and righteousness that cometh from him.
-CHAPTER: bar-6
+CHAPTER:
 A copy of an epistle, which Jeremy sent unto them which were to be led captives into Babylon by the king of the Babylonians, to certify them, as it was commanded him of God.
 Because of the sins which ye have committed before God, ye shall be led away captives into Babylon by Nabuchodonosor king of the Babylonians.
 So when ye be come unto Babylon, ye shall remain there many years, and for a long season, namely, seven generations: and after that I will bring you away peaceably from thence.
@@ -2850,7 +2851,7 @@ And likewise their gods of wood, and laid over with silver and gold, are like to
 And ye shall know them to be no gods by the bright purple that rotteth upon them: and they themselves afterward shall be eaten, and shall be a reproach in the country.
 Better therefore is the just man that hath none idols: for he shall be far from reproach.
 BOOK: pr-azar | Prayer of Azariah
-CHAPTER: pr-azar-1
+CHAPTER:
 And they walked in the midst of the fire, praising God, and blessing the Lord.
 Then Azarias stood up, and prayed on this manner; and opening his mouth in the midst of the fire said,
 Blessed art thou, O Lord God of our fathers: thy name is worthy to be praised and glorified for evermore:
@@ -2920,7 +2921,7 @@ O Ananias, Azarias, and Misael, bless ye the Lord: praise and exalt him above al
 O give thanks unto the Lord, because he is gracious: for his mercy endureth for ever.
 O all ye that worship the Lord, bless the God of gods, praise him, and give him thanks: for his mercy endureth for ever.
 BOOK: sus | Susanna
-CHAPTER: sus-1
+CHAPTER:
 There dwelt a man in Babylon, called Joacim:
 And he took a wife, whose name was Susanna, the daughter of Chelcias, a very fair woman, and one that feared the Lord.
 Her parents also were righteous, and taught their daughter according to the law of Moses.
@@ -2986,7 +2987,7 @@ And according to the law of Moses they did unto them in such sort as they malici
 Therefore Chelcias and his wife praised God for their daughter Susanna, with Joacim her husband, and all the kindred, because there was no dishonesty found in her.
 From that day forth was Daniel had in great reputation in the sight of the people.
 BOOK: bel | Bel and the Dragon
-CHAPTER: bel-1
+CHAPTER:
 And king Astyages was gathered to his fathers, and Cyrus of Persia received his kingdom.
 And Daniel conversed with the king, and was honoured above all his friends.
 Now the Babylons had an idol, called Bel, and there were spent upon him every day twelve great measures of fine flour, and forty sheep, and six vessels of wine.
@@ -3030,7 +3031,7 @@ Upon the seventh day the king went to bewail Daniel: and when he came to the den
 Then cried the king with a loud voice, saying, Great art thou, O Lord God of Daniel, and there is none other beside thee.
 And he drew him out, and cast those that were the cause of his destruction into the den: and they were devoured in a moment before his face.
 BOOK: 1-macc | 1 Maccabees
-CHAPTER: 1-macc-1
+CHAPTER:
 And it happened, after that Alexander son of Philip, the Macedonian, who came out of the land of Chettiim, had smitten Darius king of the Persians and Medes, that he reigned in his stead, the first over Greece,
 And made many wars, and won many strong holds, and slew the kings of the earth,
 And went through to the ends of the earth, and took spoils of many nations, insomuch that the earth was quiet before him; whereupon he was exalted and his heart was lifted up.
@@ -3095,7 +3096,7 @@ And they hanged the infants about their necks, and rifled their houses, and slew
 Howbeit many in Israel were fully resolved and confirmed in themselves not to eat any unclean thing.
 Wherefore they chose rather to die, that they might not be defiled with meats, and that they might not profane the holy covenant: so then they died.
 And there was very great wrath upon Israel.
-CHAPTER: 1-macc-2
+CHAPTER:
 In those days arose Mattathias the son of John, the son of Simeon, a priest of the sons of Joarib, from Jerusalem, and dwelt in Modin.
 And he had five sons, Joannan, called Caddis:
 Simon; called Thassi:
@@ -3166,7 +3167,7 @@ Take also unto you all those that observe the law, and avenge ye the wrong of yo
 Recompense fully the heathen, and take heed to the commandments of the law.
 So he blessed them, and was gathered to his fathers.
 And he died in the hundred forty and sixth year, and his sons buried him in the sepulchres of his fathers at Modin, and all Israel made great lamentation for him.
-CHAPTER: 1-macc-3
+CHAPTER:
 Then his son Judas, called Maccabeus, rose up in his stead.
 And all his brethren helped him, and so did all they that held with his father, and they fought with cheerfulness the battle of Israel.
 So he gat his people great honour, and put on a breastplate as a giant, and girt his warlike harness about him, and he made battles, protecting the host with his sword.
@@ -3227,7 +3228,7 @@ So the camp removed, and pitched upon the south side of Emmaus.
 And Judas said, arm yourselves, and be valiant men, and see that ye be in readiness against the morning, that ye may fight with these nations, that are assembled together against us to destroy us and our sanctuary:
 For it is better for us to die in battle, than to behold the calamities of our people and our sanctuary.
 Nevertheless, as the will of God is in heaven, so let him do.
-CHAPTER: 1-macc-4
+CHAPTER:
 Then took Gorgias five thousand footmen, and a thousand of the best horsemen, and removed out of the camp by night;
 To the end he might rush in upon the camp of the Jews, and smite them suddenly. And the men of the fortress were his guides.
 Now when Judas heard thereof he himself removed, and the valiant men with him, that he might smite the king’s army which was at Emmaus,
@@ -3289,7 +3290,7 @@ Thus was there very great gladness among the people, for that the reproach of th
 Moreover Judas and his brethren with the whole congregation of Israel ordained, that the days of the dedication of the altar should be kept in their season from year to year by the space of eight days, from the five and twentieth day of the month Casleu, with mirth and gladness.
 At that time also they builded up the mount Sion with high walls and strong towers round about, lest the Gentiles should come and tread it down as they had done before.
 And they set there a garrison to keep it, and fortified Bethsura to preserve it; that the people might have a defence against Idumea.
-CHAPTER: 1-macc-5
+CHAPTER:
 Now when the nations round about heard that the altar was built and the sanctuary renewed as before, it displeased them very much.
 Wherefore they thought to destroy the generation of Jacob that was among them, and thereupon they began to slay and destroy the people.
 Then Judas fought against the children of Esau in Idumea at Arabattine, because they besieged Gael: and he gave them a great overthrow, and abated their courage, and took their spoils.
@@ -3358,7 +3359,7 @@ Afterward went Judas forth with his brethren, and fought against the children of
 From thence he removed to go into the land of the Philistines, and passed through Samaria.
 At that time certain priests, desirous to shew their valour, were slain in battle, for that they went out to fight unadvisedly.
 So Judas turned to Azotus in the land of the Philistines, and when he had pulled down their altars, and burned their carved images with fire, and spoiled their cities, he returned into the land of Judea.
-CHAPTER: 1-macc-6
+CHAPTER:
 About that time king Antiochus travelling through the high countries heard say, that Elymais in the country of Persia was a city greatly renowned for riches, silver, and gold;
 And that there was in it a very rich temple, wherein were coverings of gold, and breastplates, and shields, which Alexander, son of Philip, the Macedonian king, who reigned first among the Grecians, had left there.
 Wherefore he came and sought to take the city, and to spoil it; but he was not able, because they of the city, having had warning thereof,
@@ -3422,7 +3423,7 @@ So the king and the princes were content: wherefore he sent unto them to make pe
 Also the king and the princes made an oath unto them: whereupon they went out of the strong hold.
 Then the king entered into mount Sion; but when he saw the strength of the place, he broke his oath that he had made, and gave commandment to pull down the wall round about.
 Afterward departed he in all haste, and returned unto Antiochia, where he found Philip to be master of the city: so he fought against him, and took the city by force.
-CHAPTER: 1-macc-7
+CHAPTER:
 In the hundred and one and fiftieth year Demetrius the son of Seleucus departed from Rome, and came up with a few men unto a city of the sea coast, and reigned there.
 And as he entered into the palace of his ancestors, so it was, that his forces had taken Antiochus and Lysias, to bring them unto him.
 Wherefore, when he knew it, he said, Let me not see their faces.
@@ -3473,7 +3474,7 @@ Afterwards they took the spoils, and the prey, and smote off Nicanors head, and 
 For this cause the people rejoiced greatly, and they kept that day a day of great gladness.
 Moreover they ordained to keep yearly this day, being the thirteenth of Adar.
 Thus the land of Juda was in rest a little while.
-CHAPTER: 1-macc-8
+CHAPTER:
 Now Judas had heard of the Romans, that they were mighty and valiant men, and such as would lovingly accept all that joined themselves unto them, and make a league of amity with all that came unto them;
 And that they were men of great valour. It was told him also of their wars and noble acts which they had done among the Galatians, and how they had conquered them, and brought them under tribute;
 And what they had done in the country of Spain, for the winning of the mines of the silver and gold which is there;
@@ -3506,7 +3507,7 @@ According to these articles did the Romans make a covenant with the people of th
 Howbeit if hereafter the one party or the other shall think to meet to add or diminish any thing, they may do it at their pleasures, and whatsoever they shall add or take away shall be ratified.
 And as touching the evils that Demetrius doeth to the Jews, we have written unto him, saying, Wherefore thou made thy yoke heavy upon our friends and confederates the Jews?
 If therefore they complain any more against thee, we will do them justice, and fight with thee by sea and by land.
-CHAPTER: 1-macc-9
+CHAPTER:
 Furthermore, when Demetrius heard the Nicanor and his host were slain in battle, he sent Bacchides and Alcimus into the land of Judea the second time, and with them the chief strength of his host:
 Who went forth by the way that leadeth to Galgala, and pitched their tents before Masaloth, which is in Arbela, and after they had won it, they slew much people.
 Also the first month of the hundred fifty and second year they encamped before Jerusalem:
@@ -3580,7 +3581,7 @@ Whereof when Jonathan had knowledge, he sent ambassadors unto him, to the end he
 Which thing he accepted, and did according to his demands, and sware unto him that he would never do him harm all the days of his life.
 When therefore he had restored unto him the prisoners that he had taken aforetime out of the land of Judea, he returned and went his way into his own land, neither came he any more into their borders.
 Thus the sword ceased from Israel: but Jonathan dwelt at Machmas, and began to govern the people; and he destroyed the ungodly men out of Israel.
-CHAPTER: 1-macc-10
+CHAPTER:
 In the hundred and sixtieth year Alexander, the son of Antiochus surnamed Epiphanes, went up and took Ptolemais: for the people had received him, by means whereof he reigned there,
 Now when king Demetrius heard thereof, he gathered together an exceeding great host, and went forth against him to fight.
 Moreover Demetrius sent letters unto Jonathan with loving words, so as he magnified him.
@@ -3670,7 +3671,7 @@ And from thence Jonathan removed his host, and camped against Ascalon, where the
 After this returned Jonathan and his host unto Jerusalem, having any spoils.
 Now when king Alexander heard these things, he honoured Jonathan yet more.
 And sent him a buckle of gold, as the use is to be given to such as are of the king’s blood: he gave him also Accaron with the borders thereof in possession.
-CHAPTER: 1-macc-11
+CHAPTER:
 And the king of Egypt gathered together a great host, like the sand that lieth upon the sea shore, and many ships, and went about through deceit to get Alexander’s kingdom, and join it to his own.
 Whereupon he took his journey into Spain in peaceable manner, so as they of the cities opened unto him, and met him: for king Alexander had commanded them so to do, because he was his brother in law.
 Now as Ptolemee entered into the cities, he set in every one of them a garrison of soldiers to keep it.
@@ -3745,7 +3746,7 @@ Then Jonathan rent his clothes, and cast earth upon his head, and prayed.
 Afterwards turning again to battle, he put them to flight, and so they ran away.
 Now when his own men that were fled saw this, they turned again unto him, and with him pursued them to Cades, even unto their own tents, and there they camped.
 So there were slain of the heathen that day about three thousand men: but Jonathan returned to Jerusalem.
-CHAPTER: 1-macc-12
+CHAPTER:
 Now when Jonathan saw that time served him, he chose certain men, and sent them to Rome, for to confirm and renew the friendship that they had with them.
 He sent letters also to the Lacedemonians, and to other places, for the same purpose.
 So they went unto Rome, and entered into the senate, and said, Jonathan the high priest, and the people of the Jews, sent us unto you, to the end ye should renew the friendship, which ye had with them, and league, as in former time.
@@ -3799,7 +3800,7 @@ But when they knew that Jonathan and they that were with him were taken and slai
 They therefore that followed upon them, perceiving that they were ready to fight for their lives, turned back again.
 Whereupon they all came into the land of Judea peaceably, and there they bewailed Jonathan, and them that were with him, and they were sore afraid; wherefore all Israel made great lamentation.
 Then all the heathen that were round about then sought to destroy them: for said they, They have no captain, nor any to help them: now therefore let us make war upon them, and take away their memorial from among men.
-CHAPTER: 1-macc-13
+CHAPTER:
 Now when Simon heard that Tryphon had gathered together a great host to invade the land of Judea, and destroy it,
 And saw that the people was in great trembling and fear, he went up to Jerusalem, and gathered the people together,
 And gave them exhortation, saying, Ye yourselves know what great things I, and my brethren, and my father’s house, have done for the laws and the sanctuary, the battles also and troubles which we have seen.
@@ -3853,7 +3854,7 @@ Then cried they to Simon, beseeching him to be at one with them: which thing he 
 And entered into it the three and twentieth day of the second month in the hundred seventy and first year, with thanksgiving, and branches of palm trees, and with harps, and cymbals, and with viols, and hymns, and songs: because there was destroyed a great enemy out of Israel.
 He ordained also that that day should be kept every year with gladness. Moreover the hill of the temple that was by the tower he made stronger than it was, and there he dwelt himself with his company.
 And when Simon saw that John his son was a valiant man, he made him captain of all the hosts; and he dwelt in Gazera.
-CHAPTER: 1-macc-14
+CHAPTER:
 Now in the hundred threescore and twelfth year king Demetrius gathered his forces together, and went into Media to get him help to fight against Tryphone.
 But when Arsaces, the king of Persia and Media, heard that Demetrius was entered within his borders, he sent one of his princes to take him alive:
 Who went and smote the host of Demetrius, and took him, and brought him to Arsaces, by whom he was put in ward.
@@ -3903,7 +3904,7 @@ Thus it liked all the people to deal with Simon, and to do as hath been said.
 Then Simon accepted hereof, and was well pleased to be high priest, and captain and governor of the Jews and priests, and to defend them all.
 So they commanded that this writing should be put in tables of brass, and that they should be set up within the compass of the sanctuary in a conspicuous place;
 Also that the copies thereof should be laid up in the treasury, to the end that Simon and his sons might have them.
-CHAPTER: 1-macc-15
+CHAPTER:
 Moreover Antiochus son of Demetrius the king sent letters from the isles of the sea unto Simon the priest and prince of the Jews, and to all the people;
 The contents whereof were these: King Antiochus to Simon the high priest and prince of his nation, and to the people of the Jews, greeting:
 Forasmuch as certain pestilent men have usurped the kingdom of our fathers, and my purpose is to challenge it again, that I may restore it to the old estate, and to that end have gathered a multitude of foreign soldiers together, and prepared ships of war;
@@ -3945,7 +3946,7 @@ Then the king made Cendebeus captain of the sea coast, and gave him an host of f
 And commanded him to remove his host toward Judea; also he commanded him to build up Cedron, and to fortify the gates, and to war against the people; but as for the king himself, he pursued Tryphon.
 So Cendebeus came to Jamnia and began to provoke the people and to invade Judea, and to take the people prisoners, and slay them.
 And when he had built up Cedrou, he set horsemen there, and an host of footmen, to the end that issuing out they might make outroads upon the ways of Judea, as the king had commanded him.
-CHAPTER: 1-macc-16
+CHAPTER:
 Then came up John from Gazera, and told Simon his father what Cendebeus had done.
 Wherefore Simon called his two eldest sons, Judas and John, and said unto them, I, and my brethren, and my father’s house, have ever from my youth unto this day fought against the enemies of Israel; and things have prospered so well in our hands, that we have delivered Israel oftentimes.
 But now I am old, and ye, by God’s mercy, are of a sufficient age: be ye instead of me and my brother, and go and fight for our nation, and the help from heaven be with you.
@@ -3971,7 +3972,7 @@ Hereof when he heard, he was sore astonished: so he laid hands on them that were
 As concerning the rest of the acts of John, and his wars, and worthy deeds which he did, and the building of the walls which he made, and his doings,
 Behold, these are written in the chronicles of his priesthood, from the time he was made high priest after his father.
 BOOK: 2-macc | 2 Maccabees
-CHAPTER: 2-macc-1
+CHAPTER:
 The brethren, the Jews that be at Jerusalem and in the land of Judea, wish unto the brethren, the Jews that are throughout Egypt health and peace:
 God be gracious unto you, and remember his covenant that he made with Abraham, Isaac, and Jacob, his faithful servants;
 And give you all an heart to serve him, and to do his will, with a good courage and a willing mind;
@@ -4008,7 +4009,7 @@ So when this matter was known, it was told the king of Persia, that in the place
 Then the king, inclosing the place, made it holy, after he had tried the matter.
 And the king took many gifts, and bestowed thereof on those whom he would gratify.
 And Neemias called this thing Naphthar, which is as much as to say, a cleansing: but many men call it Nephi.
-CHAPTER: 2-macc-2
+CHAPTER:
 It is also found in the records, that Jeremy the prophet commanded them that were carried away to take of the fire, as it hath been signified:
 And how that the prophet, having given them the law, charged them not to forget the commandments of the Lord, and that they should not err in their minds, when they see images of silver and gold, with their ornaments.
 And with other such speeches exhorted he them, that the law should not depart from their hearts.
@@ -4041,7 +4042,7 @@ For as the master builder of a new house must care for the whole building; but h
 To stand upon every point, and go over things at large, and to be curious in particulars, belongeth to the first author of the story:
 But to use brevity, and avoid much labouring of the work, is to be granted to him that will make an abridgment.
 Here then will we begin the story: only adding thus much to that which hath been said, that it is a foolish thing to make a long prologue, and to be short in the story itself.
-CHAPTER: 2-macc-3
+CHAPTER:
 Now when the holy city was inhabited with all peace, and the laws were kept very well, because of the godliness of Onias the high priest, and his hatred of wickedness,
 It came to pass that even the kings themselves did honour the place, and magnify the temple with their best gifts;
 Insomuch that Seleucus of Asia of his own revenues bare all the costs belonging to the service of the sacrifices.
@@ -4082,7 +4083,7 @@ And when the king asked Heliodorus, who might be a fit man to be sent yet once a
 If thou hast any enemy or traitor, send him thither, and thou shalt receive him well scourged, if he escape with his life: for in that place, no doubt, there is an especial power of God.
 For he that dwelleth in heaven hath his eye on that place, and defendeth it; and he beateth and destroyeth them that come to hurt it.
 And the things concerning Heliodorus, and the keeping of the treasury, fell out on this sort.
-CHAPTER: 2-macc-4
+CHAPTER:
 This Simon now, of whom we spake afore, having been a betrayer of the money, and of his country, slandered Onias, as if he had terrified Heliodorus, and been the worker of these evils.
 Thus was he bold to call him a traitor, that had deserved well of the city, and tendered his own nation, and was so zealous of the laws.
 But when their hatred went so far, that by one of Simon’s faction murders were committed,
@@ -4133,7 +4134,7 @@ Insomuch that he discharged Menelaus from the accusations, who notwithstanding w
 Thus they that followed the matter for the city, and for the people, and for the holy vessels, did soon suffer unjust punishment.
 Wherefore even they of Tyrus, moved with hatred of that wicked deed, caused them to be honourably buried.
 And so through the covetousness of them that were of power Menelaus remained still in authority, increasing in malice, and being a great traitor to the citizens.
-CHAPTER: 2-macc-5
+CHAPTER:
 About the same time Antiochus prepared his second voyage into Egypt:
 And then it happened, that through all the city, for the space almost of forty days, there were seen horsemen running in the air, in cloth of gold, and armed with lances, like a band of soldiers,
 And troops of horsemen in array, encountering and running one against another, with shaking of shields, and multitude of pikes, and drawing of swords, and casting of darts, and glittering of golden ornaments, and harness of all sorts.
@@ -4161,7 +4162,7 @@ He sent also that detestable ringleader Apollonius with an army of two and twent
 Who coming to Jerusalem, and pretending peace, did forbear till the holy day of the sabbath, when taking the Jews keeping holy day, he commanded his men to arm themselves.
 And so he slew all them that were gone to the celebrating of the sabbath, and running through the city with weapons slew great multitudes.
 But Judas Maccabeus with nine others, or thereabout, withdrew himself into the wilderness, and lived in the mountains after the manner of beasts, with his company, who fed on herbs continually, lest they should be partakers of the pollution.
-CHAPTER: 2-macc-6
+CHAPTER:
 Not long after this the king sent an old man of Athens to compel the Jews to depart from the laws of their fathers, and not to live after the laws of God:
 And to pollute also the temple in Jerusalem, and to call it the temple of Jupiter Olympius; and that in Garizim, of Jupiter the Defender of strangers, as they did desire that dwelt in the place.
 The coming in of this mischief was sore and grievous to the people:
@@ -4193,7 +4194,7 @@ And leave a notable example to such as be young to die willingly and courageousl
 They that led him changing the good will they bare him a little before into hatred, because the foresaid speeches proceeded, as they thought, from a desperate mind.
 But when he was ready to die with stripes, he groaned, and said, It is manifest unto the Lord, that hath the holy knowledge, that whereas I might have been delivered from death, I now endure sore pains in body by being beaten: but in soul am well content to suffer these things, because I fear him.
 And thus this man died, leaving his death for an example of a noble courage, and a memorial of virtue, not only unto young men, but unto all his nation.
-CHAPTER: 2-macc-7
+CHAPTER:
 It came to pass also, that seven brethren with their mother were taken, and compelled by the king against the law to taste swine’s flesh, and were tormented with scourges and whips.
 But one of them that spake first said thus, What wouldest thou ask or learn of us? we are ready to die, rather than to transgress the laws of our fathers.
 Then the king, being in a rage, commanded pans and caldrons to be made hot:
@@ -4236,7 +4237,7 @@ Then the king being in a rage, handed him worse than all the rest, and took it g
 So this man died undefiled, and put his whole trust in the Lord.
 Last of all after the sons the mother died.
 Let this be enough now to have spoken concerning the idolatrous feasts, and the extreme tortures.
-CHAPTER: 2-macc-8
+CHAPTER:
 Then Judas Maccabeus, and they that were with him, went privily into the towns, and called their kinsfolks together, and took unto them all such as continued in the Jews’ religion, and assembled about six thousand men.
 And they called upon the Lord, that he would look upon the people that was trodden down of all; and also pity the temple profaned of ungodly men;
 And that he would have compassion upon the city, sore defaced, and ready to be made even with the ground; and hear the blood that cried unto him,
@@ -4273,7 +4274,7 @@ Furthermore at such time as they kept the feast for the victory in their country
 As for that most ungracious Nicanor, who had brought a thousand merchants to buy the Jews,
 He was through the help of the Lord brought down by them, of whom he made least account; and putting off his glorious apparel, and discharging his company, he came like a fugitive servant through the midland unto Antioch having very great dishonour, for that his host was destroyed.
 Thus he, that took upon him to make good to the Romans their tribute by means of captives in Jerusalem, told abroad, that the Jews had God to fight for them, and therefore they could not be hurt, because they followed the laws that he gave them.
-CHAPTER: 2-macc-9
+CHAPTER:
 About that time came Antiochus with dishonour out of the country of Persia
 For he had entered the city called Persepolis, and went about to rob the temple, and to hold the city; whereupon the multitude running to defend themselves with their weapons put them to flight; and so it happened, that Antiochus being put to flight of the inhabitants returned with shame.
 Now when he came to Ecbatane, news was brought him what had happened unto Nicanor and Timotheus.
@@ -4303,7 +4304,7 @@ Therefore I pray and request you to remember the benefits that I have done unto 
 For I am persuaded that he understanding my mind will favourably and graciously yield to your desires.
 Thus the murderer and blasphemer having suffered most grievously, as he entreated other men, so died he a miserable death in a strange country in the mountains.
 And Philip, that was brought up with him, carried away his body, who also fearing the son of Antiochus went into Egypt to Ptolemeus Philometor.
-CHAPTER: 2-macc-10
+CHAPTER:
 Now Maccabeus and his company, the Lord guiding them, recovered the temple and the city:
 But the altars which the heathen had built in the open street, and also the chapels, they pulled down.
 And having cleansed the temple they made another altar, and striking stones they took fire out of them, and offered a sacrifice after two years, and set forth incense, and lights, and shewbread.
@@ -4342,7 +4343,7 @@ Nevertheless upon the fifth day early twenty young men of Maccabeus’ company, 
 Others likewise ascending after them, whiles they were busied with them that were within, burnt the towers, and kindling fires burnt the blasphemers alive; and others broke open the gates, and, having received in the rest of the army, took the city,
 And killed Timotheus, that was hid in a certain pit, and Chereas his brother, with Apollophanes.
 When this was done, they praised the Lord with psalms and thanksgiving, who had done so great things for Israel, and given them the victory.
-CHAPTER: 2-macc-11
+CHAPTER:
 Not long after this, Lysias the king’s protector and cousin, who also managed the affairs, took sore displeasure for the things that were done.
 And when he had gathered about fourscore thousand with all the horsemen, he came against the Jews, thinking to make the city an habitation of the Gentiles,
 And to make a gain of the temple, as of the other chapels of the heathen, and to set the high priesthood to sale every year:
@@ -4381,7 +4382,7 @@ Whatsoever Lysias the king’s cousin hath granted, therewith we also are well p
 But touching such things as he judged to be referred to the king, after ye have advised thereof, send one forthwith, that we may declare as it is convenient for you: for we are now going to Antioch.
 Therefore send some with speed, that we may know what is your mind.
 Farewell. This hundred and eight and fortieth year, the fifteenth day of the month Xanthicus.
-CHAPTER: 2-macc-12
+CHAPTER:
 When these covenants were made, Lysias went unto the king, and the Jews were about their husbandry.
 But of the governours of several places, Timotheus, and Apollonius the son of Genneus, also Hieronymus, and Demophon, and beside them Nicanor the governor of Cyprus, would not suffer them to be quiet and live in peace.
 The men of Joppa also did such an ungodly deed: they prayed the Jews that dwelt among them to go with their wives and children into the boats which they had prepared, as though they had meant them no hurt.
@@ -4427,7 +4428,7 @@ Betook themselves unto prayer, and besought him that the sin committed might who
 And when he had made a gathering throughout the company to the sum of two thousand drachms of silver, he sent it to Jerusalem to offer a sin offering, doing therein very well and honestly, in that he was mindful of the resurrection:
 For if he had not hoped that they that were slain should have risen again, it had been superfluous and vain to pray for the dead.
 And also in that he perceived that there was great favour laid up for those that died godly, it was an holy and good thought. Whereupon he made a reconciliation for the dead, that they might be delivered from sin.
-CHAPTER: 2-macc-13
+CHAPTER:
 In the hundred forty and ninth year it was told Judas, that Antiochus Eupator was coming with a great power into Judea,
 And with him Lysias his protector, and ruler of his affairs, having either of them a Grecian power of footmen, an hundred and ten thousand, and horsemen five thousand and three hundred, and elephants two and twenty, and three hundred chariots armed with hooks.
 Menelaus also joined himself with them, and with great dissimulation encouraged Antiochus, not for the safeguard of the country, but because he thought to have been made governor.
@@ -4454,7 +4455,7 @@ Heard that Philip, who was left over the affairs in Antioch, was desperately ben
 And accepted well of Maccabeus, made him principal governor from Ptolemais unto the Gerrhenians;
 Came to Ptolemais: the people there were grieved for the covenants; for they stormed, because they would make their covenants void:
 Lysias went up to the judgment seat, said as much as could be in defence of the cause, persuaded, pacified, made them well affected, returned to Antioch. Thus it went touching the king’s coming and departing.
-CHAPTER: 2-macc-14
+CHAPTER:
 After three years was Judas informed, that Demetrius the son of Seleucus, having entered by the haven of Tripolis with a great power and navy,
 Had taken the country, and killed Antiochus, and Lysias his protector.
 Now one Alcimus, who had been high priest, and had defiled himself wilfully in the times of their mingling with the Gentiles, seeing that by no means he could save himself, nor have any more access to the holy altar,
@@ -4501,7 +4502,7 @@ But missing his stroke through haste, the multitude also rushing within the door
 But they quickly giving back, and a space being made, he fell down into the midst of the void place.
 Nevertheless, while there was yet breath within him, being inflamed with anger, he rose up; and though his blood gushed out like spouts of water, and his wounds were grievous, yet he ran through the midst of the throng; and standing upon a steep rock,
 When as his blood was now quite gone, he plucked out his bowels, and taking them in both his hands, he cast them upon the throng, and calling upon the Lord of life and spirit to restore him those again, he thus died.
-CHAPTER: 2-macc-15
+CHAPTER:
 But Nicanor, hearing that Judas and his company were in the strong places about Samaria, resolved without any danger to set upon them on the sabbath day.
 Nevertheless the Jews that were compelled to go with him said, O destroy not so cruelly and barbarously, but give honour to that day, which he, that seeth all things, hath honoured with holiness above all other days.
 Then the most ungracious wretch demanded, if there were a Mighty one in heaven, that had commanded the sabbath day to be kept.
@@ -4542,7 +4543,7 @@ Thus went it with Nicanor: and from that time forth the Hebrews had the city in 
 And if I have done well, and as is fitting the story, it is that which I desired: but if slenderly and meanly, it is that which I could attain unto.
 For as it is hurtful to drink wine or water alone; and as wine mingled with water is pleasant, and delighteth the taste: even so speech finely framed delighteth the ears of them that read the story. And here shall be an end.
 BOOK: 1-esd | 1 Esdras
-CHAPTER: 1-esd-1
+CHAPTER:
 And Josias held the feast of the passover in Jerusalem unto his Lord, and offered the passover the fourteenth day of the first month;
 Having set the priests according to their daily courses, being arrayed in long garments, in the temple of the Lord.
 And he spake unto the Levites, the holy ministers of Israel, that they should hallow themselves unto the Lord, to set the holy ark of the Lord in the house that king Solomon the son of David had built:
@@ -4601,7 +4602,7 @@ As for the house of the Lord, they burnt it, and brake down the walls of Jerusal
 And as for her glorious things, they never ceased till they had consumed and brought them all to nought: and the people that were not slain with the sword he carried unto Babylon:
 Who became servants to him and his children, till the Persians reigned, to fulfil the word of the Lord spoken by the mouth of Jeremy:
 Until the land had enjoyed her sabbaths, the whole time of her desolation shall she rest, until the full term of seventy years.
-CHAPTER: 1-esd-2
+CHAPTER:
 In the first year of Cyrus king of the Persians, that the word of the Lord might be accomplished, that he had promised by the mouth of Jeremy;
 The Lord raised up the spirit of Cyrus the king of the Persians, and he made proclamation through all his kingdom, and also by writing,
 Saying, Thus saith Cyrus king of the Persians; The Lord of Israel, the most high Lord, hath made me king of the whole world,
@@ -4632,7 +4633,7 @@ And the men therein were given to rebellion and war: and that mighty kings and f
 Now therefore I have commanded to hinder those men from building the city, and heed to be taken that there be no more done in it;
 And that those wicked workers proceed no further to the annoyance of kings,
 Then king Artexerxes his letters being read, Rathumus, and Semellius the scribe, and the rest that were in commission with them, removing in haste toward Jerusalem with a troop of horsemen and a multitude of people in battle array, began to hinder the builders; and the building of the temple in Jerusalem ceased until the second year of the reign of Darius king of the Persians.
-CHAPTER: 1-esd-3
+CHAPTER:
 Now when Darius reigned, he made a great feast unto all his subjects, and unto all his household, and unto all the princes of Media and Persia,
 And to all the governors and captains and lieutenants that were under him, from India unto Ethiopia, of an hundred twenty and seven provinces.
 And when they had eaten and drunken, and being satisfied were gone home, then Darius the king went into his bedchamber, and slept, and soon after awaked.
@@ -4657,7 +4658,7 @@ And it maketh every heart rich, so that a man remembereth neither king nor gover
 And when they are in their cups, they forget their love both to friends and brethren, and a little after draw out swords:
 But when they are from the wine, they remember not what they have done.
 O ye men, is not wine the strongest, that enforceth to do thus? And when he had so spoken, he held his peace.
-CHAPTER: 1-esd-4
+CHAPTER:
 Then the second, that had spoken of the strength of the king, began to say,
 O ye men, do not men excel in strength that bear rule over sea and land and all things in them?
 But yet the king is more mighty: for he is lord of all these things, and hath dominion over them; and whatsoever he commandeth them they do.
@@ -4721,7 +4722,7 @@ Blessed art thou, who hast given me wisdom: for to thee I give thanks, O Lord of
 And so he took the letters, and went out, and came unto Babylon, and told it all his brethren.
 And they praised the God of their fathers, because he had given them freedom and liberty
 To go up, and to build Jerusalem, and the temple which is called by his name: and they feasted with instruments of musick and gladness seven days.
-CHAPTER: 1-esd-5
+CHAPTER:
 After this were the principal men of the families chosen according to their tribes, to go up with their wives and sons and daughters, with their menservants and maidservants, and their cattle.
 And Darius sent with them a thousand horsemen, till they had brought them back to Jerusalem safely, and with musical instruments tabrets and flutes.
 And all their brethren played, and he made them go up together with them.
@@ -4795,7 +4796,7 @@ Then Zorobabel and Jesus and the chief of the families of Israel said unto them,
 We ourselves alone will build unto the Lord of Israel, according as Cyrus the king of the Persians hath commanded us.
 But the heathen of the land lying heavy upon the inhabitants of Judea, and holding them strait, hindered their building;
 And by their secret plots, and popular persuasions and commotions, they hindered the finishing of the building all the time that king Cyrus lived: so they were hindered from building for the space of two years, until the reign of Darius.
-CHAPTER: 1-esd-6
+CHAPTER:
 Now in the second year of the reign of Darius Aggeus and Zacharias the son of Addo, the prophets, prophesied unto the Jews in Jewry and Jerusalem in the name of the Lord God of Israel, which was upon them.
 Then stood up Zorobabel the son of Salatiel, and Jesus the son of Josedec, and began to build the house of the Lord at Jerusalem, the prophets of the Lord being with them, and helping them.
 At the same time came unto them Sisinnes the governor of Syria and Phenice, with Sathrabuzanes and his companions, and said unto them,
@@ -4830,7 +4831,7 @@ That offerings may be made to the most high God for the king and for his childre
 And he commanded that whosoever should transgress, yea, or make light of any thing afore spoken or written, out of his own house should a tree be taken, and he thereon be hanged, and all his goods seized for the king.
 The Lord therefore, whose name is there called upon, utterly destroy every king and nation, that stretcheth out his hand to hinder or endamage that house of the Lord in Jerusalem.
 I Darius the king have ordained that according unto these things it be done with diligence.
-CHAPTER: 1-esd-7
+CHAPTER:
 Then Sisinnes the governor of Celosyria and Phenice, and Sathrabuzanes, with their companions following the commandments of king Darius,
 Did very carefully oversee the holy works, assisting the ancients of the Jews and governors of the temple.
 And so the holy works prospered, when Aggeus and Zacharias the prophets prophesied.
@@ -4846,7 +4847,7 @@ And so they offered the passover for all them of the captivity, and for their br
 And the children of Israel that came out of the captivity did eat, even all they that had separated themselves from the abominations of the people of the land, and sought the Lord.
 And they kept the feast of unleavened bread seven days, making merry before the Lord,
 For that he had turned the counsel of the king of Assyria toward them, to strengthen their hands in the works of the Lord God of Israel.
-CHAPTER: 1-esd-8
+CHAPTER:
 And after these things, when Artexerxes the king of the Persians reigned came Esdras the son of Saraias, the son of Ezerias, the son of Helchiah, the son of Salum,
 The son of Sadduc, the son of Achitob, the son of Amarias, the son of Ezias, the son of Meremoth, the son of Zaraias, the son of Savias, the son of Boccas, the son of Abisum, the son of Phinees, the son of Eleazar, the son of Aaron the chief priest.
 This Esdras went up from Babylon, as a scribe, being very ready in the law of Moses, that was given by the God of Israel.
@@ -4943,7 +4944,7 @@ Let us make an oath to the Lord, that we will put away all our wives, which we h
 Like as thou hast decreed, and as many as do obey the law of the Lord.
 Arise and put in execution: for to thee doth this matter appertain, and we will be with thee: do valiantly.
 So Esdras arose, and took an oath of the chief of the priests and Levites of all Israel to do after these things; and so they sware.
-CHAPTER: 1-esd-9
+CHAPTER:
 Then Esdras rising from the court of the temple went to the chamber of Joanan the son of Eliasib,
 And remained there, and did eat no meat nor drink water, mourning for the great iniquities of the multitude.
 And there was a proclamation in all Jewry and Jerusalem to all them that were of the captivity, that they should be gathered together at Jerusalem:
@@ -5000,7 +5001,7 @@ So the Levites published all things to the people, saying, This day is holy to t
 Then went they their way, every one to eat and drink, and make merry, and to give part to them that had nothing, and to make great cheer;
 Because they understood the words wherein they were instructed, and for the which they had been assembled.
 BOOK: pr-man | Prayer of Manasseh
-CHAPTER: pr-man-1
+CHAPTER:
 O Lord, Almighty God of our fathers, Abraham, Isaac, and Jacob, and of their righteous seed;
 who hast made heaven and earth, with all the ornament thereof;
 who hast bound the sea by the word of thy commandment; who hast shut up the deep, and sealed it by thy terrible and glorious name;
@@ -5017,7 +5018,7 @@ wherefore, I humbly beseech thee, forgive me, O Lord, forgive me, and destroy me
 and in me thou wilt shew all thy goodness: for thou wilt save me, that am unworthy, according to thy great mercy.
 Therefore I will praise thee for ever all the days of my life: for all the powers of the heavens do praise thee, and thine is the glory for ever and ever. Amen.
 BOOK: 2-esd | 2 Esdras
-CHAPTER: 2-esd-1
+CHAPTER:
 The second book of the prophet Esdras, the son of Saraias, the son of Azarias, the son of Helchias, the son of Sadamias, the son of Sadoc, the son of Achitob,
 The son of Achias, the son of Phinees, the son of Heli, the son of Amarias, the son of Aziei, the son of Marimoth, the son of Arna, the son of Ozias, the son of Borith, the son of Abisei, the son of Phinees, the son of Eleazar,
 The son of Aaron, of the tribe of Levi; which was captive in the land of the Medes, in the reign of Artexerxes king of the Persians.
@@ -5058,7 +5059,7 @@ I take to witness the grace of the people to come, whose little ones rejoice in 
 And now, brother, behold what glory; and see the people that come from the east:
 Unto whom I will give for leaders, Abraham, Isaac, and Jacob, Oseas, Amos, and Micheas, Joel, Abdias, and Jonas,
 Nahum, and Abacuc, Sophonias, Aggeus, Zachary, and Malachy, which is called also an angel of the Lord.
-CHAPTER: 2-esd-2
+CHAPTER:
 Thus saith the Lord, I brought this people out of bondage, and I gave them my commandments by my servants the prophets; whom they would not hear, but despised my counsels.
 The mother that bare them saith unto them, Go your way, ye children; for I am a widow and forsaken.
 I brought you up with gladness; but with sorrow and heaviness have I lost you: for ye have sinned before the Lord your God, and done that thing that is evil before him.
@@ -5107,7 +5108,7 @@ He answered and said unto me, These be they that have put off the mortal clothin
 Then said I unto the angel, What young person is it that crowneth them, and giveth them palms in their hands?
 So he answered and said unto me, It is the Son of God, whom they have confessed in the world. Then began I greatly to commend them that stood so stiffly for the name of the Lord.
 Then the angel said unto me, Go thy way, and tell my people what manner of things, and how great wonders of the Lord thy God, thou hast seen.
-CHAPTER: 2-esd-3
+CHAPTER:
 In the thirtieth year after the ruin of the city I was in Babylon, and lay troubled upon my bed, and my thoughts came up over my heart:
 For I saw the desolation of Sion, and the wealth of them that dwelt at Babylon.
 And my spirit was sore moved, so that I began to speak words full of fear to the most High, and said,
@@ -5144,7 +5145,7 @@ And yet their reward appeareth not, and their labour hath no fruit: for I have g
 Weigh thou therefore our wickedness now in the balance, and their’s also that dwell the world; and so shall thy name no where be found but in Israel.
 Or when was it that they which dwell upon the earth have not sinned in thy sight? or what people have so kept thy commandments?
 Thou shalt find that Israel by name hath kept thy precepts; but not the heathen.
-CHAPTER: 2-esd-4
+CHAPTER:
 And the angel that was sent unto me, whose name was Uriel, gave me an answer,
 And said, Thy heart hath gone to far in this world, and thinkest thou to comprehend the way of the most High?
 Then said I, Yea, my lord. And he answered me, and said, I am sent to shew thee three ways, and to set forth three similitudes before thee:
@@ -5197,7 +5198,7 @@ After this there passed by before me a watery cloud, and sent down much rain wit
 Then said he unto me, Consider with thyself; as the rain is more than the drops, and as the fire is greater than the smoke; but the drops and the smoke remain behind: so the quantity which is past did more exceed.
 Then I prayed, and said, May I live, thinkest thou, until that time? or what shall happen in those days?
 He answered me, and said, As for the tokens whereof thou askest me, I may tell thee of them in part: but as touching thy life, I am not sent to shew thee; for I do not know it.
-CHAPTER: 2-esd-5
+CHAPTER:
 Nevertheless as concerning the tokens, behold, the days shall come, that they which dwell upon earth shall be taken in a great number, and the way of truth shall be hidden, and the land shall be barren of faith.
 But iniquity shall be increased above that which now thou seest, or that thou hast heard long ago.
 And the land, that thou seest now to have root, shalt thou see wasted suddenly.
@@ -5254,7 +5255,7 @@ And she shall answer thee, They that be born in the strength of youth are of one
 Consider thou therefore also, how that ye are less of stature than those that were before you.
 And so are they that come after you less than ye, as the creatures which now begin to be old, and have passed over the strength of youth.
 Then said I, Lord, I beseech thee, if I have found favour in thy sight, shew thy servant by whom thou visitest thy creature.
-CHAPTER: 2-esd-6
+CHAPTER:
 And he said unto me, In the beginning, when the earth was made, before the borders of the world stood, or ever the winds blew,
 Before it thundered and lightened, or ever the foundations of paradise were laid,
 Before the fair flowers were seen, or ever the moveable powers were established, before the innumerable multitude of angels were gathered together,
@@ -5314,7 +5315,7 @@ As for the other people, which also come of Adam, thou hast said that they are n
 And now, O Lord, behold, these heathen, which have ever been reputed as nothing, have begun to be lords over us, and to devour us.
 But we thy people, whom thou hast called thy firstborn, thy only begotten, and thy fervent lover, are given into their hands.
 If the world now be made for our sakes, why do we not possess an inheritance with the world? how long shall this endure?
-CHAPTER: 2-esd-7
+CHAPTER:
 And when I had made an end of speaking these words, there was sent unto me the angel which had been sent unto me the nights afore:
 And he said unto me, Up, Esdras, and hear the words that I am come to tell thee.
 And I said, Speak on, my God. Then said he unto me, The sea is set in a wide place, that it might be deep and great.
@@ -5385,7 +5386,7 @@ For if he shall not multiply his mercies, the world would not continue with them
 And he pardoneth; for if he did not so of his goodness, that they which have committed iniquities might be eased of them, the ten thousandth part of men should not remain living.
 And being judge, if he should not forgive them that are cured with his word, and put out the multitude of contentions,
 There should be very few left peradventure in an innumerable multitude.
-CHAPTER: 2-esd-8
+CHAPTER:
 And he answered me, saying, The most High hath made this world for many, but the world to come for few.
 I will tell thee a similitude, Esdras; As when thou askest the earth, it shall say unto thee, that it giveth much mould whereof earthen vessels are made, but little dust that gold cometh of: even so is the course of this present world.
 There be many created, but few shall be saved.
@@ -5449,7 +5450,7 @@ But they which be created have defiled the name of him that made them, and were 
 And therefore is my judgment now at hand.
 These things have I not shewed unto all men, but unto thee, and a few like thee. Then answered I and said,
 Behold, O Lord, now hast thou shewed me the multitude of the wonders, which thou wilt begin to do in the last times: but at what time, thou hast not shewed me.
-CHAPTER: 2-esd-9
+CHAPTER:
 He answered me then, and said, Measure thou the time diligently in itself: and when thou seest part of the signs past, which I have told thee before,
 Then shalt thou understand, that it is the very same time, wherein the Highest will begin to visit the world which he made.
 Therefore when there shall be seen earthquakes and uproars of the people in the world:
@@ -5497,7 +5498,7 @@ And those thirty years I did nothing else day and night, and every hour, but mak
 After thirty years God heard me thine handmaid, looked upon my misery, considered my trouble, and gave me a son: and I was very glad of him, so was my husband also, and all my neighbours: and we gave great honour unto the Almighty.
 And I nourished him with great travail.
 So when he grew up, and came to the time that he should have a wife, I made a feast.
-CHAPTER: 2-esd-10
+CHAPTER:
 And it so came to pass, that when my son was entered into his wedding chamber, he fell down, and died.
 Then we all overthrew the lights, and all my neighbours rose up to comfort me: so I took my rest unto the second day at night.
 And it came to pass, when they had all left off to comfort me, to the end I might be quiet; then rose I up by night and fled, and came hither into this field, as thou seest.
@@ -5557,7 +5558,7 @@ And then shalt thou hear as much as thine ears may comprehend.
 For thou art blessed above many other, and art called with the Highest; and so are but few.
 But to morrow at night thou shalt remain here;
 And so shall the Highest shew thee visions of the high things, which the most High will do unto them that dwell upon the earth in the last days. So I slept that night and another, like as he commanded me.
-CHAPTER: 2-esd-11
+CHAPTER:
 Then saw I a dream, and, behold, there came up from the sea an eagle, which had twelve feathered wings, and three heads.
 And I saw, and, behold, she spread her wings over all the earth, and all the winds of the air blew on her, and were gathered together.
 And I beheld, and out of her feathers there grew other contrary feathers; and they became little feathers and small.
@@ -5604,7 +5605,7 @@ Therefore is thy wrongful dealing come up unto the Highest, and thy pride unto t
 The Highest also hath looked upon the proud times, and, behold, they are ended, and his abominations are fulfilled.
 And therefore appear no more, thou eagle, nor thy horrible wings, nor thy wicked feathers nor thy malicious heads, nor thy hurtful claws, nor all thy vain body:
 That all the earth may be refreshed, and may return, being delivered from thy violence, and that she may hope for the judgment and mercy of him that made her.
-CHAPTER: 2-esd-12
+CHAPTER:
 And it came to pass, whiles the lion spake these words unto the eagle, I saw,
 And, behold, the head that remained and the four wings appeared no more, and the two went unto it and set themselves up to reign, and their kingdom was small, and fill of uproar.
 And I saw, and, behold, they appeared no more, and the whole body of the eagle was burnt so that the earth was in great fear: then awaked I out of the trouble and trance of my mind, and from great fear, and said unto my spirit,
@@ -5656,7 +5657,7 @@ As for me, I have not forsaken you, neither am I departed from you: but am come 
 And now go your way home every man, and after these days will I come unto you.
 So the people went their way into the city, like as I commanded them:
 But I remained still in the field seven days, as the angel commanded me; and did eat only in those days of the flowers of the field, and had my meat of the herbs.
-CHAPTER: 2-esd-13
+CHAPTER:
 And it came to pass after seven days, I dreamed a dream by night:
 And, lo, there arose a wind from the sea, that it moved all the waves thereof.
 And I beheld, and, lo, that man waxed strong with the thousands of heaven: and when he turned his countenance to look, all the things trembled that were seen under him.
@@ -5715,7 +5716,7 @@ Thy life hast thou ordered in wisdom, and hast called understanding thy mother.
 And therefore have I shewed thee the treasures of the Highest: after other three days I will speak other things unto thee, and declare unto thee mighty and wondrous things.
 Then went I forth into the field, giving praise and thanks greatly unto the most High because of his wonders which he did in time;
 And because he governeth the same, and such things as fall in their seasons: and there I sat three days.
-CHAPTER: 2-esd-14
+CHAPTER:
 And it came to pass upon the third day, I sat under an oak, and, behold, there came a voice out of a bush over against me, and said, Esdras, Esdras.
 And I said, Here am I, Lord And I stood up upon my feet.
 Then said he unto me, In the bush I did manifestly reveal myself unto Moses, and talked with him, when my people served in Egypt:
@@ -5764,7 +5765,7 @@ And it came to pass, when the forty days were filled, that the Highest spake, sa
 But keep the seventy last, that thou mayest deliver them only to such as be wise among the people:
 For in them is the spring of understanding, the fountain of wisdom, and the stream of knowledge.
 And I did so.
-CHAPTER: 2-esd-15
+CHAPTER:
 Behold, speak thou in the ears of my people the words of prophecy, which I will put in thy mouth, saith the Lord:
 And cause them to be written in paper: for they are faithful and true.
 Fear not the imaginations against thee, let not the incredulity of them trouble thee, that speak against thee.
@@ -5828,7 +5829,7 @@ And in the passage they shall rush on the idle city, and shall destroy some port
 And thou shalt be cast down by them as stubble, and they shall be unto thee as fire;
 And shall consume thee, and thy cities, thy land, and thy mountains; all thy woods and thy fruitful trees shall they burn up with fire.
 Thy children shall they carry away captive, and, look, what thou hast, they shall spoil it, and mar the beauty of thy face.
-CHAPTER: 2-esd-16
+CHAPTER:
 Woe be unto thee, Babylon, and Asia! woe be unto thee, Egypt and Syria!
 Gird up yourselves with cloths of sack and hair, bewail your children, and be sorry; for your destruction is at hand.
 A sword is sent upon you, and who may turn it back?

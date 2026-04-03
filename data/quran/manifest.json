@@ -1,13 +1,6 @@
 {
   "id": "quran",
   "title": "Quran",
-  "translations": [
-    {
-      "id": "pickthall",
-      "name": "Marmaduke Pickthall",
-      "year": 1930
-    }
-  ],
   "books": [
     {
       "id": "quran",

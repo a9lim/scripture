@@ -1,13 +1,6 @@
 {
   "id": "bund",
   "title": "Bundahishn",
-  "translations": [
-    {
-      "id": "west",
-      "name": "Edward William West",
-      "year": 1897
-    }
-  ],
   "books": [
     {
       "id": "bund",

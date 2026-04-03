@@ -118,13 +118,21 @@ def parse_txt(txt_path: str) -> list[dict]:
             books.append(current_book)
             continue
 
+        # Chapter start offset: START: N
+        if line.startswith('START:') and current_book is not None:
+            num = int(line[len('START:'):].strip())
+            current_book['_start'] = num
+            continue
+
         # Chapter header
         if line.startswith('CHAPTER:'):
             if current_chapter is not None:
                 _flush_chapter(current_chapter, current_section, chapters, current_book)
 
             ch_name = line[len('CHAPTER:'):].strip() or None
-            ch_num = current_book.get('_count', 0) + 1 if current_book else 1
+            ch_idx = current_book.get('_count', 0) if current_book else 0
+            ch_start = current_book.get('_start', 1) if current_book else 1
+            ch_num = ch_start + ch_idx
             ch_id = f"{current_book['id']}-{ch_num}" if current_book else f"ch-{ch_num}"
 
             current_chapter = {

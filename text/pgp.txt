@@ -1,6 +1,6 @@
 WORK: pgp | Pearl of Great Price
 BOOK: moses | Moses
-CHAPTER: moses-1
+CHAPTER:
 The words of God, which he spake unto Moses at a time when Moses was caught up into an exceedingly high mountain,
 And he saw God face to face, and he talked with him, and the glory of God was upon Moses; therefore Moses could endure his presence.
 And God spake unto Moses, saying: Behold, I am the Lord God Almighty, and Endless is my name; for I am without beginning of days or end of years; and is not this endless?
@@ -43,7 +43,7 @@ For behold, this is my work and my glory—to bring to pass the immortality and 
 And now, Moses, my son, I will speak unto thee concerning this earth upon which thou standest; and thou shalt write the things which I shall speak.
 And in a day when the children of men shall esteem my words as naught and take many of them from the book which thou shalt write, behold, I will raise up another like unto thee; and they shall be had again among the children of men— among as many as shall believe.
 These words were spoken unto Moses in the mount, the name of which shall not be known among the children of men. And now they are spoken unto you. Show them not unto any except them that believe. Even so. Amen.
-CHAPTER: moses-2
+CHAPTER:
 And it came to pass that the Lord spake unto Moses, saying: Behold, I reveal unto you concerning this heaven, and this earth; write the words which I speak. I am the Beginning and the End, the Almighty God; by mine Only Begotten I created these things; yea, in the beginning I created the heaven, and the earth upon which thou standest.
 And the earth was without form, and void; and I caused darkness to come up upon the face of the deep; and my Spirit moved upon the face of the water; for I am God.
 And I, God, said: Let there be light; and there was light.
@@ -75,7 +75,7 @@ And I, God, blessed them, and said unto them: Be fruitful, and multiply, and rep
 And I, God, said unto man: Behold, I have given you every herb bearing seed, which is upon the face of all the earth, and every tree in the which shall be the fruit of a tree yielding seed; to you it shall be for meat.
 And to every beast of the earth, and to every fowl of the air, and to everything that creepeth upon the earth, wherein I grant life, there shall be given every clean herb for meat; and it was so, even as I spake.
 And I, God, saw everything that I had made, and, behold, all things which I had made were very good; and the evening and the morning were the sixth day.
-CHAPTER: moses-3
+CHAPTER:
 Thus the heaven and the earth were finished, and all the host of them.
 And on the seventh day I, God, ended my work, and all things which I had made; and I rested on the seventh day from all my work, and all things which I had made were finished, and I, God, saw that they were good;
 And I, God, blessed the seventh day, and sanctified it; because that in it I had rested from all my work which I, God, had created and made.
@@ -101,7 +101,7 @@ And the rib which I, the Lord God, had taken from man, made I a woman, and broug
 And Adam said: This I know now is bone of my bones, and flesh of my flesh; she shall be called Woman, because she was taken out of man.
 Therefore shall a man leave his father and his mother, and shall cleave unto his wife; and they shall be one flesh.
 And they were both naked, the man and his wife, and were not ashamed.
-CHAPTER: moses-4
+CHAPTER:
 And I, the Lord God, spake unto Moses, saying: That Satan, whom thou hast commanded in the name of mine Only Begotten, is the same which was from the beginning, and he came before me, saying—Behold, here am I, send me, I will be thy son, and I will redeem all mankind, that one soul shall not be lost, and surely I will do it; wherefore give me thine honor.
 But, behold, my Beloved Son, which was my Beloved and Chosen from the beginning, said unto me— Father, thy will be done, and the glory be thine forever.
 Wherefore, because that Satan rebelled against me, and sought to destroy the agency of man, which I, the Lord God, had given him, and also, that I should give unto him mine own power; by the power of mine Only Begotten, I caused that he should be cast down;
@@ -134,7 +134,7 @@ Therefore I, the Lord God, will send him forth from the Garden of Eden, to till 
 For as I, the Lord God, liveth, even so my words cannot return void, for as they go forth out of my mouth they must be fulfilled.
 So I drove out the man, and I placed at the east of the Garden of Eden, cherubim and a flaming sword, which turned every way to keep the way of the tree of life.
 And these are the words which I spake unto my servant Moses, and they are true even as I will; and I have spoken them unto you. See thou show them unto no man, until I command you, except to them that believe. Amen.
-CHAPTER: moses-5
+CHAPTER:
 And it came to pass that after I, the Lord God, had driven them out, that Adam began to till the earth, and to have dominion over all the beasts of the field, and to eat his bread by the sweat of his brow, as I the Lord had commanded him. And Eve, also, his wife, did labor with him.
 And Adam knew his wife, and she bare unto him sons and daughters, and they began to multiply and to replenish the earth.
 And from that time forth, the sons and daughters of Adam began to divide two and two in the land, and to till the land, and to tend flocks, and they also begat sons and daughters.
@@ -194,7 +194,7 @@ And God cursed the earth with a sore curse, and was angry with the wicked, with 
 For they would not hearken unto his voice, nor believe on his Only Begotten Son, even him whom he declared should come in the meridian of time, who was prepared from before the foundation of the world.
 And thus the Gospel began to be preached, from the beginning, being declared by holy angels sent forth from the presence of God, and by his own voice, and by the gift of the Holy Ghost.
 And thus all things were confirmed unto Adam, by an holy ordinance, and the Gospel preached, and a decree sent forth, that it should be in the world, until the end thereof; and thus it was. Amen.
-CHAPTER: moses-6
+CHAPTER:
 And Adam hearkened unto the voice of God, and called upon his sons to repent.
 And Adam knew his wife again, and she bare a son, and he called his name Seth. And Adam glorified the name of God; for he said: God hath appointed me another seed, instead of Abel, whom Cain slew.
 And God revealed himself unto Seth, and he rebelled not, but offered an acceptable sacrifice, like unto his brother Abel. And to him also was born a son, and he called his name Enos.
@@ -263,7 +263,7 @@ And thus he was baptized, and the Spirit of God descended upon him, and thus he 
 And he heard a voice out of heaven, saying: Thou art baptized with fire, and with the Holy Ghost. This is the record of the Father, and the Son, from henceforth and forever;
 And thou art after the order of him who was without beginning of days or end of years, from all eternity to all eternity.
 Behold, thou art one in me, a son of God; and thus may all become my sons. Amen.
-CHAPTER: moses-7
+CHAPTER:
 And it came to pass that Enoch continued his speech, saying: Behold, our father Adam taught these things, and many have believed and become the sons of God, and many have believed not, and have perished in their sins, and are looking forth with fear, in torment, for the fiery indignation of the wrath of God to be poured out upon them.
 And from that time forth Enoch began to prophesy, saying unto the people, that: As I was journeying, and stood upon the place Mahujah, and cried unto the Lord, there came a voice out of heaven, saying—Turn ye, and get ye upon the mount Simeon.
 And it came to pass that I turned and went up on the mount; and as I stood upon the mount, I beheld the heavens open, and I was clothed upon with glory;
@@ -333,7 +333,7 @@ But before that day he saw great tribulations among the wicked; and he also saw 
 And the Lord showed Enoch all things, even unto the end of the world; and he saw the day of the righteous, the hour of their redemption, and received a fulness of joy;
 And all the days of Zion, in the days of Enoch, were three hundred and sixty-five years.
 And Enoch and all his people walked with God, and he dwelt in the midst of Zion; and it came to pass that Zion was not, for God received it up into his own bosom; and from thence went forth the saying, Zion is Fled.
-CHAPTER: moses-8
+CHAPTER:
 And all the days of Enoch were four hundred and thirty years.
 And it came to pass that Methuselah, the son of Enoch, was not taken, that the covenants of the Lord might be fulfilled, which he made to Enoch; for he truly covenanted with Enoch that Noah should be of the fruit of his loins.
 And it came to pass that Methu selah prophesied that from his loins should spring all the kingdoms of the earth through Noah, and he took glory unto himself.
@@ -365,7 +365,7 @@ The earth was corrupt before God, and it was filled with violence.
 And God looked upon the earth, and, behold, it was corrupt, for all flesh had corrupted its way upon the earth.
 And God said unto Noah: The end of all flesh is come before me, for the earth is filled with violence, and behold I will destroy all flesh from off the earth. A Facsimile from the Book of Abraham
 BOOK: abr | Abraham
-CHAPTER: abr-1
+CHAPTER:
 In the land of the Chaldeans, at the residence of my fathers, I, Abraham, saw that it was needful for me to obtain another place of residence;
 And, finding there was greater happiness and peace and rest for me, I sought for the blessings of the fathers, and the right whereunto I should be ordained to administer the same; having been myself a follower of righteousness, desiring also to be one who possessed great knowledge, and to be a greater follower of righteousness, and to possess a greater knowledge, and to be a father of many nations, a prince of peace, and desiring to receive instructions, and to keep the commandments of God, I became a rightful heir, a High Priest, holding the right belonging to the fathers.
 It was conferred upon me from the fathers; it came down from the fathers, from the beginning of time, yea, even from the beginning, or before the foundation of the earth, down to the present time, even the right of the firstborn, or the first man, who is Adam, or first father, through the fathers unto me.
@@ -397,7 +397,7 @@ But I shall endeavor, hereafter, to delineate the chronology running back from m
 Now, after the priest of Elkenah was smitten that he died, there came a fulfilment of those things which were said unto me concerning the land of Chaldea, that there should be a famine in the land.
 Accordingly a famine prevailed throughout all the land of Chaldea, and my father was sorely tormented because of the famine, and he repented of the evil which he had determined against me, to take away my life.
 But the records of the fathers, even the patriarchs, concerning the right of Priesthood, the Lord my God preserved in mine own hands; therefore a knowledge of the beginning of the creation, and also of the planets, and of the stars, as they were made known unto the fathers, have I kept even unto this day, and I shall endeavor to write some of these things upon this record, for the benefit of my posterity that shall come after me.
-CHAPTER: abr-2
+CHAPTER:
 Now the Lord God caused the famine to wax sore in the land of Ur, insomuch that Haran, my brother, died; but Terah, my father, yet lived in the land of Ur, of the Chaldees.
 And it came to pass that I, Abra ham, took Sarai to wife, and Nahor, my brother, took Milcah to wife, who was the daughter of Haran.
 Now the Lord had said unto me: Abraham, get thee out of thy country, and from thy kindred, and from thy father’s house, unto a land that I will show thee.
@@ -423,7 +423,7 @@ And it came to pass when I was come near to enter into Egypt, the Lord said unto
 Therefore it shall come to pass, when the Egyptians shall see her, they will say—She is his wife; and they will kill you, but they will save her alive; therefore see that ye do on this wise:
 Let her say unto the Egyptians, she is thy sister, and thy soul shall live.
 And it came to pass that I, Abraham, told Sarai, my wife, all that the Lord had said unto me— Therefore say unto them, I pray thee, thou art my sister, that it may be well with me for thy sake, and my soul shall live because of thee.
-CHAPTER: abr-3
+CHAPTER:
 And I, Abraham, had the Urim and Thummim, which the Lord my God had given unto me, in Ur of the Chaldees;
 And I saw the stars, that they were very great, and that one of them was nearest unto the throne of God; and there were many great ones which were near unto it;
 And the Lord said unto me: These are the governing ones; and the name of the great one is Kolob, because it is near unto me, for I am the Lord thy God: I have set this one to govern all those which belong to the same order as that upon which thou standest.
@@ -452,7 +452,7 @@ And we will prove them herewith, to see if they will do all things whatsoever th
 And they who keep their first estate shall be added upon; and they who keep not their first estate shall not have glory in the same kingdom with those who keep their first estate; and they who keep their second estate shall have glory added upon their heads for ever and ever.
 And the Lord said: Whom shall I send? And one answered like unto the Son of Man: Here am I, send me. And another answered and said: Here am I, send me. And the Lord said: I will send the first.
 And the second was angry, and kept not his first estate; and, at that day, many followed after him.
-CHAPTER: abr-4
+CHAPTER:
 And then the Lord said: Let us go down. And they went down at the beginning, and they, that is the Gods, organized and formed the heavens and the earth.
 And the earth, after it was formed, was empty and desolate, because they had not formed anything but the earth; and darkness reigned upon the face of the deep, and the Spirit of the Gods was brooding upon the face of the waters.
 And they the Gods said: Let there be light; and there was light.
@@ -484,7 +484,7 @@ And the Gods said: We will bless them. And the Gods said: We will cause them to 
 And the Gods said: Behold, we will give them every herb bearing seed that shall come upon the face of all the earth, and every tree which shall have fruit upon it; yea, the fruit of the tree yielding seed to them we will give it; it shall be for their meat.
 And to every beast of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, behold, we will give them life, and also we will give to them every green herb for meat, and all these things shall be thus organized.
 And the Gods said: We will do everything that we have said, and organize them; and behold, they shall be very obedient. And it came to pass that it was from evening until morning they called night; and it came to pass that it was from morning until evening that they called day; and they numbered the sixth time.
-CHAPTER: abr-5
+CHAPTER:
 And thus we will finish the heavens and the earth, and all the hosts of them.
 And the Gods said among themselves: On the seventh time we will end our work, which we have counseled; and we will rest on the seventh time from all our work which we have counseled.
 And the Gods concluded upon the seventh time, because that on the seventh time they would rest from all their works which they the Gods counseled among themselves to form; and sanctified it. And thus were their decisions at the time that they counseled among themselves to form the heavens and the earth.
@@ -507,7 +507,7 @@ And they were both naked, the man and his wife, and were not ashamed.
 And out of the ground the Gods formed every beast of the field, and every fowl of the air, and brought them unto Adam to see what he would call them; and whatsoever Adam called every living creature, that should be the name thereof.
 And Adam gave names to all cattle, to the fowl of the air, to every beast of the field; and for Adam, there was found an help meet for him.
 BOOK: js-m | Joseph Smith—Matthew
-CHAPTER: js-m-1
+CHAPTER:
 For I say unto you, that ye shall not see me henceforth and know that I am he of whom it is written by the prophets, until ye shall say: Blessed is he who cometh in the name of the Lord, in the clouds of heaven, and all the holy angels with him. Then understood his disciples that he should come again on the earth, after that he was glorified and crowned on the right hand of God.
 And Jesus went out, and departed from the temple; and his disciples came to him, for to hear him, saying: Master, show us concerning the buildings of the temple, as thou hast said—They shall be thrown down, and left unto you desolate.
 And Jesus said unto them: See ye not all these things, and do ye not understand them? Verily I say unto you, there shall not be left here, upon this temple, one stone upon another that shall not be thrown down.
@@ -564,7 +564,7 @@ The lord of that servant shall come in a day when he looketh not for him, and in
 And shall cut him asunder, and shall appoint him his portion with the hypocrites; there shall be weeping and gnashing of teeth.
 And thus cometh the end of the wicked, according to the prophecy of Moses, saying: They shall be cut off from among the people; but the end of the earth is not yet, but by and by.
 BOOK: js-h | Joseph Smith—History
-CHAPTER: js-h-1
+CHAPTER:
 Owing to the many reports which have been put in circulation by evil-disposed and designing persons, in relation to the rise and progress of The Church of Jesus Christ of Latter-day Saints, all of which have been designed by the authors thereof to militate against its character as a Church and its progress in the world—I have been induced to write this history, to disabuse the public mind, and put all inquirers after truth in possession of the facts, as they have transpired, in relation both to myself and the Church, so far as I have such facts in my possession.
 In this history I shall present the various events in relation to this Church, in truth and righteousness, as they have transpired, or as they at present exist, being now 1838 the eighth year since the organization of the said Church.
 I was born in the year of our Lord one thousand eight hundred and five, on the twenty-third day of December, in the town of Sharon, Windsor county, State of Vermont.... My father, Joseph Smith, Sen., left the State of Vermont, and moved to Palmyra, Ontario now Wayne county, in the State of New York, when I was in my tenth year, or thereabouts. In about four years after my father’s arrival in Palmyra, he moved with his family into Manchester in the same county of Ontario—
@@ -641,7 +641,7 @@ Immediately on our coming up out of the water after we had been baptized, we exp
 Our minds being now enlightened, we began to have the scriptures laid open to our understandings, and the true meaning and intention of their more mysterious passages revealed unto us in a manner which we never could attain to previously, nor ever before had thought of. In the meantime we were forced to keep secret the circumstances of having received the Priesthood and our having been baptized, owing to a spirit of persecution which had already manifested itself in the neighborhood.
 We had been threatened with being mobbed, from time to time, and this, too, by professors of religion. And their intentions of mobbing us were only counteracted by the influence of my wife’s father’s family under Divine providence, who had become very friendly to me, and who were opposed to mobs, and were willing that I should be allowed to continue the work of translation without interruption; and therefore offered and promised us protection from all unlawful proceedings, as far as in them lay.
 BOOK: a-of-f | Articles of Faith
-CHAPTER: a-of-f-1
+CHAPTER:
 We believe in God, the Eternal Father, and in His Son, Jesus Christ, and in the Holy Ghost.
 We believe that men will be punished for their own sins, and not for Adam’s transgression.
 We believe that through the Atonement of Christ, all mankind may be saved, by obedience to the laws and ordinances of the Gospel.
