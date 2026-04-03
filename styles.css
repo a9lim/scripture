@@ -485,7 +485,7 @@
 }
 
 .verse-row.bookmarked .verse {
-    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    background: color-mix(in srgb, var(--ext-yellow, #e8c840) 12%, transparent);
     border-radius: var(--radius-sm, 2px);
 }
 
