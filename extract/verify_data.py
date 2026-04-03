@@ -203,37 +203,24 @@ class Checker:
 
     def check_book(self, work_id, book):
         book_id = book["id"]
-        chapters = book.get("chapters", [])
+        count = book.get("chapters", 0)
+        start = book.get("start", 1)
         expected = EXPECTED.get(book_id)
 
         if expected is not None:
-            if len(chapters) != len(expected):
+            if count != len(expected):
                 self.error(
                     f"[{work_id}/{book_id}] Expected {len(expected)} chapters, "
-                    f"got {len(chapters)}"
+                    f"got {count}"
                 )
 
-        # Check chapter numbering — derive numbers from ID suffix
-        ch_nums = [int(c["id"].rsplit("-", 1)[-1]) for c in chapters if c["id"].rsplit("-", 1)[-1].isdigit()]
-        if ch_nums:
-            first = ch_nums[0]
-            expected_nums = [first + i for i in range(len(ch_nums))]
-            if ch_nums != expected_nums:
-                self.error(
-                    f"[{work_id}/{book_id}] Chapter numbering gap or mismatch: "
-                    f"expected {expected_nums[:3]}...{expected_nums[-1:]}, "
-                    f"got {ch_nums[:3]}...{ch_nums[-1:]}"
-                )
-
-        for i, ch in enumerate(chapters):
+        for i in range(count):
             self.stats["chapters"] += 1
+            ch_id = f"{book_id}-{start + i}"
             expected_verses = expected[i] if (expected and i < len(expected)) else None
-            self.check_chapter(work_id, book_id, ch, expected_verses)
+            self.check_chapter(work_id, book_id, ch_id, expected_verses)
 
-    def check_chapter(self, work_id, book_id, ch_meta, expected_verses):
-        ch_id = ch_meta["id"]
-        manifest_count = ch_meta["verses"]
-
+    def check_chapter(self, work_id, book_id, ch_id, expected_verses):
         # Check chapter file exists
         ch_path = self.data_dir / work_id / "chapters" / f"{ch_id}.json"
         if not ch_path.exists():
@@ -250,17 +237,6 @@ class Checker:
         actual_count = len(all_verses)
         self.stats["verses"] += actual_count
 
-        # Check ID consistency
-        if ch_data.get("id") != ch_id:
-            self.error(f"[{ch_id}] Chapter file id '{ch_data.get('id')}' != manifest id '{ch_id}'")
-
-        # Check manifest count matches actual
-        if manifest_count != actual_count:
-            self.error(
-                f"[{ch_id}] Manifest says {manifest_count} verses, "
-                f"file has {actual_count}"
-            )
-
         # Check against canonical expected
         if expected_verses is not None and actual_count != expected_verses:
             self.error(
@@ -268,41 +244,12 @@ class Checker:
                 f"got {actual_count}"
             )
 
-        # Check verse numbering: sequential within each section
-        for sec in ch_data.get("sections", []):
-            sec_verses = sec.get("verses", [])
-            if not sec_verses:
-                continue
-            start = sec_verses[0]["number"]
-            for j, v in enumerate(sec_verses):
-                expected_n = start + j
-                if v["number"] != expected_n:
-                    self.error(
-                        f"[{ch_id}] Verse numbering: position {j+1} in section has "
-                        f"verse {v['number']}, expected {expected_n}"
-                    )
-                    break
-
         # Check for empty verse text
-        for v in all_verses:
-            text = v.get("text", "")
-            if not text or not text.strip():
-                self.error(f"[{ch_id}:{v['number']}] Empty verse text")
-
-        # Check section startVerse consistency
-        sections = ch_data.get("sections", [])
-        verse_offset = 0
-        for sec in sections:
-            sec_verses = sec.get("verses", [])
-            if not sec_verses:
-                continue
-            start = sec.get("startVerse")
-            first_in_sec = sec_verses[0]["number"]
-            if start is not None and start != first_in_sec:
-                self.error(
-                    f"[{ch_id}] Section startVerse={start} but first verse "
-                    f"in section is {first_in_sec}"
-                )
+        for sec in ch_data.get("sections", []):
+            for i, text in enumerate(sec.get("verses", [])):
+                if not text or not text.strip():
+                    verse_num = sec.get("startVerse", 1) + i
+                    self.error(f"[{ch_id}:{verse_num}] Empty verse text")
 
     def report(self):
         print(f"\n{'='*60}")
