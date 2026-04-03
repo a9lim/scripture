@@ -9,11 +9,11 @@ Text format::
     WORK: id | Title
     TRANSLATION: id | Name | Year
     BOOK: id | Name
-    CHAPTER: id [| name]
+    CHAPTER: [name]
     > intro text
-    ~                              section break (numbering continues)
-    ~ @                            section break, reset verse numbering to 1
-    ~ @ 4                          section break, start verse numbering at 4
+    SECTION:                       section break (numbering continues)
+    SECTION: @                     section break, reset verse numbering to 1
+    SECTION: @ 4                   section break, start verse numbering at 4
     verse text
 
 Usage::
@@ -32,6 +32,44 @@ if _here not in sys.path:
     sys.path.insert(0, _here)
 
 from base_parser import BaseParser
+
+ABBREVS = {
+    'gen': 'Gen.', 'ex': 'Ex.', 'lev': 'Lev.', 'num': 'Num.',
+    'deut': 'Deut.', 'josh': 'Josh.', 'judg': 'Judg.', 'ruth': 'Ruth',
+    '1-sam': '1 Sam.', '2-sam': '2 Sam.', '1-kgs': '1 Kgs.', '2-kgs': '2 Kgs.',
+    '1-chr': '1 Chr.', '2-chr': '2 Chr.', 'ezra': 'Ezra', 'neh': 'Neh.',
+    'esth': 'Esth.', 'job': 'Job', 'ps': 'Ps.', 'prov': 'Prov.',
+    'eccl': 'Eccl.', 'song': 'Song', 'isa': 'Isa.', 'jer': 'Jer.',
+    'lam': 'Lam.', 'ezek': 'Ezek.', 'dan': 'Dan.', 'hosea': 'Hosea',
+    'joel': 'Joel', 'amos': 'Amos', 'obad': 'Obad.', 'jonah': 'Jonah',
+    'micah': 'Micah', 'nahum': 'Nahum', 'hab': 'Hab.', 'zeph': 'Zeph.',
+    'hag': 'Hag.', 'zech': 'Zech.', 'mal': 'Mal.',
+    'matt': 'Matt.', 'mark': 'Mark', 'luke': 'Luke', 'john': 'John',
+    'acts': 'Acts', 'rom': 'Rom.', '1-cor': '1 Cor.', '2-cor': '2 Cor.',
+    'gal': 'Gal.', 'eph': 'Eph.', 'philip': 'Philip.', 'col': 'Col.',
+    '1-thes': '1 Thes.', '2-thes': '2 Thes.', '1-tim': '1 Tim.',
+    '2-tim': '2 Tim.', 'titus': 'Titus', 'philem': 'Philem.',
+    'heb': 'Heb.', 'james': 'James', '1-pet': '1 Pet.', '2-pet': '2 Pet.',
+    '1-jn': '1 Jn.', '2-jn': '2 Jn.', '3-jn': '3 Jn.', 'jude': 'Jude',
+    'rev': 'Rev.',
+    '1-ne': '1 Ne.', '2-ne': '2 Ne.', 'jacob': 'Jacob', 'enos': 'Enos',
+    'jarom': 'Jarom', 'omni': 'Omni', 'w-of-m': 'W of M',
+    'mosiah': 'Mosiah', 'alma': 'Alma', 'hel': 'Hel.', '3-ne': '3 Ne.',
+    '4-ne': '4 Ne.', 'morm': 'Morm.', 'ether': 'Ether', 'moro': 'Moro.',
+    'dc': 'D&C', 'od': 'OD',
+    'moses': 'Moses', 'abr': 'Abr.', 'js-m': 'JS\u2014M',
+    'js-h': 'JS\u2014H', 'a-of-f': 'A of F',
+    'quran': 'Quran',
+    'tobit': 'Tobit', 'judith': 'Judith', 'add-esth': 'Add. Esth.',
+    'wis': 'Wis.', 'sir': 'Sir.', 'bar': 'Bar.', 'pr-azar': 'Pr. Azar.',
+    'sus': 'Sus.', 'bel': 'Bel', '1-macc': '1 Macc.', '2-macc': '2 Macc.',
+    '1-esd': '1 Esd.', 'pr-man': 'Pr. Man.', '2-esd': '2 Esd.',
+    'gl': 'G.L.', 'dom': 'D.M.', 'analects': 'Analects', 'mencius': 'Mencius',
+    'ttc': 'T.T.C.',
+    'kjk': 'Kami.', 'kjn': 'Naka.', 'kjs': 'Shimo.',
+    'bund': 'Bund.',
+    'lotus': 'Lotus',
+}
 
 
 def parse_txt(txt_path: str) -> list[dict]:
@@ -76,7 +114,7 @@ def parse_txt(txt_path: str) -> list[dict]:
                 current_chapter = None
                 current_section = None
             m = re.match(r'^BOOK:\s*(.+?)\s*\|\s*(.+?)\s*$', line)
-            current_book = {'id': m.group(1), 'name': m.group(2), 'chapters': []}
+            current_book = {'id': m.group(1), 'name': m.group(2)}
             books.append(current_book)
             continue
 
@@ -85,15 +123,12 @@ def parse_txt(txt_path: str) -> list[dict]:
             if current_chapter is not None:
                 _flush_chapter(current_chapter, current_section, chapters, current_book)
 
-            m = re.match(r'^CHAPTER:\s*(.+?)(?:\s*\|\s*(.+?))?\s*$', line)
-            ch_id = m.group(1)
-            ch_name = m.group(2)  # None when no descriptive name
-            ch_num_m = re.search(r'(\d+)$', ch_id)
-            ch_num = int(ch_num_m.group(1)) if ch_num_m else 1
+            ch_name = line[len('CHAPTER:'):].strip() or None
+            ch_num = current_book.get('_count', 0) + 1 if current_book else 1
+            ch_id = f"{current_book['id']}-{ch_num}" if current_book else f"ch-{ch_num}"
 
             current_chapter = {
-                'chapter': ch_num,
-                'id': ch_id,
+                '_id': ch_id,
                 '_next_verse': 1,
             }
             if ch_name:
@@ -113,39 +148,52 @@ def parse_txt(txt_path: str) -> list[dict]:
             current_chapter['_next_verse'] = int(num_part) if num_part else 1
             continue
 
-        # Section break: ~, ~ @, ~ @ N
-        if line.startswith('~') and current_chapter is not None:
-            rest = line[1:].strip()
+        # Section break: SECTION:, SECTION: @, SECTION: @ N
+        if line.startswith('SECTION:') and current_chapter is not None:
+            rest = line[len('SECTION:'):].strip()
             if rest.startswith('@'):
                 num_part = rest[1:].strip()
                 current_chapter['_next_verse'] = int(num_part) if num_part else 1
-            current_section = {'verses': []}
+            start = current_chapter.get('_next_verse', 1)
+            current_section = {'startVerse': start, 'verses': []}
             current_chapter['_sections'].append(current_section)
             continue
 
         # Verse line (any line not matching other patterns)
         if current_chapter is not None:
             if current_section is None:
-                current_section = {'verses': []}
+                start = current_chapter.get('_next_verse', 1)
+                current_section = {'startVerse': start, 'verses': []}
                 current_chapter['_sections'].append(current_section)
 
-            verse_num = current_chapter.get('_next_verse', 1)
-            current_chapter['_next_verse'] = verse_num + 1
+            current_chapter['_next_verse'] = current_section['startVerse'] + len(current_section['verses']) + 1
 
-            current_section['verses'].append({
-                'number': verse_num,
-                'text': line,
-            })
+            current_section['verses'].append(line)
 
     # Flush last chapter
     if current_chapter is not None:
         _flush_chapter(current_chapter, current_section, chapters, current_book)
 
-    # Build manifest
+    # Build manifest — convert books from tracking dicts to final format
+    final_books = []
+    for book in books:
+        b = {'id': book['id'], 'name': book['name']}
+        b['abbrev'] = ABBREVS.get(book['id'], book['id'])
+        b['chapters'] = book.get('_count', 0)
+        start = book.get('_start')
+        if start is not None and start != 1:
+            b['start'] = start
+        names = book.get('_names')
+        if names:
+            # Only include names if at least one is non-None
+            if any(n is not None for n in names):
+                b['names'] = names
+        final_books.append(b)
+
     manifest = {'id': work_id, 'title': work_title}
     if translations:
         manifest['translations'] = translations
-    manifest['books'] = books
+    manifest['books'] = final_books
 
     return [{
         'manifest': manifest,
@@ -155,22 +203,13 @@ def parse_txt(txt_path: str) -> list[dict]:
 
 def _flush_chapter(current_chapter, current_section, chapters, current_book):
     """Finalize a chapter dict and append to chapters list + book metadata."""
-    ch_id = current_chapter['id']
+    ch_id = current_chapter['_id']
 
-    sections = []
-    for sec in current_chapter['_sections']:
-        start = sec['verses'][0]['number'] if sec['verses'] else 1
-        sections.append({
-            'startVerse': start,
-            'verses': sec['verses'],
-        })
+    sections = current_chapter['_sections']
 
     ch_name = current_chapter.get('name')
 
-    chapter = {
-        'chapter': current_chapter['chapter'],
-        'id': ch_id,
-    }
+    chapter = {'_id': ch_id}
     if ch_name:
         chapter['name'] = ch_name
     if current_chapter.get('intro'):
@@ -179,12 +218,24 @@ def _flush_chapter(current_chapter, current_section, chapters, current_book):
 
     chapters.append(chapter)
 
-    total_verses = sum(len(s['verses']) for s in sections)
-    ch_meta = {'id': ch_id}
+    # Update book tracking metadata
+    count = current_book.get('_count', 0)
+    if count == 0:
+        # First chapter: record start from ch_id suffix
+        suffix = ch_id.rsplit('-', 1)[-1]
+        if suffix.isdigit():
+            current_book['_start'] = int(suffix)
+    current_book['_count'] = count + 1
+
     if ch_name:
-        ch_meta['name'] = ch_name
-    ch_meta['verses'] = total_verses
-    current_book['chapters'].append(ch_meta)
+        names = current_book.setdefault('_names', [])
+        # Pad with None for any gaps
+        while len(names) < count:
+            names.append(None)
+        names.append(ch_name)
+    elif '_names' in current_book:
+        # Keep the list in sync even when no name
+        current_book['_names'].append(None)
 
     del current_chapter['_sections']
     current_chapter.pop('_next_verse', None)
