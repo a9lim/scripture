@@ -50,9 +50,16 @@ extract-raw)
     echo "=== Plaintext: Kojiki ==="
     python3 extract.py "$RAW/kj.txt" --parser kojiki --output "$DATA"
 
+    echo "=== Plaintext: Bundahishn ==="
+    python3 extract.py "$RAW/bundraw.txt" --parser bundahis --output "$DATA"
+
     echo "=== Scraped: Mencius → fourbooks ==="
     python3 parse_scraped.py "$RAW/mencius_raw.txt" --output "$DATA" \
         --work-id fourbooks --book-id mencius --book-name Mencius
+
+    echo "=== Scraped: Lotus Sutra ==="
+    python3 parse_scraped.py "$RAW/lotus_raw.txt" --output "$DATA" \
+        --work-id lotus --work-title "Lotus Sutra" --book-id lotus --book-name "Lotus Sutra"
 
     echo "=== Rebuilding search index ==="
     python3 search_index.py "$DATA"
@@ -103,8 +110,15 @@ enrich)
     python3 similarity.py "$DATA"
     ;;
 
+pipeline)
+    "$0" extract-raw
+    "$0" json2txt
+    "$0" enrich
+    "$0" verify
+    ;;
+
 *)
-    echo "Usage: $0 {scrape <url>|extract-raw|json2txt|txt2json|verify|reindex|concordance|similarity|enrich}"
+    echo "Usage: $0 {scrape <url>|extract-raw|json2txt|txt2json|verify|reindex|concordance|similarity|enrich|pipeline}"
     exit 1
     ;;
 

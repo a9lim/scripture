@@ -1,6 +1,13 @@
 {
   "id": "kj",
   "title": "Kojiki",
+  "translations": [
+    {
+      "id": "chamberlain",
+      "name": "Basil Hall Chamberlain",
+      "year": 1919
+    }
+  ],
   "books": [
     {
       "id": "kjk",

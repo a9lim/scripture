@@ -1,6 +1,13 @@
 {
   "id": "apoc",
   "title": "Apocrypha",
+  "translations": [
+    {
+      "id": "kjv",
+      "name": "King James Version",
+      "year": 1769
+    }
+  ],
   "books": [
     {
       "id": "tobit",

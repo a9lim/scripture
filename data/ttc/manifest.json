@@ -1,6 +1,13 @@
 {
   "id": "ttc",
   "title": "Tao Te Ching",
+  "translations": [
+    {
+      "id": "legge",
+      "name": "James Legge",
+      "year": 1891
+    }
+  ],
   "books": [
     {
       "id": "ttc",
