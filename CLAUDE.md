@@ -7,6 +7,7 @@ Part of the **a9l.im** portfolio. See root `CLAUDE.md` for shared design system,
 - Prefer shared modules (`shared-*.js`, `shared-base.css`) over project-specific reimplementations.
 - No work-specific code in the frontend. Adding a new scripture never requires JS changes.
 - Raw source files (PDFs, scraped text) live in `raw/` (gitignored). Extracted JSON in `data/` and text in `text/` are committed.
+- **Always re-extract from raw sources** (`./run.sh extract-raw`) rather than round-tripping through the text format. Extraction is fast, cheap, and avoids drift. The text files are a download artifact for users, not an editing workflow.
 
 ## Running Locally
 
@@ -24,7 +25,7 @@ Static scripture reader with verse actions, bookmarks, concordance, display sett
 
 ```
 main.js               Entry point. $ DOM cache, hash routing, navigate(), random verse
-├─ src/chapters.js     Data layer: caching, parseRef, findBookForChapter, chapterNum, formatRef, getBookInfo
+├─ src/chapters.js     Data layer: caching, parseRef, formatRef, chapterIdAt, bookMap
 ├─ src/nav.js          Toolbar dropdowns: fillSelect() (shared), work/book/chapter selects
 ├─ src/reader.js       Verse rendering: sections, verse highlighting, word wrapping
 ├─ src/notes.js        Notes + bookmarks: localStorage persistence, sidebar tabs, toggleBookmark
@@ -42,42 +43,42 @@ Import graph: `search.js → nav.js → chapters.js` (acyclic). `notes.js → ch
 
 ## ID System
 
-Book metadata (workId, abbreviation) lives in the manifest and is indexed by `chapters.js` at load time.
+Book metadata (workId, abbreviation) lives in each manifest and is indexed into a `bookMap` by `chapters.js` at load time. Chapter IDs are never stored — they are derived.
 
 - **Work IDs**: `bom`, `dc`, `pgp`, `ot`, `nt`, `quran`, `apoc`, `fourbooks`, `ttc`, `kj`, `bund`, `lotus`
-- **Chapter IDs**: derived as `{bookId}-{(start ?? 1) + index}` (0-based index over a book's chapters) — e.g. `gen-1`, `1-ne-3`, `dc-76`, `quran-19`, `kjk-1`, `lotus-1`
-- **Reference format**: `workId:chapterId:verse` (search index). No alternate formats.
-- **Chapter numbers**: extracted via `chapterNum()` in `chapters.js` (trailing digits of chapter ID).
+- **Chapter IDs**: `{bookId}-{(start ?? 1) + index}` where index is 0-based — e.g. `gen-1`, `1-ne-3`, `quran-19`, `kjk-0`
+- **Reference format**: `workId:chapterId:verse` — e.g. `ot:gen-1:26`
+- **Chapter numbers**: extracted via `chapterNum()` (trailing digits of chapter ID)
 
 ## Data Format
 
 ```
 data/
-  works.json                     ["ot", "apoc", "nt", "quran", "bom", "dc", "pgp", "fourbooks", "kj", "ttc", "bund", "lotus"]
+  works.json                     ["ot", "apoc", ..., "lotus"]
   search-index.json              [{ ref, text }]
-  concordance.json               { "word": ["workId:chapterId:verseNum", ...] }
-  similarity.json                { "chapterId": [{ ref, score }] }
+  concordance.json               { word: [ref, ...] }
+  similarity.json                { chapterId: [{ ref, score }] }
   {workId}/
-    manifest.json                { id, title, books: [{ id, name, abbrev, chapters, start?, names? }] }
+    manifest.json                { id, title, books }
     chapters/{chapterId}.json    { sections }
 ```
 
-Chapters use `sections[].verses[]` where each verse is a plain string and each section has `startVerse`. Verse numbers are derived from `startVerse + index`. The chapter number is derived from the chapter ID (trailing digits). The renderer auto-numbers sections when multiple exist per chapter.
+**Manifest books**: `{ id, name, abbrev, chapters }` — `chapters` is an integer count. Optional `start` (default 1) sets first chapter number; optional `names` is a string array of per-chapter subtitles (null for unnamed). Chapter IDs are derived from these fields.
 
-Book entries in the manifest: `{ id, name, abbrev, chapters }` where `chapters` is an integer count. Optional `start` (default 1) sets the first chapter number; optional `names` is an array of per-chapter subtitle strings. Chapter IDs are derived: `{bookId}-{(start ?? 1) + index}`. Chapter JSON files have no `name` field — chapter names live in the manifest `names` array only.
+**Chapter JSON**: `{ sections: [{ startVerse, verses: [string] }] }` with optional `intro`. No `name` field — chapter names live in manifest `names` only.
 
-**Chapter titles**: constructed by the renderer from context: `bookName` for single-chapter books, `workTitle N` for single-book works, `bookName N` for multi-book works.
+**Chapter titles**: constructed by the renderer: `bookName` for single-chapter books, `workTitle N` for single-book works, `bookName N` otherwise.
 
 ## Text Format
 
 ```
-text/{workId}.txt    One file per work
+text/{workId}.txt    One file per work, for user download
 ```
 
 ```
 WORK: id | Title
 BOOK: id | Name
-START: N                       (first chapter number for this book, default 1)
+START: N                       (first chapter number, default 1)
 CHAPTER: [name]
 @ N                            (set verse numbering to N)
 verse text
@@ -86,7 +87,7 @@ SECTION: @                     (section break — reset numbering to 1)
 SECTION: @ N                   (section break — start numbering at N)
 ```
 
-Chapter IDs are derived as `{bookId}-{(start ?? 1) + index}` (0-based index per book). Verse numbers auto-increment from 1. Use `START:` for books whose chapter numbering doesn't begin at 1. Use `@` / `SECTION: @` only for non-standard verse starts.
+Text files are a generated download artifact. Do not edit them as a primary workflow — re-extract from raw sources instead.
 
 ## Extraction Pipeline
 
@@ -95,27 +96,36 @@ extract/
   extract.py           python3 extract.py <source> --parser <name> --output <dir>
   txt_to_json.py       python3 txt_to_json.py <text_file> --output <dir>
   json_to_txt.py       python3 json_to_txt.py [data_dir] [output_dir]
-  base_parser.py       BaseParser: slugify, clean_text, make_section, normalize_divine_names, write_output
-  pdf_parser.py        PdfParser(BaseParser): ABC for PDF parsers (fitz pipeline)
+  base_parser.py       BaseParser: slugify, clean_text, make_section, write_output
+  pdf_parser.py        PdfParser(BaseParser): ABC for PDF parsers (fitz)
   search_index.py      python3 search_index.py <data_dir> → works.json + search-index.json
   concordance.py       python3 concordance.py <data_dir> → concordance.json
   similarity.py        python3 similarity.py <data_dir> → similarity.json (requires scikit-learn)
-  verify_data.py       python3 verify_data.py [data_dir] — checks verses against canonical counts
-  parsers/
-    quad.py            QuadParser(PdfParser) — LDS Quad PDF → 5 works
-    quran.py           QuranParser(BaseParser) — Pickthall plaintext → quran
-    kjv_vpl.py         KjvVplParser(BaseParser) — KJV verse-per-line → apoc
-    fourbooks.py       FourBooksParser(BaseParser) — Legge Four Books → fourbooks
-    ttc.py             TtcParser(BaseParser) — Legge Tao Te Ching → ttc
-    kojiki.py          KojikiParser(BaseParser) — Chamberlain Kojiki → kj
-    bundahis.py        BundahisParser(BaseParser) — West Bundahis → bund
-    _surah_names.py    Quran surah name mapping
-  scrape_sacred_texts.py   Scrape sacred-texts.com to raw file
-  parse_scraped.py         Parse scraped plaintext → JSON
-  run.sh                   Helper: scrape, extract-raw, json2txt, txt2json, verify, reindex, concordance, similarity, enrich
+  verify_data.py       python3 verify_data.py [data_dir] — checks canonical verse counts
+  parsers/             quad.py, quran.py, kjv_vpl.py, fourbooks.py, ttc.py, kojiki.py, bundahis.py
+  scrape_sacred_texts.py   Scrape sacred-texts.com → raw file
+  parse_scraped.py         Parse scraped plaintext → JSON (used for Mencius, Lotus Sutra)
+  run.sh                   All-in-one helper
 ```
 
-All parsers return `[{ "manifest": {...}, "chapters": [...] }]` with verses as plain strings. Chapter dicts use `_id` internally (stripped on write).
+All parsers return `[{ manifest, chapters }]` with verses as plain strings.
+
+### Rebuilding everything
+
+```bash
+cd extract && ./run.sh extract-raw   # re-extract all works from raw/ + reindex
+./run.sh json2txt                    # regenerate text downloads
+./run.sh enrich                      # rebuild concordance + similarity
+./run.sh verify                      # check verse counts
+```
+
+### Adding a new scripture
+
+1. Write a parser or scrape source to `raw/`
+2. Add extraction step to `run.sh extract-raw`
+3. Register abbreviation in parser and in `ABBREVS` in `txt_to_json.py`
+4. Run `./run.sh extract-raw && ./run.sh json2txt && ./run.sh enrich`
+5. Commit `data/`, `text/`, index files
 
 ## URL Routing
 
@@ -125,56 +135,26 @@ Hash-based: `#workId/chapterId` with optional `:verseNum` for deep-linking. Defa
 
 | Key | Format | Purpose |
 |-----|--------|---------|
-| `scripture-user` | `{ notes: { ref: text }, bookmarks: [ref] }` | Notes and bookmarks (migrates from old `scripture-notes`) |
+| `scripture-user` | `{ notes: { ref: text }, bookmarks: [ref] }` | Notes and bookmarks |
 | `scripture-display` | `{ fontSize, lineHeight, maxWidth, font }` | Display preferences |
 | `scripture-history` | `{ recent: [{ workId, chapterId, ts }] }` | Reading history (max 10) |
 
-Verse number hover opens an action popover (note, bookmark, copy, link). Bookmarked verses show a gold dot and subtle background highlight.
-
-## Common Workflows
-
-### Helper script
-
-```bash
-cd extract
-./run.sh scrape <sacred-texts-index-url>   # scrape to raw/{slug}_raw.txt
-./run.sh extract-raw                        # re-extract all works + reindex
-./run.sh json2txt                           # JSON → text
-./run.sh txt2json                           # text → JSON + reindex + enrich
-./run.sh verify                             # check verse counts
-./run.sh reindex                            # rebuild works.json + search-index.json
-./run.sh concordance                        # rebuild concordance.json
-./run.sh similarity                         # rebuild similarity.json (requires scikit-learn)
-./run.sh enrich                             # concordance + similarity
-```
-
-### Editing verse text
-
-Edit `text/{workId}.txt`, then: `cd extract && python3 txt_to_json.py ../text/{workId}.txt --output ../data && python3 search_index.py ../data`
-
-### Adding a new scripture
-
-1. Create `text/{workId}.txt`
-2. Add `abbrev` to each book entry in the text file and register the abbreviation in `ABBREVS` in `txt_to_json.py`
-3. Run `txt_to_json.py`, `search_index.py`, and `./run.sh enrich`
-4. Commit text, data, `works.json`, `search-index.json`, `concordance.json`, `similarity.json`
-
 ## Layout & Scrolling
 
-`#app-layout` is a fixed-height flex container (`height: calc(100vh - var(--toolbar-h))`, `overflow: hidden`). Both the reading pane and notes sidebar scroll independently within their own containers:
+`#app-layout` is a fixed-height flex container (`height: calc(100vh - var(--toolbar-h))`, `overflow: hidden`). Reading pane and notes sidebar scroll independently.
 
-- **`#reading-pane`** — `overflow-y: auto`, `scrollbar-thin` class. Left padding (3.5rem) provides gutter space for verse numbers.
-- **`#notes-content`** — `overflow-y: auto`, `scrollbar-thin` class. Flex child inside the `.sim-panel`.
+- **`#reading-pane`** — `overflow-y: auto`, left padding (3.5rem) for verse number gutter.
+- **`#notes-content`** — `overflow-y: auto`, flex child inside `.sim-panel`.
 
-Verse numbers use a fixed-width inline-block (`width: 2em`) pulled into the left gutter via negative margin (`margin-left: -2.5em`), right-aligned so 1–3 digit numbers stay flush against the verse text.
+Verse numbers: fixed-width inline-block (`width: 2em`), pulled into gutter via negative margin (`margin-left: -2.5em`).
 
 ## Gotchas
 
 - **`initOverlayDismiss(overlayEl, closeBtn, hideFn)`** — all 3 args required.
-- **Shared globals** (`escapeHtml`, `debounce`, `trapFocus`, `initOverlayDismiss`, `initShortcuts`, `initAboutPanel`, `showToast`, `_toolbar`, `_forms`, `_haptics`, `createSimTooltip`) are window globals from `shared-*.js`, not ES6 imports. Verify `<script>` tags exist in `index.html` when adding new shared dependencies.
+- **Shared globals** (`escapeHtml`, `debounce`, `trapFocus`, `initOverlayDismiss`, `initShortcuts`, `initAboutPanel`, `showToast`, `_toolbar`, `_forms`, `_haptics`, `createSimTooltip`) are window globals from `shared-*.js`, not ES6 imports. Verify `<script>` tags in `index.html`.
 - **`_PALETTE`/`_FONT` frozen** by `colors.js` — do not mutate.
-- **`scripture-user` localStorage key** — changing it loses all user notes and bookmarks. Migrated from old `scripture-notes` key automatically.
-- **`book.chapters` is an integer** count in the manifest, not an array. Chapter objects are derived, not stored.
-- **Verse number gutter** — `#reading-pane` left padding must be ≥ 3.5rem (≥ 3rem on mobile) to avoid clipping verse numbers pulled via negative margin.
-- **`#reading-pane` has `position: relative`** — required for verse popover and concordance popover absolute positioning.
-- **Concordance data** — `concordance.json` can be large (~15MB). Lazy-loaded on first word click. Words are marked with `.conc-word` class after load via MutationObserver.
+- **`scripture-user` localStorage key** — changing it loses all user notes and bookmarks.
+- **`book.chapters` is an integer** count, not an array. Chapter IDs are derived, not stored.
+- **Verse number gutter** — `#reading-pane` left padding must be ≥ 3.5rem (≥ 3rem on mobile).
+- **`#reading-pane` has `position: relative`** — required for popover positioning.
+- **Concordance data** — `concordance.json` (~15MB). Lazy-loaded on first word click.
