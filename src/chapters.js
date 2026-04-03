@@ -10,6 +10,7 @@ const DATA_BASE = 'data';
 const manifestCache = new Map();      // workId  -> manifest object
 const chapterCache  = new Map();      // "workId/chapterId" -> chapter object
 const flatChapterCache = new Map();   // workId -> [{ id, bookId, bookName }]
+const bookMap = new Map();            // bookId -> { workId, abbrev, name }
 
 let searchIndex   = null;          // array, loaded once
 let workIds       = null;          // string[], loaded once
@@ -20,6 +21,15 @@ async function fetchJSON(path) {
   const res = await fetch(path);
   if (!res.ok) throw new Error(`fetch ${path}: ${res.status}`);
   return res.json();
+}
+
+/**
+ * Derive chapter ID from book ID and 0-based index.
+ * e.g. chapterIdAt("gen", 0) → "gen-1"
+ *      chapterIdAt("kjk", 0, 0) → "kjk-0"
+ */
+export function chapterIdAt(bookId, index, start) {
+  return `${bookId}-${(start ?? 1) + index}`;
 }
 
 /* ── public API ──────────────────────────────────────────────────── */
@@ -34,10 +44,15 @@ export async function loadManifests() {
   const manifests = await Promise.all(
     workIds.map(id => fetchJSON(`${DATA_BASE}/${id}/manifest.json`))
   );
-  manifests.forEach(m => manifestCache.set(m.id, m));
+  manifests.forEach(m => {
+    manifestCache.set(m.id, m);
+    for (const book of m.books) {
+      bookMap.set(book.id, { workId: m.id, abbrev: book.abbrev, name: book.name });
+    }
+  });
 }
 
-/** Array of work ID strings (e.g. ["bom","dc","ot","nt","quran","apoc"]). */
+/** Array of work ID strings. */
 export function getWorkIds() {
   return workIds || [];
 }
@@ -45,6 +60,11 @@ export function getWorkIds() {
 /** Cached manifest for a single work, or null. */
 export function getManifest(workId) {
   return manifestCache.get(workId) ?? null;
+}
+
+/** Book info from bookMap: { workId, abbrev, name } or null. */
+export function getBookInfo(bookId) {
+  return bookMap.get(bookId) ?? null;
 }
 
 /**
@@ -59,6 +79,7 @@ export async function loadChapter(workId, chapterId) {
     `${DATA_BASE}/${workId}/chapters/${chapterId}.json`
   );
   // Attach context from the manifest for title construction
+  chapter.chapter = chapterNum(chapterId);
   const manifest = manifestCache.get(workId);
   if (manifest) {
     chapter.workTitle = manifest.title;
@@ -68,7 +89,14 @@ export async function loadChapter(workId, chapterId) {
       const book = manifest.books.find(b => b.id === bookId);
       if (book) {
         chapter.bookName = book.name;
-        if (book.chapters.length === 1) chapter.singleChapter = true;
+        if (book.chapters === 1) chapter.singleChapter = true;
+        // Attach chapter name from manifest names array
+        const start = book.start ?? 1;
+        const num = parseInt(chapterNum(chapterId), 10);
+        const idx = num - start;
+        if (book.names && book.names[idx]) {
+          chapter.name = book.names[idx];
+        }
       }
     }
   }
@@ -107,10 +135,6 @@ export function parseRef(ref) {
  * flattening all books in the manifest into a single ordered list.
  *
  * Each returned entry is { id, bookId, bookName } or null.
- *
- * @param  {string} workId
- * @param  {string} chapterId  e.g. "gen-3"
- * @return {{ prev: object|null, next: object|null }}
  */
 export function getAdjacentChapters(workId, chapterId) {
   const manifest = manifestCache.get(workId);
@@ -119,8 +143,9 @@ export function getAdjacentChapters(workId, chapterId) {
   if (!flatChapterCache.has(workId)) {
     const flat = [];
     for (const book of manifest.books) {
-      for (const ch of book.chapters) {
-        flat.push({ id: ch.id, bookId: book.id, bookName: book.name });
+      const start = book.start ?? 1;
+      for (let i = 0; i < book.chapters; i++) {
+        flat.push({ id: chapterIdAt(book.id, i, start), bookId: book.id, bookName: book.name });
       }
     }
     flatChapterCache.set(workId, flat);
@@ -135,15 +160,18 @@ export function getAdjacentChapters(workId, chapterId) {
 }
 
 /**
- * Find the bookId that owns a chapterId within a work manifest.
+ * Find the bookId that owns a chapterId within a work.
+ * Parses bookId from the chapter ID string (everything before trailing -N).
  */
 export function findBookForChapter(workId, chapterId) {
-  const m = manifestCache.get(workId);
-  if (!m) return null;
-  for (const book of m.books) {
-    if (book.chapters.some(ch => ch.id === chapterId)) return book.id;
+  const i = chapterId.lastIndexOf('-');
+  if (i > 0) {
+    const bookId = chapterId.slice(0, i);
+    if (bookMap.has(bookId)) return bookId;
   }
-  return m.books[0]?.id ?? null;
+  // Fallback: first book in manifest
+  const m = manifestCache.get(workId);
+  return m?.books[0]?.id ?? null;
 }
 
 /**
@@ -153,4 +181,19 @@ export function findBookForChapter(workId, chapterId) {
 export function chapterNum(chapterId) {
   const m = chapterId.match(/\d+$/);
   return m ? m[0] : chapterId;
+}
+
+/**
+ * Format a chapter reference for display.
+ * e.g. formatRef('gen-1', 26) → 'Gen. 1:26'
+ */
+export function formatRef(chapterId, verse) {
+  const i = chapterId.lastIndexOf('-');
+  if (i > 0) {
+    const bookId = chapterId.slice(0, i);
+    const chNum = chapterId.slice(i + 1);
+    const info = bookMap.get(bookId);
+    if (info) return `${info.abbrev} ${chNum}:${verse}`;
+  }
+  return `${chapterId}:${verse}`;
 }
