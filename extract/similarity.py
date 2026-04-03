@@ -47,8 +47,10 @@ def build_similarity(data_dir: str) -> None:
 
         chapter_to_book = {}
         for book in manifest.get("books", []):
-            for ch in book.get("chapters", []):
-                chapter_to_book[ch["id"]] = book["id"]
+            start = book.get("start", 1)
+            for i in range(book.get("chapters", 0)):
+                ch_id = f"{book['id']}-{start + i}"
+                chapter_to_book[ch_id] = book["id"]
 
         chapters_dir = os.path.join(work_dir, "chapters")
         if not os.path.isdir(chapters_dir):
@@ -61,11 +63,11 @@ def build_similarity(data_dir: str) -> None:
             with open(os.path.join(chapters_dir, chapter_file), "r", encoding="utf-8") as f:
                 chapter = json.load(f)
 
-            chapter_id = chapter["id"]
+            chapter_id = chapter_file[:-5]  # strip .json
             parts = []
             for section in chapter.get("sections", []):
-                for verse in section.get("verses", []):
-                    parts.append(verse["text"])
+                for text in section.get("verses", []):
+                    parts.append(text)
 
             text = " ".join(parts)
             if text.strip():
