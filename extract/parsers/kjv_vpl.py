@@ -33,6 +33,18 @@ _BOOK_IDS = {
 
 _RE_LINE = re.compile(r"^(\w+)\s+(\d+):(\d+)\s+(.*)$")
 
+_ABBREVS = {
+    "tobit": "Tobit", "judith": "Judith", "add-esth": "Add. Esth.",
+    "wis": "Wis.", "sir": "Sir.", "bar": "Bar.", "pr-azar": "Pr. Azar.",
+    "sus": "Sus.", "bel": "Bel", "1-macc": "1 Macc.", "2-macc": "2 Macc.",
+    "1-esd": "1 Esd.", "pr-man": "Pr. Man.", "2-esd": "2 Esd.",
+}
+
+# Books whose chapter numbering doesn't start at 1
+_START_OVERRIDES = {
+    "add-esth": 10,
+}
+
 
 class KjvVplParser(BaseParser):
     """Parser for verse-per-line KJV plaintext files."""
@@ -57,31 +69,33 @@ class KjvVplParser(BaseParser):
             if abbrev not in raw:
                 continue
             book_slug = _BOOK_IDS.get(abbrev, self.slugify(book_name))
-            book_chapters_meta = []
-            for ch_num in sorted(raw[abbrev]):
+            ch_nums = sorted(raw[abbrev])
+            for ch_num in ch_nums:
                 verses_raw = raw[abbrev][ch_num]
                 ch_id = f"{book_slug}-{ch_num}"
+                sorted_raw = sorted(verses_raw)
+                start_verse = sorted_raw[0][0] if sorted_raw else 1
                 verses = [
-                    {"number": vs, "text": BaseParser.clean_text(BaseParser.normalize_divine_names(txt))}
-                    for vs, txt in sorted(verses_raw)
+                    BaseParser.clean_text(BaseParser.normalize_divine_names(txt))
+                    for _vs, txt in sorted_raw
                 ]
                 chapters.append({
-                    "chapter": ch_num,
-                    "id": ch_id,
+                    "_id": ch_id,
                     "sections": [{
-                        "startVerse": verses[0]["number"] if verses else 1,
+                        "startVerse": start_verse,
                         "verses": verses,
                     }],
                 })
-                book_chapters_meta.append({
-                    "id": ch_id,
-                    "verses": len(verses),
-                })
-            manifest_books.append({
+            book_entry = {
                 "id": book_slug,
                 "name": book_name,
-                "chapters": book_chapters_meta,
-            })
+                "abbrev": _ABBREVS.get(book_slug, book_slug),
+                "chapters": len(ch_nums),
+            }
+            start = _START_OVERRIDES.get(book_slug)
+            if start is not None:
+                book_entry["start"] = start
+            manifest_books.append(book_entry)
         manifest = {
             "id": "apoc",
             "title": "Apocrypha",

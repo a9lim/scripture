@@ -213,7 +213,7 @@ class QuranParser(BaseParser):
             if m:
                 vnum = int(m.group(3))
                 text = m.group(4).strip()
-                current_verses.append({"number": vnum, "text": text})
+                current_verses.append(text)
                 continue
 
         # Flush last chapter
@@ -232,16 +232,9 @@ class QuranParser(BaseParser):
             "books": [{
                 "id": "quran",
                 "name": "Quran",
-                "chapters": [
-                    {
-                        "id": ch["id"],
-                        "name": ch.get("name"),
-                        "verses": sum(
-                            len(s["verses"]) for s in ch["sections"]
-                        ),
-                    }
-                    for ch in chapters
-                ],
+                "abbrev": "Quran",
+                "chapters": len(chapters),
+                "names": [ch.get("name") for ch in chapters],
             }],
         }
 
@@ -251,10 +244,7 @@ class QuranParser(BaseParser):
         }]
 
     def _finalize(self, ch_num, verses):
-        resolved = [
-            {"number": v["number"], "text": _postprocess_verse(v["text"])}
-            for v in verses
-        ]
+        resolved = [_postprocess_verse(v) for v in verses]
 
         if ch_num in _SURAH_NAMES:
             _, english = _SURAH_NAMES[ch_num]
@@ -262,11 +252,10 @@ class QuranParser(BaseParser):
             english = f"Chapter {ch_num}"
 
         return {
-            "chapter": ch_num,
-            "id": f"quran-{ch_num}",
+            "_id": f"quran-{ch_num}",
             "name": english,
             "sections": [{
-                "startVerse": resolved[0]["number"] if resolved else 1,
+                "startVerse": 1,
                 "verses": resolved,
             }] if resolved else [],
         }

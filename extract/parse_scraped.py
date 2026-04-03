@@ -36,6 +36,44 @@ if _here not in sys.path:
 
 from base_parser import BaseParser
 
+ABBREVS = {
+    'gen': 'Gen.', 'ex': 'Ex.', 'lev': 'Lev.', 'num': 'Num.',
+    'deut': 'Deut.', 'josh': 'Josh.', 'judg': 'Judg.', 'ruth': 'Ruth',
+    '1-sam': '1 Sam.', '2-sam': '2 Sam.', '1-kgs': '1 Kgs.', '2-kgs': '2 Kgs.',
+    '1-chr': '1 Chr.', '2-chr': '2 Chr.', 'ezra': 'Ezra', 'neh': 'Neh.',
+    'esth': 'Esth.', 'job': 'Job', 'ps': 'Ps.', 'prov': 'Prov.',
+    'eccl': 'Eccl.', 'song': 'Song', 'isa': 'Isa.', 'jer': 'Jer.',
+    'lam': 'Lam.', 'ezek': 'Ezek.', 'dan': 'Dan.', 'hosea': 'Hosea',
+    'joel': 'Joel', 'amos': 'Amos', 'obad': 'Obad.', 'jonah': 'Jonah',
+    'micah': 'Micah', 'nahum': 'Nahum', 'hab': 'Hab.', 'zeph': 'Zeph.',
+    'hag': 'Hag.', 'zech': 'Zech.', 'mal': 'Mal.',
+    'matt': 'Matt.', 'mark': 'Mark', 'luke': 'Luke', 'john': 'John',
+    'acts': 'Acts', 'rom': 'Rom.', '1-cor': '1 Cor.', '2-cor': '2 Cor.',
+    'gal': 'Gal.', 'eph': 'Eph.', 'philip': 'Philip.', 'col': 'Col.',
+    '1-thes': '1 Thes.', '2-thes': '2 Thes.', '1-tim': '1 Tim.',
+    '2-tim': '2 Tim.', 'titus': 'Titus', 'philem': 'Philem.',
+    'heb': 'Heb.', 'james': 'James', '1-pet': '1 Pet.', '2-pet': '2 Pet.',
+    '1-jn': '1 Jn.', '2-jn': '2 Jn.', '3-jn': '3 Jn.', 'jude': 'Jude',
+    'rev': 'Rev.',
+    '1-ne': '1 Ne.', '2-ne': '2 Ne.', 'jacob': 'Jacob', 'enos': 'Enos',
+    'jarom': 'Jarom', 'omni': 'Omni', 'w-of-m': 'W of M',
+    'mosiah': 'Mosiah', 'alma': 'Alma', 'hel': 'Hel.', '3-ne': '3 Ne.',
+    '4-ne': '4 Ne.', 'morm': 'Morm.', 'ether': 'Ether', 'moro': 'Moro.',
+    'dc': 'D&C', 'od': 'OD',
+    'moses': 'Moses', 'abr': 'Abr.', 'js-m': 'JS\u2014M',
+    'js-h': 'JS\u2014H', 'a-of-f': 'A of F',
+    'quran': 'Quran',
+    'tobit': 'Tobit', 'judith': 'Judith', 'add-esth': 'Add. Esth.',
+    'wis': 'Wis.', 'sir': 'Sir.', 'bar': 'Bar.', 'pr-azar': 'Pr. Azar.',
+    'sus': 'Sus.', 'bel': 'Bel', '1-macc': '1 Macc.', '2-macc': '2 Macc.',
+    '1-esd': '1 Esd.', 'pr-man': 'Pr. Man.', '2-esd': '2 Esd.',
+    'gl': 'G.L.', 'dom': 'D.M.', 'analects': 'Analects', 'mencius': 'Mencius',
+    'ttc': 'T.T.C.',
+    'kjk': 'Kami.', 'kjn': 'Naka.', 'kjs': 'Shimo.',
+    'bund': 'Bund.',
+    'lotus': 'Lotus',
+}
+
 _CHAPTER_RE = re.compile(r"^=== CHAPTER (\d+) ===$")
 _VERSE_RE = re.compile(r"^(\d+)\.\s*(.*)")
 
@@ -67,8 +105,7 @@ def parse_chapters(text, book_id):
             continue
         chapters.append(
             {
-                "chapter": ch_num,
-                "id": f"{book_id}-{ch_num}",
+                "_id": f"{book_id}-{ch_num}",
                 "sections": sections,
             }
         )
@@ -154,12 +191,9 @@ def _parse_paragraphs(lines):
 
 
 def _make_section(verses):
-    start = 1
     return {
-        "startVerse": start,
-        "verses": [
-            {"number": start + i, "text": v} for i, v in enumerate(verses)
-        ],
+        "startVerse": 1,
+        "verses": verses,
     }
 
 
@@ -191,14 +225,8 @@ def main():
     book_meta = {
         "id": args.book_id,
         "name": args.book_name,
-        "chapters": [
-            {
-                "id": ch["id"],
-                "name": str(ch["chapter"]),
-                "verses": sum(len(s["verses"]) for s in ch["sections"]),
-            }
-            for ch in chapters
-        ],
+        "abbrev": ABBREVS.get(args.book_id, args.book_id),
+        "chapters": len(chapters),
     }
 
     # Load or create manifest
@@ -250,7 +278,8 @@ def main():
 
     for ch in chapters:
         stripped = writer._strip_chapter(ch)
-        ch_path = os.path.join(chapters_dir, f"{stripped['id']}.json")
+        ch_id = stripped.pop('_id')
+        ch_path = os.path.join(chapters_dir, f"{ch_id}.json")
         with open(ch_path, "w", encoding="utf-8") as f:
             json.dump(stripped, f, ensure_ascii=False, indent=2)
 

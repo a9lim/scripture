@@ -44,20 +44,20 @@ class BundahisParser(BaseParser):
             # blank lines but verses span across them)
             body = re.sub(r"\s+", " ", body).strip()
 
-            verses = self._extract_verses(body)
+            start_verse, name, verses = self._extract_verses(body)
             if not verses:
                 continue
 
             chapters.append({
-                "chapter": ch_num,
-                "id": f"bund-{ch_num}",
-                "name": self._extract_name(verses),
+                "_id": f"bund-{ch_num}",
+                "name": name,
                 "sections": [{
-                    "startVerse": verses[0]["number"],
+                    "startVerse": start_verse,
                     "verses": verses,
                 }],
             })
 
+        names = [ch.get("name") for ch in chapters]
         manifest = {
             "id": self.WORK_ID,
             "title": self.WORK_TITLE,
@@ -67,14 +67,9 @@ class BundahisParser(BaseParser):
             "books": [{
                 "id": "bund",
                 "name": "Bundahishn",
-                "chapters": [
-                    {
-                        "id": ch["id"],
-                        "name": ch.get("name"),
-                        "verses": len(ch["sections"][0]["verses"]),
-                    }
-                    for ch in chapters
-                ],
+                "abbrev": "Bund.",
+                "chapters": len(chapters),
+                "names": names,
             }],
         }
 
@@ -83,20 +78,15 @@ class BundahisParser(BaseParser):
             "chapters": chapters,
         }]
 
-    @staticmethod
-    def _extract_name(verses):
-        """If verse 0 exists, use it as the chapter subtitle and remove it."""
-        if verses and verses[0]["number"] == 0:
-            name = verses.pop(0)["text"].rstrip(".")
-            # Update startVerse since verse 0 was removed
-            return name
-        return None
-
     def _extract_verses(self, body):
-        """Split body into numbered verses using sequential markers."""
+        """Split body into numbered verses using sequential markers.
+
+        Returns (start_verse, name_or_none, verse_strings).
+        If verse 0 exists, it becomes the chapter name.
+        """
         markers = list(_VERSE_RE.finditer(body))
         if not markers:
-            return []
+            return (1, None, [])
 
         # Filter to sequential verse numbers only
         filtered = []
@@ -110,14 +100,26 @@ class BundahisParser(BaseParser):
                 expect = vnum + 1
                 filtered.append(m)
 
-        verses = []
+        raw = []
         for i, m in enumerate(filtered):
             vnum = int(m.group(1))
             start = m.end()
             end = filtered[i + 1].start() if i + 1 < len(filtered) else len(body)
-            vtext = body[start:end].strip()
-            vtext = self.clean_text(vtext)
+            vtext = self.clean_text(body[start:end].strip())
             if vtext:
-                verses.append({"number": vnum, "text": vtext})
+                raw.append((vnum, vtext))
 
-        return verses
+        if not raw:
+            return (1, None, [])
+
+        # If verse 0 exists, extract it as the chapter name
+        name = None
+        if raw[0][0] == 0:
+            name = raw.pop(0)[1].rstrip(".")
+
+        if not raw:
+            return (1, name, [])
+
+        start_verse = raw[0][0]
+        verses = [text for _num, text in raw]
+        return (start_verse, name, verses)

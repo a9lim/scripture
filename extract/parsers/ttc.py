@@ -42,8 +42,7 @@ class TtcParser(BaseParser):
 
             chapters.append(
                 {
-                    "chapter": ch_num,
-                    "id": f"ttc-{ch_num}",
+                    "_id": f"ttc-{ch_num}",
                     "sections": [BaseParser.make_section(verses)],
                 }
             )
@@ -51,10 +50,8 @@ class TtcParser(BaseParser):
         book = {
             "id": "ttc",
             "name": "Tao Te Ching",
-            "chapters": [
-                {"id": ch["id"], "verses": len(ch["sections"][0]["verses"])}
-                for ch in chapters
-            ],
+            "abbrev": "T.T.C.",
+            "chapters": len(chapters),
         }
 
         return [

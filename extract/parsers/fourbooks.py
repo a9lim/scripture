@@ -8,6 +8,10 @@ import os
 import re
 from base_parser import BaseParser
 
+_ABBREVS = {
+    "gl": "G.L.", "dom": "D.M.", "analects": "Analects", "mencius": "Mencius",
+}
+
 
 class FourBooksParser(BaseParser):
     WORK_ID = "fourbooks"
@@ -46,15 +50,8 @@ class FourBooksParser(BaseParser):
                 {
                     "id": book_id,
                     "name": book_name,
-                    "chapters": [
-                        {
-                            "id": ch["id"],
-                            "verses": sum(
-                                len(s["verses"]) for s in ch["sections"]
-                            ),
-                        }
-                        for ch in chapters
-                    ],
+                    "abbrev": _ABBREVS.get(book_id, book_id),
+                    "chapters": len(chapters),
                 }
             )
 
@@ -118,24 +115,12 @@ class FourBooksParser(BaseParser):
             start = len(text_verses) + 1
             sections.append(BaseParser.make_section(comm_verses, start=start))
 
-        return [
-            {
-                "chapter": 1,
-                "id": f"{book_id}-1",
-                "sections": sections,
-            }
-        ]
+        return [{"_id": f"{book_id}-1", "sections": sections}]
 
     def _parse_single_chapter(self, lines, book_id):
         """Single-chapter book (Doctrine of the Mean)."""
         verses = self._lines_to_verses(lines)
-        return [
-            {
-                "chapter": 1,
-                "id": f"{book_id}-1",
-                "sections": [BaseParser.make_section(verses)],
-            }
-        ]
+        return [{"_id": f"{book_id}-1", "sections": [BaseParser.make_section(verses)]}]
 
     def _parse_analects(self, lines, book_id):
         """Analects: 20 chapters separated by centered numbers."""
@@ -161,10 +146,6 @@ class FourBooksParser(BaseParser):
         for num, ch_lines in chapter_groups:
             verses = self._lines_to_verses(ch_lines)
             chapters.append(
-                {
-                    "chapter": num,
-                    "id": f"{book_id}-{num}",
-                    "sections": [BaseParser.make_section(verses)],
-                }
+                {"_id": f"{book_id}-{num}", "sections": [BaseParser.make_section(verses)]}
             )
         return chapters

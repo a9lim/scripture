@@ -112,8 +112,7 @@ class KojikiParser(BaseParser):
             # Add preface as chapter 0 in Volume I
             if vol_idx == 0 and preface_verses:
                 ch = {
-                    "chapter": 0,
-                    "id": f"{book_id}-0",
+                    "_id": f"{book_id}-0",
                     "name": "Preface",
                     "sections": [BaseParser.make_section(preface_verses, clean=False)],
                 }
@@ -128,28 +127,29 @@ class KojikiParser(BaseParser):
                     if not verses:
                         continue
                     ch = {
-                        "chapter": abs_num,
-                        "id": f"{book_id}-{abs_num}",
+                        "_id": f"{book_id}-{abs_num}",
                         "name": self._title_case(title),
                         "sections": [BaseParser.make_section(verses, clean=False)],
                     }
                     chapters.append(ch)
 
             all_chapters.extend(chapters)
-            books_meta.append(
-                {
-                    "id": book_id,
-                    "name": book_name,
-                    "chapters": [
-                        {
-                            "id": ch["id"],
-                            "name": ch.get("name"),
-                            "verses": sum(len(s["verses"]) for s in ch["sections"]),
-                        }
-                        for ch in chapters
-                    ],
-                }
-            )
+            # Determine start from first chapter's _id suffix
+            start = 0
+            if chapters:
+                suffix = chapters[0]["_id"].rsplit("-", 1)[-1]
+                if suffix.isdigit():
+                    start = int(suffix)
+            abbrevs = {"kjk": "Kami.", "kjn": "Naka.", "kjs": "Shimo."}
+            book_entry = {
+                "id": book_id,
+                "name": book_name,
+                "abbrev": abbrevs.get(book_id, book_id),
+                "chapters": len(chapters),
+                "start": start,
+                "names": [ch.get("name") for ch in chapters],
+            }
+            books_meta.append(book_entry)
 
         return [
             {

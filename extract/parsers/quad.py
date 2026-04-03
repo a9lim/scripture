@@ -209,6 +209,40 @@ _BOOK_IDS = {
     "Articles of Faith": "a-of-f",
 }
 
+# book_id → abbreviation (matches frontend ABBREVS)
+_ABBREVS = {
+    # OT
+    "gen": "Gen.", "ex": "Ex.", "lev": "Lev.", "num": "Num.",
+    "deut": "Deut.", "josh": "Josh.", "judg": "Judg.", "ruth": "Ruth",
+    "1-sam": "1 Sam.", "2-sam": "2 Sam.", "1-kgs": "1 Kgs.", "2-kgs": "2 Kgs.",
+    "1-chr": "1 Chr.", "2-chr": "2 Chr.", "ezra": "Ezra", "neh": "Neh.",
+    "esth": "Esth.", "job": "Job", "ps": "Ps.", "prov": "Prov.",
+    "eccl": "Eccl.", "song": "Song", "isa": "Isa.", "jer": "Jer.",
+    "lam": "Lam.", "ezek": "Ezek.", "dan": "Dan.", "hosea": "Hosea",
+    "joel": "Joel", "amos": "Amos", "obad": "Obad.", "jonah": "Jonah",
+    "micah": "Micah", "nahum": "Nahum", "hab": "Hab.", "zeph": "Zeph.",
+    "hag": "Hag.", "zech": "Zech.", "mal": "Mal.",
+    # NT
+    "matt": "Matt.", "mark": "Mark", "luke": "Luke", "john": "John",
+    "acts": "Acts", "rom": "Rom.", "1-cor": "1 Cor.", "2-cor": "2 Cor.",
+    "gal": "Gal.", "eph": "Eph.", "philip": "Philip.", "col": "Col.",
+    "1-thes": "1 Thes.", "2-thes": "2 Thes.", "1-tim": "1 Tim.",
+    "2-tim": "2 Tim.", "titus": "Titus", "philem": "Philem.",
+    "heb": "Heb.", "james": "James", "1-pet": "1 Pet.", "2-pet": "2 Pet.",
+    "1-jn": "1 Jn.", "2-jn": "2 Jn.", "3-jn": "3 Jn.", "jude": "Jude",
+    "rev": "Rev.",
+    # BoM
+    "1-ne": "1 Ne.", "2-ne": "2 Ne.", "jacob": "Jacob", "enos": "Enos",
+    "jarom": "Jarom", "omni": "Omni", "w-of-m": "W of M",
+    "mosiah": "Mosiah", "alma": "Alma", "hel": "Hel.", "3-ne": "3 Ne.",
+    "4-ne": "4 Ne.", "morm": "Morm.", "ether": "Ether", "moro": "Moro.",
+    # D&C
+    "dc": "D&C", "od": "OD",
+    # PoGP
+    "moses": "Moses", "abr": "Abr.", "js-m": "JS\u2014M",
+    "js-h": "JS\u2014H", "a-of-f": "A of F",
+}
+
 # ---------------------------------------------------------------------------
 # Shared helpers
 # ---------------------------------------------------------------------------
@@ -340,23 +374,29 @@ class QuadParser(PdfParser):
                 canon_bname = bname
 
             if canon_bname not in book_map:
+                book_id = _BOOK_IDS.get(canon_bname, self.slugify(canon_bname))
                 book_map[canon_bname] = {
-                    "id": _BOOK_IDS.get(canon_bname, self.slugify(canon_bname)),
-                    "name": canon_bname, "chapters": [],
+                    "id": book_id,
+                    "name": canon_bname,
+                    "abbrev": _ABBREVS.get(book_id, book_id),
+                    "_ch_ids": [],
                 }
                 order.append(canon_bname)
-            book_map[canon_bname]["chapters"].append({
-                "id": ch["id"],
-                "verses": sum(len(s["verses"]) for s in ch["sections"]),
-            })
-            ids.add(ch["id"])
+            book_map[canon_bname]["_ch_ids"].append(ch["_id"])
+            ids.add(ch["_id"])
 
         def _work(work_id, title, key):
             book_map, order, ids = groups[key]
+            books = []
+            for b in order:
+                entry = dict(book_map[b])
+                ch_ids = entry.pop("_ch_ids")
+                entry["chapters"] = len(ch_ids)
+                books.append(entry)
             return {
                 "id": work_id,
                 "title": title,
-                "books": [book_map[b] for b in order],
+                "books": books,
                 "_chapter_ids": ids,
             }
 
@@ -455,10 +495,7 @@ class QuadParser(PdfParser):
             return
         text = _clean(" ".join(ch["_verse_parts"]), fix_dropcap=True)
         if text:
-            ch["verses"].append({
-                "number": ch["_cur_verse"],
-                "text": text,
-            })
+            ch["verses"].append(text)
         ch["_cur_verse"] = None
         ch["_verse_parts"] = []
         ch["_in_verse1"] = False
@@ -563,25 +600,21 @@ class QuadParser(PdfParser):
 
         if book == "Doctrine and Covenants":
             slug = f"dc-{num}"
-            name = f"D&C {num}"
         elif book.startswith("Official Declaration"):
             slug = f"od-{book.split()[-1]}"
-            name = book
         else:
             book_id = _BOOK_IDS.get(book, self.slugify(book))
             slug = f"{book_id}-{num}"
-            name = f"{book} {num}"
 
         sections = []
         if ch["verses"]:
             sections.append({
-                "startVerse": ch["verses"][0]["number"],
+                "startVerse": 1,
                 "verses": ch["verses"],
             })
 
         return {
-            "chapter": num,
-            "id": slug,
+            "_id": slug,
             "sections": sections,
             "_book": book,
         }
