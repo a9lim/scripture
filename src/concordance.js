@@ -1,5 +1,4 @@
-import { loadSearchIndex, parseRef, getManifest, getWorkIds } from './chapters.js';
-import { formatRef } from './refs.js';
+import { loadSearchIndex, parseRef, getManifest, getWorkIds, formatRef } from './chapters.js';
 
 let _concordance = null;
 let _searchIndex = null;

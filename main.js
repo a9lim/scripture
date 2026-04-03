@@ -3,13 +3,12 @@
    DOM cache, routing, module initialization.
    =================================================================== */
 
-import { loadManifests, getManifest, loadChapter, getAdjacentChapters, loadSearchIndex, parseRef, getWorkIds } from './src/chapters.js';
+import { loadManifests, getManifest, loadChapter, getAdjacentChapters, loadSearchIndex, parseRef, getWorkIds, formatRef, chapterIdAt } from './src/chapters.js';
 import { initNav, syncNav } from './src/nav.js';
 import { renderChapter, highlightVerse } from './src/reader.js';
 import { initNotes, renderNotes, openNote, toggleBookmark, isBookmarked, renderBookmarks } from './src/notes.js';
 import { initSearch } from './src/search.js';
 import { initPopover } from './src/popover.js';
-import { formatRef } from './src/refs.js';
 import { initDisplay } from './src/display.js';
 import { savePosition, getLastPosition, renderProgress, initResume } from './src/history.js';
 import { renderRelated } from './src/related.js';
@@ -54,7 +53,6 @@ const $ = {
 
 let currentWork = null;
 let currentChapter = null;
-let bookmarkScope = 'chapter';
 let tabBookmarks = null;
 
 /* ── navigation ────────────────────────────────────────────────────── */
@@ -83,7 +81,7 @@ async function navigate(workId, chapterId, verse) {
     renderRelated($, workId, chapterId, navigate);
     if (tabBookmarks && tabBookmarks.classList.contains('active')) {
       const activeScope = tabBookmarks.querySelector('.mode-btn.active');
-      const scope = activeScope ? activeScope.dataset.scope : bookmarkScope;
+      const scope = activeScope ? activeScope.dataset.scope : 'chapter';
       renderBookmarks($, workId, chapterId, scope, navigate);
     }
 
@@ -132,7 +130,8 @@ function routeFromHash() {
     if (last) { navigate(last.workId, last.chapterId); return; }
     const manifest = getManifest('bom');
     if (!manifest || !manifest.books.length) return;
-    navigate('bom', manifest.books[0].chapters[0].id);
+    const firstBook = manifest.books[0];
+    navigate('bom', chapterIdAt(firstBook.id, 0, firstBook.start));
     return;
   }
 
@@ -221,7 +220,7 @@ async function init() {
         b.setAttribute('aria-selected', b.dataset.tab === tab ? 'true' : 'false');
       });
       if (tab === 'bookmarks') {
-        renderBookmarks($, currentWork, currentChapter, bookmarkScope, navigate);
+        renderBookmarks($, currentWork, currentChapter, 'chapter', navigate);
       }
     });
   });

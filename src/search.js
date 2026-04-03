@@ -2,8 +2,7 @@
    search.js — Full-text search overlay with debounced filtering.
    =================================================================== */
 
-import { loadSearchIndex, parseRef, getManifest, getWorkIds, findBookForChapter, chapterNum } from './chapters.js';
-import { formatRef } from './refs.js';
+import { loadSearchIndex, parseRef, getManifest, getWorkIds, findBookForChapter, chapterNum, formatRef, chapterIdAt } from './chapters.js';
 import { fillSelect } from './nav.js';
 
 const MAX_RESULTS = 100;
@@ -64,13 +63,20 @@ function populateChapterFilter($, workId, bookId) {
   const m = getManifest(workId);
   if (!m) return;
   const book = m.books.find(b => b.id === bookId);
-  if (!book || book.chapters.length <= 1) {
+  if (!book || book.chapters <= 1) {
     $.searchChapter.replaceChildren();
     $.searchChapter.style.display = 'none';
     return;
   }
-  fillSelect($.searchChapter, book.chapters, ch => ch.id,
-    ch => ch.name ? `${chapterNum(ch.id)} (${ch.name})` : chapterNum(ch.id), 'All chapters');
+  const start = book.start ?? 1;
+  const items = Array.from({ length: book.chapters }, (_, i) => {
+    const id = chapterIdAt(book.id, i, start);
+    const num = start + i;
+    const name = book.names?.[i];
+    return { id, num, name };
+  });
+  fillSelect($.searchChapter, items, ch => ch.id,
+    ch => ch.name ? `${ch.num} (${ch.name})` : String(ch.num), 'All chapters');
   $.searchChapter.style.display = '';
 }
 
@@ -169,7 +175,12 @@ function runSearch($, onNavigate, index) {
     const m = getManifest(filterWork);
     if (m) {
       const book = m.books.find(b => b.id === filterBook);
-      if (book) bookChapterIds = new Set(book.chapters.map(ch => ch.id));
+      if (book) {
+        const start = book.start ?? 1;
+        bookChapterIds = new Set(
+          Array.from({ length: book.chapters }, (_, i) => chapterIdAt(book.id, i, start))
+        );
+      }
     }
   }
 

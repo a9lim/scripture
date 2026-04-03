@@ -17,7 +17,7 @@ function getChapterTitle(workId, chapterId) {
   if (!bookId) return chapterId;
   const book = manifest.books.find(b => b.id === bookId);
   if (!book) return chapterId;
-  if (book.chapters.length === 1) return book.name;
+  if (book.chapters === 1) return book.name;
   if (manifest.books.length === 1) return `${manifest.title} ${chapterNum(chapterId)}`;
   return `${book.name} ${chapterNum(chapterId)}`;
 }

@@ -3,8 +3,7 @@
    Storage key: "scripture-user" → { notes: { ref: text }, bookmarks: [ref] }
    =================================================================== */
 
-import { parseRef, getManifest } from './chapters.js';
-import { formatRef } from './refs.js';
+import { parseRef, getManifest, formatRef } from './chapters.js';
 
 const STORAGE_KEY = 'scripture-user';
 const OLD_KEY = 'scripture-notes';

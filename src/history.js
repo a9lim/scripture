@@ -1,5 +1,4 @@
-import { getManifest, findBookForChapter, loadSearchIndex } from './chapters.js';
-import { formatRef } from './refs.js';
+import { getManifest, findBookForChapter, loadSearchIndex, formatRef, chapterIdAt } from './chapters.js';
 
 const STORAGE_KEY = 'scripture-history';
 const MAX_RECENT = 10;
@@ -44,8 +43,10 @@ export function renderProgress($, workId, chapterId) {
   const book = manifest.books.find(b => b.id === bookId);
   if (!book) return;
 
-  const total = book.chapters.length;
-  const idx = book.chapters.findIndex(ch => ch.id === chapterId);
+  const total = book.chapters;
+  const start = book.start ?? 1;
+  const num = parseInt(chapterId.match(/\d+$/)?.[0], 10);
+  const idx = num - start;
   const current = idx + 1;
 
   bar.style.width = `${(current / total) * 100}%`;

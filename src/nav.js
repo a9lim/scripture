@@ -2,7 +2,7 @@
    nav.js — Toolbar dropdown population and navigation wiring.
    =================================================================== */
 
-import { getWorkIds, getManifest, findBookForChapter, chapterNum } from './chapters.js';
+import { getWorkIds, getManifest, findBookForChapter, chapterNum, chapterIdAt } from './chapters.js';
 
 /**
  * Replace all options in a <select> element.
@@ -50,11 +50,18 @@ function populateChapters($, workId, bookId) {
   if (!m) { $.chapterSelect.replaceChildren(); return; }
   const book = m.books.find(b => b.id === bookId);
   if (!book) { $.chapterSelect.replaceChildren(); return; }
-  fillSelect($.chapterSelect, book.chapters,
+  const start = book.start ?? 1;
+  const items = Array.from({ length: book.chapters }, (_, i) => {
+    const id = chapterIdAt(book.id, i, start);
+    const num = start + i;
+    const name = book.names?.[i];
+    return { id, num, name };
+  });
+  fillSelect($.chapterSelect, items,
     ch => ch.id,
-    ch => ch.name ? `${chapterNum(ch.id)} (${ch.name})` : chapterNum(ch.id)
+    ch => ch.name ? `${ch.num} (${ch.name})` : String(ch.num)
   );
-  $.chapterSelect.style.display = book.chapters.length <= 1 ? 'none' : '';
+  $.chapterSelect.style.display = book.chapters <= 1 ? 'none' : '';
 }
 
 /**
