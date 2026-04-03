@@ -977,6 +977,37 @@ body:has(.tts-bar:not([hidden])) #app-layout {
     color: var(--text);
 }
 
+/* ---------- Import Dialog ---------- */
+
+.import-dialog {
+    max-width: 360px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.import-heading {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    color: var(--text);
+}
+
+.import-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0 0 1.25rem;
+}
+
+.import-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.import-replace-btn {
+    color: var(--ext-red, #e05555);
+}
+
 @media (max-width: 900px) {
     .compare-btn-desktop { display: none; }
     .split-pane { display: none; }

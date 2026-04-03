@@ -15,6 +15,7 @@ import { renderRelated } from './src/related.js';
 import { initConcordance } from './src/concordance.js';
 import { openSplit, closeSplit, toggleSplit, isSplitOpen, getSplitState } from './src/split.js';
 import { initTTS, startTTS, stopTTS, isTTSActive } from './src/tts.js';
+import { exportData, promptImport } from './src/data-io.js';
 
 /* ── DOM cache ─────────────────────────────────────────────────────── */
 
@@ -50,6 +51,8 @@ const $ = {
   aboutBtn:         document.getElementById('about-btn'),
   ttsBtn:           document.getElementById('tts-btn'),
   compareBtn:       document.getElementById('compare-btn'),
+  exportBtn:        document.getElementById('export-btn'),
+  importBtn:        document.getElementById('import-btn'),
   appLayout:        document.getElementById('app-layout')
 };
 
@@ -363,6 +366,10 @@ async function init() {
     randomDropdown.style.left = `${rect.left}px`;
     randomDropdown.hidden = false;
   }
+
+  // Export / Import
+  $.exportBtn.addEventListener('click', exportData);
+  $.importBtn.addEventListener('click', promptImport);
 
   // Download
   $.downloadBtn.addEventListener('click', downloadText);
