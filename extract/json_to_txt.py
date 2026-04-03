@@ -38,16 +38,18 @@ def main():
         for book in manifest['books']:
             lines.append(f'BOOK: {book["id"]} | {book["name"]}')
 
-            for ch_meta in book['chapters']:
-                ch_id = ch_meta['id']
+            start = book.get('start', 1)
+            for i in range(book['chapters']):
+                ch_id = f"{book['id']}-{start + i}"
                 ch_path = os.path.join(work_dir, 'chapters', f'{ch_id}.json')
                 with open(ch_path) as f:
                     ch = json.load(f)
 
-                # Chapter header — name only when descriptive
-                header = f'CHAPTER: {ch["id"]}'
-                if ch.get('name'):
-                    header += f' | {ch["name"]}'
+                # Chapter header — name from manifest names array
+                header = 'CHAPTER:'
+                ch_name = book.get('names', [None] * (i + 1))[i] if book.get('names') else None
+                if ch_name:
+                    header += f' {ch_name}'
                 lines.append(header)
 
                 # Intro
@@ -64,15 +66,15 @@ def main():
                             lines.append(f'@ {start}')
                     elif num_sections > 1:
                         if start == 1:
-                            lines.append('~ @')
+                            lines.append('SECTION: @')
                         elif start != next_verse:
-                            lines.append(f'~ @ {start}')
+                            lines.append(f'SECTION: @ {start}')
                         else:
-                            lines.append('~')
+                            lines.append('SECTION:')
 
-                    for verse in section['verses']:
-                        lines.append(verse['text'])
-                        next_verse = verse['number'] + 1
+                    for text in section['verses']:
+                        lines.append(text)
+                    next_verse = start + len(section['verses'])
 
         # Write text file
         txt_path = os.path.join(output_dir, f'{work_id}.txt')
