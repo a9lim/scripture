@@ -24,8 +24,7 @@ Static scripture reader with verse actions, bookmarks, concordance, display sett
 
 ```
 main.js               Entry point. $ DOM cache, hash routing, navigate(), random verse
-├─ src/chapters.js     Data layer: caching, parseRef, findBookForChapter, chapterNum
-├─ src/refs.js         Book ID registry: BOOKS map (module-private), formatRef()
+├─ src/chapters.js     Data layer: caching, parseRef, findBookForChapter, chapterNum, formatRef, getBookInfo
 ├─ src/nav.js          Toolbar dropdowns: fillSelect() (shared), work/book/chapter selects
 ├─ src/reader.js       Verse rendering: sections, verse highlighting, word wrapping
 ├─ src/notes.js        Notes + bookmarks: localStorage persistence, sidebar tabs, toggleBookmark
@@ -39,14 +38,14 @@ main.js               Entry point. $ DOM cache, hash routing, navigate(), random
 
 State lives in `main.js`: `currentWork`, `currentChapter`.
 
-Import graph: `search.js → nav.js → chapters.js` (acyclic). `notes.js → chapters.js, refs.js`. `fillSelect` is exported from `nav.js` and shared by `search.js`.
+Import graph: `search.js → nav.js → chapters.js` (acyclic). `notes.js → chapters.js`. `fillSelect` is exported from `nav.js` and shared by `search.js`.
 
 ## ID System
 
-`BOOKS` in `refs.js` is the single source of truth for bookId→{workId, abbreviation}.
+Book metadata (workId, abbreviation) lives in the manifest and is indexed by `chapters.js` at load time.
 
 - **Work IDs**: `bom`, `dc`, `pgp`, `ot`, `nt`, `quran`, `apoc`, `fourbooks`, `ttc`, `kj`, `bund`, `lotus`
-- **Chapter IDs**: `{bookId}-{num}` — e.g. `gen-1`, `1-ne-3`, `dc-76`, `quran-19`, `kjk-1`, `lotus-1`
+- **Chapter IDs**: derived as `{bookId}-{(start ?? 1) + index}` (0-based index over a book's chapters) — e.g. `gen-1`, `1-ne-3`, `dc-76`, `quran-19`, `kjk-1`, `lotus-1`
 - **Reference format**: `workId:chapterId:verse` (search index). No alternate formats.
 - **Chapter numbers**: extracted via `chapterNum()` in `chapters.js` (trailing digits of chapter ID).
 
@@ -59,11 +58,13 @@ data/
   concordance.json               { "word": ["workId:chapterId:verseNum", ...] }
   similarity.json                { "chapterId": [{ ref, score }] }
   {workId}/
-    manifest.json                { id, title, books: [{ id, name, chapters: [{ id, name?, verses }] }] }
-    chapters/{chapterId}.json    { name?, sections }
+    manifest.json                { id, title, books: [{ id, name, abbrev, chapters, start?, names? }] }
+    chapters/{chapterId}.json    { sections }
 ```
 
-Chapters use `sections[].verses[]` where each verse is a plain string and each section has `startVerse`. Verse numbers are derived from `startVerse + index`. The chapter number is derived from the chapter ID (trailing digits). The renderer auto-numbers sections when multiple exist per chapter. The `name` field is a descriptive subtitle only (e.g. "Opening", "Preface") — omit when non-descriptive.
+Chapters use `sections[].verses[]` where each verse is a plain string and each section has `startVerse`. Verse numbers are derived from `startVerse + index`. The chapter number is derived from the chapter ID (trailing digits). The renderer auto-numbers sections when multiple exist per chapter.
+
+Book entries in the manifest: `{ id, name, abbrev, chapters }` where `chapters` is an integer count. Optional `start` (default 1) sets the first chapter number; optional `names` is an array of per-chapter subtitle strings. Chapter IDs are derived: `{bookId}-{(start ?? 1) + index}`. Chapter JSON files have no `name` field — chapter names live in the manifest `names` array only.
 
 **Chapter titles**: constructed by the renderer from context: `bookName` for single-chapter books, `workTitle N` for single-book works, `bookName N` for multi-book works.
 
@@ -76,6 +77,7 @@ text/{workId}.txt    One file per work
 ```
 WORK: id | Title
 BOOK: id | Name
+START: N                       (first chapter number for this book, default 1)
 CHAPTER: [name]
 @ N                            (set verse numbering to N)
 verse text
@@ -84,7 +86,7 @@ SECTION: @                     (section break — reset numbering to 1)
 SECTION: @ N                   (section break — start numbering at N)
 ```
 
-Chapter IDs are derived from `{bookId}-{N}` (sequential per book). Verse numbers auto-increment from 1. Use `@` / `SECTION: @` only for non-standard starts.
+Chapter IDs are derived as `{bookId}-{(start ?? 1) + index}` (0-based index per book). Verse numbers auto-increment from 1. Use `START:` for books whose chapter numbering doesn't begin at 1. Use `@` / `SECTION: @` only for non-standard verse starts.
 
 ## Extraction Pipeline
 
@@ -153,7 +155,7 @@ Edit `text/{workId}.txt`, then: `cd extract && python3 txt_to_json.py ../text/{w
 ### Adding a new scripture
 
 1. Create `text/{workId}.txt`
-2. Add book entries to `BOOKS` in `refs.js`
+2. Add `abbrev` to each book entry in the text file and register the abbreviation in `ABBREVS` in `txt_to_json.py`
 3. Run `txt_to_json.py`, `search_index.py`, and `./run.sh enrich`
 4. Commit text, data, `works.json`, `search-index.json`, `concordance.json`, `similarity.json`
 
@@ -172,7 +174,7 @@ Verse numbers use a fixed-width inline-block (`width: 2em`) pulled into the left
 - **Shared globals** (`escapeHtml`, `debounce`, `trapFocus`, `initOverlayDismiss`, `initShortcuts`, `initAboutPanel`, `showToast`, `_toolbar`, `_forms`, `_haptics`, `createSimTooltip`) are window globals from `shared-*.js`, not ES6 imports. Verify `<script>` tags exist in `index.html` when adding new shared dependencies.
 - **`_PALETTE`/`_FONT` frozen** by `colors.js` — do not mutate.
 - **`scripture-user` localStorage key** — changing it loses all user notes and bookmarks. Migrated from old `scripture-notes` key automatically.
-- **`BOOKS` is module-private** in `refs.js` — use `formatRef()` to format references externally.
+- **`book.chapters` is an integer** count in the manifest, not an array. Chapter objects are derived, not stored.
 - **Verse number gutter** — `#reading-pane` left padding must be ≥ 3.5rem (≥ 3rem on mobile) to avoid clipping verse numbers pulled via negative margin.
 - **`#reading-pane` has `position: relative`** — required for verse popover and concordance popover absolute positioning.
 - **Concordance data** — `concordance.json` can be large (~15MB). Lazy-loaded on first word click. Words are marked with `.conc-word` class after load via MutationObserver.
