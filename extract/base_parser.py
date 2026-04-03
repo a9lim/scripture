@@ -43,8 +43,8 @@ class BaseParser:
         return {
             "startVerse": start,
             "verses": [
-                {"number": start + i, "text": BaseParser.clean_text(v) if clean else v}
-                for i, v in enumerate(verses)
+                BaseParser.clean_text(v) if clean else v
+                for v in verses
             ],
         }
 
@@ -63,10 +63,10 @@ class BaseParser:
     @classmethod
     def _strip_manifest(cls, manifest):
         out = dict(manifest)
-        out['books'] = [
-            {**book, 'chapters': [cls._strip_none(ch) for ch in book.get('chapters', [])]}
-            for book in out.get('books', [])
-        ]
+        out['books'] = []
+        for book in manifest.get('books', []):
+            b = {k: v for k, v in book.items() if not k.startswith('_') and v is not None}
+            out['books'].append(b)
         return out
 
     # -- output ------------------------------------------------------------
@@ -92,6 +92,7 @@ class BaseParser:
 
             for chapter in work["chapters"]:
                 stripped = self._strip_chapter(chapter)
-                chapter_path = os.path.join(chapters_dir, f"{stripped['id']}.json")
+                ch_id = stripped.pop('_id')
+                chapter_path = os.path.join(chapters_dir, f"{ch_id}.json")
                 with open(chapter_path, "w", encoding="utf-8") as f:
                     json.dump(stripped, f, ensure_ascii=False, indent=2)
