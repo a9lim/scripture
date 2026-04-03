@@ -14,6 +14,7 @@ import { savePosition, getLastPosition, renderProgress, initResume } from './src
 import { renderRelated } from './src/related.js';
 import { initConcordance } from './src/concordance.js';
 import { openSplit, closeSplit, toggleSplit, isSplitOpen, getSplitState } from './src/split.js';
+import { initTTS, startTTS, stopTTS, isTTSActive } from './src/tts.js';
 
 /* ── DOM cache ─────────────────────────────────────────────────────── */
 
@@ -47,6 +48,7 @@ const $ = {
   searchChapter:    document.getElementById('search-chapter'),
   themeBtn:         document.getElementById('theme-btn'),
   aboutBtn:         document.getElementById('about-btn'),
+  ttsBtn:           document.getElementById('tts-btn'),
   compareBtn:       document.getElementById('compare-btn'),
   appLayout:        document.getElementById('app-layout')
 };
@@ -218,6 +220,13 @@ async function init() {
   // Display settings (after manifests so shared defer scripts are loaded)
   initDisplay($);
 
+  // Text-to-speech
+  initTTS($);
+  $.ttsBtn.addEventListener('click', () => {
+    if (isTTSActive()) stopTTS();
+    else startTTS($.verses);
+  });
+
   // Navigation dropdowns
   initNav($, (workId, chapterId) => navigate(workId, chapterId));
 
@@ -280,6 +289,9 @@ async function init() {
       const url = `${location.origin}${location.pathname}#${currentWork}/${currentChapter}:${verse}`;
       await navigator.clipboard.writeText(url);
       showToast('Link copied');
+    },
+    onRead: (verse) => {
+      startTTS($.verses, verse);
     },
     isBookmarked: (verse) => isBookmarked(currentWork, currentChapter, verse)
   });

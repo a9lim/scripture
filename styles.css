@@ -922,6 +922,61 @@
     padding-top: 1rem;
 }
 
+/* ---------- Text-to-Speech ---------- */
+
+.tts-bar {
+    position: fixed;
+    top: var(--toolbar-h);
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: var(--bg-panel);
+    backdrop-filter: blur(20px) saturate(1.5);
+}
+
+.tts-bar .tool-btn { flex-shrink: 0; }
+
+.tts-label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.tts-speed { width: 80px; flex-shrink: 0; }
+
+.tts-val {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    min-width: 28px;
+    flex-shrink: 0;
+}
+
+.tts-voice-select { max-width: 200px; font-size: 0.75rem; }
+
+.tts-active .verse {
+    background: color-mix(in srgb, var(--ext-blue, #6496ff) 12%, transparent);
+    border-radius: var(--radius-sm, 2px);
+}
+
+body:has(.tts-bar:not([hidden])) #app-layout {
+    margin-top: calc(var(--toolbar-h) + 36px);
+    height: calc(100vh - var(--toolbar-h) - 36px);
+}
+
+.vp-read { color: var(--text-muted); }
+
+.vp-read:hover,
+.vp-read:focus-visible {
+    background: var(--bg-hover);
+    color: var(--text);
+}
+
 @media (max-width: 900px) {
     .compare-btn-desktop { display: none; }
     .split-pane { display: none; }

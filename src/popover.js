@@ -62,6 +62,13 @@ function makeLinkIcon() {
   ]);
 }
 
+function makeSpeakerIcon() {
+  return svgEl({ fill: 'none' }, [
+    path({ d: 'M8.5 4L5 7H2v2h3l3.5 3V4z', stroke: 'currentColor', 'stroke-width': '1.5', 'stroke-linejoin': 'round' }),
+    path({ d: 'M12 5.5a4 4 0 0 1 0 5', stroke: 'currentColor', 'stroke-width': '1.5', 'stroke-linecap': 'round' })
+  ]);
+}
+
 /* -- Popover DOM ----------------------------------------------------- */
 
 function makeBtn(className, label) {
@@ -84,15 +91,17 @@ function buildPopover() {
   sep.className     = 'vp-sep';
   const copyBtn     = makeBtn('vp-copy',     'Copy verse');
   const linkBtn     = makeBtn('vp-link',     'Copy link');
+  const readBtn     = makeBtn('vp-read',     'Read aloud from here');
 
   noteBtn.appendChild(makeNoteIcon());
   bookmarkBtn.appendChild(makeBookmarkIcon(false));
   copyBtn.appendChild(makeCopyIcon());
   linkBtn.appendChild(makeLinkIcon());
+  readBtn.appendChild(makeSpeakerIcon());
 
-  el.append(noteBtn, bookmarkBtn, sep, copyBtn, linkBtn);
+  el.append(noteBtn, bookmarkBtn, sep, copyBtn, linkBtn, readBtn);
 
-  return { el, noteBtn, bookmarkBtn, copyBtn, linkBtn };
+  return { el, noteBtn, bookmarkBtn, copyBtn, linkBtn, readBtn };
 }
 
 function setBookmarkIcon(btn, filled) {
@@ -102,8 +111,8 @@ function setBookmarkIcon(btn, filled) {
 /* -- Main export ----------------------------------------------------- */
 
 export function initPopover($, callbacks) {
-  const { onNote, onBookmark, onCopy, onLink, isBookmarked } = callbacks;
-  const { el, noteBtn, bookmarkBtn, copyBtn, linkBtn } = buildPopover();
+  const { onNote, onBookmark, onCopy, onLink, onRead, isBookmarked } = callbacks;
+  const { el, noteBtn, bookmarkBtn, copyBtn, linkBtn, readBtn } = buildPopover();
 
   document.body.appendChild(el);
 
@@ -199,6 +208,12 @@ export function initPopover($, callbacks) {
     const v = activeVerse;
     close();
     if (v !== null) await onLink(v);
+  });
+
+  readBtn.addEventListener('click', () => {
+    const v = activeVerse;
+    close();
+    if (v !== null && onRead) onRead(v);
   });
 
   /* -- outside click dismiss ---------------------------------------- */
