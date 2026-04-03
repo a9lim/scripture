@@ -804,6 +804,15 @@
     font-style: italic;
 }
 
+/* ---------- Notes Search ---------- */
+
+.notes-search-input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
 /* ---------- Rich Note Display ---------- */
 
 .note-body {

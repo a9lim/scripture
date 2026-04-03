@@ -213,6 +213,10 @@ async function init() {
     ?.addEventListener('click', () => {
       renderBookmarks($, currentWork, currentChapter, 'chapter', navigate);
     });
+  document.querySelector('.sidebar-tabs .tab-btn[data-tab="notes"]')
+    ?.addEventListener('click', () => {
+      renderNotes($, currentWork, currentChapter);
+    });
 
   // Verse action popover
   initPopover($, {

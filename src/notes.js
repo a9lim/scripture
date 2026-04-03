@@ -11,6 +11,8 @@ const OLD_KEY = 'scripture-notes';
 let _$  = null;   // DOM cache reference
 let _workId = null;
 let _chapterId = null;
+let _notesScope = 'chapter';
+let _notesFilter = '';
 
 /* ── storage helpers ─────────────────────────────────────────────── */
 
@@ -80,12 +82,63 @@ export function renderNotes($, workId, chapterId) {
   const container = $.notesContent;
   container.replaceChildren();
 
+  // Search input
+  const searchInput = document.createElement('input');
+  searchInput.type = 'search';
+  searchInput.className = 'sim-select notes-search-input';
+  searchInput.placeholder = 'Filter notes\u2026';
+  searchInput.setAttribute('aria-label', 'Filter notes');
+  searchInput.value = _notesFilter;
+  container.appendChild(searchInput);
+
+  // Scope toggle
+  const scopeRow = document.createElement('div');
+  scopeRow.className = 'bookmark-scope';
+
+  const btnChapter = document.createElement('button');
+  btnChapter.className = 'mode-btn' + (_notesScope === 'chapter' ? ' active' : '');
+  btnChapter.dataset.scope = 'chapter';
+  btnChapter.textContent = 'This chapter';
+  scopeRow.appendChild(btnChapter);
+
+  const btnAll = document.createElement('button');
+  btnAll.className = 'mode-btn' + (_notesScope === 'all' ? ' active' : '');
+  btnAll.dataset.scope = 'all';
+  btnAll.textContent = 'All';
+  scopeRow.appendChild(btnAll);
+
+  _forms.bindModeGroup(scopeRow, 'scope', (val) => {
+    _notesScope = val;
+    renderNotes($, _workId, _chapterId);
+  });
+
+  container.appendChild(scopeRow);
+
+  // Debounced search
+  const debouncedRender = debounce(() => {
+    _notesFilter = searchInput.value;
+    renderNotes($, _workId, _chapterId);
+  }, 250);
+  searchInput.addEventListener('input', debouncedRender);
+
+  // Load notes
   const all = loadStore().notes;
+  const filter = _notesFilter.toLowerCase();
+
+  if (_notesScope === 'chapter') {
+    renderNotesChapter(container, all, workId, chapterId, filter);
+  } else {
+    renderNotesAll(container, all, filter);
+  }
+}
+
+function renderNotesChapter(container, all, workId, chapterId, filter) {
   const prefix = `${workId}:${chapterId}:`;
   const entries = [];
 
   for (const [key, text] of Object.entries(all)) {
     if (key.startsWith(prefix) && text) {
+      if (filter && !text.toLowerCase().includes(filter) && !key.toLowerCase().includes(filter)) continue;
       const verseNum = parseInt(key.slice(prefix.length), 10);
       entries.push({ verseNum, text });
     }
@@ -94,12 +147,92 @@ export function renderNotes($, workId, chapterId) {
   entries.sort((a, b) => a.verseNum - b.verseNum);
 
   if (!entries.length) {
-    showEmpty(container);
+    showEmpty(container, filter ? 'No matching notes.' : undefined);
     return;
   }
 
   for (const { verseNum, text } of entries) {
     container.appendChild(buildCard(verseNum, text));
+  }
+}
+
+function renderNotesAll(container, all, filter) {
+  const entries = [];
+  for (const [key, text] of Object.entries(all)) {
+    if (!text) continue;
+    if (filter) {
+      const parsed = parseRef(key);
+      const ref = formatRef(parsed.chapterId, parsed.verse);
+      if (!text.toLowerCase().includes(filter) && !ref.toLowerCase().includes(filter) && !key.toLowerCase().includes(filter)) continue;
+    }
+    const parsed = parseRef(key);
+    entries.push({ ref: key, text, ...parsed });
+  }
+
+  if (!entries.length) {
+    showEmpty(container, filter ? 'No matching notes.' : 'No notes yet.');
+    return;
+  }
+
+  // Group by workId
+  const grouped = new Map();
+  for (const entry of entries) {
+    if (!grouped.has(entry.workId)) grouped.set(entry.workId, []);
+    grouped.get(entry.workId).push(entry);
+  }
+
+  const sortedGroups = [...grouped.entries()].map(([wId, items]) => {
+    const manifest = getManifest(wId);
+    return { wId, title: manifest ? manifest.title : wId, items };
+  }).sort((a, b) => a.title.localeCompare(b.title));
+
+  for (const { title, items } of sortedGroups) {
+    const group = document.createElement('div');
+    group.className = 'bookmark-work-group';
+
+    const heading = document.createElement('h3');
+    heading.textContent = title;
+    group.appendChild(heading);
+
+    items.sort((a, b) => {
+      if (a.chapterId < b.chapterId) return -1;
+      if (a.chapterId > b.chapterId) return 1;
+      return a.verse - b.verse;
+    });
+
+    for (const entry of items) {
+      const row = document.createElement('div');
+      row.className = 'bookmark-row';
+      row.setAttribute('tabindex', '0');
+      row.setAttribute('role', 'button');
+
+      const content = document.createElement('div');
+      content.className = 'bookmark-content';
+
+      const textEl = document.createElement('div');
+      textEl.className = 'bookmark-text';
+      textEl.textContent = entry.text;
+      content.appendChild(textEl);
+
+      const refEl = document.createElement('div');
+      refEl.className = 'bookmark-ref';
+      refEl.textContent = formatRef(entry.chapterId, entry.verse);
+      content.appendChild(refEl);
+
+      row.appendChild(content);
+
+      const navigate = () => {
+        location.hash = `${entry.workId}/${entry.chapterId}:${entry.verse}`;
+      };
+      row.addEventListener('click', navigate);
+      row.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); navigate(); }
+      });
+
+      group.appendChild(row);
+    }
+
+    container.appendChild(group);
   }
 }
 
@@ -467,9 +600,9 @@ function autoResize(textarea) {
   });
 }
 
-function showEmpty(container) {
+function showEmpty(container, msg) {
   const p = document.createElement('p');
   p.className = 'empty-state';
-  p.textContent = 'Click a verse number to add a note.';
+  p.textContent = msg || 'Click a verse number to add a note.';
   container.appendChild(p);
 }
