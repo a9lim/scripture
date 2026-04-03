@@ -45,8 +45,9 @@ export function renderChapter($, chapter, isBookmarkedFn) {
         heading.textContent = i + 1;
         container.appendChild(heading);
       }
-      for (const v of chapter.sections[i].verses) {
-        appendVerse(container, v, isBookmarkedFn);
+      const sec = chapter.sections[i];
+      for (let j = 0; j < sec.verses.length; j++) {
+        appendVerse(container, sec.verses[j], sec.startVerse + j, isBookmarkedFn);
       }
     }
   }
@@ -57,29 +58,29 @@ export function renderChapter($, chapter, isBookmarkedFn) {
 /**
  * Append a single verse span (with clickable verse number) to the container.
  */
-function appendVerse(container, verse, isBookmarkedFn) {
+function appendVerse(container, text, verseNum, isBookmarkedFn) {
   const row = document.createElement('div');
   row.className = 'verse-row';
 
-  const bookmarked = isBookmarkedFn && isBookmarkedFn(verse.number);
+  const bookmarked = isBookmarkedFn && isBookmarkedFn(verseNum);
   if (bookmarked) row.classList.add('bookmarked');
 
   const num = document.createElement('span');
   num.className = 'verse-num';
   if (bookmarked) num.classList.add('bookmarked');
-  num.textContent = verse.number;
-  num.dataset.verse = verse.number;
+  num.textContent = verseNum;
+  num.dataset.verse = verseNum;
   num.setAttribute('role', 'button');
   num.setAttribute('tabindex', '0');
-  num.setAttribute('aria-label', `Verse ${verse.number} \u2014 click for actions`);
+  num.setAttribute('aria-label', `Verse ${verseNum} \u2014 click for actions`);
   row.appendChild(num);
 
   const span = document.createElement('span');
   span.className = 'verse';
-  span.id = `v${verse.number}`;
-  span.dataset.verse = verse.number;
+  span.id = `v${verseNum}`;
+  span.dataset.verse = verseNum;
   // Wrap each word in a span for concordance click
-  const words = verse.text.split(/(\s+)/);
+  const words = text.split(/(\s+)/);
   for (const w of words) {
     if (/^\s+$/.test(w)) {
       span.appendChild(document.createTextNode(w));

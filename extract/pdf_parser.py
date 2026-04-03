@@ -21,20 +21,13 @@ class PdfParser(BaseParser, ABC):
         Each dict follows this schema::
 
             {
-                "chapter": <int>,
-                "id": "<slug>",
+                "_id": "<slug>",
                 "name": "<descriptive name or None>",
                 "intro": "<chapter intro text or None>",
                 "sections": [
                     {
-                        "title": "<section heading or None>",
-                        "verses": [
-                            {
-                                "number": <int>,
-                                "text": "<verse body>"
-                            },
-                            ...
-                        ]
+                        "startVerse": <int>,
+                        "verses": ["<verse text>", ...]
                     },
                     ...
                 ]
@@ -87,7 +80,7 @@ class PdfParser(BaseParser, ABC):
         for manifest in manifests:
             chapter_ids = manifest.pop("_chapter_ids", None)
             if chapter_ids is not None:
-                work_chapters = [ch for ch in chapters if ch["id"] in chapter_ids]
+                work_chapters = [ch for ch in chapters if ch["_id"] in chapter_ids]
             else:
                 work_chapters = chapters
             works.append({

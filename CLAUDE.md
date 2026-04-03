@@ -60,10 +60,10 @@ data/
   similarity.json                { "chapterId": [{ ref, score }] }
   {workId}/
     manifest.json                { id, title, books: [{ id, name, chapters: [{ id, name?, verses }] }] }
-    chapters/{chapterId}.json    { chapter, id, name?, sections }
+    chapters/{chapterId}.json    { name?, sections }
 ```
 
-Chapters use `sections[].verses[]` where each verse is `{ number, text }` and each section has `startVerse`. The renderer auto-numbers sections when multiple exist per chapter. The `name` field is a descriptive subtitle only (e.g. "Opening", "Preface") — omit when non-descriptive.
+Chapters use `sections[].verses[]` where each verse is a plain string and each section has `startVerse`. Verse numbers are derived from `startVerse + index`. The chapter number is derived from the chapter ID (trailing digits). The renderer auto-numbers sections when multiple exist per chapter. The `name` field is a descriptive subtitle only (e.g. "Opening", "Preface") — omit when non-descriptive.
 
 **Chapter titles**: constructed by the renderer from context: `bookName` for single-chapter books, `workTitle N` for single-book works, `bookName N` for multi-book works.
 
@@ -76,15 +76,15 @@ text/{workId}.txt    One file per work
 ```
 WORK: id | Title
 BOOK: id | Name
-CHAPTER: id [| name]
+CHAPTER: [name]
 @ N                            (set verse numbering to N)
 verse text
-~                              (section break — numbering continues)
-~ @                            (section break — reset numbering to 1)
-~ @ N                          (section break — start numbering at N)
+SECTION:                       (section break — numbering continues)
+SECTION: @                     (section break — reset numbering to 1)
+SECTION: @ N                   (section break — start numbering at N)
 ```
 
-Verse numbers auto-increment from 1. Use `@` / `~ @` only for non-standard starts.
+Chapter IDs are derived from `{bookId}-{N}` (sequential per book). Verse numbers auto-increment from 1. Use `@` / `SECTION: @` only for non-standard starts.
 
 ## Extraction Pipeline
 
@@ -113,7 +113,7 @@ extract/
   run.sh                   Helper: scrape, extract-raw, json2txt, txt2json, verify, reindex, concordance, similarity, enrich
 ```
 
-All parsers return `[{ "manifest": {...}, "chapters": [...] }]` with clean `{ number, text }` verses only.
+All parsers return `[{ "manifest": {...}, "chapters": [...] }]` with verses as plain strings. Chapter dicts use `_id` internally (stripped on write).
 
 ## URL Routing
 

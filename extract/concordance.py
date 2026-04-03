@@ -131,12 +131,12 @@ def build_concordance(data_dir: str) -> None:
             with open(chapter_path, "r", encoding="utf-8") as f:
                 chapter = json.load(f)
 
-            chapter_id = chapter["id"]
+            chapter_id = chapter_file[:-5]  # strip .json
 
             for section in chapter.get("sections", []):
-                for verse in section.get("verses", []):
-                    verse_num = verse["number"]
-                    text = verse["text"].lower()
+                for i, text in enumerate(section.get("verses", [])):
+                    verse_num = section["startVerse"] + i
+                    text = text.lower()
                     ref = f"{work_id}:{chapter_id}:{verse_num}"
 
                     # Tokenize, deduplicate words per verse

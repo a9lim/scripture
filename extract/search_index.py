@@ -48,12 +48,13 @@ def build_index(data_dir: str) -> None:
             with open(chapter_path, "r", encoding="utf-8") as f:
                 chapter = json.load(f)
 
-            chapter_id = chapter["id"]
+            chapter_id = chapter_file[:-5]  # strip .json
 
             for section in chapter.get("sections", []):
-                for verse in section.get("verses", []):
-                    ref = f"{work_id}:{chapter_id}:{verse['number']}"
-                    index.append({"ref": ref, "text": verse["text"]})
+                for i, text in enumerate(section.get("verses", [])):
+                    verse_num = section["startVerse"] + i
+                    ref = f"{work_id}:{chapter_id}:{verse_num}"
+                    index.append({"ref": ref, "text": text})
 
     # Preserve existing works.json ordering, appending any new works
     works_path = os.path.join(data_dir, "works.json")
