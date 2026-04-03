@@ -19,7 +19,7 @@ Serve from repo root — shared files load via absolute paths. No build step, te
 
 ## Overview
 
-Static scripture reader with verse actions, bookmarks, concordance, display settings, reading history, full-text search, related passages, and text download. Twelve works: Book of Mormon, D&C, Pearl of Great Price, OT (KJV), NT (KJV), Apocrypha (KJV), Quran (Pickthall), Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), Lotus Sutra (Kern). Zero dependencies, vanilla ES6 modules.
+Static scripture reader with verse actions, bookmarks, concordance, display settings, reading history, full-text search, related passages, text download, split-pane parallel reading, text-to-speech, rich markdown notes, and data export/import. Twelve works: Book of Mormon, D&C, Pearl of Great Price, OT (KJV), NT (KJV), Apocrypha (KJV), Quran (Pickthall), Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), Lotus Sutra (Kern). Zero dependencies, vanilla ES6 modules.
 
 ## Frontend Architecture
 
@@ -28,18 +28,21 @@ main.js               Entry point. $ DOM cache, hash routing, navigate(), random
 ├─ src/chapters.js     Data layer: caching, parseRef, formatRef, chapterIdAt, bookMap
 ├─ src/nav.js          Toolbar dropdowns: fillSelect() (shared), work/book/chapter selects
 ├─ src/reader.js       Verse rendering: sections, verse highlighting, word wrapping
-├─ src/notes.js        Notes + bookmarks: localStorage persistence, sidebar tabs, toggleBookmark
+├─ src/notes.js        Notes + bookmarks: markdown rendering, scope toggle, global view, search
 ├─ src/search.js       Search overlay: lazy index load, debounced filter, grouped results
-├─ src/popover.js      Verse action popover: note, bookmark, copy, link (hover to open)
+├─ src/popover.js      Verse action popover: note, bookmark, copy, link, read aloud
 ├─ src/display.js      Display settings dropdown: font, size, spacing, width
 ├─ src/history.js      Reading history, resume dropdown, progress bar
 ├─ src/concordance.js  Concordance: word-click popover + full overlay
-└─ src/related.js      Related passages: TF-IDF similarity, collapsible section
+├─ src/related.js      Related passages: TF-IDF similarity, collapsible section
+├─ src/split.js        Split-pane parallel reading: independent second reader pane
+├─ src/tts.js          Text-to-speech: SpeechSynthesis API, verse tracking, control bar
+└─ src/data-io.js      Export/import: JSON backup with merge/replace
 ```
 
 State lives in `main.js`: `currentWork`, `currentChapter`.
 
-Import graph: `search.js → nav.js → chapters.js` (acyclic). `notes.js → chapters.js`. `fillSelect` is exported from `nav.js` and shared by `search.js`.
+Import graph: `search.js → nav.js → chapters.js` (acyclic). `notes.js → chapters.js`. `split.js → nav.js, chapters.js, notes.js, popover.js, concordance.js`. `fillSelect` is exported from `nav.js` and shared by `search.js` and `split.js`.
 
 ## ID System
 
@@ -129,7 +132,7 @@ cd extract && ./run.sh extract-raw   # re-extract all works from raw/ + reindex
 
 ## URL Routing
 
-Hash-based: `#workId/chapterId` with optional `:verseNum` for deep-linking. Default: last reading position from history, fallback `#bom/1-ne-1`.
+Hash-based: `#workId/chapterId` with optional `:verseNum` for deep-linking. Split-pane URLs use `+` separator: `#workId/chapterId+workId/chapterId`. Default: last reading position from history, fallback `#bom/1-ne-1`.
 
 ## User Data (localStorage)
 
@@ -158,3 +161,8 @@ Verse numbers: fixed-width inline-block (`width: 2em`), pulled into gutter via n
 - **Verse number gutter** — `#reading-pane` left padding must be ≥ 3.5rem (≥ 3rem on mobile).
 - **`#reading-pane` has `position: relative`** — required for popover positioning.
 - **Concordance data** — `concordance.json` (~15MB). Lazy-loaded on first word click.
+- **Split pane verse IDs** use `sv` prefix (`sv1`, `sv2`) to avoid collisions with primary pane's `v1`, `v2`.
+- **Split pane DOM** is built once and reused (hidden/shown) — `initPopover` and `initConcordance` are called only on first build.
+- **TTS control bar** uses `body:has(.tts-bar:not([hidden]))` to push `#app-layout` down — requires modern browser.
+- **Notes markdown** — `renderMarkdown()` calls `escapeHtml()` first, then applies regex. Safe because input is always escaped before HTML tag insertion.
+- **Export/import** uses three localStorage keys: `scripture-user`, `scripture-display`, `scripture-history`. Import reloads the page.
