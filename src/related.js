@@ -40,16 +40,15 @@ export function renderRelated($, workId, chapterId, navigateFn) {
 
     container.classList.remove('hidden');
 
-    // Clone toggle to remove old listeners
-    const newToggle = toggle.cloneNode(true);
-    toggle.replaceWith(newToggle);
-
-    newToggle.addEventListener('click', () => {
+    // Remove previous listener if any, then add new one
+    if (toggle._relatedHandler) toggle.removeEventListener('click', toggle._relatedHandler);
+    toggle._relatedHandler = () => {
       const wasHidden = list.classList.contains('hidden');
       list.classList.toggle('hidden');
-      newToggle.classList.toggle('expanded', wasHidden);
+      toggle.classList.toggle('expanded', wasHidden);
       if (wasHidden && !list.children.length) renderList(list, matches, navigateFn);
-    });
+    };
+    toggle.addEventListener('click', toggle._relatedHandler);
   }).catch(() => { /* graceful no-op */ });
 }
 

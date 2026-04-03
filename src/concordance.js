@@ -210,7 +210,11 @@ export function initConcordance($, navigateFn) {
   loadConcordance().then(conc => {
     markWords(conc);
     // Re-mark after each chapter render via MutationObserver on #verses
-    new MutationObserver(() => markWords(conc)).observe($.verses, { childList: true });
+    let markTimer;
+    new MutationObserver(() => {
+      clearTimeout(markTimer);
+      markTimer = setTimeout(() => markWords(conc), 50);
+    }).observe($.verses, { childList: true });
   }).catch(() => {});
 
   $.verses.addEventListener('click', async (e) => {
