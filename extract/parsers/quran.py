@@ -80,6 +80,7 @@ _TRANSLATIONS = {
     "Kafur": "camphor",
     "Al-Hijr": "the Rock",
     "Sijjin": "Perdition",
+    "Hud": "Lehi",
 }
 
 
@@ -109,7 +110,6 @@ _SPECULATIVE = {
     "Muslim": "Meshallem",
     # Prophet / Figure names
     "Salih": "Zoleah",
-    "Hud": "Hod",
     "Muhammad": "Mahemod",
     "MUhammad": "Mahemod",
     "Abu Lahab": "Abi-Lahav",

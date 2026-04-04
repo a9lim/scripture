@@ -28,6 +28,7 @@
 | Kafur | camphor |
 | Al-Hijr | the Rock |
 | Sijjin | Perdition |
+| Hud | Lehi |
 | Ka'bah | see Speculative → Cabah |
 
 ## Already English in Pickthall (no parser action needed)
@@ -64,7 +65,7 @@
 | Surah | Original Title | Updated Title | Source |
 |------:|----------------|---------------|--------|
 | 3 | The Family of Imran | The Family of Amram | translated ('Imran→Amram) |
-| 11 | Hud | Hod | speculative (Hud→Hod) |
+| 11 | Hud | Lehi | translated (Hud→Lehi; Hamblin 2002) |
 | 20 | Ta Ha | Teth Heh | hebraized letter names |
 | 27 | The Naml | The Nemal | speculative (Naml→Nemal) |
 | 31 | Luqman | Achiacharus | translated (Luqman→Achiacharus) |
@@ -93,7 +94,6 @@ Arabic terms run through the Proto-Semitic consonant/vowel pipeline to produce K
 | A'ad | Od | '→silent, a→o |
 | Qureysh / Quraish | Coresh | q→c, ai→e (= Hebrew "Cyrus") |
 | Salih | Zoleah | s→z, fa'il→qotel |
-| Hud | Hod | u→o (Heb. *hod* "majesty" attested) |
 | Muhammad / MUhammad | Mahemod | mu→me, Piel pp; epenthetic hatef under guttural, Canaanite shift (Heb. *mahmad* attested) |
 | Abu Lahab | Abi-Lahav | construct + Heb. *lahav* "flame" attested |
 | Tubb'a | Tobba | u→o, '→silent |

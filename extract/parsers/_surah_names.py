@@ -15,7 +15,7 @@ _RAW_PATH = os.path.join(
 # Overrides: hebraized letters, speculative coinages, translated names
 _OVERRIDES = {
     3: "Family of Amram",       # translated ('Imran→Amram)
-    11: "Hod",                  # speculative (Hud→Hod)
+    11: "Lehi",                 # translated (Hud→Lehi; Hamblin 2002)
     20: "Teth Heh",             # hebraized letter names
     27: "Nemal",                # speculative (Naml→Nemal)
     31: "Achiacharus",          # translated (Luqman→Achiacharus)
