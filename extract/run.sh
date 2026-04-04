@@ -61,6 +61,18 @@ extract-raw)
     python3 parse_scraped.py "$RAW/lotus_raw.txt" --output "$DATA" \
         --work-id lotus --work-title "Lotus Sutra" --book-id lotus --book-name "Lotus Sutra"
 
+    echo "=== Plaintext: Arda Viraf ==="
+    python3 extract.py "$RAW/virafraw.txt" --parser viraf --output "$DATA"
+
+    echo "=== Plaintext: Book of Poetry ==="
+    python3 extract.py "$RAW/bop.txt" --parser bop --output "$DATA"
+
+    echo "=== Plaintext: Kalevala ==="
+    python3 extract.py "$RAW/kv.txt" --parser kalevala --output "$DATA"
+
+    echo "=== Plaintext: Poetic Edda ==="
+    python3 extract.py "$RAW/poe.txt" --parser edda --output "$DATA"
+
     echo "=== Rebuilding search index ==="
     python3 search_index.py "$DATA"
     ;;

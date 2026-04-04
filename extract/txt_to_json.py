@@ -69,6 +69,10 @@ ABBREVS = {
     'kjk': 'Kami.', 'kjn': 'Naka.', 'kjs': 'Shimo.',
     'bund': 'Bund.',
     'lotus': 'Lotus',
+    'viraf': 'Viraf',
+    'guofeng': 'G.F.', 'xiaoya': 'X.Y.', 'daya': 'D.Y.',
+    'kv': 'Kal.',
+    'poe-gods': 'Gods', 'poe-heroes': 'Heroes',
 }
 
 

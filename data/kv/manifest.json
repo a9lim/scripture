@@ -1,0 +1,73 @@
+{
+  "id": "kv",
+  "title": "Kalevala",
+  "translations": [
+    {
+      "id": "crawford",
+      "name": "John Martin Crawford",
+      "year": 1888
+    }
+  ],
+  "books": [
+    {
+      "id": "kv",
+      "name": "Kalevala",
+      "abbrev": "Kal.",
+      "chapters": 51,
+      "start": 0,
+      "names": [
+        "Proem",
+        "Birth of Wainamoinen",
+        "Wainamoinen's Sowing",
+        "Wainamoinen and Youkahainen",
+        "The Fate of Aino",
+        "Wainamoinen's Lamentation",
+        "Wainamoinen's Haplfss Journey",
+        "Wainioinen's Rescue",
+        "Maiden of the Rainbow",
+        "Origin of Iron",
+        "Ilmarinen Forges the Sampo",
+        "Lemminkainen's Lament",
+        "Kyllikki's Broken Vow",
+        "Lemminikainen's Second Wooing",
+        "Death of Lemminkainen",
+        "Lemminkainen's Restoration",
+        "Wainamoinen's Boat-building",
+        "Wainamoinen Finds the Lost-word",
+        "The Rival Suitors",
+        "Ilmarinen's Wooing",
+        "The Brewing of Beer",
+        "Ilmarinen's Wedding-feast",
+        "The Bride's Farewell",
+        "Osmotar the Bride-adviser",
+        "The Bride's Farewell",
+        "Wainamoinen's Wedding-songs",
+        "Origin of the Serpent",
+        "The Unwelcome Guest",
+        "The Mother's Counsel",
+        "The Isle of Refuge",
+        "The Frost-fiend",
+        "Kullerwoinen Son of Evil",
+        "Kullervo as a Sheperd",
+        "Kullervo and the Cheat-cake",
+        "Kullervo Finds His Tribe-folk",
+        "Kullervo's Evil Deeds",
+        "Kullerwoinen's Victory and Death",
+        "Ilmarinen's Bride of Gold",
+        "Ilmarinen's Fruitless Wooing",
+        "Wainamoinen's Sailing",
+        "Birth of the Harp",
+        "Wainamoinen's Harp-songs",
+        "Capture of the Sampo",
+        "The Sampo Lost in the Sea",
+        "Birth of the Second Harp",
+        "Birth of the Nine Diseases",
+        "Otso the Honey-eater",
+        "Louhi Steals Sun, Moon, and Fire",
+        "Capture of the Fire-fish",
+        "Restoration of the Sun and Moon",
+        "Mariatta--wainamoinen's Departure"
+      ]
+    }
+  ]
+}

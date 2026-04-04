@@ -19,7 +19,7 @@ Serve from repo root — shared files load via absolute paths. No build step, te
 
 ## Overview
 
-Static scripture reader with verse actions, bookmarks, concordance, display settings, reading history, full-text search, related passages, text download, split-pane parallel reading, text-to-speech, rich markdown notes, and data export/import. Twelve works: Book of Mormon, D&C, Pearl of Great Price, OT (KJV), NT (KJV), Apocrypha (KJV), Quran (Pickthall), Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), Lotus Sutra (Kern). Zero dependencies, vanilla ES6 modules.
+Static scripture reader with verse actions, bookmarks, concordance, display settings, reading history, full-text search, related passages, text download, split-pane parallel reading, text-to-speech, rich markdown notes, and data export/import. Sixteen works: Book of Mormon, D&C, Pearl of Great Price, OT (KJV), NT (KJV), Apocrypha (KJV), Quran (Pickthall), Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), Lotus Sutra (Kern), Arda Viraf (Haug & West), Book of Poetry (Legge), Kalevala (Crawford), Poetic Edda (Bellows). Zero dependencies, vanilla ES6 modules.
 
 ## Frontend Architecture
 
@@ -48,7 +48,7 @@ Import graph: `search.js → nav.js → chapters.js` (acyclic). `notes.js → ch
 
 Book metadata (workId, abbreviation) lives in each manifest and is indexed into a `bookMap` by `chapters.js` at load time. Chapter IDs are never stored — they are derived.
 
-- **Work IDs**: `bom`, `dc`, `pgp`, `ot`, `nt`, `quran`, `apoc`, `fourbooks`, `ttc`, `kj`, `bund`, `lotus`
+- **Work IDs**: `bom`, `dc`, `pgp`, `ot`, `nt`, `quran`, `apoc`, `fourbooks`, `ttc`, `kj`, `bund`, `lotus`, `viraf`, `bop`, `kv`, `poe`
 - **Chapter IDs**: `{bookId}-{(start ?? 1) + index}` where index is 0-based — e.g. `gen-1`, `1-ne-3`, `quran-19`, `kjk-0`
 - **Reference format**: `workId:chapterId:verse` — e.g. `ot:gen-1:26`
 - **Chapter numbers**: extracted via `chapterNum()` (trailing digits of chapter ID)
@@ -105,7 +105,7 @@ extract/
   concordance.py       python3 concordance.py <data_dir> → concordance.json
   similarity.py        python3 similarity.py <data_dir> → similarity.json (requires scikit-learn)
   verify_data.py       python3 verify_data.py [data_dir] — checks canonical verse counts
-  parsers/             quad.py, quran.py, kjv_vpl.py, fourbooks.py, ttc.py, kojiki.py, bundahis.py
+  parsers/             quad.py, quran.py, kjv_vpl.py, fourbooks.py, ttc.py, kojiki.py, bundahis.py, viraf.py, bop.py, kalevala.py, edda.py
   scrape_sacred_texts.py   Scrape sacred-texts.com → raw file
   parse_scraped.py         Parse scraped plaintext → JSON (used for Mencius, Lotus Sutra)
   run.sh                   All-in-one helper

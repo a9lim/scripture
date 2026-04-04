@@ -1,0 +1,64 @@
+{
+  "id": "poe",
+  "title": "Poetic Edda",
+  "translations": [
+    {
+      "id": "bellows",
+      "name": "Henry Adams Bellows",
+      "year": 1936
+    }
+  ],
+  "books": [
+    {
+      "id": "poe-gods",
+      "name": "Lays of the Gods",
+      "abbrev": "Gods",
+      "chapters": 14,
+      "names": [
+        "Voluspo",
+        "Hovamol",
+        "Vafthruthnismol",
+        "Grimnismol",
+        "Skirnismol",
+        "Harbarthsljoth",
+        "Hymiskvitha",
+        "Lokasenna",
+        "Thrymskvitha",
+        "Alvissmol",
+        "Baldrs Draumar",
+        "Rigsthula",
+        "Hyndluljoth",
+        "Svipdagsmol"
+      ]
+    },
+    {
+      "id": "poe-heroes",
+      "name": "Lays of the Heroes",
+      "abbrev": "Heroes",
+      "chapters": 21,
+      "names": [
+        "Volundarkvitha",
+        "Helgakvitha Hjorvarthssonar",
+        "Helgakvitha Hundingsbana I",
+        "Helgakvitha Hundingsbana II",
+        "Fra Dautha Sinfjotla",
+        "Gripisspo",
+        "Reginsmol",
+        "Fafnismol",
+        "Sigrdrifumol",
+        "Brot af Sigurtharkvithu",
+        "Guthrunarkvitha I",
+        "Sigurtharkvitha en Skamma",
+        "Helreith Brynhildar",
+        "Drap Niflunga",
+        "Guthrunarkvitha II",
+        "Guthrunarkvitha III",
+        "Oddrunargratr",
+        "Atlakvitha",
+        "Atlamol",
+        "Guthrunarhvot",
+        "Hamthesmol"
+      ]
+    }
+  ]
+}
