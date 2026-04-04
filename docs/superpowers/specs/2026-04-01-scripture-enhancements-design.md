@@ -70,7 +70,7 @@ Toolbar dropdown for reading display preferences.
 - Font size — slider via `_forms.bindSlider`, 14px–24px, default 18px
 - Line height — slider, 1.4–2.4, default 2.0
 - Column width — slider, 500px–900px, default 800px
-- Font — 3-way mode group via `_forms.bindModeGroup`: Serif (Crimson Pro) / Sans (`--font-body`) / Dyslexic (OpenDyslexic)
+- Font — 3-way mode group via `_forms.bindModeGroup`: Serif (Crimson Text) / Sans (`--font-body`) / Dyslexic (OpenDyslexic)
 
 **Behavior:**
 - Gear icon button in toolbar (right side, immediately right of theme toggle)
