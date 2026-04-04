@@ -938,6 +938,7 @@
     backdrop-filter: blur(20px) saturate(1.5);
 }
 
+.tts-bar[hidden] { display: none; }
 .tts-bar .tool-btn { flex-shrink: 0; }
 
 .tts-label {
