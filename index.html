@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scripture | a9l.im</title>
-    <meta name="description" content="Read sacred texts from twelve works — KJV Bible, Quran (Pickthall), Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Apocrypha, Four Books (Legge), Tao Te Ching, Kojiki, Bundahis, and Lotus Sutra (Kern) — with full-text search, verse notes, and chapter navigation.">
+    <title>Scripture — a9l.im</title>
+    <meta name="description" content="Read and compare sacred texts from world traditions. Sixteen works including the Bible (KJV), Quran (Pickthall), Book of Mormon, Four Books, Tao Te Ching, and more — with full-text search, concordance, and verse notes.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta property="og:title" content="Scripture — Sacred Text Reader">
-    <meta property="og:description" content="Read sacred texts from twelve works with full-text search, verse notes, and chapter navigation. KJV Bible, Quran, Book of Mormon, Tao Te Ching, Kojiki, Lotus Sutra, and more.">
+    <meta property="og:description" content="Read and compare sacred texts from world traditions. Sixteen works with full-text search, concordance, and verse-linked notes.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://a9l.im/scripture/">
     <meta property="og:site_name" content="a9l.im">
     <meta property="og:image" content="https://a9l.im/scripture/og-image.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://a9l.im/scripture/og-image.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/webp">
     <meta name="twitter:site" content="@a9_lim">
     <meta name="twitter:creator" content="@a9_lim">
     <meta name="author" content="a9lim">
@@ -46,17 +50,23 @@
       "name": "Scripture",
       "url": "https://a9l.im/scripture/",
       "description": "Sacred text reader with twelve works from multiple traditions — KJV Old and New Testaments, Apocrypha, Quran (Pickthall), Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), and Lotus Sutra (Kern). Features full-text search, verse-linked notes, and chapter-by-chapter navigation.",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["meta[name='description']"]
+      },
       "applicationCategory": "EducationalApplication",
       "educationalUse": "Reading and studying sacred texts from world religious traditions",
       "learningResourceType": "TextReference",
       "educationalLevel": "General",
       "about": [
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q179461", "name": "Religious text"},
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q1344663", "name": "Sacred text"},
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q17141838", "name": "Comparative religion"},
         {"@type": "Thing", "name": "Bible (King James Version)"},
         {"@type": "Thing", "name": "Quran"},
         {"@type": "Thing", "name": "Book of Mormon"},
         {"@type": "Thing", "name": "Tao Te Ching"},
-        {"@type": "Thing", "name": "Kojiki"},
-        {"@type": "Thing", "name": "Comparative religion"}
+        {"@type": "Thing", "name": "Kojiki"}
       ],
       "keywords": "scripture reader, Bible, Quran, Book of Mormon, Tao Te Ching, Kojiki, Bundahis, Four Books, sacred texts, religious texts, educational",
       "operatingSystem": "Any (Web Browser)",
