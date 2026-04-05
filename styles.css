@@ -77,13 +77,7 @@
     overflow-y: auto;
 }
 
-.notes-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    flex-shrink: 0;
-}
+/* notes-header uses shared .stats-header */
 
 
 /* ---------- Note Cards ---------- */
@@ -369,18 +363,7 @@
 }
 
 /* ---------- Sidebar Tabs ---------- */
-
-.sidebar-tabs {
-    display: flex;
-    gap: 0;
-    justify-content: center;
-    flex: 1;
-}
-
-/* Use shared-base .tab-btn styles — just override color for active */
-.sidebar-tabs .tab-btn.active {
-    color: var(--accent);
-}
+/* .sidebar-tabs now in shared-base.css */
 
 .tab-panel {
     display: none;

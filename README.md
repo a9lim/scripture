@@ -1,6 +1,6 @@
 # Scripture
 
-A static scripture reader for twelve sacred texts. Full-text search, concordance, verse-linked notes and bookmarks, split-pane parallel reading, text-to-speech, related passages, reading history, and text download. Zero dependencies, vanilla ES6 modules.
+A static scripture reader for sixteen sacred texts. Full-text search, concordance, verse-linked notes and bookmarks, split-pane parallel reading, text-to-speech, related passages, reading history, and text download. Zero dependencies, vanilla ES6 modules.
 
 **Try it:** [a9l.im/scripture](https://a9l.im/scripture)
 
@@ -20,6 +20,10 @@ A static scripture reader for twelve sacred texts. Full-text search, concordance
 | Kojiki | Chamberlain | [sacred-texts.com](https://sacred-texts.com) |
 | Bundahis | West | [sacred-texts.com](https://sacred-texts.com) |
 | Lotus Sutra | Kern | [sacred-texts.com](https://sacred-texts.com) |
+| Arda Viraf | Haug & West | [sacred-texts.com](https://sacred-texts.com) |
+| Book of Poetry | Legge | [sacred-texts.com](https://sacred-texts.com) |
+| Kalevala | Crawford | [sacred-texts.com](https://sacred-texts.com) |
+| Poetic Edda | Bellows | [sacred-texts.com](https://sacred-texts.com) |
 
 ## Features
 
