@@ -95,24 +95,7 @@ function buildPane($) {
   closeBtn.title = 'Close split pane';
   closeBtn.setAttribute('aria-label', 'Close split pane');
 
-  const closeSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  closeSvg.setAttribute('width', '16');
-  closeSvg.setAttribute('height', '16');
-  closeSvg.setAttribute('viewBox', '0 0 24 24');
-  closeSvg.setAttribute('fill', 'none');
-  closeSvg.setAttribute('stroke', 'currentColor');
-  closeSvg.setAttribute('stroke-width', '2');
-  closeSvg.setAttribute('stroke-linecap', 'round');
-  closeSvg.setAttribute('stroke-linejoin', 'round');
-  const line1 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-  line1.setAttribute('x1', '18'); line1.setAttribute('y1', '6');
-  line1.setAttribute('x2', '6'); line1.setAttribute('y2', '18');
-  const line2 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-  line2.setAttribute('x1', '6'); line2.setAttribute('y1', '6');
-  line2.setAttribute('x2', '18'); line2.setAttribute('y2', '18');
-  closeSvg.appendChild(line1);
-  closeSvg.appendChild(line2);
-  closeBtn.appendChild(closeSvg);
+  closeBtn.insertAdjacentHTML('afterbegin', _ICON.at('close', 16));
 
   nav.append(workSel, bookSel, chapterSel, closeBtn);
 

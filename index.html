@@ -30,6 +30,7 @@
     <script src="/shared-tokens.js"></script>
     <script defer src="/shared-utils.js"></script>
     <script defer src="/shared-haptics.js"></script>
+    <script defer src="/shared-icons.js"></script>
     <script defer src="/shared-toolbar.js"></script>
     <script defer src="/shared-forms.js"></script>
     <script defer src="/shared-shortcuts.js"></script>
@@ -104,83 +105,19 @@
             </div>
         </div>
         <div class="toolbar-right sim-toolbar-actions">
-            <button id="random-btn" class="tool-btn" title="Random Verse" aria-label="Random verse">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <rect x="1" y="1" width="22" height="22" rx="4"></rect>
-                    <circle cx="8" cy="8" r="1.5" fill="currentColor" stroke="none"></circle>
-                    <circle cx="16" cy="8" r="1.5" fill="currentColor" stroke="none"></circle>
-                    <circle cx="8" cy="16" r="1.5" fill="currentColor" stroke="none"></circle>
-                    <circle cx="16" cy="16" r="1.5" fill="currentColor" stroke="none"></circle>
-                    <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"></circle>
-                </svg>
-            </button>
-            <button id="download-btn" class="tool-btn" title="Download Text" aria-label="Download text file">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="14" x2="12" y2="3"></line>
-                </svg>
-            </button>
-            <button id="tts-btn" class="tool-btn" title="Read Aloud" aria-label="Read chapter aloud">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                </svg>
-            </button>
-            <button id="search-btn" class="tool-btn" title="Search" aria-label="Open search">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-            </button>
-            <button id="resume-btn" class="tool-btn" title="Resume Reading" aria-label="Resume reading">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-            </button>
-            <button id="compare-btn" class="tool-btn compare-btn-desktop" title="Compare (Split Pane)" aria-label="Open split pane">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <rect x="3" y="3" width="18" height="18" rx="2"/>
-                    <line x1="12" y1="3" x2="12" y2="21"/>
-                </svg>
-            </button>
+            <button id="random-btn" class="tool-btn" title="Random Verse" aria-label="Random verse" data-icon="dice"></button>
+            <button id="download-btn" class="tool-btn" title="Download Text" aria-label="Download text file" data-icon="download"></button>
+            <button id="tts-btn" class="tool-btn" title="Read Aloud" aria-label="Read chapter aloud" data-icon="speaker"></button>
+            <button id="search-btn" class="tool-btn" title="Search" aria-label="Open search" data-icon="search"></button>
+            <button id="resume-btn" class="tool-btn" title="Resume Reading" aria-label="Resume reading" data-icon="eye"></button>
+            <button id="compare-btn" class="tool-btn compare-btn-desktop" title="Compare (Split Pane)" aria-label="Open split pane" data-icon="split"></button>
+            <button id="export-btn" class="tool-btn" title="Export Data" aria-label="Export data" data-icon="save"></button>
+            <button id="import-btn" class="tool-btn" title="Import Data" aria-label="Import data" data-icon="load"></button>
             <div class="tool-sep"></div>
-            <button id="theme-btn" class="tool-btn" title="Toggle Theme" aria-label="Toggle theme">
-                <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            </button>
-            <button id="display-btn" class="tool-btn" title="Display Settings" aria-label="Display settings">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path>
-                </svg>
-            </button>
-            <button id="about-btn" class="tool-btn" title="About" aria-label="About">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                </svg>
-            </button>
-            <button id="export-btn" class="tool-btn" title="Export Data" aria-label="Export data">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
-                </svg>
-            </button>
-            <button id="import-btn" class="tool-btn" title="Import Data" aria-label="Import data">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/>
-                </svg>
-            </button>
-            <button id="notes-toggle" class="tool-btn" title="Toggle Notes" aria-label="Toggle notes panel" aria-expanded="false">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
+            <button id="theme-btn" class="tool-btn" title="Toggle Theme" aria-label="Toggle theme" data-icon="theme"></button>
+            <button id="display-btn" class="tool-btn" title="Display Settings" aria-label="Display settings" data-icon="gear"></button>
+            <button id="about-btn" class="tool-btn" title="About" aria-label="About" data-icon="about"></button>
+            <button id="notes-toggle" class="tool-btn" title="Toggle Notes" aria-label="Toggle notes panel" aria-expanded="false" data-icon="menu"></button>
         </div>
     </div>
 
@@ -215,12 +152,7 @@
                 <button class="tab-btn active" data-tab="notes" role="tab" aria-selected="true">Notes</button>
                 <button class="tab-btn" data-tab="bookmarks" role="tab" aria-selected="false">Bookmarks</button>
             </div>
-            <button id="notes-close" class="tool-btn" title="Close panel" aria-label="Close panel">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
+            <button id="notes-close" class="tool-btn" title="Close panel" aria-label="Close panel" data-icon="close" data-icon-size="16"></button>
         </div>
         <div id="tab-notes" class="tab-panel active" role="tabpanel">
             <div id="notes-content" class="scrollbar-thin"></div>
@@ -234,12 +166,7 @@
         <div class="sim-overlay-panel glass">
             <div class="overlay-header">
                 <input id="search-input" type="search" class="sim-select" placeholder="Search..." aria-label="Search text">
-                <button id="search-close" class="tool-btn" title="Close search" aria-label="Close search">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
+                <button id="search-close" class="tool-btn" title="Close search" aria-label="Close search" data-icon="close" data-icon-size="16"></button>
             </div>
             <div class="search-filters">
                 <select id="search-work" class="sim-select" aria-label="Filter by work"></select>
@@ -254,12 +181,7 @@
         <div class="sim-overlay-panel glass">
             <div class="overlay-header">
                 <input id="concordance-input" type="search" class="sim-select" placeholder="Look up a word..." aria-label="Concordance word lookup">
-                <button id="concordance-close" class="tool-btn" title="Close" aria-label="Close concordance">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
+                <button id="concordance-close" class="tool-btn" title="Close" aria-label="Close concordance" data-icon="close" data-icon-size="16"></button>
             </div>
             <div id="concordance-results" class="sim-overlay-body"></div>
         </div>

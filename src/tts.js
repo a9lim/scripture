@@ -3,8 +3,6 @@
    Control bar, sequential verse reading, active-verse highlighting.
    =================================================================== */
 
-const SVG_NS = 'http://www.w3.org/2000/svg';
-
 let bar = null;
 let speaking = false;
 let paused = false;
@@ -14,63 +12,11 @@ let rate = 1;
 let selectedVoice = null;
 let versesContainer = null;
 
-/* -- SVG icon helpers ------------------------------------------------ */
+/* -- Icon helpers (delegates to shared _ICON at 16px) --------------- */
 
-function svgIcon(children) {
-  const el = document.createElementNS(SVG_NS, 'svg');
-  el.setAttribute('width', '16');
-  el.setAttribute('height', '16');
-  el.setAttribute('viewBox', '0 0 24 24');
-  el.setAttribute('fill', 'none');
-  el.setAttribute('stroke', 'currentColor');
-  el.setAttribute('stroke-width', '2');
-  el.setAttribute('stroke-linecap', 'round');
-  el.setAttribute('stroke-linejoin', 'round');
-  el.setAttribute('aria-hidden', 'true');
-  for (const c of children) el.appendChild(c);
-  return el;
-}
-
-function svgPath(d) {
-  const el = document.createElementNS(SVG_NS, 'path');
-  el.setAttribute('d', d);
-  return el;
-}
-
-function svgLine(x1, y1, x2, y2) {
-  const el = document.createElementNS(SVG_NS, 'line');
-  el.setAttribute('x1', x1);
-  el.setAttribute('y1', y1);
-  el.setAttribute('x2', x2);
-  el.setAttribute('y2', y2);
-  return el;
-}
-
-function svgPolygon(points) {
-  const el = document.createElementNS(SVG_NS, 'polygon');
-  el.setAttribute('points', points);
-  return el;
-}
-
-function svgRect(attrs) {
-  const el = document.createElementNS(SVG_NS, 'rect');
-  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
-  return el;
-}
-
-function makePlayIcon() {
-  return svgIcon([svgPolygon('5 3 19 12 5 21 5 3')]);
-}
-
-function makePauseIcon() {
-  return svgIcon([
-    svgLine('6', '4', '6', '20'),
-    svgLine('18', '4', '18', '20')
-  ]);
-}
-
-function makeStopIcon() {
-  return svgIcon([svgRect({ x: '4', y: '4', width: '16', height: '16', rx: '2' })]);
+function setIcon(btn, name) {
+  btn.textContent = '';
+  btn.insertAdjacentHTML('afterbegin', _ICON.at(name, 16));
 }
 
 /* -- Build control bar ----------------------------------------------- */
@@ -85,7 +31,7 @@ function buildBar($) {
   playPauseBtn.className = 'tool-btn tts-play-pause';
   playPauseBtn.type = 'button';
   playPauseBtn.setAttribute('aria-label', 'Pause');
-  playPauseBtn.replaceChildren(makePauseIcon());
+  setIcon(playPauseBtn, 'pause');
   playPauseBtn.addEventListener('click', togglePauseTTS);
 
   // Stop
@@ -93,7 +39,7 @@ function buildBar($) {
   stopBtn.className = 'tool-btn tts-stop';
   stopBtn.type = 'button';
   stopBtn.setAttribute('aria-label', 'Stop');
-  stopBtn.replaceChildren(makeStopIcon());
+  setIcon(stopBtn, 'stop');
   stopBtn.addEventListener('click', stopTTS);
 
   // Speed label
@@ -192,10 +138,10 @@ function updatePlayPauseIcon() {
   const btn = bar.querySelector('.tts-play-pause');
   if (!btn) return;
   if (paused) {
-    btn.replaceChildren(makePlayIcon());
+    setIcon(btn, 'play');
     btn.setAttribute('aria-label', 'Resume');
   } else {
-    btn.replaceChildren(makePauseIcon());
+    setIcon(btn, 'pause');
     btn.setAttribute('aria-label', 'Pause');
   }
 }
