@@ -45,6 +45,14 @@ class FourBooksParser(BaseParser):
             else:
                 chapters = self._parse_single_chapter(lines, book_id)
 
+            # Normalize all-caps first words in first verse of each chapter
+            for ch in chapters:
+                first_sec = ch["sections"][0]
+                if first_sec["verses"]:
+                    first_sec["verses"][0] = self.normalize_caps_first_words(
+                        first_sec["verses"][0]
+                    )
+
             all_chapters.extend(chapters)
             books_meta.append(
                 {

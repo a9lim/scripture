@@ -38,6 +38,49 @@ class BaseParser:
         return text.strip()
 
     @staticmethod
+    def normalize_caps_first_words(text: str) -> str:
+        """Convert leading ALL-CAPS words to title case.
+
+        Handles the drop-cap convention where the first word(s) of a
+        chapter are printed in capitals, e.g. "MASTERED by desire" →
+        "Mastered by desire", "IN THE NAME OF GOD" → "In the name of God".
+        """
+        words = text.split()
+        if not words:
+            return text
+        # Find how many leading words are all-caps (ignoring punctuation).
+        # Single uppercase letters (A, I) continue an existing run but
+        # don't start one.
+        n = 0
+        for w in words:
+            clean = re.sub(r"[^A-Za-z]", "", w)
+            if not clean:
+                continue
+            if clean == clean.upper() and (len(clean) > 1 or n > 0):
+                n += 1
+            else:
+                break
+        if n == 0:
+            return text
+        # Lower-case the leading caps words, then capitalize the first letter
+        for i in range(n):
+            words[i] = words[i].lower()
+        words[0] = words[0][0].upper() + words[0][1:]
+        # Restore divine names that were lowercased
+        for i in range(n):
+            bare = re.sub(r"[^a-z]", "", words[i])
+            if bare in ("god", "lord"):
+                words[i] = words[i].capitalize()
+        return " ".join(words)
+
+    @staticmethod
+    def strip_parenthesized(text: str) -> str:
+        """Remove all parenthesized terms and clean up whitespace."""
+        text = re.sub(r"\s*\([^)]*\)", "", text)
+        text = re.sub(r"  +", " ", text)
+        return text.strip()
+
+    @staticmethod
     def make_section(verses, start=1, clean=True):
         """Build a section dict from a list of verse text strings."""
         return {

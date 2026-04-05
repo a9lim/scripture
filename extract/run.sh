@@ -124,9 +124,9 @@ enrich)
 
 pipeline)
     "$0" extract-raw
+    "$0" verify
     "$0" json2txt
     "$0" enrich
-    "$0" verify
     ;;
 
 *)

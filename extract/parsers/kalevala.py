@@ -110,6 +110,7 @@ class KalevalaParser(BaseParser):
             verses = self._text_to_verses(body)
             if not verses:
                 continue
+            verses[0] = self.normalize_caps_first_words(verses[0])
 
             chapters.append({
                 "_id": f"kv-{rune_num}",

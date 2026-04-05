@@ -73,7 +73,7 @@ ABBREVS = {
     'bund': 'Bund.',
     'lotus': 'Lotus',
     'viraf': 'Viraf',
-    'guofeng': 'G.F.', 'xiaoya': 'X.Y.', 'daya': 'D.Y.',
+    'guofeng': 'G.F.', 'xiaoya': 'X.Y.', 'daya': 'D.Y.', 'hymns': 'Hymns',
     'kv': 'Kal.',
     'poe-gods': 'Gods', 'poe-heroes': 'Heroes',
 }
@@ -104,9 +104,18 @@ def parse_chapters(text, book_id):
 
     chapters = []
     for ch_num, lines in blocks:
+        # Strip leading all-caps title lines (chapter subtitles)
+        while lines and lines[0].strip() and lines[0].strip() == lines[0].strip().upper():
+            lines = lines[1:]
         sections = _parse_sections(lines)
         if not sections or all(not s["verses"] for s in sections):
             continue
+        # Normalize all-caps first words (drop-cap convention)
+        first_sec = sections[0]
+        if first_sec["verses"]:
+            first_sec["verses"][0] = BaseParser.normalize_caps_first_words(
+                first_sec["verses"][0]
+            )
         chapters.append(
             {
                 "_id": f"{book_id}-{ch_num}",

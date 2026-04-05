@@ -295,9 +295,9 @@
       ]
     },
     {
-      "id": "song",
-      "name": "Song",
-      "abbrev": "Song",
+      "id": "hymns",
+      "name": "Hymns",
+      "abbrev": "Hymns",
       "chapters": 40,
       "names": [
         "Ch'ing Miao",

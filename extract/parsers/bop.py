@@ -55,7 +55,7 @@ class BopParser(BaseParser):
         ("guofeng", "Guofeng", "G.F."),
         ("xiaoya", "Xiaoya", "X.Y."),
         ("daya", "Daya", "D.Y."),
-        ("song", "Song", "Song"),
+        ("hymns", "Hymns", "Hymns"),
     ]
 
     def parse(self, source_path):

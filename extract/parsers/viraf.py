@@ -63,6 +63,8 @@ class VirafParser(BaseParser):
             verses = self._parse_verses(body)
             if not verses:
                 continue
+            verses = [self.strip_parenthesized(v) for v in verses]
+            verses[0] = self.normalize_caps_first_words(verses[0])
 
             chapters.append({
                 "_id": f"viraf-{ch_num}",

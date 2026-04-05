@@ -70,7 +70,7 @@ ABBREVS = {
     'bund': 'Bund.',
     'lotus': 'Lotus',
     'viraf': 'Viraf',
-    'guofeng': 'G.F.', 'xiaoya': 'X.Y.', 'daya': 'D.Y.',
+    'guofeng': 'G.F.', 'xiaoya': 'X.Y.', 'daya': 'D.Y.', 'hymns': 'Hymns',
     'kv': 'Kal.',
     'poe-gods': 'Gods', 'poe-heroes': 'Heroes',
 }
