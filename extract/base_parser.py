@@ -33,6 +33,7 @@ class BaseParser:
     def clean_text(text: str) -> str:
         """Shared text cleanup applied to all verse text regardless of parser."""
         text = re.sub(r"[\[\]]", "", text)
+        text = re.sub(r"-{2,}", "—", text)
         text = re.sub(r" ([,;:.!?])", r"\1", text)
         text = re.sub(r"  +", " ", text)
         return text.strip()

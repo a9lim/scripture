@@ -98,7 +98,7 @@ class KalevalaParser(BaseParser):
                     stripped = lines[k].strip()
                     if stripped and not _RUNE_RE.match(stripped):
                         # Subtitle line — clean trailing period
-                        name = stripped.rstrip(".").strip()
+                        name = re.sub(r"-{2,}", "—", stripped.rstrip(".").strip())
                         if name == name.upper():
                             name = _title_case(name)
                         body_start = k + 1

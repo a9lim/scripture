@@ -341,6 +341,8 @@ class EddaParser(BaseParser):
         text = re.sub(r"\[paragraph continues\]", "", text, flags=re.IGNORECASE)
         # Strip square brackets but keep content
         text = re.sub(r"[\[\]]", "", text)
+        # Normalize double-hyphens to em dash
+        text = re.sub(r"-{2,}", "—", text)
         # Strip lacuna dots (. . . . .)
         text = re.sub(r"(?:^|\s)\.(?:\s+\.)+(?:\s|$)", " ", text)
         # Normalize whitespace
