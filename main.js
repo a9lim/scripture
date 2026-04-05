@@ -13,7 +13,6 @@ import { initDisplay } from './src/display.js';
 import { savePosition, getLastPosition, renderProgress, initResume } from './src/history.js';
 import { renderRelated } from './src/related.js';
 import { initConcordance } from './src/concordance.js';
-import { openSplit, closeSplit, toggleSplit, isSplitOpen, getSplitState } from './src/split.js';
 import { initTTS, startTTS, stopTTS, isTTSActive } from './src/tts.js';
 import { exportData, promptImport } from './src/data-io.js';
 
@@ -50,7 +49,6 @@ const $ = {
   themeBtn:         document.getElementById('theme-btn'),
   aboutBtn:         document.getElementById('about-btn'),
   ttsBtn:           document.getElementById('tts-btn'),
-  compareBtn:       document.getElementById('compare-btn'),
   exportBtn:        document.getElementById('export-btn'),
   importBtn:        document.getElementById('import-btn'),
   appLayout:        document.getElementById('app-layout')
@@ -142,21 +140,11 @@ function routeFromHash() {
     return;
   }
 
-  const plusIdx = hash.indexOf('+');
-  let primaryHash, splitHash;
-  if (plusIdx !== -1) {
-    primaryHash = hash.slice(0, plusIdx);
-    splitHash = hash.slice(plusIdx + 1);
-  } else {
-    primaryHash = hash;
-    splitHash = null;
-  }
-
-  const slashIdx = primaryHash.indexOf('/');
+  const slashIdx = hash.indexOf('/');
   if (slashIdx === -1) return;
 
-  const workId = primaryHash.slice(0, slashIdx);
-  let rest = primaryHash.slice(slashIdx + 1);
+  const workId = hash.slice(0, slashIdx);
+  let rest = hash.slice(slashIdx + 1);
   let verse = null;
 
   const colonIdx = rest.lastIndexOf(':');
@@ -169,25 +157,6 @@ function routeFromHash() {
   }
 
   navigate(workId, rest, verse);
-
-  if (splitHash) {
-    const sSlash = splitHash.indexOf('/');
-    if (sSlash !== -1) {
-      const sWorkId = splitHash.slice(0, sSlash);
-      let sRest = splitHash.slice(sSlash + 1);
-      let sVerse = null;
-      const sColon = sRest.lastIndexOf(':');
-      if (sColon !== -1) {
-        const mv = parseInt(sRest.slice(sColon + 1), 10);
-        if (!isNaN(mv)) { sVerse = mv; sRest = sRest.slice(0, sColon); }
-      }
-      requestAnimationFrame(() => {
-        openSplit($, (w, c, v) => navigate(w, c, v), sWorkId, sRest, sVerse);
-      });
-    }
-  } else if (isSplitOpen()) {
-    closeSplit($);
-  }
 }
 
 /* ── download ─────────────────────────────────────────────────────── */
@@ -373,9 +342,6 @@ async function init() {
 
   // Download
   $.downloadBtn.addEventListener('click', downloadText);
-
-  // Compare (split pane)
-  $.compareBtn.addEventListener('click', () => toggleSplit($, (w, c, v) => navigate(w, c, v)));
 
   // Keyboard shortcuts
   initShortcuts([

@@ -13,6 +13,7 @@ let _workId = null;
 let _chapterId = null;
 let _notesScope = 'chapter';
 let _notesFilter = '';
+let _bookmarksFilter = '';
 
 /* ── storage helpers ─────────────────────────────────────────────── */
 
@@ -212,6 +213,11 @@ function renderNotesAll(container, all, filter) {
       row.className = 'bookmark-row';
       row.setAttribute('tabindex', '0');
       row.setAttribute('role', 'button');
+
+      const icon = document.createElement('span');
+      icon.className = 'bookmark-icon note-icon-accent';
+      icon.insertAdjacentHTML('afterbegin', _ICON.at('document', 16));
+      row.appendChild(icon);
 
       const content = document.createElement('div');
       content.className = 'bookmark-content';
@@ -452,6 +458,15 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
   const container = $.bookmarksContent;
   container.replaceChildren();
 
+  // Search input
+  const searchInput = document.createElement('input');
+  searchInput.type = 'search';
+  searchInput.className = 'sim-select notes-search-input';
+  searchInput.placeholder = 'Filter bookmarks\u2026';
+  searchInput.setAttribute('aria-label', 'Filter bookmarks');
+  searchInput.value = _bookmarksFilter;
+  container.appendChild(searchInput);
+
   // Scope toggle row
   const scopeRow = document.createElement('div');
   scopeRow.className = 'bookmark-scope';
@@ -474,7 +489,15 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
 
   container.appendChild(scopeRow);
 
+  // Debounced search
+  const debouncedRender = debounce(() => {
+    _bookmarksFilter = searchInput.value;
+    renderBookmarks($, workId, chapterId, scope, navigateFn);
+  }, 250);
+  searchInput.addEventListener('input', debouncedRender);
+
   const bookmarks = loadStore().bookmarks;
+  const filter = _bookmarksFilter.toLowerCase();
 
   if (!bookmarks.length) {
     showBookmarksEmpty(container);
@@ -489,10 +512,17 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
         const parsed = parseRef(ref);
         return { ref, ...parsed };
       })
+      .filter(entry => {
+        if (!filter) return true;
+        const verseEl = document.getElementById(`v${entry.verse}`);
+        const text = verseEl ? verseEl.textContent.trim().toLowerCase() : '';
+        const ref = formatRef(entry.chapterId, entry.verse).toLowerCase();
+        return text.includes(filter) || ref.includes(filter);
+      })
       .sort((a, b) => a.verse - b.verse);
 
     if (!entries.length) {
-      showBookmarksEmpty(container);
+      showBookmarksEmpty(container, filter ? 'No matching bookmarks.' : undefined);
       return;
     }
 
@@ -505,6 +535,10 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
     for (const ref of bookmarks) {
       const parsed = parseRef(ref);
       if (!parsed) continue;
+      if (filter) {
+        const fmtRef = formatRef(parsed.chapterId, parsed.verse).toLowerCase();
+        if (!fmtRef.includes(filter) && !ref.toLowerCase().includes(filter)) continue;
+      }
       if (!grouped.has(parsed.workId)) grouped.set(parsed.workId, []);
       grouped.get(parsed.workId).push({ ref, ...parsed });
     }
@@ -514,6 +548,11 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
       const manifest = getManifest(wId);
       return { wId, title: manifest ? manifest.title : wId, entries };
     }).sort((a, b) => a.title.localeCompare(b.title));
+
+    if (!sortedGroups.length) {
+      showBookmarksEmpty(container, filter ? 'No matching bookmarks.' : undefined);
+      return;
+    }
 
     for (const { title, entries } of sortedGroups) {
       const group = document.createElement('div');
@@ -536,6 +575,14 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
 
       container.appendChild(group);
     }
+  }
+
+  // Restore focus to search input after re-render
+  if (_bookmarksFilter) {
+    requestAnimationFrame(() => {
+      searchInput.focus();
+      searchInput.selectionStart = searchInput.selectionEnd = searchInput.value.length;
+    });
   }
 }
 
@@ -581,10 +628,10 @@ function buildBookmarkRow(entry, navigateFn) {
   return row;
 }
 
-function showBookmarksEmpty(container) {
+function showBookmarksEmpty(container, msg) {
   const p = document.createElement('p');
   p.className = 'empty-state';
-  p.textContent = 'No bookmarks yet.';
+  p.textContent = msg || 'No bookmarks yet.';
   container.appendChild(p);
 }
 
