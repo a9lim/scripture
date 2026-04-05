@@ -64,13 +64,14 @@ let tabBookmarks = null;
 
 /**
  * Navigate to a specific chapter and optionally highlight a verse.
- * Updates the URL hash, loads data, and renders.
+ * Updates the URL path, loads data, and renders.
  */
 async function navigate(workId, chapterId, verse) {
-  // Update hash without triggering hashchange loop
-  const hash = verse ? `${workId}/${chapterId}:${verse}` : `${workId}/${chapterId}`;
-  if (location.hash !== `#${hash}`) {
-    history.replaceState(null, '', `#${hash}`);
+  const path = verse
+    ? `/scripture/${workId}/${chapterId}:${verse}`
+    : `/scripture/${workId}/${chapterId}`;
+  if (location.pathname !== path) {
+    history.replaceState(null, '', path);
   }
 
   currentWork = workId;
@@ -118,19 +119,21 @@ async function navigate(workId, chapterId, verse) {
  */
 function updateNavLink(el, workId, adjacent) {
   if (adjacent) {
-    el.href = `#${workId}/${adjacent.id}`;
+    el.href = `/scripture/${workId}/${adjacent.id}`;
     el.style.visibility = 'visible';
   } else {
-    el.href = '#';
+    el.href = '/scripture/';
     el.style.visibility = 'hidden';
   }
 }
 
-/* ── hash routing ──────────────────────────────────────────────────── */
+/* ── path routing ─────────────────────────────────────────────────── */
 
-function routeFromHash() {
-  const hash = location.hash.slice(1);
-  if (!hash) {
+function routeFromPath() {
+  // Strip /scripture/ prefix, e.g. "/scripture/bom/1-ne-1:26" → "bom/1-ne-1:26"
+  const raw = location.pathname.replace(/^\/scripture\/?/, '');
+
+  if (!raw) {
     const last = getLastPosition();
     if (last) { navigate(last.workId, last.chapterId); return; }
     const manifest = getManifest('bom');
@@ -140,11 +143,11 @@ function routeFromHash() {
     return;
   }
 
-  const slashIdx = hash.indexOf('/');
+  const slashIdx = raw.indexOf('/');
   if (slashIdx === -1) return;
 
-  const workId = hash.slice(0, slashIdx);
-  let rest = hash.slice(slashIdx + 1);
+  const workId = raw.slice(0, slashIdx);
+  let rest = raw.slice(slashIdx + 1);
   let verse = null;
 
   const colonIdx = rest.lastIndexOf(':');
@@ -202,9 +205,19 @@ async function init() {
   // Navigation dropdowns
   initNav($, (workId, chapterId) => navigate(workId, chapterId));
 
-  // Hash routing
-  window.addEventListener('hashchange', routeFromHash);
-  routeFromHash();
+  // Path routing
+  window.addEventListener('popstate', routeFromPath);
+  routeFromPath();
+
+  // Intercept prev/next chapter link clicks for SPA navigation
+  for (const el of [$.prevChapter, $.nextChapter]) {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (el.style.visibility === 'hidden') return;
+      history.pushState(null, '', el.getAttribute('href'));
+      routeFromPath();
+    });
+  }
 
   // Search
   const search = initSearch($, (workId, chapterId, verse) => {
@@ -258,7 +271,7 @@ async function init() {
       showToast('Copied to clipboard');
     },
     onLink: async (verse) => {
-      const url = `${location.origin}${location.pathname}#${currentWork}/${currentChapter}:${verse}`;
+      const url = `${location.origin}/scripture/${currentWork}/${currentChapter}:${verse}`;
       await navigator.clipboard.writeText(url);
       showToast('Link copied');
     },
@@ -365,7 +378,8 @@ async function init() {
       group: 'Navigation',
       action: () => {
         if ($.prevChapter.style.visibility !== 'hidden') {
-          location.hash = $.prevChapter.getAttribute('href').slice(1);
+          history.pushState(null, '', $.prevChapter.getAttribute('href'));
+          routeFromPath();
         }
       },
       when: () => {
@@ -379,7 +393,8 @@ async function init() {
       group: 'Navigation',
       action: () => {
         if ($.nextChapter.style.visibility !== 'hidden') {
-          location.hash = $.nextChapter.getAttribute('href').slice(1);
+          history.pushState(null, '', $.nextChapter.getAttribute('href'));
+          routeFromPath();
         }
       },
       when: () => {

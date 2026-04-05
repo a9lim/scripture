@@ -131,7 +131,7 @@ cd extract && ./run.sh extract-raw   # re-extract all works from raw/ + reindex
 
 ## URL Routing
 
-Hash-based: `#workId/chapterId` with optional `:verseNum` for deep-linking. Default: last reading position from history, fallback `#bom/1-ne-1`.
+Path-based: `/scripture/workId/chapterId` with optional `:verseNum` for deep-linking (e.g. `/scripture/bom/1-ne-1:26`). Cloudflare Pages `_redirects` serves `scripture/index.html` for all `/scripture/*` paths. Default: last reading position from history, fallback `/scripture/bom/1-ne-1`.
 
 ## User Data (localStorage)
 
