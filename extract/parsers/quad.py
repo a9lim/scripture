@@ -282,9 +282,6 @@ def _clean(text, fix_dropcap=False):
     text = re.sub(r"(\w)- ([a-z])", r"\1\2", text)
     text = re.sub(r"(\w)- ([A-Z])", r"\1-\2", text)
     text = BaseParser.clean_text(text)
-    # Strip parentheses (editorial asides baked into the source text)
-    text = re.sub(r"[()]", "", text)
-    text = re.sub(r"  +", " ", text).strip()
     # Soft hyphens
     text = text.replace("\u00ad", "")
     # Normalize Latin ligatures to modern English

@@ -26,22 +26,9 @@ _RE_BOILERPLATE = re.compile(
 # Term translations
 # ---------------------------------------------------------------------------
 
-_ARABIC_LETTERS = {
-    "Alif": "Aleph", "Alim": "Aleph", "Lam": "Lamed", "Mim": "Mem",
-    "Ra": "Resh", "Kaf": "Kaph", "Ha": "Heh", "Ya": "Yod",
-    "A'in": "Ayin", "Sad": "Zadeh", "Ta": "Teth", "Sin": "Shin",
-    "Qaf": "Qoph", "Nun": "Nun",
-}
-# Match Arabic letter names followed by a period, end of text, or space
-_RE_ARABIC_LETTER = re.compile(
-    r"\b(" + "|".join(re.escape(k) for k in sorted(_ARABIC_LETTERS, key=len, reverse=True)) + r")(\.|$|(?= ))"
-)
-
-
 def _postprocess(text):
     """Translate Arabic terms to English equivalents."""
     text = text.replace("Allah", "God")
-    text = _RE_ARABIC_LETTER.sub(lambda m: _ARABIC_LETTERS[m.group(1)] + m.group(2), text)
     for arabic, english in _TRANSLATIONS.items():
         text = text.replace(arabic, english)
     for arabic, hebrew in _SPECULATIVE.items():
@@ -81,6 +68,18 @@ _TRANSLATIONS = {
     "Al-Hijr": "the Rock",
     "Sijjin": "Perdition",
     "Hud": "Lehi",
+    # Figure names
+    "Muhammad": "Mohammed",
+    "MUhammad": "Mohammed",
+    # Jinn (Arabic jinn < jann "to hide/cover"; English "genie" via French génie < Latin genius, conflated with Arabic jinnī)
+    "jinn": "genies",
+    "Jinn": "Genies",
+    # Companions / groups
+    "Muhajirin": "emigrants",
+    "Ansar": "helpers",
+    # Ritual terms
+    "qiblah": "direction of prayer",
+    "Qiblah": "Direction of prayer",
 }
 
 
@@ -89,33 +88,15 @@ _TRANSLATIONS = {
 # English names.  See word-correspondence.md Part VII for full derivations.
 # These are NOT scholarly identifications — they are worldbuilding outputs.
 _SPECULATIVE = {
-    # Scripture / religious terms
-    "Al-Islam": "Hashlamah",
-    "al-Islam": "hashlamah",
-    "Islam": "Hashlamah",
-    "mosques": "misgadim",
-    "Mosques": "Misgadim",
-    "Mosque": "Misgad",
-    "mosque": "misgad",
-    "jinn": "ginn",
-    "Jinn": "Ginn",
     # Tribes / Peoples
     "Thamud": "Shamod",
     "A'ad": "Od",
     "Qureysh": "Coresh",
     "Quraysh": "Coresh",
     "Quraish": "Coresh",
-    # Religious identity
-    "Muslims": "Meshallim",
-    "Muslim": "Meshallem",
     # Prophet / Figure names
     "Salih": "Zoleah",
-    "Muhammad": "Mahemod",
-    "MUhammad": "Mahemod",
     "Abu Lahab": "Abi-Lahav",
-    # Companions / groups
-    "Muhajirin": "Mehagrim",
-    "Ansar": "Nozrim",
     # Places
     "Mecca": "Maccah",
     "Al-Madinah": "Medinah",
@@ -141,8 +122,6 @@ _SPECULATIVE = {
     "Ya'uq": "Yaoc",
     "Nasr": "Nesher",
     # Other terms
-    "qiblah": "ciblah",
-    "Qiblah": "Ciblah",
     "Ramadan": "Ramazon",
     "Ka'bah": "Cabah",
     "Bahirah": "Behirah",

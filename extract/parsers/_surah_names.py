@@ -16,16 +16,11 @@ _RAW_PATH = os.path.join(
 _OVERRIDES = {
     3: "Family of Amram",       # translated ('Imran→Amram)
     11: "Lehi",                 # translated (Hud→Lehi; Hamblin 2002)
-    20: "Teth Heh",             # hebraized letter names
     27: "Nemal",                # speculative (Naml→Nemal)
     31: "Achiacharus",          # translated (Luqman→Achiacharus)
     34: "Sheba",                # translated (Saba→Sheba)
-    36: "Yod Shin",             # hebraized letter names
-    38: "Zadeh",                # hebraized letter name
-    41: "Heh Mem",              # hebraized letter names
-    47: "Mahemod",              # speculative (Muhammad→Mahemod)
-    50: "Coph",                 # hebraized letter name
-    72: "Ginn",                 # speculative (jinn→ginn)
+    47: "Mohammed",              # translated (Muhammad→Mohammed)
+    72: "The Genies",            # translated (jinn→genies)
     106: "Coresh",              # speculative (Quraish→Coresh)
 }
 
