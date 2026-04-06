@@ -4,7 +4,7 @@ let _similarity = null;
 
 async function loadSimilarity() {
   if (_similarity) return _similarity;
-  const res = await fetch('data/similarity.json');
+  const res = await fetch('/scripture/data/similarity.json');
   if (!res.ok) throw new Error(`similarity: ${res.status}`);
   _similarity = await res.json();
   return _similarity;

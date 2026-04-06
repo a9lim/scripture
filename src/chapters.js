@@ -4,7 +4,7 @@
    at startup to prime the manifest cache.
    =================================================================== */
 
-const DATA_BASE = 'data';
+const DATA_BASE = '/scripture/data';
 
 /* ── caches ──────────────────────────────────────────────────────── */
 const manifestCache = new Map();      // workId  -> manifest object

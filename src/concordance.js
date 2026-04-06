@@ -6,7 +6,7 @@ let _popover = null;
 
 async function loadConcordance() {
   if (_concordance) return _concordance;
-  const res = await fetch('data/concordance.json');
+  const res = await fetch('/scripture/data/concordance.json');
   if (!res.ok) throw new Error(`concordance: ${res.status}`);
   _concordance = await res.json();
   return _concordance;
