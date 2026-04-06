@@ -67,6 +67,9 @@ let tabBookmarks = null;
  * Updates the URL path, loads data, and renders.
  */
 async function navigate(workId, chapterId, verse) {
+  const bc = document.getElementById('breadcrumb');
+  if (bc) bc.textContent = '';
+
   const path = verse
     ? `/scripture/${workId}/${chapterId}:${verse}`
     : `/scripture/${workId}/${chapterId}`;
