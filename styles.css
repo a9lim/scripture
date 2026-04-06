@@ -411,27 +411,9 @@
 
 /* ---------- Bookmarks ---------- */
 
-.bookmark-scope {
-    display: flex;
-    gap: 4px;
+.scope-toggles {
     margin-bottom: 0.75rem;
     flex-shrink: 0;
-}
-
-.bookmark-scope .mode-btn {
-    background: var(--bg-hover);
-    border: none;
-    border-radius: var(--radius-sm);
-    padding: 4px 10px;
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    cursor: pointer;
-    transition: background-color 0.15s, color 0.15s;
-}
-
-.bookmark-scope .mode-btn.active {
-    background: var(--accent-subtle);
-    color: var(--accent);
 }
 
 .bookmark-work-group { margin-bottom: 1rem; }

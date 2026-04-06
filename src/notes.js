@@ -14,6 +14,8 @@ let _chapterId = null;
 let _notesScope = 'chapter';
 let _notesFilter = '';
 let _bookmarksFilter = '';
+let _bookmarksScope = 'chapter';
+let _bm$ = null, _bmWorkId = null, _bmChapterId = null, _bmNavigateFn = null;
 
 /* ── storage helpers ─────────────────────────────────────────────── */
 
@@ -81,59 +83,77 @@ export function renderNotes($, workId, chapterId) {
   _chapterId = chapterId;
 
   const container = $.notesContent;
-  container.replaceChildren();
 
-  // Search input
-  const searchInput = document.createElement('input');
-  searchInput.type = 'search';
-  searchInput.className = 'sim-select notes-search-input';
-  searchInput.placeholder = 'Filter notes\u2026';
-  searchInput.setAttribute('aria-label', 'Filter notes');
-  searchInput.value = _notesFilter;
-  container.appendChild(searchInput);
+  // Force full rebuild on chapter change, preserve controls on scope/filter change
+  let listEl = container.querySelector('.notes-list');
+  if (listEl && container.dataset.chapter !== `${workId}:${chapterId}`) {
+    listEl = null;
+  }
+  if (!listEl) {
+    container.replaceChildren();
 
-  // Scope toggle
-  const scopeRow = document.createElement('div');
-  scopeRow.className = 'bookmark-scope';
+    // Search input
+    const searchInput = document.createElement('input');
+    searchInput.type = 'search';
+    searchInput.className = 'sim-select notes-search-input';
+    searchInput.placeholder = 'Filter notes\u2026';
+    searchInput.setAttribute('aria-label', 'Filter notes');
+    searchInput.value = _notesFilter;
+    container.appendChild(searchInput);
 
-  const btnChapter = document.createElement('button');
-  btnChapter.className = 'mode-btn' + (_notesScope === 'chapter' ? ' active' : '');
-  btnChapter.dataset.scope = 'chapter';
-  btnChapter.textContent = 'This chapter';
-  scopeRow.appendChild(btnChapter);
+    // Scope toggle
+    const scopeRow = document.createElement('div');
+    scopeRow.className = 'mode-toggles scope-toggles';
 
-  const btnAll = document.createElement('button');
-  btnAll.className = 'mode-btn' + (_notesScope === 'all' ? ' active' : '');
-  btnAll.dataset.scope = 'all';
-  btnAll.textContent = 'All';
-  scopeRow.appendChild(btnAll);
+    const btnChapter = document.createElement('button');
+    btnChapter.className = 'mode-btn' + (_notesScope === 'chapter' ? ' active' : '');
+    btnChapter.dataset.scope = 'chapter';
+    btnChapter.textContent = 'This chapter';
+    scopeRow.appendChild(btnChapter);
 
-  _forms.bindModeGroup(scopeRow, 'scope', (val) => {
-    _notesScope = val;
-    renderNotes($, _workId, _chapterId);
-  });
+    const btnAll = document.createElement('button');
+    btnAll.className = 'mode-btn' + (_notesScope === 'all' ? ' active' : '');
+    btnAll.dataset.scope = 'all';
+    btnAll.textContent = 'All';
+    scopeRow.appendChild(btnAll);
 
-  container.appendChild(scopeRow);
+    container.appendChild(scopeRow);
+    container.dataset.chapter = `${workId}:${chapterId}`;
 
-  // Debounced search
-  const debouncedRender = debounce(() => {
-    _notesFilter = searchInput.value;
-    renderNotes($, _workId, _chapterId);
-  }, 250);
-  searchInput.addEventListener('input', debouncedRender);
+    requestAnimationFrame(() => {
+      _forms.bindModeGroup(scopeRow, 'scope', (val) => {
+        _notesScope = val;
+        renderNotes(_$, _workId, _chapterId);
+      });
+    });
+
+    // Debounced search
+    const debouncedRender = debounce(() => {
+      _notesFilter = searchInput.value;
+      renderNotes(_$, _workId, _chapterId);
+    }, 250);
+    searchInput.addEventListener('input', debouncedRender);
+
+    listEl = document.createElement('div');
+    listEl.className = 'notes-list';
+    container.appendChild(listEl);
+  } else {
+    listEl.replaceChildren();
+  }
 
   // Load notes
   const all = loadStore().notes;
   const filter = _notesFilter.toLowerCase();
 
   if (_notesScope === 'chapter') {
-    renderNotesChapter(container, all, workId, chapterId, filter);
+    renderNotesChapter(listEl, all, workId, chapterId, filter);
   } else {
-    renderNotesAll(container, all, filter);
+    renderNotesAll(listEl, all, filter);
   }
 
   // Restore focus to search input after re-render
   if (_notesFilter) {
+    const searchInput = container.querySelector('.notes-search-input');
     requestAnimationFrame(() => {
       searchInput.focus();
       searchInput.selectionStart = searchInput.selectionEnd = searchInput.value.length;
@@ -457,52 +477,71 @@ export function getBookmarks() {
  * scope: 'chapter' | 'all'
  */
 export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
+  _bm$ = $; _bmWorkId = workId; _bmChapterId = chapterId; _bmNavigateFn = navigateFn;
+  _bookmarksScope = scope;
   const container = $.bookmarksContent;
-  container.replaceChildren();
 
-  // Search input
-  const searchInput = document.createElement('input');
-  searchInput.type = 'search';
-  searchInput.className = 'sim-select notes-search-input';
-  searchInput.placeholder = 'Filter bookmarks\u2026';
-  searchInput.setAttribute('aria-label', 'Filter bookmarks');
-  searchInput.value = _bookmarksFilter;
-  container.appendChild(searchInput);
+  // Force full rebuild on chapter change, preserve controls on scope/filter change
+  let listEl = container.querySelector('.bookmarks-list');
+  if (listEl && container.dataset.chapter !== `${workId}:${chapterId}`) {
+    listEl = null;
+  }
+  if (!listEl) {
+    container.replaceChildren();
 
-  // Scope toggle row
-  const scopeRow = document.createElement('div');
-  scopeRow.className = 'bookmark-scope';
+    // Search input
+    const searchInput = document.createElement('input');
+    searchInput.type = 'search';
+    searchInput.className = 'sim-select notes-search-input';
+    searchInput.placeholder = 'Filter bookmarks\u2026';
+    searchInput.setAttribute('aria-label', 'Filter bookmarks');
+    searchInput.value = _bookmarksFilter;
+    container.appendChild(searchInput);
 
-  const btnChapter = document.createElement('button');
-  btnChapter.className = 'mode-btn' + (scope === 'chapter' ? ' active' : '');
-  btnChapter.dataset.scope = 'chapter';
-  btnChapter.textContent = 'This chapter';
-  scopeRow.appendChild(btnChapter);
+    // Scope toggle row
+    const scopeRow = document.createElement('div');
+    scopeRow.className = 'mode-toggles scope-toggles';
 
-  const btnAll = document.createElement('button');
-  btnAll.className = 'mode-btn' + (scope === 'all' ? ' active' : '');
-  btnAll.dataset.scope = 'all';
-  btnAll.textContent = 'All';
-  scopeRow.appendChild(btnAll);
+    const btnChapter = document.createElement('button');
+    btnChapter.className = 'mode-btn' + (scope === 'chapter' ? ' active' : '');
+    btnChapter.dataset.scope = 'chapter';
+    btnChapter.textContent = 'This chapter';
+    scopeRow.appendChild(btnChapter);
 
-  _forms.bindModeGroup(scopeRow, 'scope', (val) => {
-    renderBookmarks($, workId, chapterId, val, navigateFn);
-  });
+    const btnAll = document.createElement('button');
+    btnAll.className = 'mode-btn' + (scope === 'all' ? ' active' : '');
+    btnAll.dataset.scope = 'all';
+    btnAll.textContent = 'All';
+    scopeRow.appendChild(btnAll);
 
-  container.appendChild(scopeRow);
+    container.appendChild(scopeRow);
+    container.dataset.chapter = `${workId}:${chapterId}`;
 
-  // Debounced search
-  const debouncedRender = debounce(() => {
-    _bookmarksFilter = searchInput.value;
-    renderBookmarks($, workId, chapterId, scope, navigateFn);
-  }, 250);
-  searchInput.addEventListener('input', debouncedRender);
+    requestAnimationFrame(() => {
+      _forms.bindModeGroup(scopeRow, 'scope', (val) => {
+        renderBookmarks(_bm$, _bmWorkId, _bmChapterId, val, _bmNavigateFn);
+      });
+    });
+
+    // Debounced search
+    const debouncedRender = debounce(() => {
+      _bookmarksFilter = searchInput.value;
+      renderBookmarks(_bm$, _bmWorkId, _bmChapterId, _bookmarksScope, _bmNavigateFn);
+    }, 250);
+    searchInput.addEventListener('input', debouncedRender);
+
+    listEl = document.createElement('div');
+    listEl.className = 'bookmarks-list';
+    container.appendChild(listEl);
+  } else {
+    listEl.replaceChildren();
+  }
 
   const bookmarks = loadStore().bookmarks;
   const filter = _bookmarksFilter.toLowerCase();
 
   if (!bookmarks.length) {
-    showBookmarksEmpty(container);
+    showBookmarksEmpty(listEl);
     return;
   }
 
@@ -524,12 +563,12 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
       .sort((a, b) => a.verse - b.verse);
 
     if (!entries.length) {
-      showBookmarksEmpty(container, filter ? 'No matching bookmarks.' : undefined);
+      showBookmarksEmpty(listEl, filter ? 'No matching bookmarks.' : undefined);
       return;
     }
 
     for (const entry of entries) {
-      container.appendChild(buildBookmarkRow(entry, navigateFn));
+      listEl.appendChild(buildBookmarkRow(entry, navigateFn));
     }
   } else {
     // Group by workId, sorted by manifest title
@@ -552,7 +591,7 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
     }).sort((a, b) => a.title.localeCompare(b.title));
 
     if (!sortedGroups.length) {
-      showBookmarksEmpty(container, filter ? 'No matching bookmarks.' : undefined);
+      showBookmarksEmpty(listEl, filter ? 'No matching bookmarks.' : undefined);
       return;
     }
 
@@ -575,12 +614,13 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
         group.appendChild(buildBookmarkRow(entry, navigateFn));
       }
 
-      container.appendChild(group);
+      listEl.appendChild(group);
     }
   }
 
   // Restore focus to search input after re-render
   if (_bookmarksFilter) {
+    const searchInput = container.querySelector('.notes-search-input');
     requestAnimationFrame(() => {
       searchInput.focus();
       searchInput.selectionStart = searchInput.selectionEnd = searchInput.value.length;
