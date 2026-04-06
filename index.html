@@ -112,7 +112,9 @@
           "urlTemplate": "https://a9l.im/scripture/?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
-      }
+      },
+      "accessibilityFeature": ["readingOrder", "structuralNavigation", "displayTransformability", "longDescription"],
+      "accessibilityHazard": "none"
     }
     </script>
     <script type="application/ld+json">
@@ -181,6 +183,22 @@
     </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://a9l.im"},{"@type":"ListItem","position":2,"name":"Scripture","item":"https://a9l.im/scripture/"}]}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://a9l.im/scripture/#dataset",
+  "name": "Sacred Texts Corpus — Sixteen Public-Domain English Translations",
+  "description": "A corpus of sixteen sacred texts spanning Abrahamic, East Asian, Zoroastrian, Buddhist, and Nordic traditions in public-domain English translations. Includes Old Testament, New Testament, Apocrypha, Quran, Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books, Kojiki, Tao Te Ching, Bundahishn, Lotus Sutra, Book of Proverbs (Confucian), Kalevala, Poetic Edda, and Arda Viraf.",
+  "url": "https://a9l.im/scripture/",
+  "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "inLanguage": "en",
+  "keywords": ["sacred texts", "Bible", "Quran", "Book of Mormon", "Tao Te Ching", "Kojiki", "Kalevala", "Poetic Edda", "comparative religion", "public domain"],
+  "includedInDataCatalog": {"@type": "DataCatalog", "name": "a9l.im"},
+  "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://a9l.im/scripture/data/works.json"},
+  "measurementTechnique": "Full-text digitization of public-domain translations"
+}
 </script>
 </head>
 
