@@ -43,7 +43,7 @@
 
 #app-layout {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: var(--toolbar-h);
     height: calc(100vh - var(--toolbar-h));
     overflow: hidden;
@@ -51,7 +51,7 @@
 }
 
 #app-layout > .breadcrumb {
-    flex-basis: 100%;
+    flex-shrink: 0;
 }
 
 @media (min-width: 901px) {
@@ -89,7 +89,9 @@
 #reading-pane {
     position: relative;
     flex: 1;
+    min-height: 0;
     max-width: var(--reader-max-width, 800px);
+    width: 100%;
     margin: 0 auto;
     padding: 2rem 1.5rem 4rem 3.5rem;
     overflow-y: auto;
@@ -949,4 +951,9 @@ body:has(.tts-bar:not([hidden])) #app-layout {
 }
 
 @media (max-width: 900px) {
+}
+
+.edu-content {
+    position: absolute;
+    left: -9999px;
 }
