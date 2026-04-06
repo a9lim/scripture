@@ -18,6 +18,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:alt" content="Scripture sacred text reader">
     <meta name="twitter:site" content="@a9_lim">
     <meta name="twitter:creator" content="@a9_lim">
     <meta name="author" content="a9lim">
@@ -44,7 +45,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
+      "@type": ["WebApplication", "LearningResource"],
       "name": "Scripture",
       "url": "https://a9l.im/scripture/",
       "description": "Sacred text reader with twelve works from multiple traditions — KJV Old and New Testaments, Apocrypha, Quran (Pickthall), Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), and Lotus Sutra (Kern). Features full-text search, verse-linked notes, and chapter-by-chapter navigation.",
@@ -60,15 +61,25 @@
         {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q179461", "name": "Religious text"},
         {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q1344663", "name": "Sacred text"},
         {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q17141838", "name": "Comparative religion"},
-        {"@type": "Thing", "name": "Bible (King James Version)"},
-        {"@type": "Thing", "name": "Quran"},
-        {"@type": "Thing", "name": "Book of Mormon"},
-        {"@type": "Thing", "name": "Tao Te Ching"},
-        {"@type": "Thing", "name": "Kojiki"}
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q623398", "name": "Bible (King James Version)"},
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q428", "name": "Quran"},
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q374076", "name": "Book of Mormon"},
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q80738", "name": "Tao Te Ching"},
+        {"@type": "Thing", "@id": "https://www.wikidata.org/wiki/Q388841", "name": "Kojiki"}
       ],
       "keywords": "scripture reader, Bible, Quran, Book of Mormon, Tao Te Ching, Kojiki, Bundahis, Four Books, sacred texts, religious texts, educational",
       "operatingSystem": "Any (Web Browser)",
       "browserRequirements": "Modern browser with ES6 module support",
+      "codeRepository": "https://github.com/a9lim/a9lim.github.io",
+      "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+      "interactivityType": "mixed",
+      "teaches": [
+        "Comparative reading of sacred texts across world traditions",
+        "Textual concordance and word frequency analysis",
+        "Historical and literary context of major religious scriptures"
+      ],
+      "datePublished": "2026-04-02",
+      "dateModified": "2026-04-05",
       "author": {
         "@type": "Person",
         "name": "a9lim",
@@ -90,6 +101,73 @@
       }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What sacred texts are included in Scripture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scripture includes sixteen works: the King James Version Old and New Testaments, KJV Apocrypha, Quran (Pickthall translation), Book of Mormon, Doctrine and Covenants, Pearl of Great Price, the Four Books of Confucianism (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahishn (West), Lotus Sutra (Kern), Arda Viraf (Haug and West), Book of Poetry (Legge), Kalevala (Crawford), and the Poetic Edda (Bellows)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the concordance feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The concordance shows how frequently each word appears across all sixteen works. Click any word in the reading pane to see its distribution, or open the full concordance overlay to search for specific terms. TF-IDF scoring surfaces related passages across different traditions based on shared vocabulary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Scripture require an internet connection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scripture loads chapter data on demand from static JSON files. After the initial page load, each chapter is fetched individually as you navigate. All data is stored as pre-built static files with no server-side processing or database — the entire application runs client-side in the browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do verse notes and bookmarks work in Scripture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click any verse number to add a personal note or bookmark. Notes are stored locally in your browser using localStorage and can be exported as JSON for backup. Notes support markdown formatting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What translations are used in Scripture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scripture uses public-domain translations: the King James Version for the Bible, Pickthall's translation for the Quran, the 1830 edition of the Book of Mormon, James Legge's translations for the Four Books and Tao Te Ching, Basil Hall Chamberlain's Kojiki, and other scholarly public-domain editions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Scripture collect any personal data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Scripture runs entirely in your browser with no server-side processing, no cookies, and no analytics tracking. All notes, bookmarks, and reading history stay on your device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Scripture work on mobile devices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Scripture is fully responsive with a mobile-optimized reading pane, touch-friendly verse selection, and adaptive navigation controls."
+          }
+        }
+      ]
+    }
+    </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://a9l.im"},{"@type":"ListItem","position":2,"name":"Scripture"}]}
+</script>
 </head>
 
 <body class="app-ready">
@@ -129,6 +207,7 @@
     </div>
 
     <div id="app-layout">
+        <nav id="breadcrumb" class="breadcrumb" aria-label="Breadcrumb"></nav>
         <main id="reading-pane" class="scrollbar-thin" tabindex="-1">
             <div id="chapter-header">
                 <h1 id="chapter-title"></h1>
@@ -196,6 +275,17 @@
 
     <script src="/shared-tabs.js"></script>
     <script type="module" src="main.js"></script>
+    <details class="edu-content">
+      <summary>About this reader</summary>
+      <article>
+        <h2>What is Scripture?</h2>
+        <p>Scripture is a browser-based reader for sixteen sacred texts spanning multiple religious and literary traditions. It provides chapter-by-chapter navigation, full-text search across all works, word concordance with frequency analysis, verse-linked notes, text-to-speech, and deep linking to any chapter or verse.</p>
+        <h3>Traditions Represented</h3>
+        <p>The collection spans Abrahamic, East Asian, Zoroastrian, Buddhist, and Nordic traditions. Christian texts include the KJV Old and New Testaments and Apocrypha. The Quran uses Pickthall's English translation. Latter-day Saint scripture includes the Book of Mormon, Doctrine and Covenants, and Pearl of Great Price. Confucian and Taoist works use Legge's translations. Japanese, Zoroastrian, Buddhist, Finnish, and Norse texts round out the collection.</p>
+        <h3>Concordance and Related Passages</h3>
+        <p>The concordance indexes every word across all sixteen works, showing frequency and distribution. TF-IDF (term frequency&ndash;inverse document frequency) scoring identifies passages with similar vocabulary across different traditions, enabling comparative study without requiring prior knowledge of each text's structure.</p>
+      </article>
+    </details>
 </body>
 
 </html>
