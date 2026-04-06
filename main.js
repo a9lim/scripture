@@ -225,6 +225,14 @@ async function init() {
     navigate(workId, chapterId, verse);
   });
 
+  // Auto-open search from ?q= parameter
+  const searchParam = new URLSearchParams(location.search).get('q');
+  if (searchParam) {
+    await search.open();
+    $.searchInput.value = searchParam;
+    $.searchInput.dispatchEvent(new Event('input'));
+  }
+
   // Notes
   initNotes($);
   _toolbar.initSidebar($.notesToggle, $.notesSidebar, $.notesClose);

@@ -27,6 +27,7 @@
     <link rel="icon" href="/favicon.ico">
     <meta name="theme-color" content="#C8553D">
     <link rel="canonical" href="https://a9l.im/scripture/">
+    <link rel="alternate" hreflang="en" href="https://a9l.im/scripture/">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="manifest" href="/manifest.json">
@@ -103,6 +104,14 @@
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://a9l.im/scripture/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     }
     </script>
@@ -246,7 +255,7 @@
             <button id="notes-close" class="tool-btn" title="Close panel" aria-label="Close panel" data-icon="close" data-icon-size="16"></button>
         </div>
         <div id="tab-notes" class="tab-panel active" role="tabpanel">
-            <div id="notes-content" class="scrollbar-thin"></div>
+            <div id="notes-content" class="scrollbar-thin" aria-live="polite"></div>
         </div>
         <div id="tab-bookmarks" class="tab-panel" role="tabpanel">
             <div id="bookmarks-content" class="scrollbar-thin"></div>
@@ -264,7 +273,7 @@
                 <select id="search-book" class="sim-select" aria-label="Filter by book"></select>
                 <select id="search-chapter" class="sim-select" aria-label="Filter by chapter"></select>
             </div>
-            <div id="search-results" class="sim-overlay-body"></div>
+            <div id="search-results" class="sim-overlay-body" aria-live="polite"></div>
         </div>
     </div>
 
@@ -274,7 +283,7 @@
                 <input id="concordance-input" type="search" class="sim-select" placeholder="Look up a word..." aria-label="Concordance word lookup">
                 <button id="concordance-close" class="tool-btn" title="Close" aria-label="Close concordance" data-icon="close" data-icon-size="16"></button>
             </div>
-            <div id="concordance-results" class="sim-overlay-body"></div>
+            <div id="concordance-results" class="sim-overlay-body" aria-live="polite"></div>
         </div>
     </div>
 
@@ -294,6 +303,7 @@
         <p>The concordance indexes every word across all sixteen works, showing frequency and distribution. TF-IDF (term frequency-inverse document frequency) scoring identifies passages with similar vocabulary across different traditions, enabling comparative study without requiring prior knowledge of each text's structure. TF-IDF weights words that are frequent in one chapter but rare across the corpus, surfacing meaningful thematic connections rather than common function words.</p>
         <h3>Deep Linking</h3>
         <p>Every chapter and verse has a permanent URL. Chapter links follow the pattern <code>/scripture/{work}/{book}-{chapter}</code> (e.g., <code>/scripture/ot/gen-1</code> for Genesis 1). Verse links append the verse number (e.g., <code>/scripture/ot/gen-1:26</code> for Genesis 1:26). These URLs can be shared, bookmarked, or cited directly.</p>
+        <p>Scripture is part of a suite of educational simulations at <a href="/">a9l.im</a>. Explore particle physics with <a href="/geon">Geon</a>, redistricting with <a href="/gerry">Gerry</a>, or cellular metabolism with <a href="/cyano">Cyano</a>.</p>
       </article>
     </details>
 </body>
