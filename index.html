@@ -28,6 +28,8 @@
     <meta name="theme-color" content="#C8553D">
     <link rel="canonical" href="https://a9l.im/scripture/">
     <link rel="alternate" hreflang="en" href="https://a9l.im/scripture/">
+    <link rel="alternate" hreflang="x-default" href="https://a9l.im/scripture/">
+    <meta property="og:locale" content="en_US">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="manifest" href="/manifest.json">
@@ -111,7 +113,8 @@
           "@type": "EntryPoint",
           "urlTemplate": "https://a9l.im/scripture/?q={search_term_string}"
         },
-        "query-input": "required name=search_term_string"
+        "query-input": "required name=search_term_string",
+        "suggestedQuery": ["Genesis", "Quran", "enlightenment", "salvation", "Book of Mormon", "Tao"]
       },
       "accessibilityFeature": ["readingOrder", "structuralNavigation", "displayTransformability", "longDescription"],
       "accessibilityHazard": "none"
