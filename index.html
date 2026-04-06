@@ -21,6 +21,8 @@
     <meta property="og:image:alt" content="Scripture sacred text reader">
     <meta name="twitter:site" content="@a9_lim">
     <meta name="twitter:creator" content="@a9_lim">
+    <meta name="twitter:title" content="Scripture — Sacred Text Reader">
+    <meta name="twitter:description" content="Read sixteen sacred texts spanning multiple traditions with full-text search, concordance, verse notes, and cross-tradition comparisons.">
     <meta name="author" content="a9lim">
     <link rel="icon" href="/favicon.ico">
     <meta name="theme-color" content="#C8553D">
@@ -28,6 +30,8 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="manifest" href="/manifest.json">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="search" type="application/opensearchdescription+xml" title="a9l.im" href="/opensearch.xml">
     <link rel="stylesheet" href="/fonts/fonts.css">
     <link rel="stylesheet" href="/shared-base.css">
     <link rel="stylesheet" href="styles.css">
@@ -52,7 +56,7 @@
       "description": "Sacred text reader with twelve works from multiple traditions — KJV Old and New Testaments, Apocrypha, Quran (Pickthall), Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), and Lotus Sutra (Kern). Features full-text search, verse-linked notes, and chapter-by-chapter navigation.",
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": ["meta[name='description']"]
+        "cssSelector": [".edu-content article"]
       },
       "applicationCategory": "EducationalApplication",
       "educationalUse": "Reading and studying sacred texts from world religious traditions",
@@ -84,7 +88,7 @@
       "author": {
         "@type": "Person",
         "name": "a9lim",
-        "url": "https://a9l.im/#about",
+        "url": "https://a9l.im/about",
         "sameAs": [
           "https://github.com/a9lim",
           "https://twitter.com/a9_lim"
@@ -167,7 +171,7 @@
     }
     </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://a9l.im"},{"@type":"ListItem","position":2,"name":"Scripture"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://a9l.im"},{"@type":"ListItem","position":2,"name":"Scripture","item":"https://a9l.im/scripture/"}]}
 </script>
 </head>
 
@@ -282,9 +286,14 @@
         <h2>What is Scripture?</h2>
         <p>Scripture is a browser-based reader for sixteen sacred texts spanning multiple religious and literary traditions. It provides chapter-by-chapter navigation, full-text search across all works, word concordance with frequency analysis, verse-linked notes, text-to-speech, and deep linking to any chapter or verse.</p>
         <h3>Traditions Represented</h3>
-        <p>The collection spans Abrahamic, East Asian, Zoroastrian, Buddhist, and Nordic traditions. Christian texts include the KJV Old and New Testaments and Apocrypha. The Quran uses Pickthall's English translation. Latter-day Saint scripture includes the Book of Mormon, Doctrine and Covenants, and Pearl of Great Price. Confucian and Taoist works use Legge's translations. Japanese, Zoroastrian, Buddhist, Finnish, and Norse texts round out the collection.</p>
+        <p>The collection spans Abrahamic, East Asian, Zoroastrian, Buddhist, and Nordic traditions. Christian texts include the King James Version Old and New Testaments (1611) and Apocrypha. The Quran uses Marmaduke Pickthall's 1930 English translation. Latter-day Saint scripture includes the Book of Mormon (1830), Doctrine and Covenants (1835), and Pearl of Great Price (1851).</p>
+        <p>Confucian works include James Legge's translations of The Four Books (1893) and the Book of Poetry (1876). The Tao Te Ching uses Legge's 1891 translation. The Kojiki uses Basil Hall Chamberlain's 1919 English translation. Zoroastrian texts include the Bundahishn (E. W. West, 1880) and the Arda Viraf (Haug &amp; West, 1872). The Lotus Sutra uses Hendrik Kern's 1884 translation. The Finnish Kalevala uses John Martin Crawford's 1888 translation, and the Norse Poetic Edda uses Henry Adams Bellows' 1923 translation.</p>
+        <h3>Public Domain Translations</h3>
+        <p>Every translation in this collection is in the public domain. The most recent translation dates to 1930 (Pickthall's Quran). All texts are freely available for reading, study, quotation, and redistribution with no copyright restrictions.</p>
         <h3>Concordance and Related Passages</h3>
-        <p>The concordance indexes every word across all sixteen works, showing frequency and distribution. TF-IDF (term frequency&ndash;inverse document frequency) scoring identifies passages with similar vocabulary across different traditions, enabling comparative study without requiring prior knowledge of each text's structure.</p>
+        <p>The concordance indexes every word across all sixteen works, showing frequency and distribution. TF-IDF (term frequency-inverse document frequency) scoring identifies passages with similar vocabulary across different traditions, enabling comparative study without requiring prior knowledge of each text's structure. TF-IDF weights words that are frequent in one chapter but rare across the corpus, surfacing meaningful thematic connections rather than common function words.</p>
+        <h3>Deep Linking</h3>
+        <p>Every chapter and verse has a permanent URL. Chapter links follow the pattern <code>/scripture/{work}/{book}-{chapter}</code> (e.g., <code>/scripture/ot/gen-1</code> for Genesis 1). Verse links append the verse number (e.g., <code>/scripture/ot/gen-1:26</code> for Genesis 1:26). These URLs can be shared, bookmarked, or cited directly.</p>
       </article>
     </details>
 </body>
