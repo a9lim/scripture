@@ -417,6 +417,7 @@ async function init() {
   // About panel
   const about = initAboutPanel({
     title: 'Scripture',
+    lastUpdated: '2026-04-05',
     description: 'Read and annotate sacred texts from twelve works across multiple traditions, with full-text search and personal notes.',
     controls: [
       { label: 'Work / Book / Chapter', value: 'Toolbar dropdowns to navigate' },
