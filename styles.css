@@ -43,10 +43,15 @@
 
 #app-layout {
     display: flex;
+    flex-wrap: wrap;
     margin-top: var(--toolbar-h);
     height: calc(100vh - var(--toolbar-h));
     overflow: hidden;
     transition: margin-right 0.55s var(--ease-out);
+}
+
+#app-layout > .breadcrumb {
+    flex-basis: 100%;
 }
 
 @media (min-width: 901px) {
