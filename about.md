@@ -113,6 +113,10 @@ The concordance uses TF-IDF (term frequency–inverse document frequency) to sur
 
 The precomputed similarity index (`similarity.json`) stores the top related chapters for each chapter, enabling instant "Related Passages" suggestions without runtime computation.
 
+## Accessibility
+
+Scripture supports keyboard navigation throughout: Tab moves between controls, Enter activates verse actions, and arrow keys navigate chapters. The reading pane has a skip-to-content link. All overlays (search, concordance) are focus-trapped ARIA dialogs. Dynamic content regions use aria-live for screen reader announcements. High-contrast mode is available via the theme toggle. No flashing content or motion hazards.
+
 ## Public Domain Status
 
 All sixteen texts are in the public domain. The King James Version (1611), the Legge translations (1876–1893), the Chamberlain Kojiki (1919), the West Bundahishn (1880), the Haug & West Arda Viraf (1872), the Kern Lotus Sutra (1884), the Crawford Kalevala (1888), the Bellows Poetic Edda (1923), the Pickthall Quran (1930), the Book of Mormon (1830), Doctrine and Covenants (1835), and Pearl of Great Price (1851) are all past copyright expiration in the United States and most jurisdictions worldwide.

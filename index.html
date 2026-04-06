@@ -32,6 +32,7 @@
     <meta property="og:locale" content="en_US">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Scripture">
     <link rel="manifest" href="/manifest.json">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     <link rel="search" type="application/opensearchdescription+xml" title="a9l.im" href="/opensearch.xml">
@@ -56,7 +57,7 @@
       "@type": ["WebApplication", "LearningResource"],
       "name": "Scripture",
       "url": "https://a9l.im/scripture/",
-      "description": "Sacred text reader with twelve works from multiple traditions — KJV Old and New Testaments, Apocrypha, Quran (Pickthall), Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), and Lotus Sutra (Kern). Features full-text search, verse-linked notes, and chapter-by-chapter navigation.",
+      "description": "Sacred text reader with sixteen works from multiple traditions — KJV Old and New Testaments, Apocrypha, Quran (Pickthall), Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahishn (West), Lotus Sutra (Kern), Arda Viraf (Haug & West), Book of Poetry (Legge), Kalevala (Crawford), and Poetic Edda (Bellows). Features full-text search, verse-linked notes, and chapter-by-chapter navigation.",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".edu-content article"]
@@ -324,6 +325,8 @@
         <p>The concordance indexes every word across all sixteen works, showing frequency and distribution. TF-IDF (term frequency-inverse document frequency) scoring identifies passages with similar vocabulary across different traditions, enabling comparative study without requiring prior knowledge of each text's structure. TF-IDF weights words that are frequent in one chapter but rare across the corpus, surfacing meaningful thematic connections rather than common function words.</p>
         <h3>Deep Linking</h3>
         <p>Every chapter and verse has a permanent URL. Chapter links follow the pattern <code>/scripture/{work}/{book}-{chapter}</code> (e.g., <code>/scripture/ot/gen-1</code> for Genesis 1). Verse links append the verse number (e.g., <code>/scripture/ot/gen-1:26</code> for Genesis 1:26). These URLs can be shared, bookmarked, or cited directly.</p>
+        <h3>Accessibility</h3>
+        <p>Scripture supports keyboard navigation throughout: Tab moves between controls, Enter activates verse actions, and arrow keys navigate chapters. The reading pane has a skip-to-content link. All overlays (search, concordance) are focus-trapped ARIA dialogs. Dynamic content regions use aria-live for screen reader announcements. High-contrast mode is available via the theme toggle. Verse numbers are visible to assistive technology. No flashing content or motion hazards.</p>
         <p>Scripture is part of a suite of educational simulations at <a href="/">a9l.im</a>. Explore particle physics with <a href="/geon">Geon</a>, redistricting with <a href="/gerry">Gerry</a>, or cellular metabolism with <a href="/cyano">Cyano</a>.</p>
       </article>
     </details>
