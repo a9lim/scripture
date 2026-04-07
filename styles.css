@@ -322,7 +322,7 @@
     padding: 4px 6px;
     border-radius: var(--radius);
     background: var(--bg-panel);
-    backdrop-filter: blur(12px) saturate(1.5);
+    backdrop-filter: blur(8px);
     box-shadow: none;
     transition: opacity 0.1s var(--ease-out);
 }
@@ -498,7 +498,7 @@
     padding: 1rem;
     border-radius: var(--radius);
     background: var(--bg-panel);
-    backdrop-filter: blur(20px) saturate(1.5);
+    backdrop-filter: blur(8px);
 }
 
 .display-row {
@@ -576,7 +576,7 @@
     padding: 12px;
     border-radius: var(--radius);
     background: var(--bg-panel);
-    backdrop-filter: blur(20px) saturate(1.5);
+    backdrop-filter: blur(8px);
     max-height: 400px;
     overflow-y: auto;
 }
@@ -630,7 +630,7 @@
     padding: 6px;
     border-radius: var(--radius);
     background: var(--bg-panel);
-    backdrop-filter: blur(20px) saturate(1.5);
+    backdrop-filter: blur(8px);
     max-height: 400px;
     overflow-y: auto;
 }
@@ -699,7 +699,7 @@
     padding: 10px;
     border-radius: var(--radius);
     background: var(--bg-panel);
-    backdrop-filter: blur(12px) saturate(1.5);
+    backdrop-filter: blur(8px);
     max-height: 300px;
     overflow-y: auto;
 }
@@ -858,7 +858,7 @@
     gap: 8px;
     padding: 6px 16px;
     background: var(--bg-panel);
-    backdrop-filter: blur(20px) saturate(1.5);
+    backdrop-filter: blur(8px);
 }
 
 .tts-bar[hidden] { display: none; }
