@@ -62,7 +62,7 @@
 
 .breadcrumb {
     padding: 0.5rem 1.5rem 0 3.5rem;
-    font-size: 0.8rem;
+    font-size: var(--font-base);
     color: var(--text-muted);
     max-width: var(--reader-max-width, 800px);
     margin: 0 auto;
@@ -202,7 +202,7 @@
 .section-heading {
     display: block;
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -224,7 +224,7 @@
 
 .empty-state {
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: var(--font-lg);
     text-align: center;
     padding: 2rem 0;
 }
@@ -268,7 +268,7 @@
 .search-filters select {
     flex: 1;
     min-width: 0;
-    font-size: 0.8rem;
+    font-size: var(--font-base);
 }
 
 /* ---------- Search Results ---------- */
@@ -279,7 +279,7 @@
 
 .search-work-group h3 {
     font-family: var(--font-sans);
-    font-size: 0.8rem;
+    font-size: var(--font-base);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -289,7 +289,7 @@
 
 .search-result {
     padding: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: var(--font-lg);
     line-height: 1.5;
     color: var(--text-secondary);
     cursor: pointer;
@@ -300,7 +300,7 @@
 }
 
 .search-ref-label {
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     color: var(--text-muted);
     margin-bottom: 0.15rem;
 }
@@ -421,7 +421,7 @@
 
 .bookmark-work-group h3 {
     font-family: var(--font-sans);
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -458,7 +458,7 @@
 
 .bookmark-text {
     font-family: var(--font-serif);
-    font-size: 0.85rem;
+    font-size: var(--font-lg);
     line-height: 1.4;
     color: var(--text-secondary);
     display: -webkit-box;
@@ -469,7 +469,7 @@
 
 .bookmark-ref {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: var(--font-sm);
     color: var(--text-muted);
     margin-top: 2px;
 }
@@ -513,7 +513,7 @@
 
 .display-label {
     font-family: var(--font-sans);
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     color: var(--text-muted);
     min-width: 80px;
     flex-shrink: 0;
@@ -521,7 +521,7 @@
 
 .display-val {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: var(--font-sm);
     color: var(--text-secondary);
     min-width: 40px;
     text-align: right;
@@ -536,7 +536,7 @@
     border: none;
     border-radius: var(--radius);
     padding: 4px 10px;
-    font-size: 0.7rem;
+    font-size: var(--font-sm);
     color: var(--text-muted);
     cursor: pointer;
     transition: background-color 0.15s, color 0.15s;
@@ -566,7 +566,7 @@
     transition: width 0.3s var(--ease-out);
 }
 
-#progress-label { font-family: var(--font-sans); font-size: 0.7rem; color: var(--text-muted); }
+#progress-label { font-family: var(--font-sans); font-size: var(--font-sm); color: var(--text-muted); }
 
 /* ---------- Resume Dropdown ---------- */
 
@@ -584,7 +584,7 @@
 
 .resume-heading {
     font-family: var(--font-sans);
-    font-size: 0.7rem;
+    font-size: var(--font-sm);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -606,7 +606,7 @@
 
 .resume-ref {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     color: var(--accent);
     min-width: 80px;
     flex-shrink: 0;
@@ -614,7 +614,7 @@
 
 .resume-text {
     font-family: var(--font-serif);
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     color: var(--text-secondary);
     flex: 1;
     white-space: nowrap;
@@ -639,7 +639,7 @@
 .random-work-row {
     padding: 8px 12px;
     font-family: var(--font-sans);
-    font-size: 0.8rem;
+    font-size: var(--font-base);
     color: var(--text-secondary);
     border-radius: var(--radius);
     cursor: pointer;
@@ -656,12 +656,12 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.85rem;
+    font-size: var(--font-lg);
     width: 100%;
     justify-content: center;
 }
 
-.related-toggle::before { content: '\25B6'; font-size: 0.6rem; transition: transform 0.2s; }
+.related-toggle::before { content: '\25B6'; font-size: var(--font-sm); transition: transform 0.2s; }
 .related-toggle.expanded::before { transform: rotate(90deg); }
 
 .related-list { margin-top: 1rem; }
@@ -669,7 +669,7 @@
 
 .related-work-group h4 {
     font-family: var(--font-sans);
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -682,7 +682,7 @@
     cursor: pointer;
     color: var(--text-secondary);
     font-family: var(--font-serif);
-    font-size: 0.9rem;
+    font-size: var(--font-lg);
     transition: color 0.15s;
 }
 
@@ -705,27 +705,27 @@
     overflow-y: auto;
 }
 
-.conc-pop-header { font-size: 0.85rem; color: var(--text); margin-bottom: 8px; }
-.conc-pop-count { font-size: 0.7rem; color: var(--text-muted); margin-left: 4px; }
+.conc-pop-header { font-size: var(--font-lg); color: var(--text); margin-bottom: 8px; }
+.conc-pop-count { font-size: var(--font-sm); color: var(--text-muted); margin-left: 4px; }
 
 .conc-pop-row {
     display: flex;
     align-items: baseline;
     gap: 6px;
     padding: 4px 0;
-    font-size: 0.8rem;
+    font-size: var(--font-base);
     cursor: pointer;
     color: var(--text-secondary);
 }
 
 .conc-pop-row:hover { color: var(--text); }
-.conc-pop-ref { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent); flex-shrink: 0; min-width: 70px; }
+.conc-pop-ref { font-family: var(--font-mono); font-size: var(--font-sm); color: var(--accent); flex-shrink: 0; min-width: 70px; }
 .conc-pop-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .conc-pop-seeall {
     margin-top: 6px;
     padding-top: 6px;
-    font-size: 0.75rem;
+    font-size: var(--font-base);
     color: var(--accent);
     cursor: pointer;
 }
@@ -770,7 +770,7 @@
     background: transparent;
     color: var(--accent);
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: var(--font-base);
     font-weight: 700;
     border: none;
     cursor: pointer;
@@ -790,7 +790,7 @@
     background: transparent;
     color: var(--text);
     font-family: var(--font-serif);
-    font-size: 0.85rem;
+    font-size: var(--font-lg);
     line-height: 1.5;
     resize: none;
     overflow: hidden;
@@ -810,7 +810,7 @@
 .notes-search-input {
     width: 100%;
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
+    font-size: var(--font-base);
     flex-shrink: 0;
 }
 
@@ -823,7 +823,7 @@
 
 .note-display {
     font-family: var(--font-serif);
-    font-size: 0.85rem;
+    font-size: var(--font-lg);
     line-height: 1.5;
     color: var(--text);
     cursor: text;
@@ -867,7 +867,7 @@
 
 .tts-label {
     font-family: var(--font-sans);
-    font-size: 0.7rem;
+    font-size: var(--font-sm);
     color: var(--text-muted);
     flex-shrink: 0;
 }
@@ -876,13 +876,13 @@
 
 .tts-val {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: var(--font-sm);
     color: var(--text-secondary);
     min-width: 28px;
     flex-shrink: 0;
 }
 
-.tts-voice-select { max-width: 200px; font-size: 0.75rem; }
+.tts-voice-select { max-width: 200px; font-size: var(--font-base); }
 
 .tts-active .verse {
     background: color-mix(in srgb, var(--ext-blue, #6496ff) 12%, transparent);
@@ -918,7 +918,7 @@ body:has(.tts-bar:not([hidden])) #app-layout {
 }
 
 .import-desc {
-    font-size: 0.85rem;
+    font-size: var(--font-lg);
     color: var(--text-secondary);
     margin: 0 0 1.25rem;
 }
