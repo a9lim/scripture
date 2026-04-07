@@ -486,61 +486,11 @@
     border-radius: var(--radius);
 }
 
-/* ---------- Display Settings Dropdown ---------- */
+/* ---------- Display Settings Overrides ---------- */
 
-.display-dropdown {
-    position: fixed;
-    z-index: 100;
-    width: 280px;
-    padding: 1rem;
-    border-radius: var(--radius);
-    background: var(--bg-panel);
-    backdrop-filter: blur(8px);
-}
-
-.display-row {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.display-row:last-child { margin-bottom: 0; }
-
-.display-label {
-    font-family: var(--font-sans);
-    font-size: var(--font-base);
-    color: var(--text-muted);
-    min-width: 80px;
-    flex-shrink: 0;
-}
-
-.display-val {
-    font-family: var(--font-mono);
-    font-size: var(--font-sm);
-    color: var(--text-secondary);
-    min-width: 40px;
-    text-align: right;
-}
-
-.display-row .sim-slider { flex: 1; }
-
-.display-font-group { display: flex; gap: 4px; }
-
-.display-font-group .mode-btn {
-    background: var(--bg-hover);
-    border: none;
-    border-radius: var(--radius);
+.settings-dd .mode-btn {
     padding: 4px 10px;
     font-size: var(--font-sm);
-    color: var(--text-muted);
-    cursor: pointer;
-    transition: background-color 0.15s, color 0.15s;
-}
-
-.display-font-group .mode-btn.active {
-    background: var(--accent-subtle);
-    color: var(--accent);
 }
 
 /* ---------- Progress Bar ---------- */
