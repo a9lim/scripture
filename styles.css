@@ -35,7 +35,7 @@
     gap: 6px;
 }
 
-.nav-dropdowns .sim-select {
+.nav-dropdowns .sim-dropdown {
     width: 140px;
 }
 
@@ -326,10 +326,6 @@
     backdrop-filter: blur(8px);
     box-shadow: none;
     transition: opacity 0.1s var(--ease-out);
-}
-
-.verse-popover.hidden {
-    display: none;
 }
 
 .vp-btn {
