@@ -120,11 +120,9 @@ export function renderNotes($, workId, chapterId) {
     container.appendChild(scopeRow);
     container.dataset.chapter = `${workId}:${chapterId}`;
 
-    requestAnimationFrame(() => {
-      _forms.bindModeGroup(scopeRow, 'scope', (val) => {
-        _notesScope = val;
-        renderNotes(_$, _workId, _chapterId);
-      });
+    _forms.bindModeGroup(scopeRow, 'scope', (val) => {
+      _notesScope = val;
+      renderNotes(_$, _workId, _chapterId);
     });
 
     // Debounced search
@@ -517,10 +515,8 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
     container.appendChild(scopeRow);
     container.dataset.chapter = `${workId}:${chapterId}`;
 
-    requestAnimationFrame(() => {
-      _forms.bindModeGroup(scopeRow, 'scope', (val) => {
-        renderBookmarks(_bm$, _bmWorkId, _bmChapterId, val, _bmNavigateFn);
-      });
+    _forms.bindModeGroup(scopeRow, 'scope', (val) => {
+      renderBookmarks(_bm$, _bmWorkId, _bmChapterId, val, _bmNavigateFn);
     });
 
     // Debounced search
