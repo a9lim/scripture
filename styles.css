@@ -121,7 +121,7 @@
     gap: 6px;
     padding: 6px 8px;
     margin-bottom: 4px;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     background-color: var(--bg-elevated);
     transition: background-color 0.15s;
 }
@@ -134,7 +134,7 @@
 
 .verse {
     display: inline;
-    font-family: var(--reader-font-family, var(--font-body-serif));
+    font-family: var(--reader-font-family, var(--font-serif));
     font-size: var(--reader-font-size, 1.25rem);
     line-height: var(--reader-line-height, 2);
     color: var(--text);
@@ -162,7 +162,7 @@
 
 .verse-highlight {
     background: color-mix(in srgb, var(--accent) 15%, transparent);
-    border-radius: var(--radius-sm, 2px);
+    border-radius: var(--radius);
 }
 
 /* ---------- Chapter Header ---------- */
@@ -181,14 +181,14 @@
 }
 
 #chapter-subtitle {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.95rem;
     color: var(--text-muted);
     margin: 0;
 }
 
 #chapter-intro {
-    font-family: var(--font-body-serif);
+    font-family: var(--font-serif);
     font-size: 1.1rem;
     color: var(--text-secondary);
     line-height: 1.6;
@@ -239,7 +239,7 @@
 }
 
 .overlay-header h2 {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--text);
@@ -277,7 +277,7 @@
 }
 
 .search-work-group h3 {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -307,7 +307,7 @@
 .search-result mark {
     background: var(--ext-yellow);
     color: inherit;
-    border-radius: 2px;
+    border-radius: var(--radius);
     padding: 0 1px;
 }
 
@@ -320,7 +320,7 @@
     align-items: center;
     gap: 2px;
     padding: 4px 6px;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius);
     background: var(--bg-panel);
     backdrop-filter: blur(12px) saturate(1.5);
     box-shadow: none;
@@ -339,7 +339,7 @@
     height: 28px;
     padding: 0;
     border: none;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     background: transparent;
     cursor: pointer;
     transition: background-color 0.15s, color 0.15s;
@@ -419,7 +419,7 @@
 .bookmark-work-group { margin-bottom: 1rem; }
 
 .bookmark-work-group h3 {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -433,7 +433,7 @@
     align-items: center;
     gap: 6px;
     padding: 6px 8px;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     background: var(--bg-elevated);
     margin-bottom: 4px;
     cursor: pointer;
@@ -456,7 +456,7 @@
 .bookmark-content { flex: 1; min-width: 0; }
 
 .bookmark-text {
-    font-family: var(--font-body-serif);
+    font-family: var(--font-serif);
     font-size: 0.85rem;
     line-height: 1.4;
     color: var(--text-secondary);
@@ -486,7 +486,7 @@
 
 .verse-row.bookmarked .verse {
     background: color-mix(in srgb, var(--ext-yellow, #e8c840) 12%, transparent);
-    border-radius: var(--radius-sm, 2px);
+    border-radius: var(--radius);
 }
 
 /* ---------- Display Settings Dropdown ---------- */
@@ -496,7 +496,7 @@
     z-index: 100;
     width: 280px;
     padding: 1rem;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius);
     background: var(--bg-panel);
     backdrop-filter: blur(20px) saturate(1.5);
 }
@@ -511,7 +511,7 @@
 .display-row:last-child { margin-bottom: 0; }
 
 .display-label {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.75rem;
     color: var(--text-muted);
     min-width: 80px;
@@ -533,7 +533,7 @@
 .display-font-group .mode-btn {
     background: var(--bg-hover);
     border: none;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     padding: 4px 10px;
     font-size: 0.7rem;
     color: var(--text-muted);
@@ -552,7 +552,7 @@
 
 #progress-bar {
     background: var(--bg-hover);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     height: 4px;
     overflow: hidden;
     margin-bottom: 4px;
@@ -561,11 +561,11 @@
 #progress-fill {
     background: var(--accent);
     height: 100%;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     transition: width 0.3s var(--ease-out);
 }
 
-#progress-label { font-family: var(--font-body); font-size: 0.7rem; color: var(--text-muted); }
+#progress-label { font-family: var(--font-sans); font-size: 0.7rem; color: var(--text-muted); }
 
 /* ---------- Resume Dropdown ---------- */
 
@@ -574,7 +574,7 @@
     z-index: 100;
     width: 320px;
     padding: 12px;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius);
     background: var(--bg-panel);
     backdrop-filter: blur(20px) saturate(1.5);
     max-height: 400px;
@@ -582,7 +582,7 @@
 }
 
 .resume-heading {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -596,7 +596,7 @@
     align-items: center;
     gap: 10px;
     padding: 8px;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     cursor: pointer;
     transition: background-color 0.15s;
 }
@@ -612,7 +612,7 @@
 }
 
 .resume-text {
-    font-family: var(--font-body-serif);
+    font-family: var(--font-serif);
     font-size: 0.75rem;
     color: var(--text-secondary);
     flex: 1;
@@ -628,7 +628,7 @@
     z-index: 100;
     width: 220px;
     padding: 6px;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius);
     background: var(--bg-panel);
     backdrop-filter: blur(20px) saturate(1.5);
     max-height: 400px;
@@ -637,10 +637,10 @@
 
 .random-work-row {
     padding: 8px 12px;
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.8rem;
     color: var(--text-secondary);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     cursor: pointer;
     transition: background-color 0.15s;
 }
@@ -667,7 +667,7 @@
 .related-work-group { margin-bottom: 1rem; }
 
 .related-work-group h4 {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -680,7 +680,7 @@
     padding: 6px 0;
     cursor: pointer;
     color: var(--text-secondary);
-    font-family: var(--font-body-serif);
+    font-family: var(--font-serif);
     font-size: 0.9rem;
     transition: color 0.15s;
 }
@@ -689,7 +689,7 @@
 
 /* ---------- Concordance ---------- */
 
-.word.conc-word { cursor: pointer; border-radius: 2px; transition: background-color 0.1s; }
+.word.conc-word { cursor: pointer; border-radius: var(--radius); transition: background-color 0.1s; }
 .word.conc-word:hover { background: var(--bg-hover); }
 
 .conc-popover {
@@ -697,7 +697,7 @@
     z-index: 20;
     width: 320px;
     padding: 10px;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius);
     background: var(--bg-panel);
     backdrop-filter: blur(12px) saturate(1.5);
     max-height: 300px;
@@ -765,7 +765,7 @@
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius);
     background: transparent;
     color: var(--accent);
     font-family: var(--font-mono);
@@ -788,7 +788,7 @@
     border: none;
     background: transparent;
     color: var(--text);
-    font-family: var(--font-body-serif);
+    font-family: var(--font-serif);
     font-size: 0.85rem;
     line-height: 1.5;
     resize: none;
@@ -821,7 +821,7 @@
 }
 
 .note-display {
-    font-family: var(--font-body-serif);
+    font-family: var(--font-serif);
     font-size: 0.85rem;
     line-height: 1.5;
     color: var(--text);
@@ -865,7 +865,7 @@
 .tts-bar .tool-btn { flex-shrink: 0; }
 
 .tts-label {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 0.7rem;
     color: var(--text-muted);
     flex-shrink: 0;
@@ -885,7 +885,7 @@
 
 .tts-active .verse {
     background: color-mix(in srgb, var(--ext-blue, #6496ff) 12%, transparent);
-    border-radius: var(--radius-sm, 2px);
+    border-radius: var(--radius);
 }
 
 body:has(.tts-bar:not([hidden])) #app-layout {
@@ -910,7 +910,7 @@ body:has(.tts-bar:not([hidden])) #app-layout {
 }
 
 .import-heading {
-    font-family: var(--font-body);
+    font-family: var(--font-sans);
     font-size: 1rem;
     margin: 0 0 1rem;
     color: var(--text);
