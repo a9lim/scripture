@@ -131,7 +131,7 @@ cd extract && ./run.sh extract-raw   # re-extract all works from raw/ + reindex
 
 ## URL Routing
 
-Path-based: `/scripture/workId/chapterId` with optional `:verseNum` for deep-linking (e.g. `/scripture/bom/1-ne-1:26`). Cloudflare Pages `_redirects` serves `scripture/index.html` for all `/scripture/*` paths. Default: last reading position from history, fallback `/scripture/bom/1-ne-1`.
+Path-based: `/scripture/workId/chapterId` with optional `:verseNum` for deep-linking (e.g. `/scripture/bom/1-ne-1:26`). The root `_worker.js` handles SPA routing for all `/scripture/*` paths, serving `scripture/index.html`. Default: last reading position from history, fallback `/scripture/bom/1-ne-1`.
 
 ## User Data (localStorage)
 
@@ -153,7 +153,7 @@ Verse numbers: fixed-width inline-block (`width: 2em`), pulled into gutter via n
 ## Gotchas
 
 - **`initOverlayDismiss(overlayEl, closeBtn, hideFn)`** — all 3 args required.
-- **Shared globals** (`escapeHtml`, `debounce`, `trapFocus`, `initOverlayDismiss`, `initShortcuts`, `initAboutPanel`, `showToast`, `_toolbar`, `_forms`, `_haptics`, `createSimTooltip`) are window globals from `shared-*.js`, not ES6 imports. Verify `<script>` tags in `index.html`.
+- **Shared globals** (`escapeHtml`, `debounce`, `trapFocus`, `initOverlayDismiss`, `initShortcuts`, `initAboutPanel`, `showToast`, `_toolbar`, `_forms`, `_settings`, `_haptics`, `createSimTooltip`) are window globals from `shared-*.js`, not ES6 imports. Verify `<script>` tags in `index.html`.
 - **`_PALETTE`/`_FONT` frozen** by `colors.js` — do not mutate.
 - **`scripture-user` localStorage key** — changing it loses all user notes and bookmarks.
 - **`book.chapters` is an integer** count, not an array. Chapter IDs are derived, not stored.
