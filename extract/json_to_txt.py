@@ -30,7 +30,12 @@ def main():
         with open(os.path.join(work_dir, 'manifest.json')) as f:
             manifest = json.load(f)
 
-        lines = []
+        lines = [
+            'This structured text is licensed under CC BY-SA 4.0',
+            'https://creativecommons.org/licenses/by-sa/4.0/',
+            'Source text is public domain. This arrangement © 2026 a9lim.',
+            '',
+        ]
 
         # Work header
         lines.append(f'WORK: {manifest["id"]} | {manifest["title"]}')

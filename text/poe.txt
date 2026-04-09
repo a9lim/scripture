@@ -1,3 +1,7 @@
+This structured text is licensed under CC BY-SA 4.0
+https://creativecommons.org/licenses/by-sa/4.0/
+Source text is public domain. This arrangement © 2026 a9lim.
+
 WORK: poe | Poetic Edda
 BOOK: poe-gods | Lays of the Gods
 CHAPTER: Voluspo
