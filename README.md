@@ -1,6 +1,6 @@
 # Scripture
 
-A static scripture reader for sixteen sacred texts. It has full-text search, concordance, verse-linked notes and bookmarks, split-pane parallel reading, text-to-speech, related passages, reading history, and text download. Vanilla ES6 modules with no dependencies.
+A static reader for sixteen sacred texts. It has full-text search, concordance, verse-linked notes and bookmarks, split-pane parallel reading, text-to-speech, related passages, reading history, and text download. Vanilla ES6 modules with no dependencies.
 
 **Try it:** [a9l.im/scripture](https://a9l.im/scripture)
 
