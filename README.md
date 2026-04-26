@@ -1,6 +1,6 @@
 # Scripture
 
-A static reader for sixteen sacred texts. It has full-text search, concordance, verse-linked notes and bookmarks, split-pane parallel reading, text-to-speech, related passages, reading history, and text download. Vanilla ES6 modules with no dependencies.
+A static reader for sixteen sacred texts. It has full-text search, concordance, verse-linked notes and bookmarks, text-to-speech, related passages, reading history, and text download. Vanilla ES6 modules with no dependencies.
 
 **Try it:** [a9l.im/scripture](https://a9l.im/scripture)
 
@@ -18,7 +18,7 @@ A static reader for sixteen sacred texts. It has full-text search, concordance, 
 | Four Books | Legge | [sacred-texts.com](https://sacred-texts.com) |
 | Tao Te Ching | Legge | [sacred-texts.com](https://sacred-texts.com) |
 | Kojiki | Chamberlain | [sacred-texts.com](https://sacred-texts.com) |
-| Bundahis | West | [sacred-texts.com](https://sacred-texts.com) |
+| Bundahishn | West | [sacred-texts.com](https://sacred-texts.com) |
 | Lotus Sutra | Kern | [sacred-texts.com](https://sacred-texts.com) |
 | Arda Viraf | Haug & West | [sacred-texts.com](https://sacred-texts.com) |
 | Book of Poetry | Legge | [sacred-texts.com](https://sacred-texts.com) |
@@ -30,7 +30,6 @@ A static reader for sixteen sacred texts. It has full-text search, concordance, 
 - **Search**: full-text search across all works with grouped results
 - **Concordance**: click any word to see every occurrence across all texts
 - **Notes and bookmarks**: verse-linked markdown notes stored in the browser
-- **Split pane**: read two passages side by side
 - **Text-to-speech**: read aloud with verse tracking
 - **Related passages**: TF-IDF similarity suggestions for each chapter
 - **Reading history**: resume where you left off

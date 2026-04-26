@@ -19,7 +19,7 @@ Serve from repo root — shared files load via absolute paths. No build step, te
 
 ## Overview
 
-Static scripture reader with verse actions, bookmarks, concordance, display settings, reading history, full-text search, related passages, text download, text-to-speech, rich markdown notes, and data export/import. Sixteen works: Book of Mormon, D&C, Pearl of Great Price, OT (KJV), NT (KJV), Apocrypha (KJV), Quran (Pickthall), Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahis (West), Lotus Sutra (Kern), Arda Viraf (Haug & West), Book of Poetry (Legge), Kalevala (Crawford), Poetic Edda (Bellows). Zero dependencies, vanilla ES6 modules.
+Static scripture reader with verse actions, bookmarks, concordance, display settings, reading history, full-text search, related passages, text download, text-to-speech, rich markdown notes, and data export/import. Sixteen works: Book of Mormon, D&C, Pearl of Great Price, OT (KJV), NT (KJV), Apocrypha (KJV), Quran (Pickthall), Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahishn (West), Lotus Sutra (Kern), Arda Viraf (Haug & West), Book of Poetry (Legge), Kalevala (Crawford), Poetic Edda (Bellows). Zero dependencies, vanilla ES6 modules.
 
 ## Frontend Architecture
 
