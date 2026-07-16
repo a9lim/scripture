@@ -1,3 +1,10 @@
+---
+name: Scripture
+title: Scripture — Sacred Text Reader
+description: Read, search, annotate, compare, and listen to sixteen public-domain sacred works with chapter and verse deep links, concordance, and related passages.
+updated: 2026-07-16
+---
+
 # Scripture — Sacred Text Reader
 
 Scripture is a browser-based reader for sixteen sacred texts from multiple religious traditions. It provides chapter-by-chapter navigation, full-text search, concordance analysis, and verse-linked notes.
@@ -12,7 +19,7 @@ The reader includes: King James Version Old Testament and New Testament, KJV Apo
 - **Concordance** showing word frequency and distribution across works using TF-IDF for related passage discovery
 - **Verse-linked notes** for personal annotation tied to specific verses
 - **Text-to-speech** for listening to passages
-- **Data export** for notes and search results
+- **Data export and import** for notes, bookmarks, display preferences, and reading history
 - **Deep linking** to any chapter via URL (e.g., `/scripture/ot/gen-1` for Genesis 1)
 
 ## Data
