@@ -1,12 +1,14 @@
 # AGENTS.md
 
-Part of the **a9l.im** portfolio. See root `AGENTS.md` for shared design system, CSS conventions, and shared code policy. Sibling projects: `geon`, `shoals`, `gerry`, `cyano`.
+Part of the **a9l.im** portfolio. See root `AGENTS.md` for the shared design
+system, CSS conventions, Worker routing/SSR, and shared code policy. Sibling
+projects: `geon`, `shoals`, `gerry`, `cyano`, `miasma`, `pile`, and `plasma`.
 
 ## Rules
 
 - Prefer shared modules (`shared-*.js`, `shared-base.css`) over project-specific reimplementations.
 - No work-specific code in the frontend. Adding a new scripture never requires JS changes.
-- Raw source files (PDFs, scraped text) live in `raw/` (gitignored). Extracted JSON in `data/` and text in `text/` are committed.
+- Raw source files (PDFs, scraped text) live in `raw/` (gitignored). Extracted JSON in `data/` and generated text downloads in `text/` are committed.
 - **Always re-extract from raw sources** (`./run.sh extract-raw`) rather than round-tripping through the text format. Extraction is fast, cheap, and avoids drift. The text files are a download artifact for users, not an editing workflow.
 
 ## Running Locally
@@ -15,16 +17,22 @@ Part of the **a9l.im** portfolio. See root `AGENTS.md` for shared design system,
 cd path/to/a9lim.github.io && python -m http.server
 ```
 
-Serve from repo root — shared files load via absolute paths. No build step, test framework, or linter.
+Serve from the parent repository root — shared files load via absolute paths.
+There is no frontend build step or JavaScript linter. The extraction pipeline
+has a committed data verifier (`cd extract && ./run.sh verify`).
 
 ## Overview
 
-Static scripture reader with verse actions, bookmarks, concordance, display settings, reading history, full-text search, related passages, text download, text-to-speech, rich markdown notes, and data export/import. Sixteen works: Book of Mormon, D&C, Pearl of Great Price, OT (KJV), NT (KJV), Apocrypha (KJV), Quran (Pickthall), Four Books (Legge), Tao Te Ching (Legge), Kojiki (Chamberlain), Bundahishn (West), Lotus Sutra (Kern), Arda Viraf (Haug & West), Book of Poetry (Legge), Kalevala (Crawford), Poetic Edda (Bellows). Zero dependencies, vanilla ES6 modules.
+Static scripture reader with verse actions, bookmarks, concordance, display
+settings, reading history, full-text search, related passages, text download,
+text-to-speech, rich markdown notes, and data export/import. The committed
+corpus contains 16 works, 121 books, 2,724 chapter files, and 63,141 verse
+records. Zero runtime dependencies; vanilla ES6 modules.
 
 ## Frontend Architecture
 
 ```
-main.js               Entry point. $ DOM cache, hash routing, navigate(), random verse
+main.js               Entry point. $ DOM cache, path routing, navigate(), random verse
 ├─ src/chapters.js     Data layer: caching, parseRef, formatRef, chapterIdAt, bookMap
 ├─ src/nav.js          Toolbar dropdowns: fillSelect() (shared), work/book/chapter selects
 ├─ src/reader.js       Verse rendering: sections, verse highlighting, word wrapping
@@ -57,9 +65,9 @@ Book metadata (workId, abbreviation) lives in each manifest and is indexed into 
 ```
 data/
   works.json                     ["ot", "apoc", ..., "lotus"]
-  search-index.json              [{ ref, text }]
-  concordance.json               { word: [ref, ...] }
-  similarity.json                { chapterId: [{ ref, score }] }
+  search-index.json              [{ ref, text }] — one row per verse record
+  concordance.json               { word: [ref, ...] } — exact occurrence refs
+  similarity.json                { chapterId: [{ ref, score }] } — top TF-IDF chapter matches
   {workId}/
     manifest.json                { id, title, books }
     chapters/{chapterId}.json    { sections }
@@ -90,6 +98,11 @@ SECTION: @ N                   (section break — start numbering at N)
 ```
 
 Text files are a generated download artifact. Do not edit them as a primary workflow — re-extract from raw sources instead.
+Their structured arrangement is licensed CC BY-SA 4.0; see `text/LICENSE`.
+The application source is AGPL-3.0. Do not label the generated corpus itself
+with the Public Domain Mark: that would conflict with the committed download
+license even though the underlying historic source texts are treated as
+public-domain inputs.
 
 ## Extraction Pipeline
 
@@ -133,6 +146,29 @@ cd extract && ./run.sh extract-raw   # re-extract all works from raw/ + reindex
 
 Path-based: `/scripture/workId/chapterId` with optional `:verseNum` for deep-linking (e.g. `/scripture/bom/1-ne-1:26`). The root `_worker.js` handles SPA routing for all `/scripture/*` paths, serving `scripture/index.html`. Default: last reading position from history, fallback `/scripture/bom/1-ne-1`.
 
+The interactive reader is client-side, but production delivery is not purely
+static: the parent Worker SSRs work/chapter/verse HTML and JSON-LD for crawlers,
+adds security/cache headers, and logs aggregate page-view metadata through its
+Analytics Engine binding. Personal notes, bookmarks, display settings, and
+reading history remain in browser `localStorage` and are not sent by the
+reader code.
+
+## SEO and discovery contract
+
+- `about.md` is the canonical long-form SEO summary. The parent build copies
+  its `title`, `description`, and `updated` fields into root discovery files
+  and submodule metadata mirrors.
+- `index.html` owns the base route's head metadata, FAQ/LearningResource/
+  Dataset JSON-LD, and crawlable educational content. The parent Worker adds
+  route-specific `CollectionPage`, `Book`, `Chapter`, `Quotation`, and
+  breadcrumb schema for deep routes.
+- The structured data arrangement/download license is CC BY-SA 4.0. The web
+  application code is AGPL-3.0.
+- Wikidata QIDs and external identifiers must be live-verified before being
+  added or changed. Never infer them from names.
+- After changing `about.md`, run the parent `node _build.mjs` so the root SEO,
+  sitemap, and LLM discovery mirrors advance with the submodule source.
+
 ## User Data (localStorage)
 
 | Key | Format | Purpose |
@@ -159,7 +195,7 @@ Verse numbers: fixed-width inline-block (`width: 2em`), pulled into gutter via n
 - **`book.chapters` is an integer** count, not an array. Chapter IDs are derived, not stored.
 - **Verse number gutter** — `#reading-pane` left padding must be ≥ 3.5rem (≥ 3rem on mobile).
 - **`#reading-pane` has `position: relative`** — required for popover positioning.
-- **Concordance data** — `concordance.json` (~15MB). Lazy-loaded on first word click.
+- **Concordance data** — `concordance.json` (~14 MB). Lazy-loaded on first word click.
 - **TTS control bar** uses `body:has(.tts-bar:not([hidden]))` to push `#app-layout` down — requires modern browser.
 - **Notes markdown** — `renderMarkdown()` calls `escapeHtml()` first, then applies regex. Safe because input is always escaped before HTML tag insertion.
 - **Export/import** uses three localStorage keys: `scripture-user`, `scripture-display`, `scripture-history`. Import reloads the page.

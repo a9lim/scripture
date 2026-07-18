@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scripture — Sacred Text Reader | a9l.im</title>
-    <meta name="description" content="Read, search, annotate, compare, and listen to sixteen public-domain sacred works with chapter and verse deep links, concordance, and related passages.">
+    <meta name="description" content="Read, search, annotate, compare, and listen to sixteen sacred works with chapter and verse deep links, concordance, and related passages.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta property="og:title" content="Scripture — Sacred Text Reader">
-    <meta property="og:description" content="Read, search, annotate, compare, and listen to sixteen public-domain sacred works with chapter and verse deep links, concordance, and related passages.">
+    <meta property="og:description" content="Read, search, annotate, compare, and listen to sixteen sacred works with chapter and verse deep links, concordance, and related passages.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://a9l.im/scripture/">
     <meta property="og:site_name" content="a9l.im">
@@ -22,7 +22,7 @@
     <meta name="twitter:site" content="@_a9lim">
     <meta name="twitter:creator" content="@_a9lim">
     <meta name="twitter:title" content="Scripture — Sacred Text Reader">
-    <meta name="twitter:description" content="Read, search, annotate, compare, and listen to sixteen public-domain sacred works with chapter and verse deep links, concordance, and related passages.">
+    <meta name="twitter:description" content="Read, search, annotate, compare, and listen to sixteen sacred works with chapter and verse deep links, concordance, and related passages.">
     <meta name="author" content="a9lim">
     <link rel="icon" href="/favicon.ico">
     <meta name="theme-color" content="#E11107">
@@ -59,7 +59,7 @@
       "@type": ["WebApplication", "LearningResource"],
       "name": "Scripture",
       "url": "https://a9l.im/scripture/",
-      "description": "Read, search, annotate, compare, and listen to sixteen public-domain sacred works with chapter and verse deep links, concordance, and related passages.",
+      "description": "Read, search, annotate, compare, and listen to sixteen sacred works with chapter and verse deep links, concordance, and related passages.",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".edu-content article"]
@@ -89,11 +89,12 @@
         "Historical and literary context of major religious scriptures"
       ],
       "datePublished": "2026-04-02",
-      "dateModified": "2026-07-16",
+      "dateModified": "2026-07-17",
       "author": {
         "@type": "Person",
         "name": "a9lim",
-        "url": "https://a9l.im/about",
+        "url": "https://a9l.im/",
+        "@id": "https://a9l.im/#person",
         "sameAs": [
           "https://github.com/a9lim",
           "https://twitter.com/_a9lim"
@@ -140,7 +141,7 @@
           "name": "What is the concordance feature?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The concordance shows how frequently each word appears across all sixteen works. Click any word in the reading pane to see its distribution, or open the full concordance overlay to search for specific terms. TF-IDF scoring surfaces related passages across different traditions based on shared vocabulary."
+            "text": "The concordance is an exact-word occurrence index across all sixteen works. Click an indexed word in the reading pane to see linked records, or open the full concordance overlay. A separate TF-IDF index powers the Related Passages section."
           }
         },
         {
@@ -148,7 +149,7 @@
           "name": "Does Scripture require an internet connection?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Scripture loads chapter data on demand from static JSON files. After the initial page load, each chapter is fetched individually as you navigate. All data is stored as pre-built static files with no server-side processing or database — the entire application runs client-side in the browser."
+            "text": "Scripture loads prebuilt chapter JSON on demand and has no application database. The interactive reader runs client-side; the parent Cloudflare Worker also renders crawlable HTML and structured data for deep routes."
           }
         },
         {
@@ -164,15 +165,15 @@
           "name": "What translations are used in Scripture?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Scripture uses public-domain translations: the King James Version for the Bible, Pickthall's translation for the Quran, the 1830 edition of the Book of Mormon, James Legge's translations for the Four Books and Tao Te Ching, Basil Hall Chamberlain's Kojiki, and other scholarly public-domain editions."
+            "text": "Scripture uses historic English editions including King James text, Pickthall's Quran, Legge's Four Books and Tao Te Ching, Chamberlain's Kojiki, and other project-documented editions. Generated text downloads and their structured arrangement are licensed CC BY-SA 4.0."
           }
         },
         {
           "@type": "Question",
-          "name": "Does Scripture collect any personal data?",
+          "name": "Where is personal reading data stored?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Scripture runs entirely in your browser with no server-side processing, no cookies, and no analytics tracking. All notes, bookmarks, and reading history stay on your device."
+            "text": "Notes, bookmarks, display settings, and reading history stay in browser localStorage and are not sent by the reader code. The parent hosting Worker records aggregate page-view metadata separately."
           }
         },
         {
@@ -194,16 +195,16 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "@id": "https://a9l.im/scripture/#dataset",
-  "name": "Sacred Texts Corpus — Sixteen Public-Domain English Translations",
-  "description": "A corpus of sixteen sacred texts spanning Abrahamic, East Asian, Zoroastrian, Buddhist, and Nordic traditions in public-domain English translations. Includes Old Testament, New Testament, Apocrypha, Quran, Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books, Kojiki, Tao Te Ching, Bundahishn, Lotus Sutra, Book of Proverbs (Confucian), Kalevala, Poetic Edda, and Arda Viraf.",
+  "name": "Sacred Texts Corpus — Sixteen Historic English Editions",
+  "description": "A structured corpus of sixteen sacred works spanning Abrahamic, East Asian, Zoroastrian, Buddhist, Finnish, and Norse traditions. Includes Old Testament, New Testament, Apocrypha, Quran, Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books, Kojiki, Tao Te Ching, Bundahishn, Lotus Sutra, Book of Poetry, Kalevala, Poetic Edda, and Arda Viraf.",
   "url": "https://a9l.im/scripture/",
-  "creator": {"@type": "Person", "name": "a9lim", "url": "https://a9l.im/about", "@id": "https://a9l.im/#person"},
-  "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "creator": {"@type": "Person", "name": "a9lim", "url": "https://a9l.im/", "@id": "https://a9l.im/#person"},
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "inLanguage": "en",
-  "keywords": ["sacred texts", "Bible", "Quran", "Book of Mormon", "Tao Te Ching", "Kojiki", "Kalevala", "Poetic Edda", "comparative religion", "public domain"],
+  "keywords": ["sacred texts", "Bible", "Quran", "Book of Mormon", "Tao Te Ching", "Kojiki", "Kalevala", "Poetic Edda", "comparative religion", "historic English editions"],
   "includedInDataCatalog": {"@type": "DataCatalog", "name": "a9l.im"},
   "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://a9l.im/scripture/data/works.json"},
-  "measurementTechnique": "Full-text digitization of public-domain translations"
+  "measurementTechnique": "Parser-normalized extraction into manifest and chapter JSON, with generated search, concordance, and TF-IDF similarity indexes"
 }
 </script>
 </head>
@@ -320,16 +321,16 @@
         <h2>What is Scripture?</h2>
         <p>Scripture is a browser-based reader for sixteen sacred texts spanning multiple religious and literary traditions. It provides chapter-by-chapter navigation, full-text search across all works, word concordance with frequency analysis, verse-linked notes, text-to-speech, and deep linking to any chapter or verse.</p>
         <h3>Traditions Represented</h3>
-        <p>The collection spans Abrahamic, East Asian, Zoroastrian, Buddhist, and Nordic traditions. Christian texts include the King James Version Old and New Testaments (1611) and Apocrypha. The Quran uses Marmaduke Pickthall's 1930 English translation. Latter-day Saint scripture includes the Book of Mormon (1830), Doctrine and Covenants (1835), and Pearl of Great Price (1851).</p>
-        <p>Confucian works include James Legge's translations of The Four Books (1893) and the Book of Poetry (1876). The Tao Te Ching uses Legge's 1891 translation. The Kojiki uses Basil Hall Chamberlain's 1919 English translation. Zoroastrian texts include the Bundahishn (E. W. West, 1880) and the Arda Viraf (Haug &amp; West, 1872). The Lotus Sutra uses Hendrik Kern's 1884 translation. The Finnish Kalevala uses John Martin Crawford's 1888 translation, and the Norse Poetic Edda uses Henry Adams Bellows' 1923 translation.</p>
-        <h3>Public Domain Translations</h3>
-        <p>Every translation in this collection is in the public domain. The most recent translation dates to 1930 (Pickthall's Quran). All texts are freely available for reading, study, quotation, and redistribution with no copyright restrictions.</p>
+        <p>The collection spans Abrahamic, East Asian, Zoroastrian, Buddhist, Finnish, and Norse traditions. It includes King James biblical text and Apocrypha, Pickthall's Quran, the Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Legge's Four Books, Tao Te Ching, and Book of Poetry, Chamberlain's Kojiki, West's Bundahishn, Kern's Lotus Sutra, Haug and West's Arda Viraf, Crawford's Kalevala, and Bellows' Poetic Edda.</p>
+        <p>The committed manifests and chapter files currently describe 121 books, 2,724 chapters, and 63,141 verse records. In poetry and prose works, a verse record can represent a line or paragraph rather than a canonically numbered scriptural verse.</p>
+        <h3>Licensing</h3>
+        <p>The application source is AGPL-3.0. Generated text downloads and their structured arrangement are CC BY-SA 4.0; the underlying historic source texts are treated as public-domain inputs. The corpus metadata therefore describes the distributed arrangement with its CC BY-SA license rather than the Public Domain Mark.</p>
         <h3>Concordance and Related Passages</h3>
-        <p>The concordance indexes every word across all sixteen works, showing frequency and distribution. TF-IDF (term frequency-inverse document frequency) scoring identifies passages with similar vocabulary across different traditions, enabling comparative study without requiring prior knowledge of each text's structure. TF-IDF weights words that are frequent in one chapter but rare across the corpus, surfacing meaningful thematic connections rather than common function words.</p>
+        <p>The concordance is an exact-word occurrence index with linked records grouped by work. Related Passages is separate: a TF-IDF (term frequency-inverse document frequency) cosine-similarity index compares chapter vocabulary after stop-word removal and stores up to five cross-book matches above its threshold. It is a lexical discovery aid, not a claim of historical or theological equivalence.</p>
         <h3>Deep Linking</h3>
         <p>Every chapter and verse has a permanent URL. Chapter links follow the pattern <code>/scripture/{work}/{book}-{chapter}</code> (e.g., <code>/scripture/ot/gen-1</code> for Genesis 1). Verse links append the verse number (e.g., <code>/scripture/ot/gen-1:26</code> for Genesis 1:26). These URLs can be shared, bookmarked, or cited directly.</p>
         <h3>Accessibility</h3>
-        <p>Scripture supports keyboard navigation throughout: Tab moves between controls, Enter activates verse actions, and arrow keys navigate chapters. The reading pane has a skip-to-content link. All overlays (search, concordance) are focus-trapped ARIA dialogs. Dynamic content regions use aria-live for screen reader announcements. High-contrast mode is available via the theme toggle. Verse numbers are visible to assistive technology. No flashing content or motion hazards.</p>
+        <p>Scripture supports keyboard navigation throughout: Tab moves between controls, Enter activates verse actions, and arrow keys navigate chapters. The reading pane has a skip-to-content link. All overlays (search, concordance) are focus-trapped ARIA dialogs. Dynamic content regions use aria-live for screen reader announcements. Light and dark themes are available through the theme toggle. Verse numbers are visible to assistive technology. No flashing content or motion hazards.</p>
         <p>Scripture is part of a suite of educational simulations at <a href="/">a9l.im</a>. Explore particle physics with <a href="/geon">Geon</a>, redistricting with <a href="/gerry">Gerry</a>, or cellular metabolism with <a href="/cyano">Cyano</a>.</p>
       </article>
     </details>

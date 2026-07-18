@@ -1,51 +1,93 @@
 # Scripture
 
-A static reader for sixteen sacred texts. It has full-text search, concordance, verse-linked notes and bookmarks, text-to-speech, related passages, reading history, and text download. Vanilla ES6 modules with no dependencies.
+A dependency-free browser reader for sixteen sacred works. It combines
+chapter and verse navigation with full-text search, exact-word concordance,
+TF-IDF related passages, verse-linked notes and bookmarks, text-to-speech,
+reading history, plaintext downloads, and local data export/import.
 
-**Try it:** [a9l.im/scripture](https://a9l.im/scripture)
+**[Read Scripture](https://a9l.im/scripture/)**
 
-## Included Texts
+## Corpus
 
-| Work | Translation | Source |
-|------|------------|--------|
-| Old Testament | King James Version | [churchofjesuschrist.org](https://www.churchofjesuschrist.org) |
-| New Testament | King James Version | [churchofjesuschrist.org](https://www.churchofjesuschrist.org) |
-| Apocrypha | King James Version | [Project Gutenberg](https://www.gutenberg.org) |
-| Book of Mormon | | [churchofjesuschrist.org](https://www.churchofjesuschrist.org) |
-| Doctrine and Covenants | | [churchofjesuschrist.org](https://www.churchofjesuschrist.org) |
-| Pearl of Great Price | | [churchofjesuschrist.org](https://www.churchofjesuschrist.org) |
-| Quran | Pickthall | [sacred-texts.com](https://sacred-texts.com) |
-| Four Books | Legge | [sacred-texts.com](https://sacred-texts.com) |
-| Tao Te Ching | Legge | [sacred-texts.com](https://sacred-texts.com) |
-| Kojiki | Chamberlain | [sacred-texts.com](https://sacred-texts.com) |
-| Bundahishn | West | [sacred-texts.com](https://sacred-texts.com) |
-| Lotus Sutra | Kern | [sacred-texts.com](https://sacred-texts.com) |
-| Arda Viraf | Haug & West | [sacred-texts.com](https://sacred-texts.com) |
-| Book of Poetry | Legge | [sacred-texts.com](https://sacred-texts.com) |
-| Kalevala | Crawford | [sacred-texts.com](https://sacred-texts.com) |
-| Poetic Edda | Bellows | [sacred-texts.com](https://sacred-texts.com) |
+The committed corpus currently contains 121 books, 2,724 chapter files, and
+63,141 verse records. Counts below come from the manifests and chapter JSON,
+not external estimates.
+
+| Work | Edition / translator | Chapters | Verse records |
+|------|----------------------|---------:|--------------:|
+| Old Testament | King James text | 929 | 23,145 |
+| Apocrypha | King James Version (1769 metadata) | 173 | 5,720 |
+| New Testament | King James text | 260 | 7,957 |
+| Quran | Marmaduke Pickthall (1930) | 114 | 6,236 |
+| Book of Mormon | project PDF extraction | 239 | 6,604 |
+| Doctrine and Covenants | 138 sections + 2 Official Declarations | 140 | 3,656 |
+| Pearl of Great Price | five constituent books | 16 | 635 |
+| The Four Books | James Legge (1861 metadata) | 50 | 1,984 |
+| Kojiki | Basil Hall Chamberlain (1919) | 173 | 308 |
+| Tao Te Ching | James Legge (1891) | 81 | 236 |
+| Bundahishn | Edward William West (1897 metadata) | 34 | 597 |
+| Lotus Sutra | Hendrik Kern | 27 | 1,265 |
+| Book of Poetry | James Legge (1876) | 301 | 1,140 |
+| Kalevala | John Martin Crawford (1888), including proem record | 51 | 1,393 |
+| Poetic Edda | Henry Adams Bellows (1936 metadata) | 35 | 1,959 |
+| Arda Viraf | Martin Haug & Edward William West (1872) | 101 | 306 |
+
+“Verse record” is the application’s uniform storage unit. In poetry and prose
+works it may represent a line or paragraph rather than a canonically numbered
+scriptural verse.
 
 ## Features
 
-- **Search**: full-text search across all works with grouped results
-- **Concordance**: click any word to see every occurrence across all texts
-- **Notes and bookmarks**: verse-linked markdown notes stored in the browser
-- **Text-to-speech**: read aloud with verse tracking
-- **Related passages**: TF-IDF similarity suggestions for each chapter
-- **Reading history**: resume where you left off
-- **Display settings**: font, size, spacing, and width controls
-- **Data export and import**: back up notes, bookmarks, and settings as JSON
-- **Deep linking**: share links to any chapter and verse (e.g. `/scripture/ot/gen-1:3`)
-- **Text download**: download any work as plaintext
+- Full-text search across all works, filterable by work, book, and chapter
+- Exact-word concordance with occurrence links back to individual records
+- Top related chapters from a precomputed TF-IDF cosine-similarity index
+- Markdown notes and bookmarks tied to chapter/verse references
+- Sequential browser text-to-speech with active-record tracking
+- Reading history, resume, progress, and previous/next chapter navigation
+- Font, size, line-height, and reading-width controls
+- JSON export/import for notes, bookmarks, display preferences, and history
+- Permanent chapter and record links such as `/scripture/ot/gen-1:3`
+- Generated plaintext downloads for every work
 
-## Running Locally
+The reader stores personal state in browser `localStorage`. Production routing
+and crawlable deep-route HTML come from the parent repository’s Cloudflare
+Worker; the reader itself has no application database or account system.
 
-Serve from the repo root (shared files load via absolute paths):
+## Data pipeline
+
+Raw PDFs and scraped/plaintext inputs live in the gitignored `raw/` directory.
+Canonical committed data lives in `data/`; the files in `text/` are generated
+download artifacts, not an editing surface.
 
 ```bash
-cd path/to/a9lim.github.io && python -m http.server
+cd extract
+./run.sh extract-raw   # parse raw inputs and rebuild works/search indexes
+./run.sh verify        # validate manifests, chapter files, and known counts
+./run.sh json2txt      # regenerate downloadable text files
+./run.sh enrich        # rebuild concordance and TF-IDF similarity indexes
 ```
 
-## License
+Use `./run.sh pipeline` to run those stages in dependency order. Similarity
+generation requires scikit-learn; extraction dependencies are listed in
+`extract/requirements.txt`.
 
-[AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html)
+## Running locally
+
+Serve the parent repository root because Scripture imports shared assets by
+absolute URL:
+
+```bash
+cd path/to/a9lim.github.io
+python -m http.server
+# http://localhost:8000/scripture/
+```
+
+Use the parent `./dev.sh` instead when testing Worker routing, deep-route SSR,
+security headers, or production CSP behavior.
+
+## Licensing
+
+Application source is [AGPL-3.0](LICENSE). The structured text downloads and
+their arrangement are [CC BY-SA 4.0](text/LICENSE); the underlying historic
+source texts are treated as public-domain inputs. Keep those layers distinct
+in metadata and redistribution notices.
