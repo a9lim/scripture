@@ -6,7 +6,7 @@ projects: `geon`, `shoals`, `gerry`, `cyano`, `miasma`, `pile`, and `plasma`.
 
 ## Rules
 
-- Prefer shared modules (`shared-*.js`, `shared-base.css`) over project-specific reimplementations.
+- Prefer shared modules (`shared-*.js`, `shared/base.css`) over project-specific reimplementations.
 - No work-specific code in the frontend. Adding a new scripture never requires JS changes.
 - Raw source files (PDFs, scraped text) live in `raw/` (gitignored). Extracted JSON in `data/` and generated text downloads in `text/` are committed.
 - **Always re-extract from raw sources** (`./run.sh extract-raw`) rather than round-tripping through the text format. Extraction is fast, cheap, and avoids drift. The text files are a download artifact for users, not an editing workflow.
@@ -14,10 +14,10 @@ projects: `geon`, `shoals`, `gerry`, `cyano`, `miasma`, `pile`, and `plasma`.
 ## Running Locally
 
 ```bash
-cd path/to/a9lim.github.io && python -m http.server
+cd path/to/a9lim.github.io && npm run build && python -m http.server --directory dist
 ```
 
-Serve from the parent repository root — shared files load via absolute paths.
+Build from the parent repository root and serve `dist/` — shared files load via absolute paths.
 There is no frontend build step or JavaScript linter. The extraction pipeline
 has a committed data verifier (`cd extract && ./run.sh verify`).
 
@@ -144,7 +144,7 @@ cd extract && ./run.sh extract-raw   # re-extract all works from raw/ + reindex
 
 ## URL Routing
 
-Path-based: `/scripture/workId/chapterId` with optional `:verseNum` for deep-linking (e.g. `/scripture/bom/1-ne-1:26`). The root `_worker.js` handles SPA routing for all `/scripture/*` paths, serving `scripture/index.html`. Default: last reading position from history, fallback `/scripture/bom/1-ne-1`.
+Path-based: `/scripture/workId/chapterId` with optional `:verseNum` for deep-linking (e.g. `/scripture/bom/1-ne-1:26`). Parent `worker/index.js` handles SPA routing for all `/scripture/*` paths, serving the staged `/scripture/index.html`. Default: last reading position from history, fallback `/scripture/bom/1-ne-1`.
 
 The interactive reader is client-side, but production delivery is not purely
 static: the parent Worker SSRs work/chapter/verse HTML and JSON-LD for crawlers,
@@ -156,8 +156,8 @@ reader code.
 ## SEO and discovery contract
 
 - `about.md` is the canonical long-form SEO summary. The parent build copies
-  its `title`, `description`, and `updated` fields into root discovery files
-  and submodule metadata mirrors.
+  its `title`, `description`, and `updated` fields into staged discovery files
+  and `dist/scripture/` metadata mirrors without editing this submodule.
 - `index.html` owns the base route's head metadata, FAQ/LearningResource/
   Dataset JSON-LD, and crawlable educational content. The parent Worker adds
   route-specific `CollectionPage`, `Book`, `Chapter`, `Quotation`, and
@@ -166,7 +166,7 @@ reader code.
   application code is AGPL-3.0.
 - Wikidata QIDs and external identifiers must be live-verified before being
   added or changed. Never infer them from names.
-- After changing `about.md`, run the parent `node _build.mjs` so the root SEO,
+- After changing `about.md`, run `npm run build` from the parent repository so root SEO,
   sitemap, and LLM discovery mirrors advance with the submodule source.
 
 ## User Data (localStorage)

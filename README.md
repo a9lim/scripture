@@ -73,12 +73,12 @@ generation requires scikit-learn; extraction dependencies are listed in
 
 ## Running locally
 
-Serve the parent repository root because Scripture imports shared assets by
-absolute URL:
+Build from the parent repository root and serve `dist/` because Scripture imports shared assets by absolute URL:
 
 ```bash
 cd path/to/a9lim.github.io
-python -m http.server
+npm run build
+python -m http.server --directory dist
 # http://localhost:8000/scripture/
 ```
 
