@@ -72,6 +72,7 @@ function renderList(list, matches, navigateFn) {
     groupEl.className = 'related-work-group';
 
     const heading = document.createElement('h4');
+    heading.className = 'group-label';
     heading.textContent = manifest ? manifest.title : wId;
     groupEl.appendChild(heading);
 
@@ -80,7 +81,7 @@ function renderList(list, matches, navigateFn) {
       row.className = 'related-row';
       row.setAttribute('role', 'button');
       row.setAttribute('tabindex', '0');
-      row.style.opacity = 0.5 + entry.score * 0.5;
+      row.style.opacity = 0.78 + entry.score * 0.22;
 
       const title = document.createElement('span');
       title.textContent = getChapterTitle(entry.workId, entry.chapterId);

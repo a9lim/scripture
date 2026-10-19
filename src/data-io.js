@@ -87,7 +87,7 @@ export function promptImport() {
 
   const heading = document.createElement('h2');
   heading.className = 'import-heading';
-  heading.textContent = 'Import Data';
+  heading.textContent = 'Import data';
 
   const desc = document.createElement('p');
   desc.className = 'import-desc';
@@ -102,7 +102,7 @@ export function promptImport() {
 
   const replaceBtn = document.createElement('button');
   replaceBtn.className = 'ghost-btn import-replace-btn';
-  replaceBtn.textContent = 'Replace All';
+  replaceBtn.textContent = 'Replace all';
 
   const cancelBtn = document.createElement('button');
   cancelBtn.className = 'ghost-btn';

@@ -1,9 +1,9 @@
 const STORAGE_KEY = 'scripture-display';
 const DEFAULTS = { fontSize: 18, lineHeight: 2.0, maxWidth: 800, font: 'serif' };
 const FONTS = {
-  serif:    'var(--font-serif)',
-  sans:     'var(--font-sans)',
-  dyslexic: '"OpenDyslexicRegular", var(--font-sans)'
+  serif:    'var(--font-text)',
+  sans:     'var(--font-reader-sans)',
+  dyslexic: '"OpenDyslexicRegular", var(--font-reader-sans)'
 };
 
 let _dyslexicLink = null;

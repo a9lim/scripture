@@ -95,7 +95,7 @@ async function renderResumeList(navigateFn) {
   }
 
   const heading = document.createElement('div');
-  heading.className = 'resume-heading';
+  heading.className = 'group-label resume-heading';
   heading.textContent = 'Recent';
   _dropdown.appendChild(heading);
 

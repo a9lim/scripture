@@ -147,6 +147,7 @@ function renderOverlayResults(word, container, navigateFn) {
     groupEl.className = 'search-work-group';
 
     const heading = document.createElement('h3');
+    heading.className = 'group-label';
     heading.textContent = manifest ? manifest.title : wId;
     groupEl.appendChild(heading);
 
@@ -202,7 +203,7 @@ function markWords(conc) {
 
 export function initConcordance($, navigateFn) {
   _popover = document.createElement('div');
-  _popover.className = 'conc-popover';
+  _popover.className = 'conc-popover glass';
   _popover.hidden = true;
   $.readingPane.appendChild(_popover);
 

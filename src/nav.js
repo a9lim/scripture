@@ -4,6 +4,20 @@
 
 import { getWorkIds, getManifest, findBookForChapter, chapterNum, chapterIdAt } from './chapters.js';
 
+// True while syncNav is writing select values, so the change events it fires
+// (to refresh the shared dropdown triggers) don't re-enter navigation.
+let _syncing = false;
+
+/**
+ * Show or hide a <select> together with its shared dropdown wrapper
+ * (shared/dropdown.js), so a hidden select leaves no empty trigger behind.
+ */
+export function setSelectVisible(sel, visible) {
+  sel.style.display = visible ? '' : 'none';
+  const wrap = sel.closest('.sim-dropdown');
+  if (wrap) wrap.style.display = visible ? '' : 'none';
+}
+
 /**
  * Replace all options in a <select> element.
  */
@@ -39,7 +53,7 @@ function populateBooks($, workId) {
   const m = getManifest(workId);
   if (!m) { $.bookSelect.replaceChildren(); return; }
   fillSelect($.bookSelect, m.books, b => b.id, b => b.name);
-  $.bookSelect.style.display = m.books.length <= 1 ? 'none' : '';
+  setSelectVisible($.bookSelect, m.books.length > 1);
 }
 
 /**
@@ -61,7 +75,7 @@ function populateChapters($, workId, bookId) {
     ch => ch.id,
     ch => ch.name ? `${ch.num} (${ch.name})` : String(ch.num)
   );
-  $.chapterSelect.style.display = book.chapters <= 1 ? 'none' : '';
+  setSelectVisible($.chapterSelect, book.chapters > 1);
 }
 
 /**
@@ -73,6 +87,7 @@ export function initNav($, navigateFn) {
   populateWorks($);
 
   $.workSelect.addEventListener('change', () => {
+    if (_syncing) return;
     const workId = $.workSelect.value;
     populateBooks($, workId);
     const firstBookId = $.bookSelect.value;
@@ -82,6 +97,7 @@ export function initNav($, navigateFn) {
   });
 
   $.bookSelect.addEventListener('change', () => {
+    if (_syncing) return;
     const workId = $.workSelect.value;
     const bookId = $.bookSelect.value;
     populateChapters($, workId, bookId);
@@ -90,6 +106,7 @@ export function initNav($, navigateFn) {
   });
 
   $.chapterSelect.addEventListener('change', () => {
+    if (_syncing) return;
     const workId = $.workSelect.value;
     const chapterId = $.chapterSelect.value;
     if (chapterId) navigateFn(workId, chapterId);
@@ -98,21 +115,34 @@ export function initNav($, navigateFn) {
 
 /**
  * Set dropdown values to match the current navigation state.
+ * A programmatic `.value` write raises no event, so the shared dropdown
+ * triggers (shared/dropdown.js) would keep showing the previous label; a
+ * guarded change event on each select refreshes them.
  */
 export function syncNav($, workId, chapterId) {
-  const workChanged = $.workSelect.value !== workId;
-  $.workSelect.value = workId;
+  _syncing = true;
+  try {
+    const workChanged = $.workSelect.value !== workId;
+    $.workSelect.value = workId;
 
-  if (workChanged || $.bookSelect.options.length <= 1) {
-    populateBooks($, workId);
-  }
+    const booksFilled = workChanged || $.bookSelect.options.length <= 1;
+    if (booksFilled) populateBooks($, workId);
 
-  const bookId = findBookForChapter(workId, chapterId);
-  if (bookId && $.bookSelect.value !== bookId) {
-    $.bookSelect.value = bookId;
-    populateChapters($, workId, bookId);
-  } else if (workChanged || $.bookSelect.options.length <= 1) {
-    populateChapters($, workId, bookId || $.bookSelect.value);
+    // The chapter list follows the book: refill it whenever the books were just
+    // filled (the first load lands in the first work's first book, where the
+    // book value never changes), the book changed, or it is still empty.
+    const bookId = findBookForChapter(workId, chapterId);
+    const bookChanged = !!bookId && $.bookSelect.value !== bookId;
+    if (bookChanged) $.bookSelect.value = bookId;
+    if (booksFilled || bookChanged || $.chapterSelect.options.length <= 1) {
+      populateChapters($, workId, bookId || $.bookSelect.value);
+    }
+    $.chapterSelect.value = chapterId;
+
+    for (const sel of [$.workSelect, $.bookSelect, $.chapterSelect]) {
+      sel.dispatchEvent(new Event('change'));
+    }
+  } finally {
+    _syncing = false;
   }
-  $.chapterSelect.value = chapterId;
 }

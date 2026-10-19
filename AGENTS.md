@@ -6,7 +6,7 @@ projects: `geon`, `shoals`, `gerry`, `cyano`, `miasma`, `pile`, and `plasma`.
 
 ## Rules
 
-- Prefer shared modules (`shared-*.js`, `shared/base.css`) over project-specific reimplementations.
+- Prefer shared modules (`shared/*.js`, `shared/base.css`) over project-specific reimplementations.
 - No work-specific code in the frontend. Adding a new scripture never requires JS changes.
 - Raw source files (PDFs, scraped text) live in `raw/` (gitignored). Extracted JSON in `data/` and generated text downloads in `text/` are committed.
 - **Always re-extract from raw sources** (`./run.sh extract-raw`) rather than round-tripping through the text format. Extraction is fast, cheap, and avoids drift. The text files are a download artifact for users, not an editing workflow.
@@ -177,6 +177,44 @@ reader code.
 | `scripture-display` | `{ fontSize, lineHeight, maxWidth, font }` | Display preferences |
 | `scripture-history` | `{ recent: [{ workId, chapterId, ts }] }` | Reading history (max 10) |
 
+## Typography and color
+
+The reader follows the root design system (see root `AGENTS.md`): Newsreader for
+everything, the shared neutral/oxblood tokens, hairline rules for structure, and
+motion limited to color and opacity. `colors.js` only freezes the shared tokens;
+scripture defines no palette of its own. `styles.css` adds two local custom
+properties: `--font-reader-sans` (the system-sans stack) and `--icon-clear`
+(the search-field clear glyph).
+
+- **Reader font** (`scripture-display.font`, `src/display.js`): `serif` is
+  `var(--font-text)`, `sans` is `var(--font-reader-sans)` (a local system stack,
+  nothing loaded), `dyslexic` is OpenDyslexic from jsDelivr with the same sans
+  fallback. The font applies to verse text (`--reader-font-family` on
+  `#reading-pane`); verse numbers, headings, and all other chrome always use
+  `--font-text`.
+- **Verse numbers** are small (0.76 of the reader size), muted, weight 400, with
+  tabular lining figures; hover and focus turn them to the accent.
+- **Group labels** (work titles above search, bookmark, concordance, related, and
+  resume lists) use the shared italic `.group-label`.
+- **Semantic hues** come from the shared `--ext-*` tokens: yellow for bookmarks
+  (verse tint, dot, bookmark icon, search highlight) and blue for the verse
+  being read aloud. Destructive actions ("Replace all") take the accent.
+- Overlays, dropdowns, and popovers use the shared `.glass` surface
+  (`--bg-panel`); the verse popover and TTS bar set the same background and blur
+  directly.
+
+## Toolbar layout
+
+The work/book/chapter pickers are shared dropdowns (`shared/dropdown.js`).
+`syncNav` fires a guarded `change` on each select so their triggers follow
+programmatic changes, and `setSelectVisible` (in `src/nav.js`) hides a select
+together with its dropdown wrapper. Above 1100px the toolbar is one row; from
+1100px down the brand hides, and at 900px and below the toolbar becomes two
+rows (pickers above, buttons below) with `--toolbar-h: 96px`, so everything the
+layout offsets from `--toolbar-h` follows. With a fine pointer the eleven
+buttons narrow to fit the row; touch devices keep the shared 44px targets and
+the row scrolls (shared `.sim-toolbar-actions` rule).
+
 ## Layout & Scrolling
 
 `#app-layout` is a fixed-height flex container (`height: calc(100vh - var(--toolbar-h))`, `overflow: hidden`). Reading pane and notes sidebar scroll independently.
@@ -184,12 +222,12 @@ reader code.
 - **`#reading-pane`** — `overflow-y: auto`, left padding (3.5rem) for verse number gutter.
 - **`#notes-content`** — `overflow-y: auto`, flex child inside `.sim-panel`.
 
-Verse numbers: fixed-width inline-block (`width: 2em`), pulled into gutter via negative margin (`margin-left: -2.5em`).
+Verse numbers: fixed-width inline-block (`width: 2em` of their own, smaller, font size), pulled into the gutter via negative margin (`margin-left: -2.5em`).
 
 ## Gotchas
 
 - **`initOverlayDismiss(overlayEl, closeBtn, hideFn)`** — all 3 args required.
-- **Shared globals** (`escapeHtml`, `debounce`, `trapFocus`, `initOverlayDismiss`, `initShortcuts`, `initAboutPanel`, `showToast`, `_toolbar`, `_forms`, `_settings`, `_haptics`, `createSimTooltip`) are window globals from `shared-*.js`, not ES6 imports. Verify `<script>` tags in `index.html`.
+- **Shared globals** (`escapeHtml`, `debounce`, `trapFocus`, `initOverlayDismiss`, `initShortcuts`, `initAboutPanel`, `showToast`, `_toolbar`, `_forms`, `_settings`, `_haptics`, `createSimTooltip`) are window globals from `shared/*.js`, not ES6 imports. Verify `<script>` tags in `index.html`.
 - **`_PALETTE`/`_FONT` frozen** by `colors.js` — do not mutate.
 - **`scripture-user` localStorage key** — changing it loses all user notes and bookmarks.
 - **`book.chapters` is an integer** count, not an array. Chapter IDs are derived, not stored.

@@ -217,6 +217,7 @@ function renderNotesAll(container, all, filter) {
     group.className = 'bookmark-work-group';
 
     const heading = document.createElement('h3');
+    heading.className = 'group-label';
     heading.textContent = title;
     group.appendChild(heading);
 
@@ -596,6 +597,7 @@ export function renderBookmarks($, workId, chapterId, scope, navigateFn) {
       group.className = 'bookmark-work-group';
 
       const heading = document.createElement('h3');
+      heading.className = 'group-label';
       heading.textContent = title;
       group.appendChild(heading);
 

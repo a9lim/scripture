@@ -44,6 +44,7 @@ function buildPopover() {
 
 function setBookmarkIcon(btn, filled) {
   btn.innerHTML = _ICON.at(filled ? 'bookmarkFilled' : 'bookmark', 16);
+  btn.classList.toggle('active', filled);
 }
 
 /* -- Main export ----------------------------------------------------- */

@@ -3,7 +3,7 @@
    =================================================================== */
 
 import { loadSearchIndex, parseRef, getManifest, getWorkIds, findBookForChapter, chapterNum, formatRef, chapterIdAt } from './chapters.js';
-import { fillSelect } from './nav.js';
+import { fillSelect, setSelectVisible } from './nav.js';
 
 const MAX_RESULTS = 100;
 const DEBOUNCE_MS = 250;
@@ -15,9 +15,9 @@ function populateWorkFilter($) {
   const items = getWorkIds().map(id => ({ id, manifest: getManifest(id) })).filter(x => x.manifest);
   fillSelect($.searchWork, items, x => x.id, x => x.manifest.title, 'All works');
   $.searchBook.replaceChildren();
-  $.searchBook.style.display = 'none';
+  setSelectVisible($.searchBook, false);
   $.searchChapter.replaceChildren();
-  $.searchChapter.style.display = 'none';
+  setSelectVisible($.searchChapter, false);
 }
 
 /**
@@ -27,27 +27,27 @@ function populateWorkFilter($) {
 function populateBookFilter($, workId) {
   if (!workId) {
     $.searchBook.replaceChildren();
-    $.searchBook.style.display = 'none';
+    setSelectVisible($.searchBook, false);
     $.searchChapter.replaceChildren();
-    $.searchChapter.style.display = 'none';
+    setSelectVisible($.searchChapter, false);
     return;
   }
   const m = getManifest(workId);
   if (!m || m.books.length <= 1) {
     $.searchBook.replaceChildren();
-    $.searchBook.style.display = 'none';
+    setSelectVisible($.searchBook, false);
     // Single-book work — show chapters directly
     if (m && m.books.length === 1) {
       populateChapterFilter($, workId, m.books[0].id);
     } else {
       $.searchChapter.replaceChildren();
-      $.searchChapter.style.display = 'none';
+      setSelectVisible($.searchChapter, false);
     }
   } else {
     fillSelect($.searchBook, m.books, b => b.id, b => b.name, 'All books');
-    $.searchBook.style.display = '';
+    setSelectVisible($.searchBook, true);
     $.searchChapter.replaceChildren();
-    $.searchChapter.style.display = 'none';
+    setSelectVisible($.searchChapter, false);
   }
 }
 
@@ -57,7 +57,7 @@ function populateBookFilter($, workId) {
 function populateChapterFilter($, workId, bookId) {
   if (!workId || !bookId) {
     $.searchChapter.replaceChildren();
-    $.searchChapter.style.display = 'none';
+    setSelectVisible($.searchChapter, false);
     return;
   }
   const m = getManifest(workId);
@@ -65,7 +65,7 @@ function populateChapterFilter($, workId, bookId) {
   const book = m.books.find(b => b.id === bookId);
   if (!book || book.chapters <= 1) {
     $.searchChapter.replaceChildren();
-    $.searchChapter.style.display = 'none';
+    setSelectVisible($.searchChapter, false);
     return;
   }
   const start = book.start ?? 1;
@@ -77,7 +77,7 @@ function populateChapterFilter($, workId, bookId) {
   });
   fillSelect($.searchChapter, items, ch => ch.id,
     ch => ch.name ? `${ch.num} (${ch.name})` : String(ch.num), 'All chapters');
-  $.searchChapter.style.display = '';
+  setSelectVisible($.searchChapter, true);
 }
 
 /**
@@ -219,6 +219,7 @@ function runSearch($, onNavigate, index) {
     groupEl.className = 'search-work-group';
 
     const heading = document.createElement('h3');
+    heading.className = 'group-label';
     heading.textContent = manifest ? manifest.title : workId;
     groupEl.appendChild(heading);
 

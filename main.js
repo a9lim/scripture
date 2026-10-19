@@ -243,7 +243,7 @@ async function init() {
   // Resume dropdown
   initResume($, navigate);
 
-  // Sidebar tabs (wired by shared-tabs.js; hook bookmarks refresh)
+  // Sidebar tabs (wired by shared/tabs.js; hook bookmarks refresh)
   tabBookmarks = document.getElementById('tab-bookmarks');
   document.querySelector('.sidebar-tabs .tab-btn[data-tab="bookmarks"]')
     ?.addEventListener('click', () => {
@@ -431,7 +431,7 @@ async function init() {
     lastUpdated: '2026-07-17',
     description: 'Read and annotate sacred texts from sixteen works across multiple traditions, with full-text search and personal notes.',
     controls: [
-      { label: 'Work / Book / Chapter', value: 'Toolbar dropdowns to navigate' },
+      { label: 'Work / book / chapter', value: 'Toolbar dropdowns to navigate' },
       { label: 'Verse actions', value: 'Click verse number for note, bookmark, copy, link' },
       { label: 'Concordance', value: 'Click any word to see all occurrences' },
       { label: 'Display', value: 'Adjust font, size, spacing, and width' },
