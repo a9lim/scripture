@@ -221,11 +221,6 @@ the works and their counts by hand.
 
 ## Open work
 
-- The Download button saves the wrong file in production. `downloadText()` in
-  `main.js` fetches the relative `text/${work}.txt`, which resolves to
-  `/scripture/{work}/text/{work}.txt`; the Worker answers that with
-  `index.html` and status 200, so the user gets HTML named `.txt` (confirmed on
-  the live site). It needs the absolute `/scripture/text/` path.
 - Mencius (170 sections) and one Lotus Sutra chapter restart verse numbering
   within a chapter, so 690 records share a ref with an earlier record. They
   cannot be linked, noted, or bookmarked separately, and their `#v{n}` ids

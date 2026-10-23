@@ -170,7 +170,7 @@ function routeFromPath() {
 async function downloadText() {
   if (!currentWork) return;
   try {
-    const res = await fetch(`text/${currentWork}.txt`);
+    const res = await fetch(`/scripture/text/${currentWork}.txt`);
     if (!res.ok) throw new Error(res.status);
     const blob = await res.blob();
     const url = URL.createObjectURL(blob);
