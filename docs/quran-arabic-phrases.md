@@ -69,7 +69,7 @@ Arabic terms run through the Proto-Semitic consonant/vowel pipeline to produce K
 |----------|-------------|---------------------|
 | Thamud | Shamod | th→sh |
 | A'ad | Od | '→silent, a→o |
-| Qureysh / Quraish | Coresh | q→c, ai→e (= Hebrew "Cyrus") |
+| Qureysh / Quraysh / Quraish | Coresh | q→c, ai→e (= Hebrew "Cyrus") |
 | Salih | Zoleah | s→z, fa'il→qotel |
 | Abu Lahab | Abi-Lahav | construct + Heb. *lahav* "flame" attested |
 | Tubb'a | Tobba | u→o, '→silent |

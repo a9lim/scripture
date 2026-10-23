@@ -85,7 +85,7 @@ _TRANSLATIONS = {
 
 # Speculative pseudo-Hebrew coinages: Arabic proper nouns and terms run
 # through the Proto-Semitic consonant/vowel pipeline to produce BoM/KJV-style
-# English names.  See word-correspondence.md Part VII for full derivations.
+# English names.  See docs/word-correspondence.md Part VII for full derivations.
 # These are NOT scholarly identifications — they are worldbuilding outputs.
 _SPECULATIVE = {
     # Tribes / Peoples

@@ -2,7 +2,7 @@
 
 Titles are scraped from the Pickthall raw file, stripping 'The ' prefix.
 Overrides apply hebraized letter names, speculative coinages, and translated
-proper nouns (see quran-arabic-phrases.md).
+proper nouns (see docs/quran-arabic-phrases.md).
 """
 
 import os
