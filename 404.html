@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Scripture</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#FCFCFB">
+    <script>
+        // Same preference order as the reader: saved choice, then the OS.
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('scripture-theme'); } catch (e) { /* storage blocked */ }
+            var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (dark) document.documentElement.dataset.theme = 'dark';
+        })();
+    </script>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <script src="/shared/tokens.js"></script>
+    <link rel="stylesheet" href="/shared/base.css">
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        body {
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 24px;
+            text-align: center;
+        }
+        .error-page { max-width: 480px; }
+        .error-code {
+            font-size: clamp(5rem, 15vw, 8rem);
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: var(--text-muted);
+        }
+        .error-rule {
+            width: 48px;
+            height: 1px;
+            margin: 28px auto;
+            background: var(--border-strong);
+        }
+        .error-message {
+            font-size: 20px;
+            line-height: 1.55;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+        .home-link {
+            font-size: 18px;
+            color: var(--accent);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.2em;
+            text-decoration-color: var(--accent-line);
+            transition: text-decoration-color 0.2s var(--ease-out);
+        }
+        .home-link:hover { text-decoration-color: var(--accent); }
+    </style>
+</head>
+<body>
+    <main class="error-page">
+        <h1 class="error-code">404</h1>
+        <div class="error-rule" aria-hidden="true"></div>
+        <p class="error-message">This page doesn't exist. It may have been moved or removed.</p>
+        <a href="/" class="home-link">Back to Scripture</a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,1748 @@
+/* ═══════════════════════════════════════════════
+   shared/base.css — Shared styles for all a9l.im sites
+   ═══════════════════════════════════════════════ */
+
+/* ─── Reset ─── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form controls take the page's face instead of the UA's system font. */
+button, input, select, textarea {
+    font: inherit;
+}
+
+/* ─── Layout Tokens ─── */
+:root {
+    --radius: 2px;
+
+    --font-sm: 0.84rem;
+    --font-base: 0.92rem;
+    --font-lg: 1.02rem;
+
+    --toolbar-h: 52px;
+    --panel-w: 360px;
+
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ─── Body Base ─── */
+body {
+    background: var(--bg-canvas);
+    color: var(--text);
+    font-family: var(--font-text);
+    font-optical-sizing: auto;
+    font-variant-numeric: lining-nums;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.5s var(--ease-out), color 0.4s var(--ease-out);
+}
+
+/* ─── Glass Panel ─── */
+.glass {
+    background: var(--bg-panel);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--border);
+    transition: background 0.2s var(--ease-out);
+}
+
+/* ─── Tool Buttons ─── */
+.tool-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    outline: none;
+    -webkit-appearance: none;
+    transition: color 0.2s var(--ease-out), background 0.2s var(--ease-out), opacity 0.2s;
+}
+
+.tool-btn svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.tool-btn:hover {
+    color: var(--text);
+}
+
+.tool-btn:focus-visible {
+    outline: 1.5px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.tool-btn.active {
+    color: var(--accent);
+}
+
+
+.tool-btn:disabled,
+.tool-btn[disabled] {
+    opacity: 0.22;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* ─── Speed Button ─── */
+.speed-btn {
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    font-weight: 500;
+    font-variant-numeric: lining-nums tabular-nums;
+    min-width: 34px;
+}
+
+/* ─── Keyframes ─── */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ─── Sidebar Patterns ─── */
+.group-label {
+    font-family: var(--font-text);
+    font-style: italic;
+    font-weight: 400;
+    font-size: var(--font-lg);
+    color: var(--text-muted);
+    padding-bottom: 2px;
+}
+
+.stats-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 12px;
+    flex-shrink: 0;
+}
+
+.stats-title {
+    font-family: var(--font-text);
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    margin-bottom: 1px;
+    border-radius: var(--radius);
+    transition: background 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+
+.stat-row:hover {
+    background: var(--bg-hover);
+}
+
+.stat-label {
+    font-size: var(--font-base);
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.stat-value {
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: var(--font-base);
+    color: var(--text);
+    min-width: 2em;
+    text-align: right;
+    display: inline-block;
+    font-variant-numeric: lining-nums tabular-nums;
+}
+
+.stat-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.stat-group:last-child {
+    margin-bottom: 0;
+}
+
+/* ─── Tab System ─── */
+.sidebar-tabs {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    flex: 1;
+}
+
+.tabs-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    animation: fadeIn 0.4s var(--ease-out) 0.15s both;
+}
+
+.tab-bar {
+    display: flex;
+    gap: 0;
+    padding: 0 16px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 0.6rem 0.4rem 0.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: var(--font-lg);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.28s var(--ease-out);
+    text-align: center;
+    position: relative;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity 0.3s var(--ease-out);
+}
+
+.tab-btn:hover {
+    color: var(--text);
+}
+
+.tab-btn.active {
+    color: var(--accent);
+}
+
+.tab-btn.active::after {
+    opacity: 1;
+}
+
+.tab-panels {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-variant-numeric: tabular-nums;
+}
+
+.tab-panel {
+    display: none;
+    padding: 10px 12px;
+}
+
+.tab-panel.active {
+    display: block;
+    animation: fadeIn 0.2s ease both;
+}
+
+/* ─── Sim Layout Components ─── */
+
+/* Floating toolbar */
+.sim-toolbar {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    height: var(--toolbar-h);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px 0 20px;
+    gap: 1rem;
+    border-radius: var(--radius);
+    opacity: 0;
+    pointer-events: none;
+    transition: background-color 0.4s var(--ease-out);
+}
+
+.app-ready .sim-toolbar {
+    animation: fadeIn 0.5s var(--ease-out) 0.08s both;
+    pointer-events: auto;
+}
+
+/* Toolbar right-side button group */
+.sim-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-shrink: 0;
+}
+
+/* Vertical separator */
+.tool-sep {
+    width: 1px;
+    height: 18px;
+    background: var(--text-muted);
+    margin: 0 4px;
+    flex-shrink: 0;
+    opacity: 0.15;
+}
+
+/* Home logo link */
+.sim-home {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.sim-home img {
+    height: 28px;
+    width: auto;
+    transition: opacity 0.2s var(--ease-out);
+}
+
+.sim-home:hover img {
+    opacity: 0.75;
+}
+
+/* Ensure brand wrapper is a flex row when logo is present */
+.sim-toolbar :has(> .sim-home) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Brand title; an <em> part takes the accent */
+.sim-brand {
+    font-family: var(--font-text);
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+    font-weight: 400;
+    color: var(--text);
+    letter-spacing: -0.012em;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.sim-brand em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* Right-side floating panel */
+.sim-panel {
+    position: fixed;
+    top: calc(12px + var(--toolbar-h) + 12px);
+    right: 12px;
+    bottom: 12px;
+    width: var(--panel-w);
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: var(--radius);
+    transform: translateX(calc(100% + 24px));
+    transition: background-color 0.4s;
+}
+
+.app-ready .sim-panel {
+    transition: transform 0.55s var(--ease-out), background-color 0.4s;
+}
+
+.sim-panel.open {
+    transform: translateX(0);
+}
+
+/* Floating bottom pill */
+.sim-bar {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: var(--radius);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: background-color 0.4s var(--ease-out), left 0.3s var(--ease-out);
+}
+
+.app-ready .sim-bar {
+    animation: fadeIn 0.5s var(--ease-out) 0.2s both;
+    pointer-events: auto;
+}
+
+@media (min-width: 901px) {
+    body:has(.sim-panel.open) .sim-bar {
+        left: calc(50% - (var(--panel-w) + 24px) / 2);
+    }
+}
+
+/* Floating left control stack */
+.sim-controls {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    border-radius: var(--radius);
+    padding: 3px;
+    z-index: 20;
+    align-items: center;
+    font-variant-numeric: lining-nums tabular-nums;
+    opacity: 0;
+    pointer-events: none;
+    transition: background-color 0.4s var(--ease-out);
+}
+
+.app-ready .sim-controls {
+    animation: fadeIn 0.4s var(--ease-out) 0.3s both;
+    pointer-events: auto;
+}
+
+/* ─── Small Utilities ─── */
+
+/* Zoom percentage text */
+.zoom-level {
+    font-family: var(--font-text);
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    padding: 0 4px;
+    text-align: center;
+    min-width: 34px;
+    font-variant-numeric: lining-nums tabular-nums;
+    user-select: none;
+    line-height: 1.5;
+}
+
+/* Horizontal control separator */
+.ctrl-sep {
+    width: 20px;
+    height: 1px;
+    background: var(--bg-hover);
+    margin: 2px auto;
+    opacity: 0.6;
+}
+
+/* Thin scrollbar */
+.scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: var(--radius); }
+
+/* Hint text — italic caption style */
+.panel-hint {
+    color: var(--text-muted);
+    font-family: var(--font-text);
+    font-size: var(--font-sm);
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+    padding: 2px 0 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ─── Global Focus & Selection ─── */
+::selection {
+    background: color-mix(in srgb, var(--accent) 22%, transparent);
+    color: var(--text);
+}
+
+:focus-visible {
+    outline: 1.5px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: var(--radius);
+}
+
+/* ─── Sheet Handle (mobile bottom sheet drag handle) ─── */
+.sheet-handle {
+    display: none;
+}
+
+/* ─── Responsive: Primary Mobile ─── */
+@media (max-width: 900px) {
+    :root {
+        --toolbar-h: 48px;
+    }
+
+    .sim-toolbar {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        padding: 0 8px 0 16px;
+    }
+
+    .sim-brand {
+        font-size: 1.05rem;
+    }
+
+    .tool-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .tool-sep {
+        height: 14px;
+        margin: 0 2px;
+    }
+
+    /* Bottom sheet touch optimizations */
+    .sim-panel {
+        will-change: transform;
+        overscroll-behavior: contain;
+    }
+
+    .tabs-wrap { min-height: auto; }
+    .tab-bar { position: static; }
+    .tab-panels { max-height: calc(60vh - 120px); }
+
+    /* Sheet handle — visible on mobile */
+    .sheet-handle {
+        display: flex;
+        justify-content: center;
+        padding: 12px 0 8px;
+        cursor: grab;
+        flex-shrink: 0;
+        touch-action: none;
+    }
+
+    .sheet-handle::after {
+        content: '';
+        width: 40px;
+        height: 4px;
+        background: var(--border-strong);
+        border-radius: var(--radius);
+        transition: width 0.2s var(--ease-out), background 0.2s;
+    }
+
+    .sheet-handle:active {
+        cursor: grabbing;
+    }
+
+    .sheet-handle:active::after {
+        width: 48px;
+        background: var(--text-muted);
+    }
+}
+
+/* ─── Responsive: Small Phone ─── */
+@media (max-width: 600px) {
+    .sim-brand {
+        font-size: 0.92rem;
+    }
+
+    .tool-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .sim-toolbar-actions {
+        gap: 2px;
+    }
+
+    .tool-sep {
+        margin: 0 1px;
+    }
+}
+
+/* ─── Responsive: Minimal UI ─── */
+@media (max-width: 440px) {
+    .hide-sm {
+        display: none !important;
+    }
+
+    .sim-brand {
+        display: none;
+    }
+
+    .sim-toolbar-actions {
+        gap: 1px;
+    }
+}
+
+/* ─── Toast Notifications ─── */
+#toast-container {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+    transition: left 0.3s var(--ease-out);
+}
+@media (min-width: 901px) {
+    body:has(.sim-panel.open) #toast-container {
+        left: calc(50% - (var(--panel-w) + 24px) / 2);
+    }
+}
+
+.toast {
+    padding: 8px 24px;
+    border-radius: var(--radius);
+    background: var(--bg-panel);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: none;
+    color: var(--text);
+    font: 400 var(--font-base) var(--font-text);
+    box-shadow: inset 0 0 0 1px var(--border);
+    opacity: 0;
+    transition: opacity 0.3s var(--ease-out);
+    pointer-events: auto;
+    max-width: min(460px, 85vw);
+}
+.toast.toast-multiline {
+    border-radius: var(--radius);
+    padding: 12px 20px;
+    line-height: 1.45;
+}
+
+.toast.visible {
+    opacity: 1;
+}
+
+/* ─── Accessibility ─── */
+.skip-link {
+    position: fixed;
+    top: -100%;
+    left: 16px;
+    z-index: 10000;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: var(--text-on-accent);
+    font: 500 var(--font-lg) var(--font-text);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: top 0.2s var(--ease-out);
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ─── Info Tip Triggers ─── */
+.info-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background: var(--bg-hover);
+    color: var(--text-muted);
+    font-size: var(--font-sm);
+    font-style: italic;
+    font-weight: 500;
+    font-family: var(--font-text);
+    cursor: help;
+    padding: 0;
+    margin-left: 4px;
+    flex-shrink: 0;
+    line-height: 1;
+    vertical-align: middle;
+    transition: color 0.2s var(--ease-out), background 0.2s var(--ease-out);
+}
+
+.info-trigger:hover,
+.info-trigger:focus-visible {
+    color: var(--accent);
+    background: var(--accent-subtle);
+}
+
+/* ─── Sim Tooltip (cursor-following) ─── */
+.sim-tooltip {
+    position: fixed;
+    z-index: 200;
+    padding: 6px 10px;
+    border-radius: var(--radius);
+    background: var(--bg-panel-solid);
+    border: none;
+    font: 400 var(--font-sm) / 1.5 var(--font-text);
+    font-variant-numeric: lining-nums tabular-nums;
+    color: var(--text);
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: inset 0 0 0 1px var(--border);
+    opacity: 0;
+    transition: opacity 0.12s var(--ease-in-out);
+}
+
+.sim-tooltip.visible {
+    opacity: 1;
+}
+
+/* ─── Info Tip Popovers ─── */
+.info-popover {
+    position: fixed;
+    z-index: 9000;
+    padding: 10px 14px;
+    border-radius: var(--radius);
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    line-height: 1.55;
+    color: var(--text);
+    opacity: 0;
+    transition: opacity 0.2s var(--ease-out);
+    pointer-events: none;
+}
+
+.info-popover-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.info-popover-title {
+    font-weight: 500;
+    font-size: var(--font-lg);
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+.info-popover-body {
+    color: var(--text-secondary);
+}
+
+.info-popover-body .katex {
+    font-size: 1.05em;
+}
+
+.info-popover-body .katex-display {
+    overflow-x: auto;
+    margin: 0.4em 0;
+}
+
+.info-popover-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0;
+    border-radius: 50%;
+    transition: color 0.15s, background 0.15s;
+}
+
+.info-popover-close:hover {
+    color: var(--text);
+    background: var(--bg-hover);
+}
+
+/* ─── About Overlay ─── */
+.about-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.3s var(--ease-out);
+    pointer-events: none;
+}
+
+.about-overlay-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.about-content {
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    max-width: 480px;
+    width: 90vw;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about-header h2 {
+    font-family: var(--font-text);
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin: 0;
+}
+
+.about-desc {
+    font-size: var(--font-lg);
+    line-height: 1.55;
+    color: var(--text-secondary);
+    margin: 0 0 16px;
+}
+
+.about-section {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.about-section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.about-group-label {
+    font-family: var(--font-text);
+    font-style: italic;
+    font-weight: 400;
+    font-size: var(--font-lg);
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+/* A later shortcut group inside the same section needs air above its label. */
+.about-row + .about-group-label {
+    margin-top: 14px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.about-label {
+    font-size: var(--font-base);
+    color: var(--text-secondary);
+}
+
+.about-key {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    font-family: var(--font-text);
+    font-size: var(--font-sm);
+    color: var(--text);
+    min-width: 24px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.about-value {
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    color: var(--text);
+}
+
+.about-footer {
+    padding-top: 12px;
+    margin-top: 4px;
+    font-size: var(--font-base);
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.about-footer a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-line);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 0.2s var(--ease-out);
+}
+
+.about-footer a:hover {
+    text-decoration-color: var(--accent);
+}
+
+.about-updated {
+    font-size: var(--font-base);
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+/* ─── Educational Content ─── */
+.edu-content {
+    max-width: 42rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.sim-body .edu-content {
+    position: absolute;
+    left: -9999px;
+}
+
+.edu-content summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.edu-content h2,
+.edu-content h3 {
+    color: var(--text);
+    margin-top: 1.5rem;
+}
+
+/* ─── Control Rows ─── */
+.ctrl-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.ctrl-row > label,
+.ctrl-label {
+    font-size: var(--font-base);
+    color: var(--text);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.ctrl-sub { padding-left: 20px; }
+.ctrl-sub > label { font-size: var(--font-sm); color: var(--text-secondary); }
+
+.ctrl-disabled { opacity: 0.4; pointer-events: none; transition: opacity 0.2s var(--ease-out); }
+
+/* ─── Dependency Reveal (shared/forms.js bindDeps) ─── */
+.dep-reveal {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.dep-reveal:not(.dep-init) {
+    transition: grid-template-rows 0.25s var(--ease-out);
+}
+.dep-reveal > * {
+    overflow: hidden;
+    min-height: 0;
+}
+.dep-reveal:not(.dep-init) > * {
+    transition: opacity 0.2s var(--ease-out) 0.05s;
+}
+.dep-reveal.dep-hidden {
+    grid-template-rows: 0fr;
+    pointer-events: none;
+}
+.dep-reveal.dep-hidden > * {
+    opacity: 0;
+}
+.dep-reveal.dep-hidden:not(.dep-init) > * {
+    transition: opacity 0.1s var(--ease-out);
+}
+
+.ctrl-group {
+    margin-bottom: 10px;
+}
+.ctrl-group:last-child { margin-bottom: 0; }
+
+.panel-section {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.panel-section:last-of-type { margin-bottom: 0; }
+
+.stat-sub { padding-left: 20px; }
+.stat-sub .stat-label { font-size: var(--font-sm); color: var(--text-muted); }
+.stat-sub .stat-value { font-size: var(--font-sm); color: var(--text-secondary); }
+
+.ctrl-row.locked { opacity: 0.4; pointer-events: none; transition: opacity 0.2s var(--ease-out); }
+
+/* ─── Select Dropdowns ─── */
+/* Native select — hidden when enhanced by shared/dropdown.js */
+.sim-select {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--bg-hover);
+    color: var(--text);
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    transition: background 0.2s var(--ease-out);
+}
+
+.sim-select:focus {
+    background: var(--bg-elevated);
+    outline: 1.5px solid var(--accent);
+    outline-offset: 0;
+}
+
+/* ─── Custom Dropdown (shared/dropdown.js) ─── */
+.sim-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.sim-dropdown.disabled { opacity: 0.4; pointer-events: none; }
+
+.sim-dropdown-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--bg-hover);
+    color: var(--text);
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    font-variant-numeric: lining-nums tabular-nums;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: background 0.2s var(--ease-out);
+}
+
+.sim-dropdown-trigger:hover {
+    background: var(--bg-elevated);
+}
+
+.sim-dropdown-trigger:focus-visible {
+    background: var(--bg-elevated);
+    outline: 1.5px solid var(--accent);
+    outline-offset: 0;
+}
+
+.sim-dropdown-chevron {
+    color: var(--text-muted);
+    font-size: 0.7em;
+    transition: transform 0.2s var(--ease-out);
+}
+
+.sim-dropdown.open .sim-dropdown-chevron {
+    transform: rotate(180deg);
+}
+
+.sim-dropdown.open .sim-dropdown-trigger {
+    border-radius: var(--radius) var(--radius) 0 0;
+    background: var(--bg-panel-solid);
+}
+
+.sim-dropdown-list {
+    display: none;
+    position: absolute;
+    z-index: 300;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 240px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+    background: var(--bg-panel-solid);
+    box-shadow: inset 0 0 0 1px var(--border);
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 2px 0;
+}
+
+.sim-dropdown.open .sim-dropdown-list {
+    display: block;
+    animation: dropdownIn 0.15s var(--ease-out) both;
+}
+
+.sim-dropdown.closing .sim-dropdown-list {
+    animation: dropdownOut 0.15s var(--ease-in-out) both;
+}
+
+.sim-dropdown.closing .sim-dropdown-trigger {
+    border-radius: var(--radius);
+    background: var(--bg-hover);
+}
+
+@keyframes dropdownIn {
+    from { opacity: 0; max-height: 0; }
+    to   { opacity: 1; max-height: 240px; }
+}
+
+@keyframes dropdownOut {
+    from { opacity: 1; max-height: 240px; }
+    to   { opacity: 0; max-height: 0; }
+}
+
+.sim-dropdown-item {
+    padding: 5px 10px;
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    font-variant-numeric: tabular-nums;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: background 0.12s var(--ease-out), color 0.12s var(--ease-out);
+}
+
+.sim-dropdown-item:hover,
+.sim-dropdown-item.focused {
+    background: var(--bg-hover);
+    color: var(--text);
+}
+
+.sim-dropdown-item.selected {
+    color: var(--accent);
+}
+
+.sim-dropdown-item.disabled {
+    color: var(--text-muted);
+    cursor: default;
+    opacity: 0.4;
+}
+
+.sim-dropdown-item.disabled:hover {
+    background: transparent;
+}
+
+/* ─── Form Controls ─── */
+
+/* Slider value display */
+.slider-value {
+    font-family: var(--font-text);
+    color: var(--text);
+    font-weight: 500;
+    font-size: var(--font-base);
+    font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* Range sliders */
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+    height: 20px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--slider-color, var(--accent)) var(--slider-fill, 0%), var(--slider-track) var(--slider-fill, 0%));
+    border-radius: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: var(--slider-color, var(--accent));
+    margin-top: -6px;
+    border: none;
+    transition: box-shadow 180ms var(--ease-in-out);
+}
+
+input[type=range]:focus-visible::-webkit-slider-thumb {
+    box-shadow: 0 0 0 4px var(--accent-subtle);
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    background: var(--slider-track);
+    border-radius: 0;
+    border: none;
+}
+
+input[type=range]::-moz-range-progress {
+    height: 1px;
+    background: var(--slider-color, var(--accent));
+    border-radius: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: var(--slider-color, var(--accent));
+    border: none;
+}
+
+/* Segmented control (mode toggles) */
+.mode-toggles {
+    display: flex;
+    gap: 2px;
+    padding: 3px;
+    background: var(--bg-hover);
+    border-radius: var(--radius);
+    position: relative;
+}
+
+.mode-indicator {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: calc(100% - 6px);
+    border-radius: var(--radius);
+    background: var(--accent);
+    transition: transform 0.3s var(--ease-out), width 0.3s var(--ease-out);
+    z-index: 0;
+}
+
+.mode-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 6px 12px;
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    font-weight: 400;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.25s var(--ease-out);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.mode-btn:hover {
+    color: var(--text);
+}
+
+.mode-btn.active {
+    color: var(--text-on-accent);
+}
+
+/* Settings dropdown (shared/settings.js) */
+.settings-dd {
+    position: fixed;
+    z-index: 100;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background: var(--bg-panel);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.settings-dd-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.settings-dd-row:last-child { margin-bottom: 0; }
+
+.settings-dd-label {
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    color: var(--text-muted);
+    min-width: 80px;
+    flex-shrink: 0;
+}
+
+.settings-dd-val {
+    font-family: var(--font-text);
+    font-size: var(--font-sm);
+    font-variant-numeric: lining-nums tabular-nums;
+    color: var(--text-secondary);
+    min-width: 40px;
+    text-align: right;
+}
+
+.settings-dd-row .sim-slider { flex: 1; }
+
+/* Checkbox label layout (standalone checkboxes, not .tog toggles) */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 36px;
+    height: 20px;
+    background: var(--slider-track);
+    border-radius: var(--radius);
+    position: relative;
+    cursor: pointer;
+    transition: background 180ms var(--ease-in-out);
+    flex-shrink: 0;
+}
+
+.checkbox-label input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background: var(--text-muted);
+    border-radius: var(--radius);
+    transition: all 180ms var(--ease-in-out);
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+    background: var(--accent);
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+    left: 19px;
+    background: var(--text-on-accent);
+}
+
+/* ─── Ghost Buttons ─── */
+.ghost-btn {
+    padding: 0.4rem 0.75rem;
+    border-radius: var(--radius);
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s var(--ease-out), color 0.2s var(--ease-out);
+}
+
+.ghost-btn:hover {
+    background: var(--bg-hover);
+    color: var(--text);
+}
+
+.ghost-btn:disabled,
+.ghost-btn[disabled] {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* ─── Overlay / Dialog ─── */
+.sim-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    animation: fadeIn 0.2s ease-out;
+}
+
+.sim-overlay[hidden],
+.sim-overlay.hidden {
+    display: none !important;
+}
+
+.sim-overlay-panel {
+    max-width: 600px;
+    width: 90vw;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.sim-overlay-body {
+    padding: 1rem 1.2rem;
+    overflow-y: auto;
+    font-size: var(--font-lg);
+    line-height: 1.6;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sim-overlay-body h3 {
+    margin: 1em 0 0.3em;
+    font-size: var(--font-lg);
+}
+
+.sim-overlay-body p { margin: 0.4em 0; }
+.sim-overlay-body ul, .sim-overlay-body ol { margin: 0.4em 0; padding-left: 1.2em; }
+
+.sim-overlay-body .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 600px) {
+    .sim-overlay-panel {
+        width: 100vw;
+        max-width: 100vw;
+        max-height: 100vh;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .sim-overlay { align-items: stretch; }
+    .sim-overlay-body { font-size: var(--font-base); padding: 0.75rem 1rem; }
+}
+
+/* ─── Theme Toggle Icons ─── */
+.icon-sun, .icon-moon { display: none; }
+[data-theme="light"] .icon-sun { display: block; }
+[data-theme="dark"] .icon-moon { display: block; }
+
+/* ─── Control Group Label ─── */
+label.control-label {
+    font-size: var(--font-base);
+    color: var(--text);
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* ─── Toggle Switches ─── */
+.tog-wrap { position: relative; }
+.tog-wrap input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.tog {
+    display: inline-flex;
+    align-items: center;
+    width: 42px;
+    height: 22px;
+    background: var(--tog-bg);
+    border-radius: var(--radius);
+    cursor: pointer;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    transition: all 0.28s var(--ease-in-out);
+    overflow: hidden;
+    --tog-color: var(--accent);
+    --tog-shift: 20px;
+}
+
+.tog-thumb {
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: var(--radius);
+    background: var(--text-muted);
+    transition: all 0.35s var(--ease-out);
+    z-index: 2;
+}
+
+.tog-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.28s var(--ease-in-out);
+    z-index: 1;
+    line-height: 0;
+    color: var(--text-on-accent);
+}
+
+.tog-icon-on { right: 5px; opacity: 0.25; }
+.tog-icon-off { left: 5px; opacity: 0.6; }
+
+.tog-wrap input:checked + .tog {
+    background: var(--tog-color);
+}
+.tog-wrap input:checked + .tog .tog-thumb {
+    transform: translateX(var(--tog-shift)) translateY(-50%);
+    background: var(--bg-elevated);
+}
+.tog-wrap input:checked + .tog .tog-icon-on { opacity: 1; }
+.tog-wrap input:checked + .tog .tog-icon-off { opacity: 0.25; }
+
+.tog-wrap input:focus-visible + .tog {
+    outline: 1.5px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Dark-mode toggle overrides */
+[data-theme="dark"] .tog-wrap input:checked + .tog {
+    background: color-mix(in srgb, var(--tog-color) 30%, var(--bg-panel-solid));
+}
+[data-theme="dark"] .tog-wrap input:checked + .tog .tog-thumb {
+    background: var(--tog-color);
+}
+
+/* Larger touch targets on coarse pointers */
+@media (pointer: coarse) {
+    .tog { --tog-shift: 22px; width: 48px; height: 26px; border-radius: var(--radius); }
+    .tog-thumb { width: 18px; height: 18px; left: 4px; }
+}
+
+/* ─── Touch Device Overrides ─── */
+@media (pointer: coarse) {
+  .ctrl-row { padding: 6px 0; }
+  .tool-btn { width: 44px; height: 44px; }
+  .info-trigger { min-width: 32px; min-height: 32px; padding: 8px; }
+  .tab-btn { min-height: 44px; }
+  .mode-btn { min-height: 44px; }
+
+  .sim-toolbar-actions {
+    flex-shrink: 1;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .sim-toolbar-actions::-webkit-scrollbar { display: none; }
+}
+
+/* ─── Simulation Body Base ─── */
+/* Simulation apps (not the portfolio) use this to lock viewport */
+.sim-body {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    user-select: none;
+}
+
+html:has(> .sim-body) { overflow: hidden; }
+
+/* ─── Canvas Container ─── */
+.canvas-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--bg-canvas);
+    position: relative;
+    touch-action: none;
+    transition: background-color 0.5s var(--ease-out);
+}
+
+/* ─── Substrate Pill Buttons ─── */
+.pill-group {
+    display: flex;
+    align-items: center;
+}
+
+.pill-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.7rem;
+    border: none;
+    background: transparent;
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: clamp(0.82rem, 1.1vw, 0.92rem);
+    cursor: pointer;
+    transition: color 0.2s, background 0.2s;
+    white-space: nowrap;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.pill-btn-left  { border-radius: var(--radius) 0 0 var(--radius); }
+.pill-btn-right { border-radius: 0 var(--radius) var(--radius) 0; }
+.pill-btn-solo  { border-radius: var(--radius); }
+
+.pill-btn:hover:not(:disabled) {
+    background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.pill-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+/* ─── Divider ─── */
+.divider {
+    width: 1px;
+    height: 20px;
+    background: var(--bg-hover);
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+/* ─── Sparkline ─── */
+.sparkline {
+    display: block;
+    width: 100%;
+    height: var(--sparkline-h, 36px);
+    margin-top: 4px;
+    border-radius: var(--radius);
+    background: transparent;
+}
+
+/* ─── Text Input ─── */
+.sim-input {
+    width: 100%;
+    padding: 0.4rem 0.65rem;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--bg-hover);
+    color: var(--text);
+    font-family: var(--font-text);
+    font-size: var(--font-base);
+    outline: none;
+    transition: background 0.2s var(--ease-out);
+}
+
+.sim-input:focus {
+    background: var(--bg-elevated);
+    outline: 1.5px solid var(--accent);
+    outline-offset: 0;
+}
+
+/* ─── Progress Track ─── */
+.progress-track {
+    width: 100%;
+    height: var(--track-h, 4px);
+    background: var(--slider-track);
+    border-radius: calc(var(--track-h, 4px) / 2);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: inherit;
+    transition: width 0.4s var(--ease-smooth);
+}
+
+/* ─── Icon Tight (thicker stroke for small icons) ─── */
+.icon-tight svg {
+    stroke-width: 1.8;
+}
+
+/* ─── Japanese labels ─── */
+/* Mincho has no true italic, so Japanese text is never slanted synthetically
+   (Latin runs keep Newsreader's real italic); labels are set at 500 and tracked. */
+:lang(ja) {
+    font-synthesis-style: none;
+}
+
+:lang(ja) .group-label,
+:lang(ja) .about-group-label,
+:lang(ja) .panel-hint {
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+/* ─── Canvas Cursor ─── */
+.cursor-grab { cursor: grab; }
+.cursor-grab:active { cursor: grabbing; }
+
+/* ─── Mobile Bottom Sheet ─── */
+/* Sim panels become bottom sheets on mobile */
+@media (max-width: 900px) {
+    .sim-panel {
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 55vh;
+        border-radius: var(--radius) var(--radius) 0 0;
+        transform: translateY(100%);
+    }
+
+    .sim-panel.open,
+    .app-ready .sim-panel.open {
+        transform: translateY(0);
+    }
+}
+
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

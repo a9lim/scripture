@@ -66,26 +66,25 @@ text-to-speech with active-record highlighting.
 
 Notes, bookmarks, display preferences, and reading history live in browser
 `localStorage`. JSON export/import supports backup, merge, and replacement.
-The reader has no user account or application database. The parent hosting
-Worker records aggregate page-view metadata, but the reader code does not send
-personal notes, bookmarks, or reading history to it.
+The reader has no user account or application database, and the reader code
+does not send personal notes, bookmarks, or reading history to a server.
 
 ## Data and delivery
 
 Chapter content is committed as static JSON and fetched on demand. Search,
 concordance, and related-passage indexes are precomputed by the extraction
-pipeline. Production deep routes are served through the parent Cloudflare
-Worker, which injects crawlable work/chapter/verse HTML and route-specific
-JSON-LD before the client application takes over.
+pipeline. A Cloudflare Worker serves every route and injects crawlable
+work/chapter/verse HTML and route-specific JSON-LD before the client
+application takes over.
 
-Every chapter is addressable as `/scripture/{workId}/{chapterId}`. Append
-`:{verse}` for a record-level link. Examples:
+Every chapter is addressable as `/{workId}/{chapterId}`. Append `:{verse}` for
+a record-level link. Examples:
 
-- Genesis 1: `/scripture/ot/gen-1`
-- Genesis 1:26: `/scripture/ot/gen-1:26`
-- Surah 19: `/scripture/quran/quran-19`
-- 1 Nephi 3: `/scripture/bom/1-ne-3`
-- Tao Te Ching 42: `/scripture/ttc/ttc-42`
+- Genesis 1: `/ot/gen-1`
+- Genesis 1:26: `/ot/gen-1:26`
+- Surah 19: `/quran/quran-19`
+- 1 Nephi 3: `/bom/1-ne-3`
+- Tao Te Ching 42: `/ttc/ttc-42`
 
 ## Accessibility
 

@@ -71,8 +71,8 @@ async function navigate(workId, chapterId, verse) {
   if (bc) bc.textContent = '';
 
   const path = verse
-    ? `/scripture/${workId}/${chapterId}:${verse}`
-    : `/scripture/${workId}/${chapterId}`;
+    ? `/${workId}/${chapterId}:${verse}`
+    : `/${workId}/${chapterId}`;
   if (location.pathname !== path) {
     history.replaceState(null, '', path);
   }
@@ -122,10 +122,10 @@ async function navigate(workId, chapterId, verse) {
  */
 function updateNavLink(el, workId, adjacent) {
   if (adjacent) {
-    el.href = `/scripture/${workId}/${adjacent.id}`;
+    el.href = `/${workId}/${adjacent.id}`;
     el.style.visibility = 'visible';
   } else {
-    el.href = '/scripture/';
+    el.href = '/';
     el.style.visibility = 'hidden';
   }
 }
@@ -133,8 +133,8 @@ function updateNavLink(el, workId, adjacent) {
 /* ── path routing ─────────────────────────────────────────────────── */
 
 function routeFromPath() {
-  // Strip /scripture/ prefix, e.g. "/scripture/bom/1-ne-1:26" → "bom/1-ne-1:26"
-  const raw = location.pathname.replace(/^\/scripture\/?/, '');
+  // Strip the leading slash, e.g. "/bom/1-ne-1:26" → "bom/1-ne-1:26"
+  const raw = location.pathname.replace(/^\//, '');
 
   if (!raw) {
     const last = getLastPosition();
@@ -170,7 +170,7 @@ function routeFromPath() {
 async function downloadText() {
   if (!currentWork) return;
   try {
-    const res = await fetch(`/scripture/text/${currentWork}.txt`);
+    const res = await fetch(`/text/${currentWork}.txt`);
     if (!res.ok) throw new Error(res.status);
     const blob = await res.blob();
     const url = URL.createObjectURL(blob);
@@ -208,6 +208,9 @@ async function init() {
   // Navigation dropdowns
   initNav($, (workId, chapterId) => navigate(workId, chapterId));
 
+  // Read ?q= before routing: navigate() replaces the URL, query included.
+  const searchParam = new URLSearchParams(location.search).get('q');
+
   // Path routing
   window.addEventListener('popstate', routeFromPath);
   routeFromPath();
@@ -229,7 +232,6 @@ async function init() {
   });
 
   // Auto-open search from ?q= parameter
-  const searchParam = new URLSearchParams(location.search).get('q');
   if (searchParam) {
     await search.open();
     $.searchInput.value = searchParam;
@@ -282,7 +284,7 @@ async function init() {
       showToast('Copied to clipboard');
     },
     onLink: async (verse) => {
-      const url = `${location.origin}/scripture/${currentWork}/${currentChapter}:${verse}`;
+      const url = `${location.origin}/${currentWork}/${currentChapter}:${verse}`;
       await navigator.clipboard.writeText(url);
       showToast('Link copied');
     },
@@ -450,7 +452,7 @@ async function init() {
       { label: 'KJV Apocrypha', value: 'Project Gutenberg', url: 'https://www.gutenberg.org' },
       { label: 'LDS Quad (KJV OT/NT, BoM, D&C, PoGP)', value: 'churchofjesuschrist.org', url: 'https://www.churchofjesuschrist.org' }
     ],
-    repo: 'https://github.com/a9lim/a9lim.github.io'
+    repo: 'https://github.com/a9lim/scripture'
   });
   $.aboutBtn.addEventListener('click', () => about.show());
 

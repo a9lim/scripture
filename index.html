@@ -4,22 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scripture — Sacred Text Reader | a9l.im</title>
+    <title>Scripture — Sacred Text Reader</title>
     <meta name="description" content="Read, search, annotate, compare, and listen to sixteen sacred works with chapter and verse deep links, concordance, and related passages.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta property="og:title" content="Scripture — Sacred Text Reader">
     <meta property="og:description" content="Read, search, annotate, compare, and listen to sixteen sacred works with chapter and verse deep links, concordance, and related passages.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://a9l.im/scripture/">
-    <meta property="og:site_name" content="a9l.im">
-    <meta property="og:image" content="https://a9l.im/og-image.webp?v=20261023">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://a9l.im/og-image.webp?v=20261023">
-    <meta name="twitter:image:alt" content="a9l.im — research, simulations, and open-source software">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/webp">
-    <meta property="og:image:alt" content="a9l.im — research, simulations, and open-source software">
+    <meta property="og:url" content="%ORIGIN%/">
+    <meta property="og:site_name" content="Scripture">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@_a9lim">
     <meta name="twitter:creator" content="@_a9lim">
     <meta name="twitter:title" content="Scripture — Sacred Text Reader">
@@ -27,19 +20,19 @@
     <meta name="author" content="a9lim">
     <link rel="icon" href="/favicon.ico">
     <meta name="theme-color" content="#FCFCFB">
-    <link rel="canonical" href="https://a9l.im/scripture/">
-    <link rel="alternate" hreflang="en" href="https://a9l.im/scripture/">
-    <link rel="alternate" hreflang="x-default" href="https://a9l.im/scripture/">
+    <link rel="canonical" href="%ORIGIN%/">
+    <link rel="alternate" hreflang="en" href="%ORIGIN%/">
+    <link rel="alternate" hreflang="x-default" href="%ORIGIN%/">
     <meta property="og:locale" content="en_US">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Scripture">
     <link rel="manifest" href="/manifest.json">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="search" type="application/opensearchdescription+xml" title="a9l.im" href="/opensearch.xml">
+    <link rel="search" type="application/opensearchdescription+xml" title="Scripture" href="/opensearch.xml">
     <link rel="stylesheet" href="/fonts/fonts.css">
     <link rel="stylesheet" href="/shared/base.css">
-    <link rel="stylesheet" href="/scripture/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <script src="/shared/tokens.js"></script>
     <script defer src="/shared/utils.js"></script>
     <script defer src="/shared/haptics.js"></script>
@@ -52,14 +45,14 @@
     <script defer src="/shared/about.js"></script>
     <script defer src="/shared/touch.js"></script>
     <script defer src="/shared/tooltip.js"></script>
-    <script defer src="/scripture/colors.js"></script>
+    <script defer src="/colors.js"></script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": ["WebApplication", "LearningResource"],
       "name": "Scripture",
-      "url": "https://a9l.im/scripture/",
+      "url": "%ORIGIN%/",
       "description": "Read, search, annotate, compare, and listen to sixteen sacred works with chapter and verse deep links, concordance, and related passages.",
       "speakable": {
         "@type": "SpeakableSpecification",
@@ -81,7 +74,7 @@
       "keywords": "scripture reader, Bible, Quran, Book of Mormon, Tao Te Ching, Kojiki, Bundahis, Four Books, sacred texts, religious texts, educational",
       "operatingSystem": "Any (Web Browser)",
       "browserRequirements": "Modern browser with ES6 module support",
-      "codeRepository": "https://github.com/a9lim/a9lim.github.io",
+      "codeRepository": "https://github.com/a9lim/scripture",
       "license": "https://www.gnu.org/licenses/agpl-3.0.html",
       "interactivityType": "mixed",
       "teaches": [
@@ -101,11 +94,6 @@
           "https://twitter.com/_a9lim"
         ]
       },
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "a9l.im",
-        "url": "https://a9l.im"
-      },
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -115,7 +103,7 @@
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://a9l.im/scripture/?q={search_term_string}"
+          "urlTemplate": "%ORIGIN%/?q={search_term_string}"
         },
         "query-input": "required name=search_term_string",
         "suggestedQuery": ["Genesis", "Quran", "enlightenment", "salvation", "Book of Mormon", "Tao"]
@@ -150,7 +138,7 @@
           "name": "Does Scripture require an internet connection?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Scripture loads prebuilt chapter JSON on demand and has no application database. The interactive reader runs client-side; the parent Cloudflare Worker also renders crawlable HTML and structured data for deep routes."
+            "text": "Scripture loads prebuilt chapter JSON on demand and has no application database. The interactive reader runs client-side; a Cloudflare Worker also renders crawlable HTML and structured data for deep routes."
           }
         },
         {
@@ -174,7 +162,7 @@
           "name": "Where is personal reading data stored?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Notes, bookmarks, display settings, and reading history stay in browser localStorage and are not sent by the reader code. The parent hosting Worker records aggregate page-view metadata separately."
+            "text": "Notes, bookmarks, display settings, and reading history stay in browser localStorage and are not sent by the reader code."
           }
         },
         {
@@ -189,22 +177,18 @@
     }
     </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://a9l.im"},{"@type":"ListItem","position":2,"name":"Scripture","item":"https://a9l.im/scripture/"}]}
-</script>
-<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "@id": "https://a9l.im/scripture/#dataset",
+  "@id": "%ORIGIN%/#dataset",
   "name": "Sacred Texts Corpus — Sixteen Historic English Editions",
   "description": "A structured corpus of sixteen sacred works spanning Abrahamic, East Asian, Zoroastrian, Buddhist, Finnish, and Norse traditions. Includes Old Testament, New Testament, Apocrypha, Quran, Book of Mormon, Doctrine and Covenants, Pearl of Great Price, Four Books, Kojiki, Tao Te Ching, Bundahishn, Lotus Sutra, Book of Poetry, Kalevala, Poetic Edda, and Arda Viraf.",
-  "url": "https://a9l.im/scripture/",
+  "url": "%ORIGIN%/",
   "creator": {"@type": "Person", "name": "a9lim", "url": "https://a9l.im/", "@id": "https://a9l.im/#person"},
   "license": "https://creativecommons.org/licenses/by-sa/4.0/",
   "inLanguage": "en",
   "keywords": ["sacred texts", "Bible", "Quran", "Book of Mormon", "Tao Te Ching", "Kojiki", "Kalevala", "Poetic Edda", "comparative religion", "historic English editions"],
-  "includedInDataCatalog": {"@type": "DataCatalog", "name": "a9l.im"},
-  "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://a9l.im/scripture/data/works.json"},
+  "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "%ORIGIN%/data/works.json"},
   "measurementTechnique": "Parser-normalized extraction into manifest and chapter JSON, with generated search, concordance, and TF-IDF similarity indexes"
 }
 </script>
@@ -215,7 +199,7 @@
 
     <div id="toolbar" class="sim-toolbar glass" role="toolbar" aria-label="Reader controls">
         <div class="toolbar-left">
-            <a href="/" class="sim-home" title="a9l.im"><img src="/logo.svg" alt="a9l.im" height="28"></a>
+            <a href="https://a9l.im/" class="sim-home" title="a9l.im"><img src="/logo.svg" alt="a9l.im" height="28"></a>
             <span class="sim-brand">Scripture</span>
             <div class="toolbar-sep"></div>
             <div class="nav-dropdowns">
@@ -315,7 +299,7 @@
     </div>
 
     <script src="/shared/tabs.js"></script>
-    <script type="module" src="/scripture/main.js"></script>
+    <script type="module" src="/main.js"></script>
     <details class="edu-content">
       <summary>About this reader</summary>
       <article>
@@ -329,10 +313,10 @@
         <h3>Concordance and related passages</h3>
         <p>The concordance is an exact-word occurrence index with linked records grouped by work. Related passages is separate: a TF-IDF (term frequency-inverse document frequency) cosine-similarity index compares chapter vocabulary after stop-word removal and stores up to five cross-book matches above its threshold. It is a lexical discovery aid, not a claim of historical or theological equivalence.</p>
         <h3>Deep linking</h3>
-        <p>Every chapter and verse has a permanent URL. Chapter links follow the pattern <code>/scripture/{work}/{book}-{chapter}</code> (e.g., <code>/scripture/ot/gen-1</code> for Genesis 1). Verse links append the verse number (e.g., <code>/scripture/ot/gen-1:26</code> for Genesis 1:26). These URLs can be shared, bookmarked, or cited directly.</p>
+        <p>Every chapter and verse has a permanent URL. Chapter links follow the pattern <code>/{work}/{book}-{chapter}</code> (e.g., <code>/ot/gen-1</code> for Genesis 1). Verse links append the verse number (e.g., <code>/ot/gen-1:26</code> for Genesis 1:26). These URLs can be shared, bookmarked, or cited directly.</p>
         <h3>Accessibility</h3>
         <p>Scripture supports keyboard navigation throughout: Tab moves between controls, Enter activates verse actions, and arrow keys navigate chapters. The reading pane has a skip-to-content link. All overlays (search, concordance) are focus-trapped ARIA dialogs. Dynamic content regions use aria-live for screen reader announcements. Light and dark themes are available through the theme toggle. Verse numbers are visible to assistive technology. No flashing content or motion hazards.</p>
-        <p>Scripture is part of a suite of educational simulations at <a href="/">a9l.im</a>. Explore particle physics with <a href="/geon">Geon</a>, redistricting with <a href="/gerry">Gerry</a>, or cellular metabolism with <a href="/cyano">Cyano</a>.</p>
+        <p>Scripture is made by <a href="https://a9l.im/">a9lim</a>. The source is on <a href="https://github.com/a9lim/scripture">GitHub</a>.</p>
       </article>
     </details>
 </body>

@@ -1,0 +1,146 @@
+/* Newsreader (variable — opsz 6–72, wght 200–800), roman and italic.
+   Google Fonts v26 latin and latin-ext slices of
+   google/fonts@8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5 ofl/newsreader. */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/fonts/newsreader-roman-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/fonts/newsreader-roman-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/fonts/newsreader-italic-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/fonts/newsreader-italic-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Shippori Mincho 400/500, subset at build time by tools/subset-fonts.mjs to
+   the Japanese text the site prints (the ranges below must match JA_RANGES
+   there). Mincho has no italic; Japanese text is never slanted (base.css). */
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/shippori-mincho-400.woff2) format('woff2');
+  unicode-range: U+3000-30FF, U+31F0-31FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FF00-FFEF;
+}
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/shippori-mincho-500.woff2) format('woff2');
+  unicode-range: U+3000-30FF, U+31F0-31FF, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FF00-FFEF;
+}
+
+/* STIX Two Text (roman and italic) and STIX Two Math: Greek, Cyrillic,
+   super/subscripts, operators, arrows and accidentals Newsreader lacks, subset
+   at build time by tools/subset-fonts.mjs (ranges must match TEXT_RANGES,
+   MATH_RANGES and ARROW_RANGES there). size-adjust matches Newsreader's
+   x-height (0.426 em against STIX's 0.473 roman, 0.467 italic) and the
+   overrides restore Newsreader's line metrics, so a fallback glyph never
+   changes line height. Math has one upright cut, declared for both styles so
+   operators in italic runs stay upright instead of slanting synthetically. */
+@font-face {
+  font-family: 'STIX Two Text';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/stix-two-text.woff2) format('woff2');
+  unicode-range: U+0300-036F, U+0370-03FF, U+0400-04FF, U+1D00-1DBF, U+1E00-1EFF, U+2016, U+2070-209F, U+20D0-20FF, U+2100-214F;
+  size-adjust: 90.1%;
+  ascent-override: 81.6%;
+  descent-override: 29.4%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/stix-two-text-italic.woff2) format('woff2');
+  unicode-range: U+0300-036F, U+0370-03FF, U+0400-04FF, U+1D00-1DBF, U+1E00-1EFF, U+2016, U+2070-209F, U+20D0-20FF, U+2100-214F;
+  size-adjust: 91.2%;
+  ascent-override: 80.6%;
+  descent-override: 29.1%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'STIX Two Math';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/stix-two-math.woff2) format('woff2');
+  unicode-range: U+2200-22FF, U+2300-23FF, U+25A0-25FF, U+266D-266F, U+27C0-27EF, U+2980-29FF, U+2A00-2AFF;
+  size-adjust: 90.1%;
+  ascent-override: 81.6%;
+  descent-override: 29.4%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'STIX Two Math';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/stix-two-math.woff2) format('woff2');
+  unicode-range: U+2200-22FF, U+2300-23FF, U+25A0-25FF, U+266D-266F, U+27C0-27EF, U+2980-29FF, U+2A00-2AFF;
+  size-adjust: 90.1%;
+  ascent-override: 81.6%;
+  descent-override: 29.4%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'STIX Two Math';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/stix-two-math-arrows.woff2) format('woff2');
+  unicode-range: U+2190-21FF;
+  size-adjust: 90.1%;
+  ascent-override: 81.6%;
+  descent-override: 29.4%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'STIX Two Math';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(/fonts/stix-two-math-arrows.woff2) format('woff2');
+  unicode-range: U+2190-21FF;
+  size-adjust: 90.1%;
+  ascent-override: 81.6%;
+  descent-override: 29.4%;
+  line-gap-override: 0%;
+}
+
+/* Noto Emoji (monochrome variable font, converted to WOFF2).
+   Source: google/fonts@7ff85c87f93ea6cca5f41c69f2e4edcb90240f26 */
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: block;
+  src: url(/fonts/noto-emoji-variable.woff2) format('woff2');
+}

@@ -4,7 +4,7 @@ A browser reader for sixteen public-domain sacred works. Read chapter by
 chapter, search everything at once, follow a word through the whole corpus,
 and keep notes and bookmarks on individual verses.
 
-**[Open it](https://a9l.im/scripture/)** · part of [a9l.im](https://a9l.im)
+By [a9lim](https://a9l.im). It used to live at a9l.im/scripture and is moving to its own domain.
 
 ## What's in it
 
@@ -27,7 +27,7 @@ verse.
 | Poetic Edda | Henry Adams Bellows |
 
 - Work, book, and chapter pickers, previous/next chapter, and a permanent URL
-  for every chapter and verse (`/scripture/ot/gen-1:26`)
+  for every chapter and verse (`/ot/gen-1:26`)
 - Full-text search across all works, filterable by work, book, and chapter
 - An exact-word concordance: click a word to see its occurrences, or open the
   full list grouped by work
@@ -58,16 +58,14 @@ there is no account, and the reader sends none of it to a server.
 
 ## Running locally
 
-The project has no build step of its own; it loads the shared design system from
-the parent site by absolute path. From a checkout of
-[a9lim.github.io](https://github.com/a9lim/a9lim.github.io) with submodules:
+Node 22 or newer.
 
-    npm install && npm run build
-    python3 -m http.server --directory dist 8000   # http://localhost:8000/scripture/
+    npm install
+    npm run dev        # build, then serve at http://localhost:8787
 
-A static server only serves the base page. Deep links such as
-`/scripture/ot/gen-1` are routed by the parent site's Cloudflare Worker, which
-`./dev.sh` runs locally.
+`npm run build` stages the deploy tree in `dist/`, and `npm run deploy` builds
+and deploys it as a Cloudflare Worker with static assets. The public origin is
+set once, in `site.config.mjs`.
 
 ## How it's built
 
@@ -75,9 +73,10 @@ Vanilla ES modules: `main.js` routes and wires the modules in `src/`, which
 cover the data layer, rendering, search, concordance, notes, and speech. The
 corpus is static JSON in `data/`, generated from source PDFs and plaintext by
 the Python pipeline in `extract/` (`extract/run.sh pipeline`), along with the
-search, concordance, and similarity indexes and the downloads in `text/`. In
-production the parent Worker renders crawlable chapter HTML and structured data
-before the client takes over. [AGENTS.md](AGENTS.md) has the detailed map.
+search, concordance, and similarity indexes and the downloads in `text/`. A
+Cloudflare Worker (`worker/`) serves every page and renders crawlable chapter
+HTML and structured data before the client takes over. `shared/` is a copy of
+a9l.im's design layer. [AGENTS.md](AGENTS.md) has the detailed map.
 
 ## License
 

@@ -254,7 +254,7 @@ function renderNotesAll(container, all, filter) {
       row.appendChild(content);
 
       const navigate = () => {
-        history.pushState(null, '', `/scripture/${entry.workId}/${entry.chapterId}:${entry.verse}`);
+        history.pushState(null, '', `/${entry.workId}/${entry.chapterId}:${entry.verse}`);
         window.dispatchEvent(new PopStateEvent('popstate'));
       };
       row.addEventListener('click', navigate);
@@ -387,7 +387,7 @@ function buildCard(verseNum, text) {
       const workId = ref.slice(0, slash);
       const chapterId = ref.slice(slash + 1, lastColon);
       const verse = parseInt(ref.slice(lastColon + 1), 10);
-      history.pushState(null, '', `/scripture/${workId}/${chapterId}:${verse}`);
+      history.pushState(null, '', `/${workId}/${chapterId}:${verse}`);
       window.dispatchEvent(new PopStateEvent('popstate'));
       return;
     }

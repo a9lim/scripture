@@ -30,3 +30,9 @@ raw/
 
 # Worktrees
 .worktrees/
+
+# Build output
+dist/
+.build/
+node_modules/
+.wrangler/
